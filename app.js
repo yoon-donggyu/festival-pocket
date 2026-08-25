@@ -1,4 +1,4 @@
-// Festival Pocket loader: force light appearance + manual-only weather loading
+// Festival Pocket loader: light appearance + performance-safe manual weather
 (function(){
   const style=document.createElement('style');
   style.id='festival-pocket-force-light';
@@ -25,20 +25,26 @@
     .selection-sheet{border-top:1px solid rgba(17,17,17,.08) !important;}.sheet-head{border-bottom-color:rgba(17,17,17,.08) !important;}.sheet-handle{background:#d0d0cf !important;}
     .bottom-nav{background:rgba(255,255,255,.92) !important;border-color:rgba(255,255,255,.98) !important;box-shadow:0 12px 38px rgba(0,0,0,.14) !important;}.bottom-nav button{background:transparent !important;color:#8e8e93 !important;}
     input,select,textarea,button{color-scheme:light !important;}
+    @media(max-width:699px){
+      .sticky,.bottom-nav,.glass{-webkit-backdrop-filter:none !important;backdrop-filter:none !important;}
+      .sticky{background:rgba(245,245,243,.97) !important;}
+      .bottom-nav{background:rgba(255,255,255,.97) !important;box-shadow:0 6px 20px rgba(0,0,0,.10) !important;}
+      .card,.month-card,.mini-event,.summary,.rec-card,.map-shell{box-shadow:0 3px 12px rgba(0,0,0,.045) !important;}
+      .map-pin{filter:none !important;}
+    }
   `;
   document.head.appendChild(style);
 
-  // Prevent the weather IntersectionObserver from making network requests automatically.
   const NativeIntersectionObserver=window.IntersectionObserver;
   if(NativeIntersectionObserver){
     window.IntersectionObserver=function(callback,options){
       const io=new NativeIntersectionObserver((entries,observer)=>{
         const keep=entries.filter(en=>!(en.target&&en.target.dataset&&en.target.dataset.weatherId));
-        if(keep.length) callback(keep,observer);
+        if(keep.length)callback(keep,observer);
       },options);
       const nativeObserve=io.observe.bind(io);
       io.observe=function(target){
-        if(target&&target.dataset&&target.dataset.weatherId) return;
+        if(target&&target.dataset&&target.dataset.weatherId)return;
         return nativeObserve(target);
       };
       return io;
@@ -46,37 +52,54 @@
     window.IntersectionObserver.prototype=NativeIntersectionObserver.prototype;
   }
 
-  const core=document.createElement('script');
-  core.src='app-core.js?v=20260825-convenience1';
-  core.onload=function(){
-    // Future renders must also avoid automatic weather loading.
+  function loadScript(src,onload){
+    const s=document.createElement('script');
+    s.src=src;
+    s.onload=onload||null;
+    s.onerror=()=>console.error('Festival Pocket script load failed:',src);
+    document.body.appendChild(s);
+  }
+
+  loadScript('app-core.js?v=20260825-perf2',function(){
     try{
       window.setupWeatherObserver=function(){};
       window.loadWeather=function(f){
+        const cached=typeof getWeatherCache==='function'?getWeatherCache(f):null;
+        if(cached){
+          try{renderWeatherSummary(f,cached);renderWeatherDetail(f,cached);}catch(e){}
+          return Promise.resolve(cached);
+        }
         const sum=document.querySelector('#weather-summary-'+f.id);
         if(sum){
           sum.className='weather-summary';
           sum.innerHTML='<span class="weather-dot"></span><span>날씨는 「날씨 새로고침」으로 확인</span>';
         }
         const det=document.querySelector('#weather-detail-'+f.id);
-        if(det) det.innerHTML='<div class="event-forecast">실시간 날씨는 상단 「날씨 새로고침」을 눌러 확인하세요.</div>';
+        if(det)det.innerHTML='<div class="event-forecast">실시간 날씨는 상단 「날씨 새로고침」을 눌러 확인하세요.</div>';
         return Promise.resolve(null);
       };
+      const networkFetch=window.fetchFestivalWeather;
+      if(typeof networkFetch==='function'){
+        window.fetchFestivalWeather=function(f,force=false){
+          if(force)return networkFetch(f,true);
+          const cached=typeof getWeatherCache==='function'?getWeatherCache(f):null;
+          if(cached){
+            try{renderWeatherSummary(f,cached);renderWeatherDetail(f,cached);}catch(e){}
+            return Promise.resolve(cached);
+          }
+          return Promise.reject(new Error('manual weather mode'));
+        };
+      }
       document.querySelectorAll('[data-weather-id]').forEach(el=>{
         el.className='weather-summary';
         el.innerHTML='<span class="weather-dot"></span><span>날씨는 「날씨 새로고침」으로 확인</span>';
       });
     }catch(e){console.warn('manual weather mode setup failed',e);}
 
-    const extra=document.createElement('script');
-    extra.src='festival-extra.js?v=20260825-convenience1';
-    extra.onload=function(){
-      const enhance=document.createElement('script');
-      enhance.src='enhancements.js?v=20260825-1';
-      document.body.appendChild(enhance);
-    };
-    document.body.appendChild(extra);
-  };
-  core.onerror=function(){console.error('Festival Pocket core load failed');};
-  document.body.appendChild(core);
+    loadScript('performance.js?v=20260825-perf2',function(){
+      loadScript('festival-extra.js?v=20260825-perf2',function(){
+        loadScript('enhancements.js?v=20260825-perf2');
+      });
+    });
+  });
 })();
