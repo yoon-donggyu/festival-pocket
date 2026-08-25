@@ -1,0 +1,10 @@
+:root{
+  color-scheme: light only;
+}
+html,body{
+  background:#f5f5f3 !important;
+  color:#121212 !important;
+}
+input,button,select,textarea{
+  color-scheme: light only;
+}
