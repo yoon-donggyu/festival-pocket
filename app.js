@@ -47,7 +47,7 @@
   }
 
   const core=document.createElement('script');
-  core.src='app-core.js?v=20260825-manualweather1';
+  core.src='app-core.js?v=20260825-convenience1';
   core.onload=function(){
     // Future renders must also avoid automatic weather loading.
     try{
@@ -69,7 +69,12 @@
     }catch(e){console.warn('manual weather mode setup failed',e);}
 
     const extra=document.createElement('script');
-    extra.src='festival-extra.js?v=20260825-manualweather1';
+    extra.src='festival-extra.js?v=20260825-convenience1';
+    extra.onload=function(){
+      const enhance=document.createElement('script');
+      enhance.src='enhancements.js?v=20260825-1';
+      document.body.appendChild(enhance);
+    };
     document.body.appendChild(extra);
   };
   core.onerror=function(){console.error('Festival Pocket core load failed');};
