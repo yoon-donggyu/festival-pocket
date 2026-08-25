@@ -1,5 +1,6 @@
-// Festival Pocket convenience features · 2026-08-25
+// Festival Pocket convenience features · optimized 2026-08-25
 (function(){
+  'use strict';
   const KEY_STATUS='festivalPocket.visitStatus.v1';
   const KEY_NOTES='festivalPocket.notes.v1';
   const feature={today:false,free:false};
@@ -7,6 +8,8 @@
   const write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
   let visitStatus=read(KEY_STATUS);
   let notes=read(KEY_NOTES);
+  let enhancing=false;
+  let scheduled=false;
 
   const localYmd=()=>{
     const d=new Date();
@@ -19,32 +22,35 @@
   const dayDiff=(a,b)=>Math.round((ymdDate(b)-ymdDate(a))/86400000);
   const isTodayFestival=f=>f.start<=localYmd()&&f.end>=localYmd();
   const isFree=f=>/무료/.test(String(f.fee||''));
+  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-  // Apply the new filters to the app's existing filtering pipeline so list + map stay synchronized.
   try{
-    const baseFiltered=filtered;
-    filtered=function(){
-      let arr=baseFiltered();
-      if(feature.today) arr=arr.filter(isTodayFestival);
-      if(feature.free) arr=arr.filter(isFree);
-      return arr;
-    };
+    if(!window.__fpConvenienceFilteredPatched){
+      const baseFiltered=filtered;
+      filtered=function(){
+        let arr=baseFiltered();
+        if(feature.today)arr=arr.filter(isTodayFestival);
+        if(feature.free)arr=arr.filter(isFree);
+        return arr;
+      };
+      window.__fpConvenienceFilteredPatched=true;
+    }
   }catch(e){console.warn('Festival Pocket filter extension unavailable',e);}
 
   function urgency(f){
     const now=localYmd();
-    if(f.end<now) return '';
+    if(f.end<now)return '';
     if(f.start<=now&&f.end>=now){
       const left=dayDiff(now,f.end);
-      if(left===0) return '오늘 종료';
-      if(left<=3) return `종료 D-${left}`;
+      if(left===0)return '오늘 종료';
+      if(left<=3)return `종료 D-${left}`;
       return '오늘 진행';
     }
     return '';
   }
 
   function addFeatureStyles(){
-    if(document.getElementById('fp-convenience-style')) return;
+    if(document.getElementById('fp-convenience-style'))return;
     const s=document.createElement('style');
     s.id='fp-convenience-style';
     s.textContent=`
@@ -61,18 +67,24 @@
   }
 
   function ensureFilterButtons(){
-    if(document.getElementById('fpFilterRow')) return;
+    if(document.getElementById('fpFilterRow'))return;
     const grid=document.getElementById('grid');
-    if(!grid||!grid.parentElement) return;
+    if(!grid||!grid.parentElement)return;
     const row=document.createElement('div');
     row.id='fpFilterRow';
     row.className='fp-filter-row';
-    row.innerHTML=`<button id="fpTodayBtn">오늘만 보기</button><button id="fpFreeBtn">무료만 보기</button>`;
+    row.innerHTML='<button id="fpTodayBtn">오늘만 보기</button><button id="fpFreeBtn">무료만 보기</button>';
     grid.parentElement.insertBefore(row,grid);
-    const todayBtn=document.getElementById('fpTodayBtn');
-    const freeBtn=document.getElementById('fpFreeBtn');
-    todayBtn.onclick=()=>{feature.today=!feature.today;todayBtn.classList.toggle('on',feature.today);try{renderListAndMap()}catch(e){applyFallbackFilter()}};
-    freeBtn.onclick=()=>{feature.free=!feature.free;freeBtn.classList.toggle('on',feature.free);try{renderListAndMap()}catch(e){applyFallbackFilter()}};
+    document.getElementById('fpTodayBtn').onclick=()=>{
+      feature.today=!feature.today;
+      document.getElementById('fpTodayBtn').classList.toggle('on',feature.today);
+      renderListAndMap();
+    };
+    document.getElementById('fpFreeBtn').onclick=()=>{
+      feature.free=!feature.free;
+      document.getElementById('fpFreeBtn').classList.toggle('on',feature.free);
+      renderListAndMap();
+    };
   }
 
   function applyFallbackFilter(){
@@ -85,7 +97,7 @@
   }
 
   function setVisit(id,status){
-    if(visitStatus[id]===status) delete visitStatus[id]; else visitStatus[id]=status;
+    if(visitStatus[id]===status)delete visitStatus[id];else visitStatus[id]=status;
     write(KEY_STATUS,visitStatus);
     enhanceCards();
   }
@@ -95,7 +107,7 @@
     const v=prompt(`${f?f.name:'축제'} 메모`,current);
     if(v===null)return;
     const t=v.trim();
-    if(t) notes[id]=t; else delete notes[id];
+    if(t)notes[id]=t;else delete notes[id];
     write(KEY_NOTES,notes);
     enhanceCards();
   }
@@ -103,40 +115,71 @@
   window.fpEditNote=editNote;
 
   function enhanceCards(){
-    if(typeof festivals==='undefined') return;
-    document.querySelectorAll('article[id^="festival-"]').forEach(el=>{
-      const id=Number(el.id.replace('festival-',''));
-      const f=festivals.find(x=>x.id===id);
-      if(!f)return;
-      const meta=el.querySelector('.card-summary-meta');
-      const u=urgency(f);
-      if(meta){
-        const old=meta.querySelector('.fp-urgency'); if(old)old.remove();
-        if(u){const b=document.createElement('span');b.className='fp-urgency';b.textContent=u;meta.appendChild(b);}
-      }
-      let row=el.querySelector('.fp-status-row');
-      if(!row){
-        row=document.createElement('div');row.className='fp-status-row';
-        const quick=el.querySelector('.quick-actions');
-        if(quick)quick.insertAdjacentElement('afterend',row);else el.appendChild(row);
-      }
-      const st=visitStatus[id]||'';
-      const note=notes[id]||'';
-      row.innerHTML=`
-        <button class="${st==='plan'?'on':''}" onclick="event.stopPropagation();fpSetVisit(${id},'plan')">갈 예정</button>
-        <button class="${st==='done'?'on':''}" onclick="event.stopPropagation();fpSetVisit(${id},'done')">다녀옴</button>
-        <button onclick="event.stopPropagation();fpEditNote(${id})">${note?'메모 수정':'내 메모'}</button>
-        ${note?`<div class="fp-note-preview">${note.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}</div>`:''}`;
+    if(enhancing||typeof festivals==='undefined')return;
+    enhancing=true;
+    try{
+      const festivalById=new Map(festivals.map(f=>[f.id,f]));
+      document.querySelectorAll('article[id^="festival-"]').forEach(el=>{
+        const id=Number(el.id.replace('festival-',''));
+        const f=festivalById.get(id);
+        if(!f)return;
+
+        const meta=el.querySelector('.card-summary-meta');
+        const u=urgency(f);
+        if(meta){
+          let badge=meta.querySelector('.fp-urgency');
+          if(u){
+            if(!badge){badge=document.createElement('span');badge.className='fp-urgency';meta.appendChild(badge);}
+            if(badge.textContent!==u)badge.textContent=u;
+          }else if(badge){badge.remove();}
+        }
+
+        let row=el.querySelector('.fp-status-row');
+        if(!row){
+          row=document.createElement('div');
+          row.className='fp-status-row';
+          const quick=el.querySelector('.quick-actions');
+          if(quick)quick.insertAdjacentElement('afterend',row);else el.appendChild(row);
+        }
+        const st=visitStatus[id]||'';
+        const note=notes[id]||'';
+        const sig=`${st}|${note}`;
+        if(row.dataset.fpSig!==sig){
+          row.dataset.fpSig=sig;
+          row.innerHTML=`
+            <button class="${st==='plan'?'on':''}" onclick="event.stopPropagation();fpSetVisit(${id},'plan')">갈 예정</button>
+            <button class="${st==='done'?'on':''}" onclick="event.stopPropagation();fpSetVisit(${id},'done')">다녀옴</button>
+            <button onclick="event.stopPropagation();fpEditNote(${id})">${note?'메모 수정':'내 메모'}</button>
+            ${note?`<div class="fp-note-preview">${esc(note)}</div>`:''}`;
+        }
+      });
+      applyFallbackFilter();
+    }finally{
+      enhancing=false;
+    }
+  }
+
+  function scheduleEnhance(){
+    if(scheduled)return;
+    scheduled=true;
+    requestAnimationFrame(()=>{
+      scheduled=false;
+      ensureFilterButtons();
+      enhanceCards();
     });
-    applyFallbackFilter();
   }
 
   addFeatureStyles();
   ensureFilterButtons();
   enhanceCards();
+
   const grid=document.getElementById('grid');
   if(grid){
-    const mo=new MutationObserver(()=>{ensureFilterButtons();enhanceCards();});
-    mo.observe(grid,{childList:true,subtree:true});
+    const mo=new MutationObserver(mutations=>{
+      if(enhancing)return;
+      if(mutations.some(m=>m.type==='childList'&&m.target===grid))scheduleEnhance();
+    });
+    mo.observe(grid,{childList:true,subtree:false});
   }
+  document.addEventListener('fp:list-rendered',scheduleEnhance);
 })();
