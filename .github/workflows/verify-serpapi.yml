@@ -2,6 +2,9 @@ name: Verify Travel Pocket fares with Google Flights
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/verify-serpapi.yml'
   schedule:
     # 06:30 KST = 21:30 UTC (previous day)
     - cron: '30 21 * * *'
