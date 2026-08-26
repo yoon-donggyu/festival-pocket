@@ -8,9 +8,11 @@ from urllib.error import HTTPError, URLError
 
 KEY = os.environ.get('DATA_GO_KR_API_KEY','').strip()
 IIAC_BASE = 'https://apis.data.go.kr/B551177/StatusOfPaxFltSched'
-KAC_BASE = 'https://apis.data.go.kr/B551178/flight-schedule'
+KAC_SCHEDULE_BASE = 'https://apis.data.go.kr/B551178/flight-schedule'
+KAC_SEARCH_BASE = 'https://apis.data.go.kr/B551178/flight-search'
 OUT = Path('data/airport_schedule_probe.json')
 
+# 공공데이터포털에서 승인된 실제 상세기능 경로 기준.
 PROBES = [
     ('IIAC_DEPARTURES', IIAC_BASE + '/getPaxFltSchedDeparturesDeOdp', {
         'pageNo':'1','numOfRows':'30','type':'json','airport':'KIX','lang':'K'
@@ -18,13 +20,19 @@ PROBES = [
     ('IIAC_ARRIVALS', IIAC_BASE + '/getPaxFltSchedArrivalsDeOdp', {
         'pageNo':'1','numOfRows':'30','type':'json','airport':'KIX','lang':'K'
     }),
-    ('KAC_INT', KAC_BASE + '/int', {
+    ('KAC_INT_SCHEDULE', KAC_SCHEDULE_BASE + '/int', {
         'pageNo':'1','numOfRows':'30','schDate':'20260901',
         'schDeptCityCode':'GMP','schArrvCityCode':'HND','type':'json'
     }),
-    ('KAC_DOM', KAC_BASE + '/dom', {
+    ('KAC_DOM_SCHEDULE', KAC_SCHEDULE_BASE + '/dom', {
         'pageNo':'1','numOfRows':'30','schDate':'20260901',
         'schDeptCityCode':'GMP','schArrvCityCode':'PUS','type':'json'
+    }),
+    # 한국공항공사 항공기 운항정보 항공편 검색 /info
+    # schLineType: D 국내 / I 국제, schIOType: I 도착 / O 출발
+    ('KAC_FLIGHT_SEARCH', KAC_SEARCH_BASE + '/info', {
+        'schLineType':'I','schIOType':'O','schAirCode':'GMP',
+        'schStTime':'0600','schEdTime':'2359','type':'json'
     }),
 ]
 
@@ -38,7 +46,7 @@ def request_once(url, params):
     q['serviceKey'] = KEY
     req = Request(url + '?' + urlencode(q), headers={
         'Accept':'application/json, application/xml;q=0.9, */*;q=0.8',
-        'User-Agent':'Mozilla/5.0 TravelPocket/1.1'
+        'User-Agent':'Mozilla/5.0 TravelPocket/1.2'
     })
     try:
         with urlopen(req, timeout=TIMEOUT_SECONDS) as r:
@@ -73,7 +81,6 @@ def request_with_retry(url, params):
         final = res
         if res.get('ok'):
             break
-        # 4xx 응답은 같은 요청을 반복해도 해결될 가능성이 낮으므로 즉시 종료.
         if isinstance(res.get('status'), int) and 400 <= res['status'] < 500:
             break
     final = dict(final or {})
@@ -99,14 +106,16 @@ def main():
         print(provider, '=>', res.get('status'),
               'OK' if res.get('ok') else 'FAIL',
               f"attempts={res.get('attempt_count')}")
-        # 공공데이터 게이트웨이에 연속 요청이 몰리지 않게 간격을 둠.
         time.sleep(2)
 
+    ok_count = sum(1 for r in results if r.get('ok'))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         'generated_at_utc': datetime.now(timezone.utc).isoformat(),
         'timeout_seconds': TIMEOUT_SECONDS,
         'max_attempts': MAX_ATTEMPTS,
+        'ok_count': ok_count,
+        'total_count': len(results),
         'results': results
     }, ensure_ascii=False, indent=2), encoding='utf-8')
 
