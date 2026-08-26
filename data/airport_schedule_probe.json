@@ -1,5 +1,7 @@
 {
-  "generated_at_utc": "2026-08-26T06:17:12.091765+00:00",
+  "generated_at_utc": "2026-08-26T06:22:47.546719+00:00",
+  "timeout_seconds": 90,
+  "max_attempts": 3,
   "results": [
     {
       "provider": "IIAC_DEPARTURES",
@@ -12,8 +14,17 @@
         "lang": "K"
       },
       "ok": false,
-      "status": null,
-      "body_preview": "<urlopen error timed out>"
+      "status": 403,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "status": 403,
+          "error_or_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n"
+        }
+      ],
+      "attempt_count": 1
     },
     {
       "provider": "IIAC_ARRIVALS",
@@ -26,8 +37,17 @@
         "lang": "K"
       },
       "ok": false,
-      "status": null,
-      "body_preview": "<urlopen error timed out>"
+      "status": 403,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "status": 403,
+          "error_or_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n"
+        }
+      ],
+      "attempt_count": 1
     },
     {
       "provider": "KAC_INT",
@@ -41,8 +61,17 @@
         "type": "json"
       },
       "ok": false,
-      "status": null,
-      "body_preview": "<urlopen error timed out>"
+      "status": 403,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "status": 403,
+          "error_or_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n"
+        }
+      ],
+      "attempt_count": 1
     },
     {
       "provider": "KAC_DOM",
@@ -56,8 +85,17 @@
         "type": "json"
       },
       "ok": false,
-      "status": null,
-      "body_preview": "<urlopen error timed out>"
+      "status": 403,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "status": 403,
+          "error_or_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n"
+        }
+      ],
+      "attempt_count": 1
     }
   ]
 }
