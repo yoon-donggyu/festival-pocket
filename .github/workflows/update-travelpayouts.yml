@@ -9,11 +9,22 @@ on:
       - 'scripts/collect_airport_schedules.py'
       - '.github/workflows/update-travelpayouts.yml'
   schedule:
-    # 17:00 KST = 08:00 UTC
-    - cron: '0 8 * * *'
+    # Korea-focused refresh windows (GitHub cron uses UTC)
+    # 01:30 KST: overnight airline/OTA inventory and fare changes
+    - cron: '30 16 * * *'
+    # 06:30 KST: recheck after overnight batch processing has largely settled
+    - cron: '30 21 * * *'
+    # 12:30 KST: daytime fare/package changes and newly released promotions
+    - cron: '30 3 * * *'
+    # 18:30 KST: evening travel-agency/package inventory and price refresh
+    - cron: '30 9 * * *'
 
 permissions:
   contents: write
+
+concurrency:
+  group: travel-pocket-data-refresh
+  cancel-in-progress: false
 
 jobs:
   collect:
