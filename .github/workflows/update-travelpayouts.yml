@@ -2,6 +2,11 @@ name: Update Travelpayouts fares
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/collect_travelpayouts.py'
+      - '.github/workflows/update-travelpayouts.yml'
   schedule:
     # 17:00 KST = 08:00 UTC
     - cron: '0 8 * * *'
