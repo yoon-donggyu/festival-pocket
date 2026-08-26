@@ -1,40 +1,63 @@
 {
-  "generated_at_utc": "2026-08-26T05:51:45.302159+00:00",
+  "generated_at_utc": "2026-08-26T06:17:12.091765+00:00",
   "results": [
     {
-      "provider": "IIAC",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSched",
+      "provider": "IIAC_DEPARTURES",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
+      },
       "ok": false,
-      "status": 400,
-      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+      "status": null,
+      "body_preview": "<urlopen error timed out>"
     },
     {
-      "provider": "IIAC",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedList",
+      "provider": "IIAC_ARRIVALS",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedArrivalsDeOdp",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
+      },
       "ok": false,
-      "status": 400,
-      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+      "status": null,
+      "body_preview": "<urlopen error timed out>"
     },
     {
-      "provider": "KAC",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/getFlightSchedule",
+      "provider": "KAC_INT",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/int",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "schDate": "20260901",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "HND",
+        "type": "json"
+      },
       "ok": false,
-      "status": 400,
-      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+      "status": null,
+      "body_preview": "<urlopen error timed out>"
     },
     {
-      "provider": "KAC",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/getFlightScheduleList",
+      "provider": "KAC_DOM",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/dom",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "schDate": "20260901",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "PUS",
+        "type": "json"
+      },
       "ok": false,
-      "status": 400,
-      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
-    },
-    {
-      "provider": "KAC",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/v1",
-      "ok": false,
-      "status": 400,
-      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+      "status": null,
+      "body_preview": "<urlopen error timed out>"
     }
   ]
 }

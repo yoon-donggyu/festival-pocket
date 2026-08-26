@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T05:51:40.559704+00:00",
+  "generated_at_utc": "2026-08-26T06:15:29.963202+00:00",
   "requests": 176,
   "successful_requests": 168,
   "failed_requests": 8,
@@ -365,8 +365,8 @@
       "origin": "ICN",
       "destination": "CXR",
       "month": "2026-12",
-      "returned": 52,
-      "accepted_2to7_nights": 42
+      "returned": 53,
+      "accepted_2to7_nights": 43
     },
     {
       "origin": "ICN",
@@ -505,7 +505,7 @@
       "origin": "ICN",
       "destination": "PQC",
       "month": "2026-12",
-      "returned": 43,
+      "returned": 44,
       "accepted_2to7_nights": 39
     },
     {
@@ -953,8 +953,8 @@
       "origin": "GMP",
       "destination": "CXR",
       "month": "2026-12",
-      "returned": 36,
-      "accepted_2to7_nights": 29
+      "returned": 37,
+      "accepted_2to7_nights": 30
     },
     {
       "origin": "GMP",
