@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-08-26T05:51:45.302159+00:00",
+  "results": [
+    {
+      "provider": "IIAC",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSched",
+      "ok": false,
+      "status": 400,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+    },
+    {
+      "provider": "IIAC",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedList",
+      "ok": false,
+      "status": 400,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+    },
+    {
+      "provider": "KAC",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/getFlightSchedule",
+      "ok": false,
+      "status": 400,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+    },
+    {
+      "provider": "KAC",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/getFlightScheduleList",
+      "ok": false,
+      "status": 400,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+    },
+    {
+      "provider": "KAC",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/v1",
+      "ok": false,
+      "status": 400,
+      "body_preview": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"NO_OPENAPI_SERVICE_ERROR\",\n      \"returnAuthMsg\": \"해당 오픈API 서비스가 없거나 폐기됨\",\n      \"returnReasonCode\": \"12\"\n    }\n  }\n}\n"
+    }
+  ]
+}
