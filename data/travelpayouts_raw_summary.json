@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T06:33:09.574977+00:00",
+  "generated_at_utc": "2026-08-26T06:56:16.804992+00:00",
   "requests": 176,
   "successful_requests": 168,
   "failed_requests": 8,
@@ -22,7 +22,7 @@
       "origin": "ICN",
       "destination": "KIX",
       "month": "2026-11",
-      "returned": 19,
+      "returned": 18,
       "accepted_2to7_nights": 6
     },
     {
@@ -92,8 +92,8 @@
       "origin": "ICN",
       "destination": "CTS",
       "month": "2026-09",
-      "returned": 5,
-      "accepted_2to7_nights": 4
+      "returned": 4,
+      "accepted_2to7_nights": 3
     },
     {
       "origin": "ICN",
@@ -610,7 +610,7 @@
       "origin": "GMP",
       "destination": "KIX",
       "month": "2026-11",
-      "returned": 19,
+      "returned": 18,
       "accepted_2to7_nights": 6
     },
     {
@@ -680,8 +680,8 @@
       "origin": "GMP",
       "destination": "CTS",
       "month": "2026-09",
-      "returned": 5,
-      "accepted_2to7_nights": 4
+      "returned": 4,
+      "accepted_2to7_nights": 3
     },
     {
       "origin": "GMP",
