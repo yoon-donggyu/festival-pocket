@@ -47,4 +47,5 @@ jobs:
             exit 0
           fi
           git commit -m "Update Travel Pocket travel data"
-          git push
+          git pull --rebase origin main
+          git push origin main
