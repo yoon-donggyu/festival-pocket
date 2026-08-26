@@ -1,0 +1,78 @@
+name: Test SerpApi Google Flights
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/test-serpapi.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test-serpapi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test one Google Flights query via SerpApi
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          from urllib.parse import urlencode
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+
+          key = os.environ.get('SERPAPI_KEY','').strip()
+          if not key:
+              print('SERPAPI_KEY secret is missing', file=sys.stderr)
+              sys.exit(2)
+
+          params = {
+              'engine': 'google_flights',
+              'departure_id': 'ICN',
+              'arrival_id': 'KIX',
+              'outbound_date': '2026-09-15',
+              'return_date': '2026-09-18',
+              'currency': 'KRW',
+              'hl': 'ko',
+              'api_key': key,
+          }
+          url = 'https://serpapi.com/search.json?' + urlencode(params)
+          req = Request(url, headers={'User-Agent':'TravelPocket/1.0','Accept':'application/json'})
+          try:
+              with urlopen(req, timeout=60) as r:
+                  data = json.loads(r.read().decode('utf-8'))
+          except HTTPError as e:
+              body = e.read().decode('utf-8', errors='replace')
+              print(f'HTTP {e.code}: {body[:1000]}', file=sys.stderr)
+              sys.exit(1)
+          except (URLError, TimeoutError, json.JSONDecodeError) as e:
+              print(f'SerpApi request failed: {e}', file=sys.stderr)
+              sys.exit(1)
+
+          err = data.get('error')
+          if err:
+              print('SerpApi error:', err, file=sys.stderr)
+              sys.exit(1)
+
+          best = data.get('best_flights') or []
+          other = data.get('other_flights') or []
+          flights = best + other
+          print('SERPAPI_OK')
+          print('search_metadata_status=', (data.get('search_metadata') or {}).get('status'))
+          print('best_flights=', len(best), 'other_flights=', len(other), 'total_groups=', len(flights))
+          if flights:
+              first = flights[0]
+              print('first_price=', first.get('price'))
+              legs = first.get('flights') or []
+              if legs:
+                  leg = legs[0]
+                  print('first_airline=', leg.get('airline'))
+                  print('first_flight_number=', leg.get('flight_number'))
+                  print('first_departure=', (leg.get('departure_airport') or {}).get('time'))
+                  print('first_arrival=', (leg.get('arrival_airport') or {}).get('time'))
+          else:
+              print('No flight groups returned for test dates; API connection itself succeeded.')
+          PY
