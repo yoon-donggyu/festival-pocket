@@ -1,0 +1,46 @@
+name: Verify Travel Pocket fares with Google Flights
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:30 KST = 21:30 UTC (previous day)
+    - cron: '30 21 * * *'
+    # 18:30 KST = 09:30 UTC
+    - cron: '30 9 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: travel-pocket-serpapi-verification
+  cancel-in-progress: false
+
+jobs:
+  verify-serpapi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify up to six candidates with Google Flights
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python scripts/verify_serpapi_google_flights.py
+
+      - name: Commit Google Flights verification data
+        run: |
+          git config user.name "travel-pocket-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/serpapi_google_flights.json
+          if git diff --cached --quiet; then
+            echo "No SerpApi verification changes"
+            exit 0
+          fi
+          git commit -m "Update Google Flights verification data"
+          git pull --rebase origin main
+          git push origin main
