@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T06:22:36.681668+00:00",
+  "generated_at_utc": "2026-08-26T06:33:09.574977+00:00",
   "requests": 176,
   "successful_requests": 168,
   "failed_requests": 8,
@@ -512,8 +512,8 @@
       "origin": "ICN",
       "destination": "BKI",
       "month": "2026-09",
-      "returned": 6,
-      "accepted_2to7_nights": 6
+      "returned": 7,
+      "accepted_2to7_nights": 7
     },
     {
       "origin": "ICN",
@@ -1100,8 +1100,8 @@
       "origin": "GMP",
       "destination": "BKI",
       "month": "2026-09",
-      "returned": 6,
-      "accepted_2to7_nights": 6
+      "returned": 7,
+      "accepted_2to7_nights": 7
     },
     {
       "origin": "GMP",
