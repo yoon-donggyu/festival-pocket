@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T18:15:37.722577+00:00",
+  "generated_at_utc": "2026-08-27T00:58:35.798388+00:00",
   "requests": 560,
   "successful_requests": 552,
   "failed_requests": 8,
@@ -22,8 +22,8 @@
       "origin": "ICN",
       "destination": "KIX",
       "month": "2026-11",
-      "returned": 17,
-      "accepted_2to14_nights": 15
+      "returned": 19,
+      "accepted_2to14_nights": 16
     },
     {
       "origin": "ICN",
@@ -36,15 +36,15 @@
       "origin": "ICN",
       "destination": "NRT",
       "month": "2026-09",
-      "returned": 50,
-      "accepted_2to14_nights": 43
+      "returned": 49,
+      "accepted_2to14_nights": 42
     },
     {
       "origin": "ICN",
       "destination": "NRT",
       "month": "2026-10",
-      "returned": 43,
-      "accepted_2to14_nights": 37
+      "returned": 45,
+      "accepted_2to14_nights": 39
     },
     {
       "origin": "ICN",
@@ -57,22 +57,22 @@
       "origin": "ICN",
       "destination": "NRT",
       "month": "2026-12",
-      "returned": 23,
+      "returned": 24,
       "accepted_2to14_nights": 23
     },
     {
       "origin": "ICN",
       "destination": "HND",
       "month": "2026-09",
-      "returned": 55,
-      "accepted_2to14_nights": 50
+      "returned": 53,
+      "accepted_2to14_nights": 47
     },
     {
       "origin": "ICN",
       "destination": "HND",
       "month": "2026-10",
-      "returned": 49,
-      "accepted_2to14_nights": 43
+      "returned": 48,
+      "accepted_2to14_nights": 42
     },
     {
       "origin": "ICN",
@@ -85,22 +85,22 @@
       "origin": "ICN",
       "destination": "HND",
       "month": "2026-12",
-      "returned": 23,
+      "returned": 24,
       "accepted_2to14_nights": 23
     },
     {
       "origin": "ICN",
       "destination": "FUK",
       "month": "2026-09",
-      "returned": 15,
-      "accepted_2to14_nights": 11
+      "returned": 17,
+      "accepted_2to14_nights": 13
     },
     {
       "origin": "ICN",
       "destination": "FUK",
       "month": "2026-10",
-      "returned": 19,
-      "accepted_2to14_nights": 18
+      "returned": 21,
+      "accepted_2to14_nights": 19
     },
     {
       "origin": "ICN",
@@ -289,7 +289,7 @@
       "destination": "HKG",
       "month": "2026-09",
       "returned": 29,
-      "accepted_2to14_nights": 26
+      "accepted_2to14_nights": 25
     },
     {
       "origin": "ICN",
@@ -330,8 +330,8 @@
       "origin": "ICN",
       "destination": "MFM",
       "month": "2026-11",
-      "returned": 0,
-      "accepted_2to14_nights": 0
+      "returned": 2,
+      "accepted_2to14_nights": 2
     },
     {
       "origin": "ICN",
@@ -351,15 +351,15 @@
       "origin": "ICN",
       "destination": "BKK",
       "month": "2026-10",
-      "returned": 21,
-      "accepted_2to14_nights": 18
+      "returned": 24,
+      "accepted_2to14_nights": 21
     },
     {
       "origin": "ICN",
       "destination": "BKK",
       "month": "2026-11",
-      "returned": 4,
-      "accepted_2to14_nights": 4
+      "returned": 3,
+      "accepted_2to14_nights": 3
     },
     {
       "origin": "ICN",
@@ -414,8 +414,8 @@
       "origin": "ICN",
       "destination": "HKT",
       "month": "2026-11",
-      "returned": 10,
-      "accepted_2to14_nights": 10
+      "returned": 9,
+      "accepted_2to14_nights": 9
     },
     {
       "origin": "ICN",
@@ -456,8 +456,8 @@
       "origin": "ICN",
       "destination": "KUL",
       "month": "2026-09",
-      "returned": 28,
-      "accepted_2to14_nights": 26
+      "returned": 29,
+      "accepted_2to14_nights": 27
     },
     {
       "origin": "ICN",
@@ -547,8 +547,8 @@
       "origin": "ICN",
       "destination": "DAD",
       "month": "2026-10",
-      "returned": 32,
-      "accepted_2to14_nights": 30
+      "returned": 34,
+      "accepted_2to14_nights": 32
     },
     {
       "origin": "ICN",
@@ -568,8 +568,8 @@
       "origin": "ICN",
       "destination": "CXR",
       "month": "2026-09",
-      "returned": 61,
-      "accepted_2to14_nights": 57
+      "returned": 53,
+      "accepted_2to14_nights": 49
     },
     {
       "origin": "ICN",
@@ -582,8 +582,8 @@
       "origin": "ICN",
       "destination": "CXR",
       "month": "2026-11",
-      "returned": 26,
-      "accepted_2to14_nights": 26
+      "returned": 25,
+      "accepted_2to14_nights": 25
     },
     {
       "origin": "ICN",
@@ -603,8 +603,8 @@
       "origin": "ICN",
       "destination": "HAN",
       "month": "2026-10",
-      "returned": 4,
-      "accepted_2to14_nights": 4
+      "returned": 5,
+      "accepted_2to14_nights": 5
     },
     {
       "origin": "ICN",
@@ -652,15 +652,15 @@
       "origin": "ICN",
       "destination": "PQC",
       "month": "2026-09",
-      "returned": 64,
-      "accepted_2to14_nights": 63
+      "returned": 65,
+      "accepted_2to14_nights": 64
     },
     {
       "origin": "ICN",
       "destination": "PQC",
       "month": "2026-10",
-      "returned": 42,
-      "accepted_2to14_nights": 38
+      "returned": 39,
+      "accepted_2to14_nights": 35
     },
     {
       "origin": "ICN",
@@ -680,8 +680,8 @@
       "origin": "ICN",
       "destination": "CEB",
       "month": "2026-09",
-      "returned": 10,
-      "accepted_2to14_nights": 9
+      "returned": 9,
+      "accepted_2to14_nights": 8
     },
     {
       "origin": "ICN",
@@ -715,8 +715,8 @@
       "origin": "ICN",
       "destination": "MNL",
       "month": "2026-10",
-      "returned": 9,
-      "accepted_2to14_nights": 6
+      "returned": 7,
+      "accepted_2to14_nights": 4
     },
     {
       "origin": "ICN",
@@ -764,15 +764,15 @@
       "origin": "ICN",
       "destination": "PVG",
       "month": "2026-09",
-      "returned": 47,
-      "accepted_2to14_nights": 39
+      "returned": 46,
+      "accepted_2to14_nights": 38
     },
     {
       "origin": "ICN",
       "destination": "PVG",
       "month": "2026-10",
-      "returned": 29,
-      "accepted_2to14_nights": 26
+      "returned": 26,
+      "accepted_2to14_nights": 24
     },
     {
       "origin": "ICN",
@@ -792,7 +792,7 @@
       "origin": "ICN",
       "destination": "PEK",
       "month": "2026-09",
-      "returned": 37,
+      "returned": 38,
       "accepted_2to14_nights": 32
     },
     {
@@ -820,7 +820,7 @@
       "origin": "ICN",
       "destination": "PKX",
       "month": "2026-09",
-      "returned": 37,
+      "returned": 38,
       "accepted_2to14_nights": 32
     },
     {
@@ -883,8 +883,8 @@
       "origin": "ICN",
       "destination": "CAN",
       "month": "2026-10",
-      "returned": 16,
-      "accepted_2to14_nights": 13
+      "returned": 14,
+      "accepted_2to14_nights": 12
     },
     {
       "origin": "ICN",
@@ -995,8 +995,8 @@
       "origin": "ICN",
       "destination": "ALA",
       "month": "2026-10",
-      "returned": 33,
-      "accepted_2to14_nights": 28
+      "returned": 31,
+      "accepted_2to14_nights": 26
     },
     {
       "origin": "ICN",
@@ -1023,15 +1023,15 @@
       "origin": "ICN",
       "destination": "TAS",
       "month": "2026-10",
-      "returned": 51,
-      "accepted_2to14_nights": 38
+      "returned": 50,
+      "accepted_2to14_nights": 37
     },
     {
       "origin": "ICN",
       "destination": "TAS",
       "month": "2026-11",
-      "returned": 33,
-      "accepted_2to14_nights": 20
+      "returned": 35,
+      "accepted_2to14_nights": 22
     },
     {
       "origin": "ICN",
@@ -1044,8 +1044,8 @@
       "origin": "ICN",
       "destination": "DXB",
       "month": "2026-09",
-      "returned": 8,
-      "accepted_2to14_nights": 8
+      "returned": 9,
+      "accepted_2to14_nights": 9
     },
     {
       "origin": "ICN",
@@ -1135,8 +1135,8 @@
       "origin": "ICN",
       "destination": "IST",
       "month": "2026-10",
-      "returned": 20,
-      "accepted_2to14_nights": 20
+      "returned": 19,
+      "accepted_2to14_nights": 19
     },
     {
       "origin": "ICN",
@@ -1212,8 +1212,8 @@
       "origin": "ICN",
       "destination": "FCO",
       "month": "2026-09",
-      "returned": 8,
-      "accepted_2to14_nights": 8
+      "returned": 10,
+      "accepted_2to14_nights": 10
     },
     {
       "origin": "ICN",
@@ -1289,8 +1289,8 @@
       "origin": "ICN",
       "destination": "FRA",
       "month": "2026-12",
-      "returned": 0,
-      "accepted_2to14_nights": 0
+      "returned": 1,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "ICN",
@@ -1471,8 +1471,8 @@
       "origin": "ICN",
       "destination": "BUD",
       "month": "2026-10",
-      "returned": 2,
-      "accepted_2to14_nights": 2
+      "returned": 1,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "ICN",
@@ -1576,8 +1576,8 @@
       "origin": "ICN",
       "destination": "LAX",
       "month": "2026-09",
-      "returned": 9,
-      "accepted_2to14_nights": 8
+      "returned": 10,
+      "accepted_2to14_nights": 9
     },
     {
       "origin": "ICN",
@@ -1667,8 +1667,8 @@
       "origin": "ICN",
       "destination": "JFK",
       "month": "2026-10",
-      "returned": 7,
-      "accepted_2to14_nights": 5
+      "returned": 6,
+      "accepted_2to14_nights": 4
     },
     {
       "origin": "ICN",
@@ -1912,8 +1912,8 @@
       "origin": "ICN",
       "destination": "AKL",
       "month": "2026-09",
-      "returned": 3,
-      "accepted_2to14_nights": 2
+      "returned": 2,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "ICN",
@@ -1954,8 +1954,8 @@
       "origin": "GMP",
       "destination": "KIX",
       "month": "2026-11",
-      "returned": 17,
-      "accepted_2to14_nights": 15
+      "returned": 19,
+      "accepted_2to14_nights": 16
     },
     {
       "origin": "GMP",
@@ -1968,8 +1968,8 @@
       "origin": "GMP",
       "destination": "NRT",
       "month": "2026-09",
-      "returned": 27,
-      "accepted_2to14_nights": 23
+      "returned": 25,
+      "accepted_2to14_nights": 21
     },
     {
       "origin": "GMP",
@@ -1989,22 +1989,22 @@
       "origin": "GMP",
       "destination": "NRT",
       "month": "2026-12",
-      "returned": 11,
+      "returned": 12,
       "accepted_2to14_nights": 11
     },
     {
       "origin": "GMP",
       "destination": "HND",
       "month": "2026-09",
-      "returned": 51,
+      "returned": 52,
       "accepted_2to14_nights": 45
     },
     {
       "origin": "GMP",
       "destination": "HND",
       "month": "2026-10",
-      "returned": 43,
-      "accepted_2to14_nights": 37
+      "returned": 44,
+      "accepted_2to14_nights": 38
     },
     {
       "origin": "GMP",
@@ -2017,22 +2017,22 @@
       "origin": "GMP",
       "destination": "HND",
       "month": "2026-12",
-      "returned": 23,
+      "returned": 24,
       "accepted_2to14_nights": 23
     },
     {
       "origin": "GMP",
       "destination": "FUK",
       "month": "2026-09",
-      "returned": 13,
-      "accepted_2to14_nights": 9
+      "returned": 14,
+      "accepted_2to14_nights": 10
     },
     {
       "origin": "GMP",
       "destination": "FUK",
       "month": "2026-10",
-      "returned": 18,
-      "accepted_2to14_nights": 17
+      "returned": 20,
+      "accepted_2to14_nights": 18
     },
     {
       "origin": "GMP",
@@ -2221,7 +2221,7 @@
       "destination": "HKG",
       "month": "2026-09",
       "returned": 25,
-      "accepted_2to14_nights": 24
+      "accepted_2to14_nights": 23
     },
     {
       "origin": "GMP",
@@ -2262,8 +2262,8 @@
       "origin": "GMP",
       "destination": "MFM",
       "month": "2026-11",
-      "returned": 0,
-      "accepted_2to14_nights": 0
+      "returned": 2,
+      "accepted_2to14_nights": 2
     },
     {
       "origin": "GMP",
@@ -2276,22 +2276,22 @@
       "origin": "GMP",
       "destination": "BKK",
       "month": "2026-09",
-      "returned": 27,
-      "accepted_2to14_nights": 23
+      "returned": 28,
+      "accepted_2to14_nights": 24
     },
     {
       "origin": "GMP",
       "destination": "BKK",
       "month": "2026-10",
-      "returned": 18,
-      "accepted_2to14_nights": 18
+      "returned": 21,
+      "accepted_2to14_nights": 21
     },
     {
       "origin": "GMP",
       "destination": "BKK",
       "month": "2026-11",
-      "returned": 4,
-      "accepted_2to14_nights": 4
+      "returned": 3,
+      "accepted_2to14_nights": 3
     },
     {
       "origin": "GMP",
@@ -2332,8 +2332,8 @@
       "origin": "GMP",
       "destination": "HKT",
       "month": "2026-09",
-      "returned": 11,
-      "accepted_2to14_nights": 10
+      "returned": 12,
+      "accepted_2to14_nights": 11
     },
     {
       "origin": "GMP",
@@ -2346,8 +2346,8 @@
       "origin": "GMP",
       "destination": "HKT",
       "month": "2026-11",
-      "returned": 7,
-      "accepted_2to14_nights": 7
+      "returned": 6,
+      "accepted_2to14_nights": 6
     },
     {
       "origin": "GMP",
@@ -2472,15 +2472,15 @@
       "origin": "GMP",
       "destination": "DAD",
       "month": "2026-09",
-      "returned": 52,
-      "accepted_2to14_nights": 49
+      "returned": 51,
+      "accepted_2to14_nights": 48
     },
     {
       "origin": "GMP",
       "destination": "DAD",
       "month": "2026-10",
-      "returned": 22,
-      "accepted_2to14_nights": 22
+      "returned": 24,
+      "accepted_2to14_nights": 24
     },
     {
       "origin": "GMP",
@@ -2500,15 +2500,15 @@
       "origin": "GMP",
       "destination": "CXR",
       "month": "2026-09",
-      "returned": 74,
-      "accepted_2to14_nights": 69
+      "returned": 76,
+      "accepted_2to14_nights": 71
     },
     {
       "origin": "GMP",
       "destination": "CXR",
       "month": "2026-10",
-      "returned": 24,
-      "accepted_2to14_nights": 23
+      "returned": 23,
+      "accepted_2to14_nights": 22
     },
     {
       "origin": "GMP",
@@ -2521,8 +2521,8 @@
       "origin": "GMP",
       "destination": "CXR",
       "month": "2026-12",
-      "returned": 32,
-      "accepted_2to14_nights": 32
+      "returned": 33,
+      "accepted_2to14_nights": 33
     },
     {
       "origin": "GMP",
@@ -2535,8 +2535,8 @@
       "origin": "GMP",
       "destination": "HAN",
       "month": "2026-10",
-      "returned": 1,
-      "accepted_2to14_nights": 1
+      "returned": 3,
+      "accepted_2to14_nights": 3
     },
     {
       "origin": "GMP",
@@ -2584,15 +2584,15 @@
       "origin": "GMP",
       "destination": "PQC",
       "month": "2026-09",
-      "returned": 30,
-      "accepted_2to14_nights": 30
+      "returned": 33,
+      "accepted_2to14_nights": 33
     },
     {
       "origin": "GMP",
       "destination": "PQC",
       "month": "2026-10",
-      "returned": 17,
-      "accepted_2to14_nights": 15
+      "returned": 15,
+      "accepted_2to14_nights": 13
     },
     {
       "origin": "GMP",
@@ -2605,15 +2605,15 @@
       "origin": "GMP",
       "destination": "PQC",
       "month": "2026-12",
-      "returned": 18,
-      "accepted_2to14_nights": 18
+      "returned": 17,
+      "accepted_2to14_nights": 17
     },
     {
       "origin": "GMP",
       "destination": "CEB",
       "month": "2026-09",
-      "returned": 8,
-      "accepted_2to14_nights": 8
+      "returned": 7,
+      "accepted_2to14_nights": 7
     },
     {
       "origin": "GMP",
@@ -2647,8 +2647,8 @@
       "origin": "GMP",
       "destination": "MNL",
       "month": "2026-10",
-      "returned": 6,
-      "accepted_2to14_nights": 4
+      "returned": 3,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "GMP",
@@ -2696,15 +2696,15 @@
       "origin": "GMP",
       "destination": "PVG",
       "month": "2026-09",
-      "returned": 29,
-      "accepted_2to14_nights": 24
+      "returned": 28,
+      "accepted_2to14_nights": 23
     },
     {
       "origin": "GMP",
       "destination": "PVG",
       "month": "2026-10",
-      "returned": 21,
-      "accepted_2to14_nights": 19
+      "returned": 19,
+      "accepted_2to14_nights": 17
     },
     {
       "origin": "GMP",
@@ -2724,7 +2724,7 @@
       "origin": "GMP",
       "destination": "PEK",
       "month": "2026-09",
-      "returned": 37,
+      "returned": 38,
       "accepted_2to14_nights": 32
     },
     {
@@ -2752,7 +2752,7 @@
       "origin": "GMP",
       "destination": "PKX",
       "month": "2026-09",
-      "returned": 37,
+      "returned": 38,
       "accepted_2to14_nights": 32
     },
     {
@@ -2815,8 +2815,8 @@
       "origin": "GMP",
       "destination": "CAN",
       "month": "2026-10",
-      "returned": 14,
-      "accepted_2to14_nights": 11
+      "returned": 12,
+      "accepted_2to14_nights": 10
     },
     {
       "origin": "GMP",
@@ -2927,8 +2927,8 @@
       "origin": "GMP",
       "destination": "ALA",
       "month": "2026-10",
-      "returned": 33,
-      "accepted_2to14_nights": 28
+      "returned": 31,
+      "accepted_2to14_nights": 26
     },
     {
       "origin": "GMP",
@@ -2962,8 +2962,8 @@
       "origin": "GMP",
       "destination": "TAS",
       "month": "2026-11",
-      "returned": 66,
-      "accepted_2to14_nights": 40
+      "returned": 65,
+      "accepted_2to14_nights": 39
     },
     {
       "origin": "GMP",
@@ -3060,15 +3060,15 @@
       "origin": "GMP",
       "destination": "IST",
       "month": "2026-09",
-      "returned": 29,
-      "accepted_2to14_nights": 27
+      "returned": 28,
+      "accepted_2to14_nights": 26
     },
     {
       "origin": "GMP",
       "destination": "IST",
       "month": "2026-10",
-      "returned": 20,
-      "accepted_2to14_nights": 20
+      "returned": 19,
+      "accepted_2to14_nights": 19
     },
     {
       "origin": "GMP",
@@ -3144,8 +3144,8 @@
       "origin": "GMP",
       "destination": "FCO",
       "month": "2026-09",
-      "returned": 8,
-      "accepted_2to14_nights": 8
+      "returned": 10,
+      "accepted_2to14_nights": 10
     },
     {
       "origin": "GMP",
@@ -3221,8 +3221,8 @@
       "origin": "GMP",
       "destination": "FRA",
       "month": "2026-12",
-      "returned": 0,
-      "accepted_2to14_nights": 0
+      "returned": 1,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "GMP",
@@ -3403,8 +3403,8 @@
       "origin": "GMP",
       "destination": "BUD",
       "month": "2026-10",
-      "returned": 2,
-      "accepted_2to14_nights": 2
+      "returned": 1,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "GMP",
@@ -3508,8 +3508,8 @@
       "origin": "GMP",
       "destination": "LAX",
       "month": "2026-09",
-      "returned": 9,
-      "accepted_2to14_nights": 8
+      "returned": 10,
+      "accepted_2to14_nights": 9
     },
     {
       "origin": "GMP",
@@ -3599,8 +3599,8 @@
       "origin": "GMP",
       "destination": "JFK",
       "month": "2026-10",
-      "returned": 7,
-      "accepted_2to14_nights": 5
+      "returned": 6,
+      "accepted_2to14_nights": 4
     },
     {
       "origin": "GMP",
@@ -3844,8 +3844,8 @@
       "origin": "GMP",
       "destination": "AKL",
       "month": "2026-09",
-      "returned": 3,
-      "accepted_2to14_nights": 2
+      "returned": 2,
+      "accepted_2to14_nights": 1
     },
     {
       "origin": "GMP",
