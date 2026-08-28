@@ -1,20 +1,19 @@
 {
-  "generated_at_utc": "2026-08-27T20:02:09.852841+00:00",
-  "elapsed_seconds": 290.75,
+  "generated_at_utc": "2026-08-28T01:08:54.283157+00:00",
+  "elapsed_seconds": 290.01,
   "timeout_seconds": 35,
   "max_attempts": 2,
   "max_workers": 8,
   "results": [
     {
-      "provider": "KAC_FLIGHT_SEARCH",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-search/info",
+      "provider": "IIAC_ARRIVALS",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedArrivalsDeOdp",
       "params_without_key": {
-        "schLineType": "D",
-        "schIOType": "O",
-        "schAirCode": "GMP",
-        "schStTime": "0600",
-        "schEdTime": "2359",
-        "type": "json"
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
       },
       "ok": false,
       "status": null,
@@ -66,43 +65,15 @@
       "attempt_count": 2
     },
     {
-      "provider": "IIAC_ARRIVALS",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedArrivalsDeOdp",
+      "provider": "KAC_FLIGHT_SEARCH",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-search/info",
       "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "30",
-        "type": "json",
-        "airport": "KIX",
-        "lang": "K"
-      },
-      "ok": false,
-      "status": null,
-      "body_preview": "<urlopen error timed out>",
-      "attempts": [
-        {
-          "attempt": 1,
-          "ok": false,
-          "status": null,
-          "error_or_preview": "<urlopen error timed out>"
-        },
-        {
-          "attempt": 2,
-          "ok": false,
-          "status": null,
-          "error_or_preview": "<urlopen error timed out>"
-        }
-      ],
-      "attempt_count": 2
-    },
-    {
-      "provider": "IIAC_DEPARTURES",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "30",
-        "type": "json",
-        "airport": "KIX",
-        "lang": "K"
+        "schLineType": "D",
+        "schIOType": "O",
+        "schAirCode": "GMP",
+        "schStTime": "0600",
+        "schEdTime": "2359",
+        "type": "json"
       },
       "ok": false,
       "status": null,
@@ -133,6 +104,35 @@
         "schDeptCityCode": "GMP",
         "schArrvCityCode": "HND",
         "type": "json"
+      },
+      "ok": false,
+      "status": null,
+      "body_preview": "<urlopen error timed out>",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "status": null,
+          "error_or_preview": "<urlopen error timed out>"
+        },
+        {
+          "attempt": 2,
+          "ok": false,
+          "status": null,
+          "error_or_preview": "<urlopen error timed out>"
+        }
+      ],
+      "attempt_count": 2
+    },
+    {
+      "provider": "IIAC_DEPARTURES",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
       },
       "ok": false,
       "status": null,
@@ -1184,33 +1184,6 @@
     },
     {
       "rank": 39,
-      "key": "ICN-DAD-2026-09-14T20:35:00+09:00-2026-09-21T00:25:00+07:00-ZE-593",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-09-14T20:35:00+09:00",
-      "return_at": "2026-09-21T00:25:00+07:00",
-      "airline": "ZE",
-      "flight_number": "593",
-      "flight_code": "593",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 40,
       "key": "ICN-DAD-2026-09-09T20:35:00+09:00-2026-09-18T00:25:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1237,7 +1210,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 40,
       "key": "ICN-PQC-2026-09-01T19:30:00+09:00-2026-09-04T00:20:00+07:00-ZE-581",
       "origin": "ICN",
       "destination": "PQC",
@@ -1260,6 +1233,33 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 41,
+      "key": "ICN-DAD-2026-09-14T20:35:00+09:00-2026-09-21T00:25:00+07:00-ZE-593",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-09-14T20:35:00+09:00",
+      "return_at": "2026-09-21T00:25:00+07:00",
+      "airline": "ZE",
+      "flight_number": "593",
+      "flight_code": "593",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
         "lang": "K"
       }
     },
@@ -1645,6 +1645,60 @@
     },
     {
       "rank": 56,
+      "key": "ICN-PQC-2026-09-09T05:20:00+09:00-2026-09-12T01:00:00+07:00-9G-455",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-09T05:20:00+09:00",
+      "return_at": "2026-09-12T01:00:00+07:00",
+      "airline": "9G",
+      "flight_number": "455",
+      "flight_code": "455",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 57,
+      "key": "ICN-PQC-2026-09-09T05:20:00+09:00-2026-09-16T01:00:00+07:00-9G-455",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-09T05:20:00+09:00",
+      "return_at": "2026-09-16T01:00:00+07:00",
+      "airline": "9G",
+      "flight_number": "455",
+      "flight_code": "455",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 58,
       "key": "ICN-FUK-2026-09-05T18:30:00+09:00-2026-09-07T11:30:00+09:00-ZE-643",
       "origin": "ICN",
       "destination": "FUK",
@@ -1671,7 +1725,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 59,
       "key": "ICN-KIX-2026-12-07T10:35:00+09:00-2026-12-14T07:40:00+09:00-MM-714",
       "origin": "ICN",
       "destination": "KIX",
@@ -1698,7 +1752,7 @@
       }
     },
     {
-      "rank": 58,
+      "rank": 60,
       "key": "ICN-PQC-2026-09-14T19:30:00+09:00-2026-09-19T00:20:00+07:00-ZE-581",
       "origin": "ICN",
       "destination": "PQC",
@@ -1725,7 +1779,61 @@
       }
     },
     {
-      "rank": 59,
+      "rank": 61,
+      "key": "ICN-PQC-2026-09-12T05:20:00+09:00-2026-09-19T01:00:00+07:00-9G-455",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-12T05:20:00+09:00",
+      "return_at": "2026-09-19T01:00:00+07:00",
+      "airline": "9G",
+      "flight_number": "455",
+      "flight_code": "455",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 62,
+      "key": "ICN-PQC-2026-09-04T05:20:00+09:00-2026-09-11T01:00:00+07:00-9G-455",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-04T05:20:00+09:00",
+      "return_at": "2026-09-11T01:00:00+07:00",
+      "airline": "9G",
+      "flight_number": "455",
+      "flight_code": "455",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 63,
       "key": "ICN-BKI-2026-09-13T19:10:00+09:00-2026-09-18T00:30:00+08:00-7C-2603",
       "origin": "ICN",
       "destination": "BKI",
@@ -1752,7 +1860,7 @@
       }
     },
     {
-      "rank": 60,
+      "rank": 64,
       "key": "ICN-DAD-2026-10-05T07:55:00+09:00-2026-10-08T11:45:00+07:00-TW-007",
       "origin": "ICN",
       "destination": "DAD",
@@ -1779,7 +1887,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 65,
       "key": "GMP-KIX-2026-09-19T13:55:00+09:00-2026-09-22T11:00:00+09:00-7C-1327",
       "origin": "GMP",
       "destination": "KIX",
@@ -1807,7 +1915,34 @@
       }
     },
     {
-      "rank": 62,
+      "rank": 66,
+      "key": "ICN-PQC-2026-09-12T05:20:00+09:00-2026-09-17T01:00:00+07:00-9G-455",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-12T05:20:00+09:00",
+      "return_at": "2026-09-17T01:00:00+07:00",
+      "airline": "9G",
+      "flight_number": "455",
+      "flight_code": "455",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 67,
       "key": "ICN-PQC-2026-09-12T17:20:00+09:00-2026-09-16T22:25:00+07:00-7C-2315",
       "origin": "ICN",
       "destination": "PQC",
@@ -1834,7 +1969,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 68,
       "key": "ICN-FUK-2026-09-13T08:05:00+09:00-2026-09-17T09:40:00+09:00-RS-723",
       "origin": "ICN",
       "destination": "FUK",
@@ -1861,7 +1996,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 69,
       "key": "ICN-TPE-2026-09-25T23:00:00+09:00-2026-09-28T20:00:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -1888,7 +2023,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 70,
       "key": "GMP-KIX-2026-09-02T13:55:00+09:00-2026-09-04T14:20:00+09:00-7C-1327",
       "origin": "GMP",
       "destination": "KIX",
@@ -1916,7 +2051,7 @@
       }
     },
     {
-      "rank": 66,
+      "rank": 71,
       "key": "ICN-PQC-2026-09-03T19:30:00+09:00-2026-09-08T00:20:00+07:00-ZE-581",
       "origin": "ICN",
       "destination": "PQC",
@@ -1943,7 +2078,7 @@
       }
     },
     {
-      "rank": 67,
+      "rank": 72,
       "key": "ICN-KIX-2026-12-10T21:00:00+09:00-2026-12-17T07:40:00+09:00-MM-710",
       "origin": "ICN",
       "destination": "KIX",
@@ -1970,7 +2105,7 @@
       }
     },
     {
-      "rank": 68,
+      "rank": 73,
       "key": "ICN-KIX-2026-09-27T08:00:00+09:00-2026-09-29T11:35:00+09:00-TW-301",
       "origin": "ICN",
       "destination": "KIX",
@@ -1997,7 +2132,7 @@
       }
     },
     {
-      "rank": 69,
+      "rank": 74,
       "key": "ICN-NRT-2026-09-10T14:10:00+09:00-2026-09-23T16:20:00+09:00-ZE-607",
       "origin": "ICN",
       "destination": "NRT",
@@ -2024,7 +2159,7 @@
       }
     },
     {
-      "rank": 70,
+      "rank": 75,
       "key": "ICN-FUK-2026-09-13T17:00:00+09:00-2026-09-16T09:45:00+09:00-LJ-271",
       "origin": "ICN",
       "destination": "FUK",
@@ -2051,7 +2186,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 76,
       "key": "ICN-DAD-2026-09-15T20:35:00+09:00-2026-09-18T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -2078,7 +2213,7 @@
       }
     },
     {
-      "rank": 72,
+      "rank": 77,
       "key": "ICN-DAD-2026-10-23T07:55:00+09:00-2026-10-28T23:35:00+07:00-TW-7",
       "origin": "ICN",
       "destination": "DAD",
@@ -2105,7 +2240,7 @@
       }
     },
     {
-      "rank": 73,
+      "rank": 78,
       "key": "ICN-DAD-2026-09-05T21:15:00+09:00-2026-09-10T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -2132,7 +2267,7 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 79,
       "key": "ICN-TPE-2026-09-10T00:30:00+09:00-2026-09-19T20:00:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -2159,7 +2294,7 @@
       }
     },
     {
-      "rank": 75,
+      "rank": 80,
       "key": "ICN-NRT-2026-09-03T09:50:00+09:00-2026-09-05T15:20:00+09:00-WE-501",
       "origin": "ICN",
       "destination": "NRT",
@@ -2186,7 +2321,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 81,
       "key": "ICN-DAD-2026-09-07T20:55:00+09:00-2026-09-11T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2213,7 +2348,7 @@
       }
     },
     {
-      "rank": 77,
+      "rank": 82,
       "key": "ICN-TPE-2026-10-24T23:00:00+09:00-2026-10-28T18:15:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -2240,7 +2375,34 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 83,
+      "key": "ICN-DAD-2026-09-09T21:30:00+09:00-2026-09-12T13:10:00+07:00-7C-2217",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-09-09T21:30:00+09:00",
+      "return_at": "2026-09-12T13:10:00+07:00",
+      "airline": "7C",
+      "flight_number": "2217",
+      "flight_code": "2217",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": false,
+      "http_status": null,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 0,
+      "live_flight_search_api_ok": false,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 84,
       "key": "ICN-TPE-2026-09-09T00:30:00+09:00-2026-09-19T18:10:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -2267,7 +2429,7 @@
       }
     },
     {
-      "rank": 79,
+      "rank": 85,
       "key": "ICN-DAD-2026-10-10T20:55:00+09:00-2026-10-15T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2294,7 +2456,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 86,
       "key": "ICN-BKK-2026-09-15T18:00:00+09:00-2026-09-18T00:05:00+07:00-TW-101",
       "origin": "ICN",
       "destination": "BKK",
@@ -2321,7 +2483,7 @@
       }
     },
     {
-      "rank": 81,
+      "rank": 87,
       "key": "ICN-TPE-2026-09-16T00:30:00+09:00-2026-09-23T02:00:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -2348,7 +2510,7 @@
       }
     },
     {
-      "rank": 82,
+      "rank": 88,
       "key": "ICN-DAD-2026-10-12T20:35:00+09:00-2026-10-15T00:25:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -2375,7 +2537,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 89,
       "key": "ICN-DAD-2026-10-05T21:30:00+09:00-2026-10-14T01:30:00+07:00-7C-2217",
       "origin": "ICN",
       "destination": "DAD",
@@ -2402,7 +2564,7 @@
       }
     },
     {
-      "rank": 84,
+      "rank": 90,
       "key": "ICN-HAN-2026-09-09T19:55:00+09:00-2026-09-14T00:20:00+07:00-WE-271",
       "origin": "ICN",
       "destination": "HAN",
@@ -2429,7 +2591,7 @@
       }
     },
     {
-      "rank": 85,
+      "rank": 91,
       "key": "ICN-DAD-2026-10-14T18:30:00+09:00-2026-10-18T22:40:00+07:00-WE-201",
       "origin": "ICN",
       "destination": "DAD",
@@ -2456,7 +2618,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 92,
       "key": "ICN-DAD-2026-09-17T21:30:00+09:00-2026-09-22T13:10:00+07:00-7C-2217",
       "origin": "ICN",
       "destination": "DAD",
@@ -2483,7 +2645,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 93,
       "key": "ICN-HAN-2026-09-08T19:55:00+09:00-2026-09-13T00:20:00+07:00-WE-271",
       "origin": "ICN",
       "destination": "HAN",
@@ -2510,7 +2672,7 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 94,
       "key": "ICN-DAD-2026-09-14T09:10:00+09:00-2026-09-19T13:10:00+07:00-7C-2211",
       "origin": "ICN",
       "destination": "DAD",
@@ -2537,7 +2699,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 95,
       "key": "ICN-PQC-2026-09-14T19:30:00+09:00-2026-09-17T00:20:00+07:00-ZE-581",
       "origin": "ICN",
       "destination": "PQC",
@@ -2564,7 +2726,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 96,
       "key": "GMP-KIX-2026-09-08T17:40:00+09:00-2026-09-11T11:10:00+09:00-OZ-1165",
       "origin": "GMP",
       "destination": "KIX",
@@ -2592,7 +2754,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 97,
       "key": "ICN-PQC-2026-09-05T19:30:00+09:00-2026-09-07T00:20:00+07:00-ZE-581",
       "origin": "ICN",
       "destination": "PQC",
@@ -2619,7 +2781,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 98,
       "key": "ICN-NRT-2026-09-19T14:10:00+09:00-2026-09-25T17:30:00+09:00-ZE-607",
       "origin": "ICN",
       "destination": "NRT",
@@ -2646,7 +2808,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 99,
       "key": "ICN-NRT-2026-09-09T08:00:00+09:00-2026-09-11T18:30:00+09:00-ZE-601",
       "origin": "ICN",
       "destination": "NRT",
@@ -2673,7 +2835,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 100,
       "key": "ICN-PQC-2026-09-11T11:55:00+09:00-2026-09-16T01:00:00+07:00-9G-451",
       "origin": "ICN",
       "destination": "PQC",
@@ -2696,169 +2858,6 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 95,
-      "key": "ICN-PQC-2026-09-11T11:55:00+09:00-2026-09-18T20:20:00+07:00-9G-451",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-11T11:55:00+09:00",
-      "return_at": "2026-09-18T20:20:00+07:00",
-      "airline": "9G",
-      "flight_number": "451",
-      "flight_code": "451",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 96,
-      "key": "ICN-PQC-2026-09-15T19:30:00+09:00-2026-09-18T00:20:00+07:00-ZE-581",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-15T19:30:00+09:00",
-      "return_at": "2026-09-18T00:20:00+07:00",
-      "airline": "ZE",
-      "flight_number": "581",
-      "flight_code": "581",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 97,
-      "key": "GMP-KIX-2026-12-02T13:10:00+09:00-2026-12-05T16:00:00+09:00-MM-738",
-      "origin": "GMP",
-      "destination": "KIX",
-      "departure_at": "2026-12-02T13:10:00+09:00",
-      "return_at": "2026-12-05T16:00:00+09:00",
-      "airline": "MM",
-      "flight_number": "738",
-      "flight_code": "738",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261202",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "KIX",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 98,
-      "key": "ICN-KIX-2026-12-02T15:05:00+09:00-2026-12-05T19:50:00+09:00-MM-706",
-      "origin": "ICN",
-      "destination": "KIX",
-      "departure_at": "2026-12-02T15:05:00+09:00",
-      "return_at": "2026-12-05T19:50:00+09:00",
-      "airline": "MM",
-      "flight_number": "706",
-      "flight_code": "706",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "KIX",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 99,
-      "key": "ICN-FUK-2026-10-07T17:20:00+09:00-2026-10-16T12:15:00+09:00-7C-1407",
-      "origin": "ICN",
-      "destination": "FUK",
-      "departure_at": "2026-10-07T17:20:00+09:00",
-      "return_at": "2026-10-16T12:15:00+09:00",
-      "airline": "7C",
-      "flight_number": "1407",
-      "flight_code": "1407",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "FUK",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 100,
-      "key": "ICN-DAD-2026-10-13T21:30:00+09:00-2026-10-20T23:45:00+07:00-7C-2217",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-10-13T21:30:00+09:00",
-      "return_at": "2026-10-20T23:45:00+07:00",
-      "airline": "7C",
-      "flight_number": "2217",
-      "flight_code": "2217",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": false,
-      "http_status": null,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 0,
-      "live_flight_search_api_ok": false,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
         "lang": "K"
       }
     }
