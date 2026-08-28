@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2026 동대문구 맥주축제 가이드</title>
+<style>body{margin:0;background:#fff8e7;color:#082757;font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR","Segoe UI",sans-serif}.loading{max-width:520px;margin:20vh auto;padding:24px;text-align:center;font-weight:850}.loading small{display:block;margin-top:8px;color:#667085;font-weight:650}</style>
+</head>
+<body>
+<div class="loading">🍺 축제 가이드를 불러오는 중입니다.<small>잠시만 기다려 주세요.</small></div>
+<script>
+(async()=>{
+  const RAW='https://raw.githubusercontent.com/yoon-donggyu/yoon-donggyu.github.io/main/';
+  try{
+    const res=await fetch(RAW+'ddm-beer-festival-2026.html?v=20260828-6',{cache:'no-store'});
+    if(!res.ok) throw new Error('guide '+res.status);
+    let html=await res.text();
+    html=html
+      .replaceAll("'./ddm-beer-festival-2026-base.html", "'"+RAW+"ddm-beer-festival-2026-base.html")
+      .replaceAll('"./ddm-beer-festival-2026-base.html', '"'+RAW+'ddm-beer-festival-2026-base.html')
+      .replaceAll('./ddm-beer-festival-map.webp', RAW+'ddm-beer-festival-map.webp')
+      .replaceAll('./ddm-guide-1-hd.webp', RAW+'ddm-guide-1-hd.webp')
+      .replaceAll('./ddm-guide-2-hd.webp', RAW+'ddm-guide-2-hd.webp')
+      .replaceAll('./ddm-guide-3-hd.webp', RAW+'ddm-guide-3-hd.webp')
+      .replaceAll('./ddm-guide-4-hd.webp', RAW+'ddm-guide-4-hd.webp')
+      .replaceAll('./ddm-guide-5-hd.webp', RAW+'ddm-guide-5-hd.webp');
+    document.open();document.write(html);document.close();
+  }catch(e){
+    console.error(e);
+    document.body.innerHTML='<div class="loading">가이드를 불러오지 못했습니다.<small>잠시 후 새로고침해 주세요.</small></div>';
+  }
+})();
+</script>
+</body>
+</html>
