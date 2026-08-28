@@ -12,7 +12,7 @@
 (async()=>{
   const RAW='https://raw.githubusercontent.com/yoon-donggyu/yoon-donggyu.github.io/main/';
   try{
-    const res=await fetch(RAW+'ddm-beer-festival-2026.html?v=20260828-6',{cache:'no-store'});
+    const res=await fetch(RAW+'ddm-beer-festival-2026.html?v=20260828-7',{cache:'no-store'});
     if(!res.ok) throw new Error('guide '+res.status);
     let html=await res.text();
     html=html
@@ -23,7 +23,8 @@
       .replaceAll('./ddm-guide-2-hd.webp', RAW+'ddm-guide-2-hd.webp')
       .replaceAll('./ddm-guide-3-hd.webp', RAW+'ddm-guide-3-hd.webp')
       .replaceAll('./ddm-guide-4-hd.webp', RAW+'ddm-guide-4-hd.webp')
-      .replaceAll('./ddm-guide-5-hd.webp', RAW+'ddm-guide-5-hd.webp');
+      .replaceAll('./ddm-guide-5-hd.webp', RAW+'ddm-guide-5-hd.webp')
+      .replaceAll('?v=20260828','?v=20260828-2');
     document.open();document.write(html);document.close();
   }catch(e){
     console.error(e);
