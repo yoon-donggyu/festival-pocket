@@ -27,16 +27,9 @@ function keyType(key) {
 
 function parsePlatforms(value) {
   const allowed = new Set(['airbnb', 'booking', 'vrbo', 'google']);
-  const list = String(value || 'airbnb,booking').split(',').map(v => v.trim()).filter(v => allowed.has(v));
+  const list = String(value || 'airbnb,booking')
+    .split(',').map(v => v.trim()).filter(v => allowed.has(v));
   return list.length ? [...new Set(list)] : ['airbnb', 'booking'];
-}
-
-function pickPhoto(item) {
-  if (Array.isArray(item?.images) && item.images.length) {
-    const first = item.images[0];
-    return typeof first === 'string' ? first : (first?.url || first?.src || first?.original || first?.thumbnail || '');
-  }
-  return item?.image || item?.thumbnail || '';
 }
 
 function validHttpUrl(value) {
@@ -46,61 +39,64 @@ function validHttpUrl(value) {
   } catch { return ''; }
 }
 
-function isKoreaLocation(loc) {
+function pickPhoto(item) {
+  if (Array.isArray(item?.images) && item.images.length) {
+    const first = item.images[0];
+    return typeof first === 'string' ? first : (first?.url || first?.src || '');
+  }
+  return item?.image || item?.thumbnail || '';
+}
+
+function isKorea(loc) {
   const country = String(loc?.country || '').trim().toUpperCase();
-  if (country === 'KR' || country === 'KOR' || country.includes('KOREA')) return true;
+  if (['KR', 'KOR'].includes(country) || country.includes('KOREA')) return true;
   const lat = Number(loc?.lat), lng = Number(loc?.lng);
   return Number.isFinite(lat) && Number.isFinite(lng) && lat >= 33 && lat <= 39.7 && lng >= 124 && lng <= 132;
 }
 
-function normalizeRating(item) {
-  const rating = Number(item?.guestRating || item?.rating || 0) || null;
-  const scale = Number(item?.ratingScale || 0) || (rating && rating <= 5 ? 5 : 10);
-  const normalized = rating && scale ? Math.round((rating / scale) * 100) / 10 : 0;
-  return { rating, ratingScale: scale, ratingNormalized: normalized };
-}
-
 function normalize(item, region) {
-  const price = item?.price || {};
-  const total = Number(price?.totalPrice ?? price?.total ?? item?.totalPrice ?? 0) || 0;
-  const nightly = Number(price?.nightlyPrice ?? price?.nightly ?? item?.nightlyPrice ?? 0) || 0;
-  const nights = Number(price?.nights || 0) || null;
-  const currency = String(price?.currency || item?.currency || '').toUpperCase() || null;
+  const p = item?.price || {};
+  const total = Number(p?.totalPrice ?? item?.totalPrice ?? 0) || 0;
+  const nightly = Number(p?.nightlyPrice ?? item?.nightlyPrice ?? 0) || 0;
   const loc = item?.location || {};
-  const address = item?.address || [loc?.city, loc?.region, loc?.country].filter(Boolean).join(', ') || region;
   const amenities = Array.isArray(item?.amenities) ? item.amenities : [];
-  const pool = amenities.some(a => String(a).toLowerCase().includes('pool')) || /pool|수영장/i.test(String(item?.description || ''));
-  const { rating, ratingScale, ratingNormalized } = normalizeRating(item);
+  const rating = Number(item?.guestRating ?? item?.rating ?? 0) || null;
+  const ratingScale = Number(item?.ratingScale || 0) || (rating && rating <= 5 ? 5 : 10);
+  const type = item?.propertyType || 'other';
   return {
     id: String(item?.id || `${item?.platform || 'stay'}-${item?.platformListingId || Math.random()}`),
-    provider: String(item?.platform || item?.provider || 'stayingapi'),
-    platformListingId: item?.platformListingId || null,
+    provider: String(item?.platform || 'stayingapi'),
     region,
-    country: String(loc?.country || ''),
-    lat: Number(loc?.lat) || null,
-    lng: Number(loc?.lng) || null,
     name: item?.name || item?.title || '숙소',
-    address,
+    address: item?.address || [loc?.city, loc?.region, loc?.country].filter(Boolean).join(', ') || region,
+    country: String(loc?.country || ''),
     price: Math.round(total || nightly),
     nightlyPrice: Math.round(nightly || total),
-    nights,
-    currency,
+    currency: String(p?.currency || item?.currency || '').toUpperCase() || 'USD',
+    nights: Number(p?.nights || 0) || null,
     rating,
     ratingScale,
-    ratingNormalized,
-    reviews: Number(item?.reviewCount || item?.reviews || 0) || null,
-    type: item?.propertyType || 'other',
-    typeLabel: TYPE_LABEL[item?.propertyType] || '숙박',
-    cancellation: amenities.includes('free_cancellation') ? '무료취소' : '',
-    pool,
+    ratingNormalized: rating && ratingScale ? (rating / ratingScale) * 10 : 0,
+    reviews: Number(item?.reviewCount || 0) || null,
+    type,
+    typeLabel: TYPE_LABEL[type] || '숙박',
+    pool: amenities.some(a => /pool/i.test(String(a))),
     bedrooms: Number(item?.bedrooms || 0) || null,
     bathrooms: Number(item?.bathrooms || 0) || null,
-    maxOccupancy: Number(item?.maxOccupancy || item?.guests || 0) || null,
+    maxOccupancy: Number(item?.maxOccupancy || 0) || null,
     amenities,
     photo: pickPhoto(item),
-    url: validHttpUrl(item?.url || item?.identity?.canonicalUrl || item?.deeplink || ''),
-    isKorea: isKoreaLocation(loc),
+    url: validHttpUrl(item?.url || item?.identity?.canonicalUrl || ''),
+    isKorea: isKorea(loc),
   };
+}
+
+function typeMatches(x, type) {
+  if (type === 'all') return true;
+  if (type === 'villa') return x.type === 'villa';
+  if (type === 'house') return x.type === 'house';
+  if (type === 'family') return ['villa', 'house', 'cottage', 'apartment', 'other'].includes(x.type);
+  return true;
 }
 
 async function stayingGet(path, apiKey) {
@@ -112,7 +108,8 @@ async function stayingGet(path, apiKey) {
   let data;
   try { data = JSON.parse(text); } catch { data = { raw: text }; }
   if (!response.ok && response.status !== 202) {
-    const err = new Error(data?.error?.message || data?.message || `StayingAPI ${response.status}`);
+    const message = data?.error?.message || data?.error || data?.message || data?.raw || `StayingAPI HTTP ${response.status}`;
+    const err = new Error(typeof message === 'string' ? message : JSON.stringify(message));
     err.status = response.status;
     throw err;
   }
@@ -124,39 +121,23 @@ function rowsFromEnvelope(payload, fromJob = false) {
     const result = payload?.data?.result;
     if (Array.isArray(result)) return result;
     if (Array.isArray(result?.data)) return result.data;
-    if (Array.isArray(result?.results)) return result.results;
     return [];
   }
   if (Array.isArray(payload?.data)) return payload.data;
-  if (Array.isArray(payload?.data?.results)) return payload.data.results;
   return [];
 }
 
-function typeMatches(x, type) {
-  if (type === 'all') return true;
-  if (type === 'villa') return x.type === 'villa';
-  if (type === 'house') return x.type === 'house';
-  if (type === 'family') return ['villa', 'house', 'cottage', 'apartment', 'other'].includes(x.type);
-  return true;
-}
-
 function resultResponse(payload, region, type, started, fromJob = false) {
-  const rows = rowsFromEnvelope(payload, fromJob);
-  const normalized = rows.map(x => normalize(x, region));
-  const korean = normalized.filter(x => x.isKorea && x.price > 0 && typeMatches(x, type));
-  const currencyOk = korean.filter(x => x.currency === 'KRW');
-  const items = (currencyOk.length ? currencyOk : korean).sort((a, b) => a.price - b.price);
+  const all = rowsFromEnvelope(payload, fromJob).map(x => normalize(x, region));
+  const items = all.filter(x => x.isKorea && x.price > 0 && typeMatches(x, type))
+    .sort((a, b) => a.price - b.price);
+  const meta = fromJob ? (payload?.meta || {}) : (payload?.meta || {});
   return {
-    ok: true,
-    mode: 'live',
-    keyType: 'live',
-    provider: 'StayingAPI',
-    count: items.length,
-    items,
-    filteredForeign: normalized.filter(x => !x.isKorea).length,
-    creditsCharged: Number(payload?.meta?.creditsCharged || 0),
-    partial: Boolean(payload?.meta?.partial),
-    warnings: payload?.meta?.warnings || [],
+    ok: true, mode: 'live', keyType: 'live', provider: 'StayingAPI',
+    count: items.length, items,
+    filteredForeign: all.filter(x => !x.isKorea).length,
+    creditsCharged: Number(meta?.creditsCharged || 0),
+    partial: Boolean(meta?.partial), warnings: meta?.warnings || [],
     elapsed_ms: Date.now() - started,
   };
 }
@@ -164,32 +145,21 @@ function resultResponse(payload, region, type, started, fromJob = false) {
 module.exports = async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
   const started = Date.now();
-  const apiKey = process.env.STAYING_API_KEY || '';
+  const apiKey = String(process.env.STAYING_API_KEY || '').trim();
   const kt = keyType(apiKey);
 
   if (String(req.query?.health || '') === '1') {
-    return res.status(200).json({
-      ok: true,
-      live: kt === 'live',
-      keyType: kt,
-      mode: kt === 'live' ? 'live' : kt === 'test' ? 'test' : 'demo',
-      provider: 'StayingAPI',
-    });
+    return res.status(200).json({ ok: true, live: kt === 'live', keyType: kt, provider: 'StayingAPI' });
   }
 
-  if (kt === 'none' || kt === 'unknown') {
-    return res.status(503).json({ ok: false, mode: 'demo', keyType: kt, error: 'STAYING_API_KEY가 없거나 StayingAPI 키 형식이 아닙니다.' });
+  if (kt === 'none') {
+    return res.status(503).json({ ok: false, keyType: kt, error: 'STAYING_API_KEY가 등록되지 않았습니다.' });
   }
-
+  if (kt === 'unknown') {
+    return res.status(503).json({ ok: false, keyType: kt, error: 'STAYING_API_KEY 형식이 StayingAPI 키가 아닙니다. Live 키는 stay_live_ 로 시작해야 합니다.' });
+  }
   if (kt === 'test') {
-    return res.status(200).json({
-      ok: true,
-      mode: 'test',
-      keyType: 'test',
-      provider: 'StayingAPI',
-      items: [],
-      message: '현재 stay_test_ 샌드박스 키입니다. 실제 가평 숙소/가격을 조회하려면 stay_live_ 키로 교체하세요.',
-    });
+    return res.status(200).json({ ok: true, mode: 'test', keyType: kt, items: [], message: 'stay_test_ 샌드박스 키입니다.' });
   }
 
   const region = String(req.query?.region || '가평');
@@ -202,11 +172,13 @@ module.exports = async function handler(req, res) {
       const payload = result.data;
       const status = payload?.data?.status;
       if (status === 'pending' || status === 'running') {
-        return res.status(200).json({ ok: true, mode: 'live', pending: true, jobId, jobStatus: status, retryAfter: result.retryAfter || 3 });
+        return res.status(200).json({ ok: true, mode: 'live', pending: true, jobId, retryAfter: result.retryAfter || 3 });
       }
-      if (status === 'failed') return res.status(502).json({ ok: false, error: payload?.data?.error?.message || 'StayingAPI 검색 작업 실패' });
+      if (status === 'failed') {
+        return res.status(502).json({ ok: false, error: payload?.data?.error?.message || payload?.data?.error || 'StayingAPI 작업 실패' });
+      }
       if (status === 'completed') return res.status(200).json(resultResponse(payload, region, type, started, true));
-      return res.status(502).json({ ok: false, error: '알 수 없는 StayingAPI 작업 상태입니다.' });
+      return res.status(502).json({ ok: false, error: `알 수 없는 작업 상태: ${status || '없음'}` });
     } catch (error) {
       return res.status(Number(error?.status) || 502).json({ ok: false, error: error?.message || '작업 조회 실패' });
     }
@@ -216,36 +188,39 @@ module.exports = async function handler(req, res) {
   const checkout = String(req.query?.checkout || '2026-09-23');
   const adults = clamp(req.query?.adults || 6, 1, 30);
   const children = clamp(req.query?.children || 1, 0, 10);
-  const childAge = clamp(req.query?.childAge || 2, 0, 17);
   const limit = clamp(req.query?.limit || 5, 5, 20);
   const platforms = parsePlatforms(req.query?.platforms);
   const location = REGION_LOCATION[region] || `${region}, South Korea`;
 
-  const params = new URLSearchParams();
-  params.set('location', location);
-  params.set('checkIn', checkin);
-  params.set('checkOut', checkout);
-  params.set('adults', String(adults));
-  params.set('children', String(children));
-  if (children > 0) for (let i = 0; i < children; i++) params.append('childAges[]', String(childAge));
-  params.set('platforms', platforms.join(','));
-  params.set('limit', String(limit));
-  params.set('currency', 'KRW');
+  // Keep the live call intentionally minimal and aligned with StayingAPI's documented /v1/search examples.
+  const params = new URLSearchParams({
+    location,
+    checkIn: checkin,
+    checkOut: checkout,
+    adults: String(adults),
+    children: String(children),
+    platforms: platforms.join(','),
+    limit: String(limit),
+  });
 
   try {
     const result = await stayingGet(`/v1/search?${params.toString()}`, apiKey);
     const payload = result.data;
     if (result.status === 202) {
       const newJobId = payload?.data?.jobId;
-      if (!newJobId) throw new Error('StayingAPI가 작업 ID 없이 202를 반환했습니다.');
+      if (!newJobId) throw new Error('StayingAPI가 202를 반환했지만 jobId가 없습니다.');
       return res.status(202).json({ ok: true, mode: 'live', pending: true, jobId: newJobId, retryAfter: result.retryAfter || 3 });
     }
     return res.status(200).json({
       ...resultResponse(payload, region, type, started, false),
-      query: { region, checkin, checkout, adults, children, childAge, type, platforms, limit, currency: 'KRW' },
+      query: { region, location, checkin, checkout, adults, children, platforms, limit },
     });
   } catch (error) {
     const status = Number(error?.status) || 502;
-    return res.status(status >= 400 && status < 600 ? status : 502).json({ ok: false, mode: 'live', provider: 'StayingAPI', error: error?.message || 'StayingAPI 요청 실패' });
+    return res.status(status >= 400 && status < 600 ? status : 502).json({
+      ok: false, mode: 'live', provider: 'StayingAPI', status,
+      error: error?.message || 'StayingAPI 요청 실패',
+      hint: status === 401 ? 'Live API 키가 맞는지 확인하세요.' : status === 429 ? '요청 한도 또는 크레딧을 확인하세요.' : '',
+    });
   }
 };
