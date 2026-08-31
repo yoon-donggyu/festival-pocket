@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Travel Pocket Family</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#17202a;--muted:#718096;--line:#e6e9ee;--accent:#111827;--soft:#eef2f7;--good:#087f5b;--warn:#b45309;--radius:20px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif}button,input,select{font:inherit}.app{max-width:760px;margin:0 auto;padding:0 14px 90px}.hero{padding:30px 4px 18px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;color:#6b7280}.hero h1{font-size:30px;line-height:1.08;margin:8px 0}.hero p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}.mini{background:#111827;color:#fff;padding:12px;border-radius:16px}.mini b{display:block;font-size:15px}.mini span{font-size:11px;opacity:.72}.tabs{position:sticky;top:0;z-index:20;background:rgba(244,246,248,.92);backdrop-filter:blur(10px);padding:8px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.tab{border:0;background:#e7eaf0;color:#5b6472;padding:11px 8px;border-radius:14px;font-weight:800}.tab.on{background:#111827;color:#fff}.panel{display:none}.panel.on{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin:12px 0;box-shadow:0 8px 24px rgba(15,23,42,.04)}.card h2{font-size:17px;margin:0 0 12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field label{display:block;font-size:11px;font-weight:800;color:#6b7280;margin:0 0 6px}.field input,.field select{width:100%;border:1px solid var(--line);border-radius:13px;background:#fafafa;padding:12px;color:#111}.wide{grid-column:1/-1}.chips{display:flex;flex-wrap:wrap;gap:7px}.check{display:flex;align-items:center;gap:7px;background:#f4f5f7;padding:9px 11px;border-radius:12px;font-size:13px;font-weight:700}.search{width:100%;border:0;border-radius:15px;padding:14px;background:#111827;color:#fff;font-weight:900;margin-top:12px}.search:disabled{opacity:.55}.status{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:13px;background:#f5f7fa;font-size:12px;color:#596273;margin-top:10px}.dot{width:8px;height:8px;border-radius:50%;background:#9ca3af}.dot.live{background:#10b981}.dot.demo{background:#f59e0b}.toolbar{display:flex;gap:8px;align-items:center;justify-content:space-between;margin:14px 2px 6px}.toolbar small{color:var(--muted)}.toolbar select{border:1px solid var(--line);border-radius:11px;padding:8px;background:#fff}.result{overflow:hidden;padding:0}.photo{height:170px;background:linear-gradient(135deg,#e8edf3,#dce3eb);display:flex;align-items:center;justify-content:center;font-size:42px;color:#8a94a3}.photo img{width:100%;height:100%;object-fit:cover}.body{padding:15px}.topline{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.provider{font-size:10px;text-transform:uppercase;font-weight:900;letter-spacing:.07em;background:#eef2f7;padding:6px 8px;border-radius:999px}.name{font-size:18px;font-weight:900;line-height:1.25;margin:3px 0}.addr{font-size:12px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.tag{font-size:11px;background:#f2f4f7;border-radius:999px;padding:6px 8px}.pricebox{display:flex;align-items:flex-end;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px;margin-top:11px}.price{font-size:24px;font-weight:950}.per{font-size:11px;color:var(--muted);margin-top:2px}.actions{display:flex;gap:8px;margin-top:12px}.btn{flex:1;border:0;border-radius:12px;padding:11px;font-weight:900;background:#edf0f4;color:#111}.btn.primary{background:#111827;color:#fff}.empty{text-align:center;padding:40px 20px;color:var(--muted)}.people{display:grid;gap:8px}.person{display:flex;align-items:center;justify-content:space-between;background:#f6f7f9;padding:12px;border-radius:13px}.person b{font-size:14px}.person select{border:0;background:#fff;padding:7px 9px;border-radius:9px}.timeline{border-left:2px solid #d9dde4;margin:10px 0 0 8px;padding-left:18px}.event{position:relative;padding:0 0 17px}.event:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:#111827;left:-23px;top:5px}.event b{font-size:13px}.event p{font-size:12px;color:var(--muted);margin:4px 0 0}.notice{font-size:12px;line-height:1.6;background:#fff8e8;color:#8a5a00;border:1px solid #ffe4a9;border-radius:14px;padding:12px}.footer{text-align:center;font-size:10px;color:#98a1ad;padding:28px 0}@media(max-width:480px){.hero h1{font-size:27px}.grid2{grid-template-columns:1fr}.wide{grid-column:auto}.summary{grid-template-columns:1fr 1fr 1fr}.price{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div class="eyebrow">TRAVEL POCKET · FAMILY</div>
+  <h1>우리 가족 국내여행<br>최저가 숙소 찾기</h1>
+  <p>가평·양평·포천 등 풀빌라/독채를 StayingAPI로 비교하고, 마음에 드는 숙소를 저장해 한 번에 결정합니다.</p>
+  <div class="summary"><div class="mini"><b>9/22 → 9/23</b><span>기본 1박 일정</span></div><div class="mini"><b>성인 6 + 아이 1</b><span>2세 아동</span></div><div class="mini"><b>가평 우선</b><span>지역 변경 가능</span></div></div>
+</header>
+<nav class="tabs"><button class="tab on" data-tab="searchPanel">🏡 숙소</button><button class="tab" data-tab="schedulePanel">🗓 일정</button><button class="tab" data-tab="savedPanel">♥ 저장</button></nav>
+
+<section id="searchPanel" class="panel on">
+  <div class="card">
+    <h2>숙소 검색 조건</h2>
+    <div class="grid2">
+      <div class="field"><label>지역</label><select id="region"><option>가평</option><option>양평</option><option>포천</option><option>춘천</option><option>홍천</option><option>남양주</option><option>강화</option><option>서울</option></select></div>
+      <div class="field"><label>숙소 유형</label><select id="type"><option value="family">풀빌라 + 독채 + 펜션</option><option value="villa">빌라/풀빌라</option><option value="house">독채</option><option value="all">전체</option></select></div>
+      <div class="field"><label>체크인</label><input id="checkin" type="date" value="2026-09-22"></div>
+      <div class="field"><label>체크아웃</label><input id="checkout" type="date" value="2026-09-23"></div>
+      <div class="field"><label>성인</label><input id="adults" type="number" min="1" value="6"></div>
+      <div class="field"><label>어린이</label><input id="children" type="number" min="0" value="1"></div>
+      <div class="field"><label>어린이 나이</label><input id="childAge" type="number" min="0" max="17" value="2"></div>
+      <div class="field"><label>플랫폼당 검색 수</label><select id="limit"><option value="5">5개 · 크레딧 절약</option><option value="10">10개</option><option value="20">20개</option></select></div>
+      <div class="field wide"><label>검색 플랫폼</label><div class="chips"><label class="check"><input type="checkbox" name="platform" value="airbnb" checked> Airbnb</label><label class="check"><input type="checkbox" name="platform" value="booking" checked> Booking</label><label class="check"><input type="checkbox" name="platform" value="vrbo"> Vrbo</label><label class="check"><input type="checkbox" name="platform" value="google"> Google</label></div></div>
+    </div>
+    <button id="searchBtn" class="search">실시간 숙소 검색</button>
+    <div class="status"><span id="statusDot" class="dot"></span><span id="statusText">API 연결 상태 확인 중…</span></div>
+  </div>
+
+  <div class="notice">StayingAPI 검색은 선택한 플랫폼과 결과 수에 따라 크레딧을 사용합니다. 기본은 Airbnb + Booking, 각 5개로 최소화했습니다.</div>
+  <div class="toolbar"><small id="resultCount">검색 전</small><select id="sort"><option value="price">최저가순</option><option value="rating">평점순</option><option value="per">1인당순</option></select></div>
+  <div id="results"><div class="empty">조건을 확인한 뒤 <b>실시간 숙소 검색</b>을 눌러주세요.</div></div>
+</section>
+
+<section id="schedulePanel" class="panel">
+  <div class="card"><h2>가족 참석 가능 여부</h2><div id="people" class="people"></div></div>
+  <div class="card"><h2>1박 2일 기본 일정</h2><div class="timeline"><div class="event"><b>9/22 11:00 · 출발</b><p>출발지별 합류 후 가평/선택 지역 이동</p></div><div class="event"><b>13:00 · 점심</b><p>아이 동반 가능한 식당 위주</p></div><div class="event"><b>15:00 · 풀빌라 체크인</b><p>수영장·온수풀·바비큐 이용 조건 확인</p></div><div class="event"><b>18:00 · 바비큐 / 저녁</b><p>가족 식사 및 휴식</p></div><div class="event"><b>9/23 09:00 · 아침</b><p>간단한 식사 후 정리</p></div><div class="event"><b>11:00 · 체크아웃</b><p>근처 카페 또는 관광지 1곳 후 귀가</p></div></div></div>
+</section>
+
+<section id="savedPanel" class="panel"><div id="saved"></div></section>
+<div class="footer">TRAVEL POCKET FAMILY · StayingAPI server proxy · API key is never stored in this HTML</div>
+</div>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let current=[];
+const money=n=>Number(n||0).toLocaleString('ko-KR')+'원';
+const adults=()=>Math.max(1,Number($('#adults').value)||1), children=()=>Math.max(0,Number($('#children').value)||0);
+const party=()=>adults()+children();
+function getSaved(){try{return JSON.parse(localStorage.getItem('tpf_saved')||'[]')}catch{return[]}}
+function setSaved(v){localStorage.setItem('tpf_saved',JSON.stringify(v));renderSaved()}
+function setStatus(mode,text){$('#statusDot').className='dot '+(mode==='live'?'live':mode==='demo'?'demo':'');$('#statusText').textContent=text}
+
+$$('.tab').forEach(b=>b.onclick=()=>{$$('.tab').forEach(x=>x.classList.toggle('on',x===b));$$('.panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.tab));if(b.dataset.tab==='savedPanel')renderSaved()});
+
+async function health(){try{const r=await fetch('/api/stays?health=1',{cache:'no-store'});const d=await r.json();if(d.live)setStatus('live','LIVE · StayingAPI 키 연결됨');else setStatus('demo','SAMPLE · Vercel에 STAYING_API_KEY 등록 필요')}catch(e){setStatus('', 'API 서버 연결 확인 필요')}}
+
+function platforms(){const p=$$('input[name="platform"]:checked').map(x=>x.value);return p.length?p:['airbnb','booking']}
+function query(){const q=new URLSearchParams({region:$('#region').value,type:$('#type').value,checkin:$('#checkin').value,checkout:$('#checkout').value,adults:$('#adults').value,children:$('#children').value,childAge:$('#childAge').value,limit:$('#limit').value,platforms:platforms().join(',')});return q}
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function search(){const btn=$('#searchBtn');btn.disabled=true;btn.textContent='검색 중…';$('#results').innerHTML='<div class="empty">숙소 가격을 조회하고 있습니다.<br>플랫폼에 따라 10~30초 정도 걸릴 수 있어요.</div>';try{let r=await fetch('/api/stays?'+query().toString(),{cache:'no-store'});let d=await r.json();if(!r.ok)throw new Error(d.error||'검색 실패');let tries=0;while(d.pending&&d.jobId&&tries<30){tries++;btn.textContent=`검색 중… ${tries}`;await sleep(Math.max(2,Number(d.retryAfter)||3)*1000);r=await fetch('/api/stays?jobId='+encodeURIComponent(d.jobId)+'&region='+encodeURIComponent($('#region').value),{cache:'no-store'});d=await r.json();if(!r.ok)throw new Error(d.error||'작업 조회 실패')}if(d.pending)throw new Error('검색 시간이 너무 길어졌습니다. 잠시 후 다시 시도해주세요.');current=d.items||[];if(d.mode==='live')setStatus('live',`LIVE · ${current.length}개 결과${d.creditsCharged?` · ${d.creditsCharged} credits`:''}`);else setStatus('demo','SAMPLE · API 키 등록 후 실제 가격으로 변경됩니다');render()}catch(e){current=[];$('#results').innerHTML=`<div class="empty"><b>검색하지 못했습니다.</b><br>${e.message}</div>`}finally{btn.disabled=false;btn.textContent='실시간 숙소 검색'}}
+
+function sorted(){const v=[...current],s=$('#sort').value;if(s==='rating')v.sort((a,b)=>(b.ratingNormalized||0)-(a.ratingNormalized||0));else if(s==='per')v.sort((a,b)=>(a.price/party())-(b.price/party()));else v.sort((a,b)=>a.price-b.price);return v}
+function card(x,savedMode=false){const image=x.photo?`<img src="${x.photo}" alt="" loading="lazy" onerror="this.parentNode.innerHTML='🏡'">`:'🏡';const rating=x.rating?`⭐ ${x.rating}${x.ratingScale?' / '+x.ratingScale:''}${x.reviews?' · '+x.reviews.toLocaleString()+'개 리뷰':''}`:'평점 정보 없음';const tags=[x.typeLabel,x.pool?'수영장/Pool':'',x.bedrooms?`침실 ${x.bedrooms}`:'',x.maxOccupancy?`최대 ${x.maxOccupancy}명`:'',x.cancellation].filter(Boolean);return `<article class="card result"><div class="photo">${image}</div><div class="body"><div class="topline"><div><div class="provider">${x.provider}</div><div class="name">${x.name}</div><div class="addr">${x.address||x.region}</div></div></div><div class="tags">${tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div><div class="addr">${rating}</div><div class="pricebox"><div><div class="price">${money(x.price)}</div><div class="per">총액 기준 · ${party()}명 기준 1인당 약 ${money(Math.round(x.price/party()))}</div></div></div><div class="actions">${x.url?`<button class="btn" onclick="window.open('${String(x.url).replaceAll("'","%27")}','_blank')">예약처 보기</button>`:''}<button class="btn primary" onclick="${savedMode?`removeSaved('${x.id}')`:`saveItem('${x.id}')`}">${savedMode?'저장 삭제':'♥ 저장'}</button></div></div></article>`}
+function render(){const arr=sorted();$('#resultCount').textContent=arr.length?`${arr.length}개 숙소 · ${$('#region').value}`:'검색 결과 없음';$('#results').innerHTML=arr.length?arr.map(x=>card(x)).join(''):'<div class="empty">조건에 맞는 가격 결과가 없습니다.<br>숙소 유형을 전체로 바꾸거나 플랫폼을 추가해보세요.</div>'}
+function saveItem(id){const x=current.find(v=>v.id===id);if(!x)return;const s=getSaved();if(!s.some(v=>v.id===id))s.unshift(x);setSaved(s);alert('저장했습니다.')}
+function removeSaved(id){setSaved(getSaved().filter(v=>v.id!==id))}
+function renderSaved(){const s=getSaved();$('#saved').innerHTML=s.length?`<div class="toolbar"><small>${s.length}개 저장</small></div>`+s.map(x=>card(x,true)).join(''):'<div class="card empty">아직 저장한 숙소가 없습니다.<br>숙소 검색에서 마음에 드는 곳을 저장해보세요.</div>'}
+$('#searchBtn').onclick=search;$('#sort').onchange=render;
+
+const names=['동규','누나','엄마','매형','매형네 아버님','매형네 어머님','조카(2살)'];
+function renderPeople(){let st={};try{st=JSON.parse(localStorage.getItem('tpf_people')||'{}')}catch{};$('#people').innerHTML=names.map(n=>`<div class="person"><b>${n}</b><select data-person="${n}"><option ${st[n]==='가능'?'selected':''}>가능</option><option ${st[n]==='미정'?'selected':''}>미정</option><option ${st[n]==='불가'?'selected':''}>불가</option></select></div>`).join('');$$('[data-person]').forEach(s=>s.onchange=()=>{const o={};$$('[data-person]').forEach(x=>o[x.dataset.person]=x.value);localStorage.setItem('tpf_people',JSON.stringify(o))})}
+renderPeople();renderSaved();health();
+</script>
+</body>
+</html>
