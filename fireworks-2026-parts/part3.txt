@@ -1,0 +1,274 @@
+b">더현대/IFC에서 제대로 먹고 체력 확보.</p></div></div>
+<div class="rank"><div class="num">2</div><div><b>15:30 복귀 전에 저녁 확보</b><p class="sub">김밥·샌드위치처럼 바로 먹을 수 있는 음식 준비.</p></div></div>
+<div class="rank"><div class="num">3</div><div><b>푸드트럭은 1~2개만</b><p class="sub">4명이 메뉴를 나눠 먹는 방식 추천. 긴 줄에 각자 따로 서지 않기.</p></div></div>
+<div class="rank"><div class="num">4</div><div><b>17시 이후 긴 줄은 포기</b><p class="sub">화장실·자리 이동까지 겹치면 체력 손해가 큼.</p></div></div>
+<div class="callout"><b>과거 후기 팁</b><p>2024 방문후기에서는 닭강정을 살 때 미리 만들어 둔 제품보다 현장에서 직접 조리하는 곳을 권했습니다. 2026 모집 자체도 트럭 내 직접 조리 조건을 두고 있습니다.</p></div>
+</div>
+<div class="card source">
+<h3>먹거리 자료 출처</h3>
+<ul>
+<li><a target="_blank" href="https://www.seoul.go.kr/news/news_notice.do?nttNo=463460">서울시 2026 푸드트럭 운영자 모집공고</a> — 9/5 약 27대, 직접조리, 카드결제, 가격심사.</li>
+<li><a target="_blank" href="https://news.seoul.go.kr/economy/archives/571032">서울시 2026 푸드트럭 Pool 메뉴분류</a> — 한식·양식·분식·중식·일식·간식·음료 메뉴 예시.</li>
+<li><a target="_blank" href="https://imnotarobot.tistory.com/m/42">2024 실제 방문후기</a> — 푸드트럭·닭강정 구매 경험 참고.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="reviews">
+<div class="card">
+<h2>실제 방문후기 모음</h2>
+<div class="sub">공식정보와 후기정보를 분리했습니다. 아래는 과거 방문자의 경험을 <b>요약</b>한 것이며, 해마다 통제·배치가 달라질 수 있습니다.</div>
+</div>
+<div class="card">
+<h3>후기에서 반복되는 공통점</h3>
+<details open><summary>오전 8시도 이미 사람이 있다</summary><p>2024 방문후기에서는 오전 8시경에도 이미 관람객이 있었지만 아직 자리를 잡을 여유가 있었다고 합니다. 이후 시간 단위로 좋은 줄이 빠르게 채워졌다는 경험담이 있습니다.</p></details>
+<details><summary>오후 3시는 이미 ‘인파 모드’</summary><p>과거 블로그 후기에서는 불꽃 시작 약 4시간 전인 오후 3시에 도착했을 때 횡단보도부터 인파가 크게 늘고 경찰 통제가 시작됐다고 기록되어 있습니다.</p></details>
+<details><summary>화장실은 ‘있어도 줄이 길다’</summary><p>2024 후기에서 임시화장실 수는 많았지만 줄이 매우 길었다는 경험이 확인됩니다. 2026년에는 임시화장실 94동이 추가되지만 17시 이전 선이용 전략은 그대로 유효합니다.</p></details>
+<details><summary>주차는 가까운 곳보다 ‘탈출’이 중요</summary><p>과거 후기에서는 마포대교 남단 쪽 주차가 이미 만차여서 서강대교 남단으로 이동한 사례가 있습니다. 가까운 한 곳만 믿지 말고 2~3개 권역을 준비하는 편이 안전합니다.</p></details>
+<details><summary>명당보다 통로 통제가 변수</summary><p>오후부터 경찰·안전요원이 계단과 통로를 적극적으로 비우는 사례가 반복됩니다. 아침에 잡은 자리가 통로·계단·자전거길과 겹치지 않는지 반드시 확인해야 합니다.</p></details>
+</div>
+<div class="card">
+<h3>후기 기반 실전 판단</h3>
+<table class="table">
+<tr><th>항목</th><th>후기 기반 판단</th><th>이번 계획 반영</th></tr>
+<tr><td><b>08:00 자리</b></td><td>가능하지만 이미 경쟁 시작</td><td><span class="badge">적정</span> 07:40~08:00 도착 추천</td></tr>
+<tr><td><b>16:00 복귀</b></td><td>상당히 혼잡한 시간대</td><td>15:30 목표, 16:00 마지노선</td></tr>
+<tr><td><b>화장실</b></td><td>줄이 길어질 가능성 큼</td><td>16:30~17:30 1차 이용</td></tr>
+<tr><td><b>차량</b></td><td>근접 주차장 조기 만차 반복</td><td>영등포본동 → 신길 → 노량진 → 마포 순 플랜B</td></tr>
+<tr><td><b>퇴장</b></td><td>생각보다 질서 있게 빠진 사례도 있음</td><td>그래도 30분 늦게 출발 권장</td></tr>
+</table>
+</div>
+<div class="card source">
+<h3>후기/참고 원문</h3>
+<ul>
+<li><a target="_blank" href="https://happiyak.tistory.com/entry/%EC%97%AC%EC%9D%98%EB%8F%84-%EB%B6%88%EA%BD%83%EC%B6%95%EC%A0%9C-%ED%9B%84%EA%B8%B0-%EC%A3%BC%EC%B0%A8%ED%8C%81-%EB%B6%88%EA%BD%83%EC%B6%95%EC%A0%9C-%EB%AA%85%EB%8B%B9">날으는 병아리 · 여의도 불꽃축제 후기</a> — 오후 3시 현장 인파, 주차 경험.</li>
+<li><a target="_blank" href="https://www.teamblind.com/kr/post/%EC%97%AC%EC%9D%98%EB%8F%84-%EB%B6%88%EA%BD%83%EC%B6%95%EC%A0%9C-%ED%9B%84%EA%B8%B0-6QcBfnAA">Blind · 2024 방문후기</a> — 오전 8시 자리, 화장실, 통로 통제, 퇴장 경험.</li>
+<li><a target="_blank" href="https://showgrace.tistory.com/entry/2025-yeouido-fireworks-full-guide">쇼그레이스 · 2025 종합가이드</a> — 명당·준비물·촬영 참고.</li>
+<li><a target="_blank" href="https://www.miniseries.co.kr/boardView.do?bbsNo=0vB57HY3o72hPLLebpJ8&menuId=4I1x3">Mini's · 이촌권 주차/관람 참고</a> — 맞은편 관람 및 주차 대안.</li>
+</ul>
+<div class="mini">※ 블로그/커뮤니티 후기는 경험담이므로 공식 통제정보보다 우선하지 않습니다.</div>
+</div>
+</section>
+<section class="section" id="source">
+<div class="card source">
+<h2>공식·확인 자료</h2>
+<div class="sub">최종 정리 기준: 2026-09-02 밤. 행사 직전 변경 가능.</div>
+<ul>
+<li><a target="_blank" href="https://hangang.seoul.go.kr/www/eventMng/detail.do?evntSn=454&mid=538&srchType=list">서울시 미래한강본부 · 2026 서울세계불꽃축제</a> — 일정, 불꽃시간, 관람규모, 교통, 임시화장실, 수상통제, 생중계.</li>
+<li><a target="_blank" href="https://www.seoul.go.kr/news/news_report.do?nttNo=465103">서울시 보도자료 · 100만 인파 종합대책</a> — 안전인력 6,800명, 안전장비 확대, 푸드트럭, 분산귀가.</li>
+<li><a target="_blank" href="https://mediahub.seoul.go.kr/archives/2019249">내 손안에 서울 · 교통통제 종합 안내</a> — 원효대교, 여의동로, 따릉이/PM, 지하철 대응.</li>
+<li><a target="_blank" href="https://www.hanwhafireworks.com/">서울세계불꽃축제 공식 홈페이지</a> — 공식 프로그램, 앱, 안전, 이벤트.</li>
+<li><a target="_blank" href="https://www.hanwhafireworks.com/notice/5">한화 공식 카카오T 주차 사전예약 안내</a> — 여의도·용산·노량진·합정 등.</li>
+<li><a target="_blank" href="https://hangang.seoul.go.kr/www/contents/669.do?mid=473">여의도한강공원 시설 안내</a> — 상설 화장실, 편의점, 음수대, 광장·시설.</li>
+<li><a target="_blank" href="https://hangang.seoul.go.kr/www/contents/752.do?mid=475">여의도한강공원 주차정보</a> — 평상시 주차장 5곳, 1,782면. 행사 당일 제한과 별개.</li>
+<li><a target="_blank" href="https://hangang.seoul.go.kr/www/eventMng/detail.do?evntSn=454&mid=538&srchType=list">2026 불꽃축제 대중교통 공식안내</a> — 여의나루역 혼잡 시 무정차, 여의도·마포·샛강역 분산 이용.</li>
+</ul>
+<div class="callout warn"><b>주의</b><p>주차 잔여면수, 역 무정차, 현장 펜스, 세부 부스, 날씨·주차 잔여면수·역 무정차·현장 펜스는 당일 달라질 수 있습니다. 이 페이지의 날씨 탭은 기상청 APIHub 데이터를 직접 갱신하며, 교통·주차는 공식 페이지와 카카오T를 함께 확인하세요.</p></div>
+</div>
+</section>
+</div>
+<nav class="bottomnav" id="nav">
+<button class="active" data-group="home" data-target="home"><span class="navico">⌂</span>홈</button>
+<button data-group="plan" data-target="plan"><span class="navico">◷</span>일정</button>
+<button data-group="map" data-target="spot"><span class="navico">⌖</span>지도</button>
+<button data-group="field" data-target="field"><span class="navico">●</span>현장</button>
+<button data-group="more" data-target="event"><span class="navico">•••</span>더보기</button>
+</nav>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const buttons=[...document.querySelectorAll('#nav button')], sections=[...document.querySelectorAll('.section')];
+let mapsMade={};
+const groups={
+home:[['home','홈']],
+plan:[['plan','일정'],['hoegi','회기 플랜']],
+map:[['spot','돗자리'],['parking','주차'],['hoegi','회기']],
+field:[['field','현장'],['weather','날씨'],['food','먹거리'],['traffic','교통']],
+more:[['event','행사'],['gear','준비물'],['tips','팁'],['reviews','후기'],['source','출처']]
+};
+let currentGroup='home';
+function openSection(id,group=currentGroup){
+currentGroup=group;
+sections.forEach(s=>s.classList.toggle('active',s.id===id));
+buttons.forEach(b=>b.classList.toggle('active',b.dataset.group===group));
+renderQuick(group,id);
+window.scrollTo({top:0,behavior:'smooth'});
+setTimeout(()=>{
+if(id==='spot') initSpot();
+if(id==='parking') initParking();
+if(id==='hoegi') initHoegi();
+if(id==='weather') loadLiveWeather();
+},120);
+}
+function renderQuick(group,activeId){
+const q=document.getElementById('quicknav'), items=groups[group]||[];
+if(items.length<=1){q.style.display='none';q.innerHTML='';return}
+q.style.display='flex';
+q.innerHTML=items.map(x=>'<button class="'+(x[0]===activeId?'active':'')+'" data-id="'+x[0]+'">'+x[1]+'</button>').join('');
+q.querySelectorAll('button').forEach(b=>b.onclick=()=>openSection(b.dataset.id,group));
+}
+buttons.forEach(btn=>btn.addEventListener('click',()=>openSection(btn.dataset.target,btn.dataset.group)));
+function baseMap(id,c,z){
+const m=L.map(id).setView(c,z);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(m);
+return m;
+}
+function addZone(m,name,pts,opacity,text){
+L.polygon(pts,{color:'#111',weight:2,fillColor:'#555',fillOpacity:opacity}).addTo(m).bindPopup('<b>'+name+'</b><br>'+text)
+}
+function initSpot(){
+if(mapsMade.spot){mapsMade.spot.invalidateSize();return}
+const m=baseMap('spotMap',[37.5272,126.935],14);
+addZone(m,'1 · 원효대교 남단 서쪽',[[37.5220,126.9343],[37.5243,126.9320],[37.5260,126.9332],[37.5240,126.9367]],.38,'메인 중심감 최상. 08시 전후 선점 추천.');
+addZone(m,'2 · 63빌딩 북서측',[[37.5192,126.9380],[37.5216,126.9361],[37.5230,126.9380],[37.5207,126.9407]],.31,'발사 구역 인접. 나무/시설물 시야 체크.');
+addZone(m,'3 · 물빛무대/물빛광장',[[37.5290,126.9290],[37.5317,126.9270],[37.5329,126.9300],[37.5302,126.9320]],.24,'푸드트럭·행사 접근 최고, 혼잡 높음.');
+addZone(m,'4 · 마포대교 남단 하류',[[37.5318,126.9270],[37.5340,126.9248],[37.5355,126.9270],[37.5333,126.9290]],.18,'귀가 분산과 시야 균형.');
+addZone(m,'5 · 서강대교 방향',[[37.5350,126.9210],[37.5385,126.9188],[37.5395,126.9220],[37.5366,126.9240]],.12,'플랜 B. 중심감은 낮지만 상대적으로 분산.');
+L.marker([37.5264,126.9346]).addTo(m).bindPopup('<b>원효대교 남단</b><br>9/5 09:00부터 전면 통제');
+L.marker([37.5321,126.9304]).addTo(m).bindPopup('<b>물빛무대 권역</b><br>공식 푸드트럭존 13:00~22:00');
+L.marker([37.5199,126.9397]).addTo(m).bindPopup('<b>63빌딩</b><br>자리 방향 잡는 랜드마크');
+mapsMade.spot=m;
+}
+function initHoegi(){
+if(mapsMade.hoegi){mapsMade.hoegi.invalidateSize();return}
+const m=baseMap('hoegiMap',[37.5895,127.0575],14);
+L.circleMarker([37.5890,127.0578],{radius:10,color:'#000',fillColor:'#000',fillOpacity:1,weight:2})
+.addTo(m).bindPopup('<b>회기역 파전골목 기준점</b><br>휘경동 334-9 부근 · 친구집 인접권');
+L.circleMarker([37.5897,127.0570],{radius:7,color:'#000',fillColor:'#777',fillOpacity:1,weight:2})
+.addTo(m).bindPopup('<b>회기역</b><br>1호선·경의중앙선·경춘선');
+L.polyline([[37.5890,127.0578],[37.5133,126.9421],[37.5216,126.9242]],{color:'#111',weight:3,dashArray:'8 7'})
+.addTo(m).bindPopup('<b>추천 대중교통 흐름</b><br>회기 → 노량진 → 여의도');
+mapsMade.hoegi=m;
+}
+function initParking(){
+if(mapsMade.parking){mapsMade.parking.invalidateSize();return}
+const m=baseMap('parkingMap',[37.520,126.919],13);
+const marks=[
+[37.5169,126.9088,'1 · 영등포본동 제1공영','194면 · 24시간 · 이번 계획 1순위'],
+[37.5163,126.9047,'2 · 영등포본동 대체 공영권','제2·여고 공영 등 즉시 전환용'],
+[37.5170,126.9077,'3 · 영등포역/타임스퀘어권','공영 만차 시 대형시설 플랜 C'],
+[37.5173,126.9172,'4 · 신길역권','1·5호선 접근, 행사권 외곽'],
+[37.5133,126.9421,'5 · 노량진역권','1·9호선, 한강 남쪽'],
+[37.5397,126.9440,'6 · 마포유수지/마포역권','5호선, 북쪽 분산 귀가'],
+[37.5494,126.9138,'7 · 합정역권','거리보다 귀가 탈출성 우선']
+];
+marks.forEach((x,i)=>L.circleMarker([x[0],x[1]],{radius:i===0?9:7,color:'#000',fillColor:i===0?'#000':'#777',fillOpacity:1,weight:2}).addTo(m).bindPopup('<b>'+x[2]+'</b><br>'+x[3]));
+L.circle([37.5284,126.9329],{radius:1800,color:'#000',weight:2,dashArray:'6 6',fill:false}).addTo(m).bindPopup('<b>행사 중심 혼잡권</b><br>차량 진입·주차 비추천');
+mapsMade.parking=m;
+}
+function updateFieldClock(){
+const el=document.getElementById('fieldClock'), cd=document.getElementById('countdown');
+if(!el||!cd)return;
+const now=new Date();
+el.textContent=now.toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false});
+const target=new Date('2026-09-05T20:00:00+09:00');
+const diff=target-now;
+if(diff<=0){cd.textContent=now<new Date('2026-09-05T21:10:00+09:00')?'진행중':'종료';return}
+const d=Math.floor(diff/86400000), h=Math.floor(diff%86400000/3600000), m=Math.floor(diff%3600000/60000);
+cd.textContent=d>0?'D-'+d+' · '+h+'h':h+'h '+m+'m';
+}
+setInterval(updateFieldClock,30000);updateFieldClock();
+function saveMySpot(){
+const st=document.getElementById('spotSaveStatus');
+if(!navigator.geolocation){st.textContent='이 브라우저는 GPS 저장을 지원하지 않습니다.';return}
+st.textContent='현재 위치 확인 중...';
+navigator.geolocation.getCurrentPosition(p=>{
+const v={lat:p.coords.latitude,lng:p.coords.longitude,savedAt:new Date().toISOString()};
+localStorage.setItem('fireworks_my_spot',JSON.stringify(v));
+st.textContent='돗자리 위치 저장 완료 · '+v.lat.toFixed(5)+', '+v.lng.toFixed(5);
+},e=>{st.textContent='위치 저장 실패 · 휴대폰의 위치 권한을 확인하세요.'},{enableHighAccuracy:true,timeout:10000});
+}
+function showSavedSpot(){
+const st=document.getElementById('spotSaveStatus'), raw=localStorage.getItem('fireworks_my_spot');
+if(!raw){st.textContent='아직 저장된 돗자리 위치가 없습니다.';return}
+try{
+const v=JSON.parse(raw);
+st.innerHTML='저장 위치 · '+v.lat.toFixed(5)+', '+v.lng.toFixed(5)+' <a target="_blank" style="text-decoration:underline" href="https://map.kakao.com/link/map/우리돗자리,'+v.lat+','+v.lng+'">카카오맵 열기</a>';
+}catch(e){st.textContent='저장 위치를 읽지 못했습니다.'}
+}
+const KMA_WEATHER_PROXY_URL='https://script.google.com/macros/s/AKfycbxjq6tyDI5iHyXHChKhd4wvsNf42QvBqFI6DNl6oYc1CAEbVFaD5NOSvO2cZoXX856oiw/exec';
+let weatherJsonpSeq=0;
+const SEOUL_FIREWORKS={lat:37.5285,lng:126.9330,start:'2026-09-05'};
+function jsonpKmaWeather(){
+return new Promise((resolve,reject)=>{
+const cb='fireworksKma_'+Date.now()+'_'+(++weatherJsonpSeq);
+const sc=document.createElement('script');
+let finished=false;
+const cleanup=()=>{
+if(finished)return; finished=true;
+try{delete window[cb]}catch(e){}
+if(sc.parentNode)sc.parentNode.removeChild(sc);
+};
+window[cb]=(data)=>{cleanup();resolve(data)};
+sc.onerror=()=>{cleanup();reject(new Error('기상청 중계 연결 실패'))};
+setTimeout(()=>{if(!finished){cleanup();reject(new Error('기상청 응답 시간 초과'))}},12000);
+sc.src=KMA_WEATHER_PROXY_URL+'?action=weather&lat='+SEOUL_FIREWORKS.lat+'&lon='+SEOUL_FIREWORKS.lng+'&callback='+encodeURIComponent(cb)+'&_='+Date.now();
+document.head.appendChild(sc);
+});
+}
+function fmtHour(t){
+const m=String(t||'').match(/(\d{2}):?(\d{2})/);
+return m?Number(m[1])+'시':String(t||'');
+}
+function weatherAdviceText(data){
+const c=data.current||{}, ultra=Array.isArray(data.ultraForecast)?data.ultraForecast:[];
+const rainy=ultra.some(x=>Number(x.pop)>=40 || /비|눈|소나기/.test(x.sky||'')) || Number(c.precipitation)>0;
+const windy=Number(c.windSpeed)>=6;
+const temp=Number(c.temp);
+let arr=[];
+if(rainy)arr.push('우비 4개 필수');
+else arr.push('현재 기준 우비는 비상용');
+if(windy)arr.push('돗자리 고정 강화');
+if(Number.isFinite(temp)&&temp>=27)arr.push('낮 더위 대비 물·선크림');
+arr.push('밤에는 얇은 겉옷');
+return arr.join(' · ');
+}
+async function loadLiveWeather(force=false){
+const btn=document.getElementById('weatherRefreshBtn');
+if(btn){btn.disabled=true;btn.textContent='갱신 중...'}
+try{
+const data=await jsonpKmaWeather();
+const c=data.current||{};
+document.getElementById('wTemp').textContent=c.temp!=null?Math.round(Number(c.temp))+'°':'--°';
+document.getElementById('wCond').textContent=c.condition||'실황';
+document.getElementById('wWind').textContent=c.windSpeed!=null?Number(c.windSpeed).toFixed(1)+' m/s':'--';
+document.getElementById('wUpdated').textContent='기상청 APIHub · '+(c.observedAt?String(c.observedAt).replace('T',' '):(data.queriedAt||'최신 조회'))+' · 여의도 좌표 기준';
+const ultra=Array.isArray(data.ultraForecast)?data.ultraForecast.slice(0,8):[];
+document.getElementById('hourlyWeather').innerHTML=ultra.length?
+'<div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px">'+ultra.map(r=>
+'<div class="metric" style="min-width:105px"><b style="font-size:16px">'+fmtHour(r.time)+'</b><small>'+(r.sky||'-')+'<br>'+(r.temp!=null?Math.round(Number(r.temp))+'°':'')+(r.pop!=null?' · 강수 '+r.pop+'%':'')+'</small></div>'
+).join('')+'</div>'
+:'초단기예보 데이터가 없습니다.';
+const daily=Array.isArray(data.dailyForecast)?data.dailyForecast:[];
+const d=daily.find(x=>String(x.date||'').startsWith('2026-09-05'));
+if(d){
+const min=d.minTemp??d.tmn, max=d.maxTemp??d.tmx, pop=d.maxPop??d.pop;
+document.getElementById('eventDayWeather').innerHTML=
+'<b>9/5 토요일</b><br>'+(d.condition||d.sky||'예보')+
+(min!=null&&max!=null?' · '+Math.round(Number(min))+'~'+Math.round(Number(max))+'℃':'')+
+(pop!=null?' · 최대 강수확률 '+Math.round(Number(pop))+'%':'');
+}else{
+document.getElementById('eventDayWeather').innerHTML='행사일 상세예보가 아직 응답에 포함되지 않았습니다. 날짜가 가까워지면 자동 표시됩니다.';
+}
+document.getElementById('weatherAdvice').textContent=weatherAdviceText(data);
+}catch(err){
+document.getElementById('wCond').textContent='조회 실패';
+document.getElementById('wUpdated').textContent='기상청 연동 실패 · '+String(err.message||err);
+document.getElementById('hourlyWeather').textContent='날씨를 불러오지 못했습니다. 잠시 뒤 새로고침하세요.';
+}finally{
+if(btn){btn.disabled=false;btn.textContent='기상청 최신값 새로고침'}
+}
+}
+const cbs=[...document.querySelectorAll('#checklist input')];
+function updateProg(){
+const done=cbs.filter(c=>c.checked).length, pct=Math.round(done/cbs.length*100);
+document.getElementById('prog').style.width=pct+'%';
+document.getElementById('progText').textContent=pct+'% 준비 완료 · '+done+'/'+cbs.length;
+}
+cbs.forEach(cb=>{
+cb.checked=localStorage.getItem('fireworks_'+cb.dataset.key)==='1';
+cb.addEventListener('change',()=>{localStorage.setItem('fireworks_'+cb.dataset.key,cb.checked?'1':'0');updateProg()})
+});
+updateProg();
+setTimeout(()=>loadLiveWeather().catch(()=>{}),500);
+</script>
+</body>
+</html>
