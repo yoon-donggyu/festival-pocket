@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>2026 서울세계불꽃축제 · 4인 커플 현장 가이드 PRO LIVE</title>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{
+--bg:#f5f5f7;--card:#fff;--text:#111;--muted:#6e6e73;--line:#dedede;
+--black:#000;--soft:#ececec;--deep:#1c1c1e;--mid:#8e8e93;--white:#fff;
+--radius:24px;--shadow:0 10px 34px rgba(0,0,0,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Pretendard","Noto Sans KR",Arial,sans-serif;
+background:var(--bg);color:var(--text);letter-spacing:-.025em
+}
+a{color:inherit;text-decoration:none}
+button,a{font:inherit}
+.app{max-width:960px;margin:auto;padding:env(safe-area-inset-top) 14px calc(105px + env(safe-area-inset-bottom))}
+.hero{margin:14px 0;background:#000;color:#fff;border-radius:34px;overflow:hidden;position:relative;box-shadow:var(--shadow)}
+.hero:before{
+content:"";position:absolute;inset:0;
+background:
+radial-gradient(circle at 75% 16%,rgba(255,255,255,.45) 0 2px,transparent 3px),
+radial-gradient(circle at 69% 28%,rgba(255,255,255,.25) 0 1px,transparent 2px),
+radial-gradient(circle at 83% 31%,rgba(255,255,255,.3) 0 1px,transparent 2px),
+linear-gradient(180deg,#1c1c1e,#000)
+}
+.hero-inner{position:relative;z-index:1;padding:34px 24px 27px}
+.kicker{font-size:12px;font-weight:900;letter-spacing:.14em;color:#aaa;text-transform:uppercase}
+h1{font-size:42px;line-height:1.02;margin:13px 0 12px;letter-spacing:-.06em}
+.hero p{color:#c7c7cc;line-height:1.55;max-width:680px}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:24px}
+.stat{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:14px;border-radius:18px;backdrop-filter:blur(15px)}
+.stat b{display:block;font-size:18px}.stat span{font-size:11px;color:#b8b8bb}
+.hero-alert{margin-top:14px;padding:14px;border-radius:18px;background:#fff;color:#111;font-size:13px;line-height:1.5}
+.section{display:none}.section.active{display:block}
+.card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:20px;margin:12px 0;box-shadow:var(--shadow)}
+.card h2{font-size:26px;margin:0 0 7px}.card h3{font-size:18px;margin:0 0 7px}
+.sub{font-size:14px;line-height:1.58;color:var(--muted)}
+.mini{font-size:11px;color:#8e8e93}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.metric{background:#f2f2f4;border-radius:18px;padding:14px}
+.metric b{font-size:21px;display:block}.metric small{color:#777}
+.pillrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.pill{font-size:12px;font-weight:800;background:#efeff0;border:1px solid #e1e1e1;padding:8px 11px;border-radius:999px}
+.pill.dark{background:#111;color:#fff;border-color:#111}
+.timeline{margin-top:10px}.event{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:15px 0;border-top:1px solid var(--line)}
+.event:first-child{border-top:0}.time{font-weight:900;font-size:15px}.event p{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.55}
+details{border-top:1px solid var(--line);padding:13px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:850;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"＋";float:right;color:#777}
+details[open] summary:after{content:"－"}
+details p,details li{color:var(--muted);font-size:13px;line-height:1.65}
+.rank{display:flex;gap:12px;align-items:flex-start;padding:15px 0;border-top:1px solid var(--line)}
+.rank:first-of-type{border-top:0}
+.num{min-width:40px;height:40px;border-radius:13px;background:#111;color:#fff;display:grid;place-items:center;font-weight:900}
+.score{font-size:12px;color:#777;margin-top:3px}
+.map{height:430px;border-radius:20px;overflow:hidden;border:1px solid #ddd;background:#e5e5e5}
+.map-note{font-size:12px;color:var(--muted);margin:9px 2px 0;line-height:1.5}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th,.table td{text-align:left;padding:11px 7px;border-top:1px solid #e6e6e6;font-size:13px;vertical-align:top}
+.table th{font-size:11px;color:#777}
+.badge{display:inline-block;background:#000;color:#fff;padding:4px 7px;border-radius:8px;font-size:10px;font-weight:900}
+.callout{padding:15px;border-radius:18px;background:#111;color:#fff;margin-top:12px}
+.callout b{font-size:15px}.callout p{margin:6px 0 0;color:#ccc;font-size:13px;line-height:1.55}
+.warn{background:#efefef;color:#111}.warn p{color:#555}
+.photo{border-radius:20px;overflow:hidden;background:#ddd;margin-top:12px}
+.photo img{display:block;width:100%;height:280px;object-fit:cover;filter:grayscale(100%)}
+.caption{font-size:11px;color:#666;padding:9px 12px;background:#f0f0f0}
+.linkbtn{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 15px;border-radius:14px;background:#111;color:#fff;font-size:13px;font-weight:850;border:0}
+.linkbtn.light{background:#efeff0;color:#111}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.checklist label{display:flex;gap:11px;padding:12px 0;border-top:1px solid #eee;align-items:flex-start}
+.checklist label:first-child{border-top:0}.checklist input{width:22px;height:22px;accent-color:#000}
+.checklist b{font-size:14px}.checklist small{display:block;color:#777;margin-top:3px;line-height:1.45}
+.progress{height:8px;border-radius:99px;background:#e7e7e7;overflow:hidden;margin:10px 0 0}.progress span{display:block;height:100%;background:#000;width:0%}
+.source a{text-decoration:underline;text-underline-offset:3px}.source li{margin:8px 0;color:#555;font-size:13px;line-height:1.45}
+.bottomnav{position:fixed;z-index:1000;bottom:calc(10px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+width:min(95%,900px);padding:7px;background:rgba(20,20,20,.93);backdrop-filter:blur(20px);border-radius:25px;display:flex;overflow-x:auto;gap:3px;box-shadow:0 14px 38px rgba(0,0,0,.3)}
+.bottomnav button{border:0;background:transparent;color:#aaa;padding:10px 12px;border-radius:17px;white-space:nowrap;font-size:11px;font-weight:850}
+.bottomnav button.active{background:#fff;color:#000}
+@media(max-width:640px){
+.app{padding-left:10px;padding-right:10px}.hero{border-radius:28px}.hero-inner{padding:28px 20px 24px}
+h1{font-size:36px}.statrow{grid-template-columns:1fr 1fr}.grid2,.grid3{grid-template-columns:1fr}.map{height:360px}.photo img{height:225px}.card{padding:17px}
+}
+/* CLEAN UI 2026 */
+:root{--radius:20px;--shadow:0 3px 16px rgba(0,0,0,.045)}
+body{background:#f7f7f8}
+.app{max-width:760px;padding-left:16px;padding-right:16px}
+.hero{border-radius:26px;box-shadow:none;margin-top:10px}
+.hero-inner{padding:28px 22px 22px}
+h1{font-size:34px;line-height:1.06;margin:10px 0}
+.hero p{font-size:13px;margin:0}
+.statrow{grid-template-columns:repeat(2,1fr);margin-top:18px}
+.stat{padding:12px;border-radius:14px}
+.card{border:0;border-radius:20px;padding:18px;margin:10px 0;box-shadow:none}
+.card h2{font-size:23px}.card h3{font-size:17px}
+.metric{border-radius:15px;padding:13px;background:#f5f5f6}
+.callout{border-radius:15px}
+.map{height:390px;border-radius:16px}
+.bottomnav{
+width:min(calc(100% - 24px),720px);bottom:calc(8px + env(safe-area-inset-bottom));
+justify-content:space-around;overflow:visible;padding:6px;border-radius:22px
+}
+.bottomnav button{flex:1;padding:9px 4px;font-size:10px;min-width:0}
+.bottomnav button .navico{display:block;font-size:18px;margin-bottom:2px}
+.quicknav{
+position:sticky;top:8px;z-index:800;background:rgba(247,247,248,.92);
+backdrop-filter:blur(18px);margin:0 -2px 10px;padding:7px 2px;
+display:flex;gap:7px;overflow-x:auto;scrollbar-width:none
+}
+.quicknav::-webkit-scrollbar{display:none}
+.quicknav button{
+border:0;background:#e9e9eb;color:#555;border-radius:999px;
+padding:9px 13px;white-space:nowrap;font-size:12px;font-weight:800
+}
+.quicknav button.active{background:#111;color:#fff}
+.pagehead{padding:6px 3px 2px}
+.pagehead small{color:#888;font-weight:700}
+.clean-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.clean-action{border:0;background:#f1f1f3;border-radius:16px;padding:14px;text-align:left;font-weight:850}
+.clean-action small{display:block;color:#777;font-weight:500;margin-top:4px;line-height:1.35}
+#home .hero-alert{margin-top:12px}
+#home>.card:nth-of-type(2){display:none}
+@media(max-width:640px){
+.app{padding-left:12px;padding-right:12px;padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+.hero-inner{padding:24px 18px 20px} h1{font-size:31px}
+.card{padding:16px}.map{height:330px}
+.grid2,.grid3{grid-template-columns:1fr 1fr}
+.metric b{font-size:18px}.metric small{font-size:11px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="quicknav" id="quicknav" style="display:none"></div>
+<section class="section active" id="home">
+<div class="hero">
+<div class="hero-inner">
+<div class="kicker">SEOUL INTERNATIONAL FIREWORKS FESTIVAL · 2026</div>
+<h1>서울세계불꽃축제<br>4인 현장 가이드</h1>
+<p>9월 5일 토요일 · 여의도 · 커플 2팀</p>
+<div class="statrow">
+<div class="stat"><b>13:00</b><span>본행사 시작</span></div>
+<div class="stat"><b>20:00</b><span>불꽃쇼 시작</span></div>
+<div class="stat"><b>21:10</b><span>불꽃 종료</span></div>
+<div class="stat"><b>100만+</b><span>예상 총인파</span></div>
+</div>
+<div class="hero-alert"><b>추천 한 줄</b><br>회기 친구집 주차 → 07시 전후 이동 → 08:00 자리 확보 → 15:30 복귀 → 20:00 불꽃 → 21:40 이후 회기 복귀.</div>
+</div>
+</div>
+<div class="card">
+<div class="pagehead"><small>당일 바로가기</small><h2 style="margin-top:4px">필요한 것만 빠르게</h2></div>
+<div class="clean-actions">
+<button class="clean-action" onclick="openSection('spot','map')">⌖ 우리 자리<small>명당 지도 · GPS 저장</small></button>
+<button class="clean-action" onclick="openSection('hoegi','plan')">🚇 회기 플랜<small>친구집 주차 · 귀가</small></button>
+<button class="clean-action" onclick="openSection('weather','field')">☁ 날씨<small>기상청 실시간</small></button>
+<button class="clean-action" onclick="openSection('field','field')">● 현장모드<small>SOS · 카운트다운</small></button>
+</div>
+</div>
+<div class="card">
+<h2>가장 중요한 결론</h2>
+<div class="grid3">
+<div class="metric"><b>1순위</b><small>회기 친구집 무료주차</small></div>
+<div class="metric"><b>08:00</b><small>돗자리 확보 목표</small></div>
+<div class="metric"><b>15:30</b><small>자리 복귀 권장</small></div>
+</div>
+<div class="callout"><b>여의도 안에 차를 넣지 않는 게 핵심</b><p>여의도 한강공원 1·2·3주차장은 행사 직전부터 제한되고, 행사 당일 여의동로는 15:00~24:00 전면 통제됩니다.</p></div>
+</div>
+<div class="card">
+<h3>2026 올해 달라진 점</h3>
+<details open><summary>전야제가 처음 생겼다</summary><p>9월 4일 전야제가 추가되어 이틀 행사로 확대됐습니다. 본행사는 9월 5일 13:00~22:00입니다.</p></details>
+<details><summary>안전인력 약 6,800명</summary><p>서울시·경찰·소방·자치구 등 종합안전본부가 운영되고 안전장비도 전년 대비 확대됩니다.</p></details>
+<details><summary>임시화장실 94동 추가</summary><p>여의도·이촌 한강공원에 임시화장실 94동과 쓰레기 수거시설이 추가됩니다.</p></details>
+<details><summary>라이브 생중계·원거리 음악 지원</summary><p>라이브서울·한화TV 생중계가 제공되며 공식 앱 오렌지플레이로 원거리 관람 장소에서도 배경음악을 들을 수 있습니다.</p></details>
+</div>
+</section>
+<section class="section" id="plan">
+<div class="card">
+<h2>4인 추천 타임라인</h2>
+<div class="sub">자리 선점 후 전원 외출을 전제로 한 일정입니다.</div>
+<div class="timeline">
+<div class="event"><div class="time">06:30</div><div><b>출발</b><p>주말 + 행사일 변수를 고려해 평소보다 일찍 출발.</p></div></div>
+<div class="event"><div class="time">07:20</div><div><b>주차지 도착 목표</b><p>영등포본동 제1공영주차장 또는 신길·영등포·노량진 플랜 B.</p></div></div>
+<div class="event"><div class="time">08:00</div><div><b>돗자리 확보</b><p>1순위 구역을 먼저 보고, 시야가 안 좋으면 2순위로 바로 이동. 사진·좌표 저장.</p></div></div>
+<div class="event"><div class="time">08:40</div><div><b>짐 최소화 후 외출</b><p>자리에는 저가 돗자리·고정용품만. 귀중품·의자·가방·음식은 남기지 않기.</p></div></div>
+<div class="event"><div class="time">09:30</div><div><b>더현대 서울 / IFC</b><p>브런치·카페·팝업. 오후 장시간 관람 전에 실내에서 체력 보존.</p></div></div>
+<div class="event"><div class="time">12:30</div><div><b>점심 + 저녁거리 구매</b><p>푸드트럭은 체험용으로 보고 실제 저녁은 미리 확보.</p></div></div>
+<div class="event"><div class="time">13:00</div><div><b>공식 프로그램 시작</b><p>물빛무대 앞 푸드트럭존, 시민참여 프로그램, 주변 이벤트.</p></div></div>
+<div class="event"><div class="time">15:30</div><div><b>돗자리 복귀</b><p>여의동로 통제 시작 이후 인파가 급격히 늘기 전에 돌아가기.</p></div></div>
+<div class="event"><div class="time">17:00</div><div><b>화장실·저녁 1차</b><p>2명씩 교대. 19시 이후 이동 최소화.</p></div></div>
+<div class="event"><div class="time">18:30</div><div><b>배터리 절약 모드</b><p>보조배터리 연결, 화면 밝기 낮추기, 재집결 장소 재확인.</p></div></div>
+<div class="event"><div class="time">20:00</div><div><b>불꽃쇼</b><p>한국·미국·영국 3개국 참여.</p></div></div>
+<div class="event"><div class="time">21:10</div><div><b>정리</b><p>쓰레기 정리·짐 체크. 바로 역으로 뛰지 않기.</p></div></div>
+<div class="event"><div class="time">21:40</div><div><b>귀가 개시</b><p>여의나루역보다 여의도역·샛강역·마포역 방향으로 분산.</p></div></div>
+</div>
+</div>
+</section>
+<section class="section" id="spot">
+<div class="card">
+<h2>돗자리 추천 지도</h2>
+<div class="sub">아래 음영은 공식 좌석도가 아니라 <b>시야·혼잡·편의시설·귀가</b>를 조합한 전략 구역입니다. 당일 통제선이 최우선입니다.</div>
+<div id="spotMap" class="map"></div>
+<div class="map-note">지도에서 각 구역을 누르면 상세 설명이 나옵니다.</div>
+</div>
+<div class="card">
+<h3>상세 추천 6곳</h3>
+<div class="rank"><div class="num">1</div><div><b>원효대교 남단 서쪽 수변 잔디</b><div class="score">시야 5 · 중심감 5 · 편의 3 · 귀가 3 · 혼잡 5</div><p class="sub">메인 불꽃의 중심감을 가장 잘 느낄 가능성이 높은 구역. 단, 다리 자체는 09:00부터 통제되고 사람이 가장 몰릴 수 있습니다. 08시 이전 진입 추천.</p></div></div>
+<div class="rank"><div class="num">2</div><div><b>63빌딩 북서측 강변 잔디</b><div class="score">시야 5 · 중심감 5 · 편의 3 · 귀가 3 · 혼잡 5</div><p class="sub">불꽃 발사 구역과 가깝고 사진 구도가 좋을 가능성이 큼. 63빌딩·수목·시설물에 시야가 가리지 않는 위치를 현장에서 선점해야 합니다.</p></div></div>
+<div class="rank"><div class="num">3</div><div><b>물빛무대~물빛광장 강변</b><div class="score">시야 4 · 편의 5 · 행사 5 · 귀가 4 · 혼잡 5</div><p class="sub">공식 푸드트럭존과 프로그램 접근성이 최고. 화장실·편의시설 접근도 상대적으로 좋지만 유동인구가 많습니다.</p></div></div>
+<div class="rank"><div class="num">4</div><div><b>마포대교 남단 하류 수변</b><div class="score">시야 4 · 편의 4 · 귀가 4 · 혼잡 4</div><p class="sub">메인 중심에서 약간 벗어나지만 마포역 방면 귀가 분산이 가능한 균형형 구역.</p></div></div>
+<div class="rank"><div class="num">5</div><div><b>서강대교 방향 서쪽 잔디권</b><div class="score">시야 3 · 편의 3 · 귀가 4 · 혼잡 3</div><p class="sub">정중앙 느낌은 줄지만 인파를 조금 피하고 싶을 때 플랜 B. 불꽃 전체 파노라마 감상용.</p></div></div>
+<div class="rank"><div class="num">6</div><div><b>이촌한강공원 북쪽 맞은편</b><div class="score">시야 4 · 사진 5 · 접근 2 · 귀가 3 · 혼잡 4</div><p class="sub">여의도 건너편에서 불꽃+스카이라인을 함께 보기 좋지만, 차량 동선과 귀가가 별도라 이번 4인 계획에는 2차 선택지.</p></div></div>
+</div>
+<div class="card">
+<h3>자리 고를 때 30초 체크</h3>
+<div class="grid2">
+<div class="metric"><b>앞</b><small>나무·난간·텐트가 시야를 막는지</small></div>
+<div class="metric"><b>뒤</b><small>통로·자전거길·행사 동선인지</small></div>
+<div class="metric"><b>옆</b><small>화장실·매점 진입로와 겹치는지</small></div>
+<div class="metric"><b>밤</b><small>귀가역 방향으로 빠질 출구가 있는지</small></div>
+</div>
+<div class="callout warn"><b>무인 자리 선점 리스크</b><p>돗자리 방치가 공식적으로 보장되는 제도는 아닙니다. 이동·훼손·현장 정리 가능성을 전제로 하세요. 돌아왔을 때 자리가 사라졌다면 다투기보다 4·5순위 구역으로 즉시 이동하는 게 낫습니다.</p></div>
+</div>
+</section>
+<section class="section" id="parking">
+<div class="card">
+<h2>주차 추천 지도</h2>
+<div class="sub">이번 계획에서는 “가까움”보다 <b>행사 종료 후 빠져나오기 쉬움</b>이 더 중요합니다.</div>
+<div id="parkingMap" class="map"></div>
+</div>
+<div class="card">
+<h3>상세 추천 7곳/권역</h3>
+<div class="rank"><div class="num">1</div><div><b>영등포본동 제1공영주차장</b><div class="score">194면 · 24시간 · 약 1,200원/시간 정보 확인</div><p class="sub">이번 일정의 가장 안정적인 1순위. 영등포구 영신로10길 15. 여의도 중심을 벗어나 있어 귀가 때 차량 정체에 덜 묶이는 편. 07시대 입차 추천.</p><div class="btnrow"><a class="linkbtn" target="_blank" href="https://map.kakao.com/?q=%EC%98%81%EB%93%B1%ED%8F%AC%EB%B3%B8%EB%8F%99%20%EC%A0%9C1%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5">지도 열기</a></div></div></div>
+<div class="rank"><div class="num">2</div><div><b>영등포본동 제2 / 여고 공영주차장 권역</b><div class="score">1순위 만차 시 즉시 전환용</div><p class="sub">제1공영 인근 대체 주차장 군. 같은 권역에 여러 공영주차장이 있어 “한 곳만 믿고 들어가는” 리스크를 줄일 수 있습니다.</p></div></div>
+<div class="rank"><div class="num">3</div><div><b>영등포역·타임스퀘어 권역</b><div class="score">대형 시설 · 실내 대기 가능 · 접근성 우수</div><p class="sub">공영이 만차일 때 유료 대형시설을 플랜 C로. 쇼핑객 수요도 있어 요금과 장시간 주차 조건은 당일 확인.</p></div></div>
