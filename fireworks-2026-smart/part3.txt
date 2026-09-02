@@ -1,0 +1,172 @@
+DATE='2026-09-05';
+const START=new Date('2026-09-05T20:00:00+09:00');
+const END=new Date('2026-09-05T21:10:00+09:00');
+const KMA_WEATHER_PROXY_URL='https://script.google.com/macros/s/AKfycbxjq6tyDI5iHyXHChKhd4wvsNf42QvBqFI6DNl6oYc1CAEbVFaD5NOSvO2cZoXX856oiw/exec';
+const POS={yeouido:[37.5285,126.9330],wonhyo:[37.5226,126.9367],sixty3:[37.5209,126.9402],mapo:[37.5370,126.9325],mulbit:[37.5324,126.9275],yeouidoSta:[37.5218,126.9245],saetgang:[37.5174,126.9282]};
+
+const views=[...document.querySelectorAll('.view')];
+const navBtns=[...document.querySelectorAll('#nav button')];
+function showView(id,anchor){
+  views.forEach(v=>v.classList.toggle('active',v.id===id));
+  navBtns.forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='map') setTimeout(initMap,120);
+  if(anchor) setTimeout(()=>document.getElementById(anchor)?.scrollIntoView({behavior:'smooth',block:'start'}),220);
+}
+navBtns.forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.go,b.dataset.anchor)));
+
+function seoulParts(d=new Date()){
+  const p=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(d);
+  return Object.fromEntries(p.map(x=>[x.type,x.value]));
+}
+function seoulMinutes(d=new Date()){const p=seoulParts(d);return (+p.hour)*60+(+p.minute)}
+function seoulDate(d=new Date()){const p=seoulParts(d);return `${p.year}-${p.month}-${p.day}`}
+function fmtDuration(ms){
+  if(ms<=0)return '진행 중';
+  const d=Math.floor(ms/86400000),h=Math.floor(ms%86400000/3600000),m=Math.floor(ms%3600000/60000);
+  return d>0?`D-${d}`:`${h}시간 ${m}분`;
+}
+function currentAction(){
+  const date=seoulDate(), m=seoulMinutes();
+  if(date<EVENT_DATE)return ['준비만 하면 돼요','돗자리·보조배터리·회기 주차 플랜만 확인하세요.','준비'];
+  if(date>EVENT_DATE)return ['행사가 끝났어요','오늘 저장한 위치와 사진을 확인하세요.','종료'];
+  if(m<420)return ['회기로 출발 준비','차량은 친구집에 두고 4명 함께 이동하는 게 핵심.','여유'];
+  if(m<480)return ['여의도로 이동','회기 → 노량진 → 여의도. 도착 즉시 자리부터 확보.','이동'];
+  if(m<570)return ['돗자리부터 확보','시야·통로·화장실 동선을 30초 확인하고 자리 저장.','자리'];
+  if(m<750)return ['자유시간 + 점심','자리 위치를 휴대폰에 저장하고 실내에서 체력 충전.','여유'];
+  if(m<930)return ['저녁까지 미리 확보','15:30에는 자리로 돌아오는 게 목표.','복귀 준비'];
+  if(m<1020)return ['자리로 돌아가세요','이제부터 이동량을 줄이는 게 편합니다.','혼잡'];
+  if(m<1110)return ['식사·화장실 먼저','18시 이후 줄이 길어지기 전에 한 번 다녀오기.','혼잡'];
+  if(m<1170)return ['자리 고정','배터리 확인하고 이동은 최소화.','매우 혼잡'];
+  if(m<1200)return ['촬영 준비','렌즈 닦고 1배부터. 플래시는 OFF.','매우 혼잡'];
+  if(m<1270)return ['🎆 지금은 불꽃만 보세요','휴대폰보다 눈으로 보는 시간.','최고 혼잡'];
+  if(m<1300)return ['짐부터 천천히 정리','Clean Time에 맞춰 쓰레기와 개인물품 확인.','최고 혼잡'];
+  return ['회기로 귀가','여의나루를 고집하지 말고 여의도·샛강으로 분산.','귀가'];
+}
+function crowdByTime(){
+  if(seoulDate()!==EVENT_DATE)return '낮음';
+  const m=seoulMinutes();
+  if(m<720)return '낮음'; if(m<960)return '보통'; if(m<1140)return '높음'; return '매우 높음';
+}
+function updateClock(){
+  const now=new Date(), p=seoulParts(now);
+  document.getElementById('liveClock').textContent=`${p.hour}:${p.minute}`;
+  const diff=START-now;
+  const cd=document.getElementById('countdown');
+  if(now<START)cd.textContent=fmtDuration(diff);
+  else if(now<=END)cd.textContent='진행 중';
+  else cd.textContent='종료';
+  const [t,d,s]=currentAction();
+  document.getElementById('nowTitle').textContent=t;
+  document.getElementById('nowDesc').textContent=d;
+  document.getElementById('crowdStatus').textContent=s;
+  document.getElementById('fieldCrowd').textContent=crowdByTime();
+  const dayStart=390,dayEnd=1300,cur=seoulMinutes();
+  document.getElementById('dayProgress').style.width=(seoulDate()===EVENT_DATE?Math.max(0,Math.min(100,(cur-dayStart)/(dayEnd-dayStart)*100)):0)+'%';
+  const f=document.getElementById('fieldCountdown');
+  if(now<START)f.textContent=fmtDuration(diff);
+  else if(now<=END){f.textContent='LIVE';document.getElementById('fieldCaption').textContent='지금 불꽃 진행 중'}
+  else{f.textContent='END';document.getElementById('fieldCaption').textContent='짐 정리 후 분산 귀가'}
+  updateTimeline();
+}
+function updateTimeline(){
+  const nowM=seoulMinutes(), eventToday=seoulDate()===EVENT_DATE;
+  const rows=[...document.querySelectorAll('.trow')];
+  rows.forEach(r=>r.classList.remove('done','current'));
+  if(!eventToday)return;
+  let last=null;
+  rows.forEach(r=>{
+    const [h,m]=r.dataset.time.split(':').map(Number),rm=h*60+m;
+    if(nowM>=rm){r.classList.add('done');last=r}
+  });
+  if(last){last.classList.remove('done');last.classList.add('current')}
+}
+setInterval(updateClock,30000);updateClock();
+
+function jsonpWeather(){
+  return new Promise((resolve,reject)=>{
+    const cb='kma_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+    const s=document.createElement('script');
+    const timer=setTimeout(()=>{cleanup();reject(new Error('timeout'))},10000);
+    function cleanup(){clearTimeout(timer);delete window[cb];s.remove()}
+    window[cb]=data=>{cleanup();resolve(data)};
+    s.onerror=()=>{cleanup();reject(new Error('network'))};
+    s.src=`${KMA_WEATHER_PROXY_URL}?action=weather&lat=${POS.yeouido[0]}&lon=${POS.yeouido[1]}&callback=${cb}&_=${Date.now()}`;
+    document.head.appendChild(s);
+  });
+}
+function extractWeather(data){
+  const flat=JSON.stringify(data);
+  const temp=(data&& (data.temp??data.temperature??data.current?.temp??data.current?.temperature));
+  const wind=(data&& (data.windSpeed??data.wind??data.current?.windSpeed));
+  let desc=data?.condition??data?.sky??data?.current?.condition??'기상청';
+  return {temp,wind,desc};
+}
+jsonpWeather().then(data=>{
+  const w=extractWeather(data);
+  if(w.temp!==undefined&&w.temp!==null)document.getElementById('weatherTemp').textContent=`${Math.round(Number(w.temp))}°`;
+  document.getElementById('weatherText').textContent=String(w.desc||'기상청');
+  document.getElementById('windValue').textContent=w.wind!==undefined?`${w.wind} m/s`:'확인';
+}).catch(()=>{
+  document.getElementById('weatherText').textContent='새로고침 시 재시도';
+  document.getElementById('windValue').textContent='미수신';
+});
+
+let map,mapGroups={};
+function initMap(){
+  if(map){setTimeout(()=>map.invalidateSize(),80);return}
+  map=L.map('mainMap',{zoomControl:false}).setView(POS.yeouido,14);
+  L.control.zoom({position:'bottomright'}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
+  mapGroups.spot=L.layerGroup([
+    L.circleMarker(POS.wonhyo,{radius:10}).bindPopup('<b>① 원효대교 남단 서쪽 잔디</b><br>중앙감 우수 · 혼잡 높음'),
+    L.circleMarker(POS.sixty3,{radius:10}).bindPopup('<b>② 63빌딩 북서 강변</b><br>사진 구도 좋음 · 나무 확인'),
+    L.circleMarker(POS.mapo,{radius:10}).bindPopup('<b>③ 마포대교 남단 하류</b><br>귀가 밸런스 대안')
+  ]).addTo(map);
+  mapGroups.facility=L.layerGroup([
+    L.marker(POS.mulbit).bindPopup('<b>물빛무대 앞 광장</b><br>푸드트럭존'),
+    L.marker([37.5280,126.9320]).bindPopup('<b>행사장 중심 편의시설권</b><br>정확한 임시시설 위치는 현장 안내 우선')
+  ]);
+  mapGroups.exit=L.layerGroup([
+    L.marker(POS.yeouidoSta).bindPopup('<b>여의도역</b><br>회기 복귀 기본'),
+    L.marker(POS.saetgang).bindPopup('<b>샛강역</b><br>혼잡 시 분산 대안')
+  ]);
+}
+document.querySelectorAll('[data-layer]').forEach(btn=>btn.addEventListener('click',()=>{
+  initMap();
+  document.querySelectorAll('[data-layer]').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  Object.values(mapGroups).forEach(g=>map.removeLayer(g));
+  mapGroups[btn.dataset.layer]?.addTo(map);
+}));
+function savedSpot(){try{return JSON.parse(localStorage.getItem('fireworks_spot_v2')||'null')}catch{return null}}
+document.getElementById('saveSpot').addEventListener('click',()=>{
+  const st=document.getElementById('spotState');
+  if(!navigator.geolocation){st.textContent='이 브라우저는 위치 저장을 지원하지 않습니다.';return}
+  st.textContent='현재 위치 확인 중…';
+  navigator.geolocation.getCurrentPosition(p=>{
+    const v={lat:p.coords.latitude,lng:p.coords.longitude,time:new Date().toISOString()};
+    localStorage.setItem('fireworks_spot_v2',JSON.stringify(v));
+    st.textContent=`저장 완료 · ${v.lat.toFixed(5)}, ${v.lng.toFixed(5)}`;
+  },()=>st.textContent='위치 권한이 꺼져 있습니다. 브라우저 사이트 권한에서 위치를 허용하세요.',{enableHighAccuracy:true,timeout:12000});
+});
+document.getElementById('openSpot').addEventListener('click',()=>{
+  const v=savedSpot(),st=document.getElementById('spotState');
+  if(!v){st.textContent='저장된 위치가 없습니다.';return}
+  window.open(`https://map.kakao.com/link/map/우리자리,${v.lat},${v.lng}`,'_blank');
+});
+document.getElementById('showSaved').addEventListener('click',()=>{
+  initMap();const v=savedSpot();
+  if(!v){alert('저장된 자리가 없습니다. 현장 메뉴에서 현재 위치를 먼저 저장하세요.');return}
+  L.marker([v.lat,v.lng]).addTo(map).bindPopup('<b>내가 저장한 자리</b>').openPopup();
+  map.setView([v.lat,v.lng],17);
+});
+document.querySelectorAll('.check input').forEach(i=>{
+  const key='fwcheck_'+i.closest('.check').id+'_'+i.dataset.key;
+  i.checked=localStorage.getItem(key)==='1';
+  i.addEventListener('change',()=>localStorage.setItem(key,i.checked?'1':'0'));
+});
+</script>
+</body>
+</html>
