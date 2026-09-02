@@ -1,0 +1,274 @@
+
+<div class="rank"><div class="num">4</div><div><b>신길역 권역</b><div class="score">여의도 남서쪽 · 1/5호선 접근</div><p class="sub">여의도까지 가깝지만 직접적인 행사장 차량 통제권에서는 벗어난 편. 실제 이용 주차장은 출발 전 카카오T에서 잔여 확인.</p></div></div>
+<div class="rank"><div class="num">5</div><div><b>노량진역 공영주차장 권역</b><div class="score">1/9호선 · 한강 남쪽 · 행사 접근 우수</div><p class="sub">공식 주차 사전예약 추천 권역과 맞물려 활용도가 높습니다. 다만 불꽃 관람객 자체 수요가 커 조기 만차 가능성이 큼.</p></div></div>
+<div class="rank"><div class="num">6</div><div><b>마포유수지·마포역 공영주차 권역</b><div class="score">5호선 · 북쪽 우회 귀가</div><p class="sub">귀가 방향을 북쪽으로 분산하고 싶을 때. 여의도 서쪽 자리와 궁합이 좋습니다.</p></div></div>
+<div class="rank"><div class="num">7</div><div><b>합정역 외곽 권역</b><div class="score">거리 증가 · 귀가 차량 정체 회피형</div><p class="sub">가까운 곳을 포기하고 차량 탈출성을 최우선으로 할 때. 지하철 이동시간은 늘지만 종료 후 여의도 도로 병목에서 완전히 벗어납니다.</p></div></div>
+</div>
+<div class="card">
+<h3>주차 의사결정</h3>
+<table class="table">
+<tr><th>시간</th><th>판단</th></tr>
+<tr><td>07:00 이전</td><td>영등포본동 제1공영 직행</td></tr>
+<tr><td>07:30 만차</td><td>인근 제2·여고 공영으로 즉시 전환</td></tr>
+<tr><td>08:00 이후</td><td>영등포역 대형시설 또는 노량진/마포 권역으로 분산</td></tr>
+<tr><td>오후 도착</td><td>여의도 차량 진입 포기. 더 외곽 주차 후 지하철</td></tr>
+</table>
+<div class="callout"><b>카카오T 주차 사전예약</b><p>2026 공식 안내에서 여의도·용산·노량진·합정 등의 주변 주차장을 사전예약할 수 있도록 안내하고 있습니다. 예약 가능 시설이 뜨면 공영주차장보다 먼저 확보하는 것도 좋은 선택입니다.</p></div>
+</div>
+</section>
+<section class="section" id="event">
+<div class="card">
+<h2>축제 프로그램 모음</h2>
+<div class="photo">
+<img src="https://hangang.seoul.go.kr/www/file/editorImage.do?day=202308&fileNm=507c06412710401490d93c06738b98aa.jpg" alt="여의도 물빛무대">
+<div class="caption">여의도 물빛무대 참고 이미지 · 서울시 미래한강본부</div>
+</div>
+</div>
+<div class="card">
+<details open><summary>본행사 · 9/5 13:00~22:00</summary><p>여의도·이촌 한강공원 일대. 무료 자유관람. 노들섬은 전 구역 유료 티켓 구역입니다.</p></details>
+<details><summary>불꽃쇼 · 20:00~21:10</summary><p>한국·미국·영국 3개국 참가. 올해 주제는 ‘당신의 빛을 찾아서(Your Infinite Colors)’.</p></details>
+<details><summary>공식 푸드트럭존 · 13:00~22:00</summary><p>여의도 물빛무대 앞 광장. 시설 안전·위생·가격을 사전 심사한 공식 존입니다.</p></details>
+<details><summary>시민참여 프로그램</summary><p>여의도·이촌 일대에 시민참여 프로그램이 운영됩니다. 세부 부스 구성은 현장과 공식 홈페이지에서 최종 확인.</p></details>
+<details><summary>노들섬 오렌지플레이존</summary><p>무대 공연·레크리에이션·AR 불꽃놀이·불꽃 캔들/스트랩 만들기·사진 전시·F&amp;B 등이 안내되어 있습니다. 단, 유료 티켓 사전 구매자만 입장.</p></details>
+<details><summary>온라인 생중계</summary><p>라이브서울과 한화TV에서 현장 생중계를 제공합니다.</p></details>
+<details><summary>오렌지플레이 앱</summary><p>불꽃 배경음악 동기화, 긴급상황 위치 확인·신고 기능이 안내되어 있습니다.</p></details>
+<details><summary>사진 콘테스트</summary><p>행사 후 공식 사진 이벤트가 예정되어 있어, 사진을 잘 찍었다면 참여 가치가 있습니다.</p></details>
+</div>
+<div class="card">
+<h3>낮 시간 추천</h3>
+<div class="photo">
+<img src="https://www.konest.com/varimg/photogallery/Article_Photo/17717/big_310546.jpg" alt="더현대 서울">
+<div class="caption">더현대 서울 참고 이미지 · 여의도 실내 대기/식사 후보</div>
+</div>
+<p class="sub">오전에는 더현대 서울·IFC몰처럼 실내 위주로 움직이는 게 좋습니다. 행사 자체가 13시부터 시작되므로 굳이 먼 곳까지 관광을 넣기보다 여의도 안에서 체력을 아끼는 편이 유리합니다.</p>
+</div>
+</section>
+<section class="section" id="weather">
+<div class="card">
+<h2>실시간 여의도 날씨</h2>
+<div class="sub">Festival Pocket에서 이미 사용 중인 <b>기상청 APIHub 프록시</b>를 그대로 연결했습니다. API 키는 HTML에 노출되지 않습니다.</div>
+<div id="liveWeatherBox" style="margin-top:14px">
+<div class="grid3">
+<div class="metric"><b id="wTemp">--°</b><small>현재 기온</small></div>
+<div class="metric"><b id="wCond">조회 중</b><small>현재 상태</small></div>
+<div class="metric"><b id="wWind">--</b><small>풍속</small></div>
+</div>
+<div class="btnrow">
+<button class="linkbtn" id="weatherRefreshBtn" onclick="loadLiveWeather(true)">기상청 최신값 새로고침</button>
+</div>
+<div class="mini" id="wUpdated" style="margin-top:9px">여의도 좌표 기준 · 최신 기상청 데이터 조회 중</div>
+</div>
+</div>
+<div class="card">
+<h3>앞으로 몇 시간</h3>
+<div id="hourlyWeather" class="sub">초단기예보를 불러오는 중입니다.</div>
+</div>
+<div class="card">
+<h3>9월 5일 행사일 예보</h3>
+<div id="eventDayWeather" class="sub">단기예보를 불러오는 중입니다.</div>
+<div class="callout warn"><b>현장 준비 판단</b><p id="weatherAdvice">예보를 불러온 뒤 우비·겉옷·강풍 대비 여부를 자동으로 표시합니다.</p></div>
+</div>
+</section>
+<section class="section" id="gear">
+<div class="card">
+<h2>4인 준비물</h2>
+<div class="sub">체크 상태는 휴대폰에 저장됩니다.</div>
+<div class="progress"><span id="prog"></span></div>
+<div class="mini" id="progText" style="margin-top:6px">0% 준비 완료</div>
+<div class="checklist" id="checklist">
+<label><input type="checkbox" data-key="mat"><span><b>대형 방수 돗자리</b><small>4인 기준 200×200cm 이상. 무인 선점용은 고가 제품 피하기.</small></span></label>
+<label><input type="checkbox" data-key="anchor"><span><b>돗자리 고정용 집게/웨이트</b><small>잔디 훼손 우려가 있는 긴 팩보다 집게·무게추 위주.</small></span></label>
+<label><input type="checkbox" data-key="cushion"><span><b>방석 4개</b><small>장시간 착석 피로 감소.</small></span></label>
+<label><input type="checkbox" data-key="radio"><span><b>생활무전기 2대</b><small>커플별 1대. 휴대폰 통신 혼잡 시 비상용.</small></span></label>
+<label><input type="checkbox" data-key="power"><span><b>20,000mAh 보조배터리 2~3개</b><small>촬영·지도·통신 재시도 대비.</small></span></label>
+<label><input type="checkbox" data-key="cable"><span><b>충전 케이블 2종 이상</b><small>C타입·아이폰 혼용 대비.</small></span></label>
+<label><input type="checkbox" data-key="water"><span><b>생수 6~8병</b><small>오후 복귀 직전 보충.</small></span></label>
+<label><input type="checkbox" data-key="food"><span><b>저녁 + 간식</b><small>김밥·샌드위치·과일·초콜릿 등.</small></span></label>
+<label><input type="checkbox" data-key="trash"><span><b>쓰레기봉투 2~3장</b><small>종료 후 클린타임 대비.</small></span></label>
+<label><input type="checkbox" data-key="tissue"><span><b>물티슈 + 휴지</b><small>임시화장실 혼잡 대비.</small></span></label>
+<label><input type="checkbox" data-key="rain"><span><b>우비 4개</b><small>밀집 지역은 우산보다 안전.</small></span></label>
+<label><input type="checkbox" data-key="bug"><span><b>모기기피제</b><small>강변 야간 대비.</small></span></label>
+<label><input type="checkbox" data-key="jacket"><span><b>얇은 겉옷</b><small>낮 29℃ / 밤 18℃ 수준 예보 대비.</small></span></label>
+<label><input type="checkbox" data-key="screen"><span><b>스크린샷 4종</b><small>주차 / 돗자리 / 재집결 / 귀가역.</small></span></label>
+<label><input type="checkbox" data-key="mask"><span><b>KF80 이상 마스크</b><small>불꽃 후 미세먼지 일시 상승 가능성. 서울시도 민감군에게 준비 권고.</small></span></label>
+<label><input type="checkbox" data-key="med"><span><b>밴드·진통제 등 소형 구급품</b><small>긴 시간 야외 체류 대비.</small></span></label>
+<label><input type="checkbox" data-key="cash"><span><b>소액 현금</b><small>통신 지연으로 결제가 느려질 경우 대비.</small></span></label>
+</div>
+</div>
+</section>
+<section class="section" id="traffic">
+<div class="card">
+<h2>교통·안전 핵심</h2>
+<table class="table">
+<tr><th>항목</th><th>시간/규모</th><th>내용</th></tr>
+<tr><td><b>원효대교</b></td><td>9/5 09:00 ~ 9/6 03:00</td><td>차도·인도 전면 통제</td></tr>
+<tr><td><b>여의동로</b></td><td>9/5 15:00 ~ 24:00</td><td>마포대교 남단~63빌딩 앞 전면 통제</td></tr>
+<tr><td><b>여의나루역</b></td><td>저녁 혼잡 시</td><td>무정차 통과·출입구 폐쇄 가능</td></tr>
+<tr><td><b>5·9호선</b></td><td>증편</td><td>행사 대응 추가 운행</td></tr>
+<tr><td><b>따릉이·공유PM</b></td><td>9/4 08:00 ~ 9/6 07:00</td><td>여의도·이촌 일대 대여/반납 중지</td></tr>
+<tr><td><b>임시화장실</b></td><td>94동 추가</td><td>여의도·이촌 한강공원 추가 설치</td></tr>
+<tr><td><b>안전인력</b></td><td>약 6,800명</td><td>주요 출입로·지하철역·밀집구역 집중 배치</td></tr>
+<tr><td><b>수상 안전</b></td><td>순찰선 45척</td><td>서강대교~한강대교 수상구간 단계 통제</td></tr>
+</table>
+</div>
+<div class="card">
+<h3>통신 먹통 대비</h3>
+<div class="sub">통신 3사가 행사 트래픽 대응을 강화한다고 발표했지만, 100만 명 규모에서는 체감 속도 저하 가능성을 전제로 움직이는 것이 좋습니다.</div>
+<details open><summary>커플별 무전기 1대</summary><p>2대만 있어도 4명이 두 팀으로 움직일 때 유용합니다.</p></details>
+<details><summary>재집결 지점 1곳</summary><p>돗자리 말고 안내센터·고정 조형물·특정 화장실처럼 움직이지 않는 곳으로 정하세요.</p></details>
+<details><summary>문자·일반전화도 시도</summary><p>데이터 메신저가 밀릴 때 SMS나 음성통화가 상대적으로 먼저 연결되는 경우가 있습니다.</p></details>
+</div>
+</section>
+<section class="section" id="tips">
+<div class="card">
+<h2>현장 팁 모음</h2>
+<details open><summary>화장실은 17시 전에 한 번</summary><p>18시 이후에는 이동 자체가 어려워질 수 있습니다. 16:30~17:30 사이 1차 화장실을 권장합니다.</p></details>
+<details><summary>푸드트럭은 메인 식사로 잡지 않는다</summary><p>공식 존이어도 줄이 길 수 있습니다. 미리 저녁을 준비하고 푸드트럭은 간식·체험용으로.</p></details>
+<details><summary>사진보다 짧은 영상이 만족도가 높다</summary><p>불꽃은 순간 노출차가 커서 자동모드 사진 실패가 잦습니다. 10~20초 짧은 영상 여러 개 + 대표 사진 몇 장 방식이 편합니다.</p></details>
+<details><summary>0.5배만 고집하지 않는다</summary><p>사람 머리·난간이 많이 들어올 수 있어 1배/2배도 번갈아 사용. 렌즈를 미리 닦아두세요.</p></details>
+<details><summary>18:30부터 휴대폰 절전</summary><p>저전력 모드·화면 밝기 30~40%·불필요한 앱 종료. 불꽃 시작 때 배터리를 남겨두는 게 중요합니다.</p></details>
+<details><summary>짐은 2개 가방으로</summary><p>한 팀은 먹거리·휴지, 다른 팀은 전자기기·구급품. 귀가 때 누락 확인이 쉬워집니다.</p></details>
+<details><summary>플랜 B 자리를 캡처</summary><p>무인 돗자리가 없어졌을 때 5분 안에 이동할 후보를 미리 저장해두세요.</p></details>
+<details><summary>집에 돌아갈 때 택시 호출은 외곽에서</summary><p>여의도 중심부에서 호출하지 말고 주차지 근처 또는 행사권 밖으로 빠진 뒤 호출하는 편이 수월합니다.</p></details>
+<details><summary>미세먼지 대비</summary><p>불꽃 사용 후 미세먼지가 일시 상승할 수 있어 민감한 사람은 KF80 이상 마스크를 준비하는 게 좋습니다.</p></details>
+</div>
+</section>
+<section class="section" id="hoegi">
+<div class="card">
+<h2>회기 친구집 무료주차 플랜</h2>
+<div class="sub">친구 집 위치를 <b>회기역 파전골목·휘경동 인접권</b>으로 잡은 시나리오입니다. 확실한 무료주차가 가능하다면 이번 4인 일정에서는 꽤 좋은 선택입니다.</div>
+<div class="grid3" style="margin-top:12px">
+<div class="metric"><b>무료</b><small>주차비·만차 걱정 없음</small></div>
+<div class="metric"><b>1회</b><small>추천 환승 횟수</small></div>
+<div class="metric"><b>8.5/10</b><small>종합 추천점수</small></div>
+</div>
+<div class="callout"><b>내 추천: 회기 주차 플랜을 1순위로 올려도 됨</b><p>영등포·신길보다 행사장에서는 멀지만, ‘확실하게 세울 수 있는 친구 집’이라는 장점이 큽니다. 행사 종료 후 주차장 출차 정체를 피할 수 있고 4명이 처음부터 끝까지 같이 움직이기 편합니다.</p></div>
+</div>
+<div class="card">
+<h3>위치 기준</h3>
+<div id="hoegiMap" class="map"></div>
+<div class="map-note">친구 집의 정확한 주소가 아니라 회기 파전골목(휘경동 334-9 부근)을 기준점으로 표시했습니다.</div>
+</div>
+<div class="card">
+<h3>추천 이동 루트</h3>
+<div class="timeline">
+<div class="event"><div class="time">아침</div><div><b>마석 → 회기 파전골목 친구집</b><p>친구 집에 차를 세우고 4명 합류. 축제용 짐만 들고 회기역으로 이동.</p></div></div>
+<div class="event"><div class="time">이동</div><div><b>회기역 → 노량진역 → 여의도역</b><p><b>1호선 회기 → 노량진</b> 이동 후 <b>9호선으로 환승 → 여의도</b>. 환승 1회라 4명이 같이 움직이기 편한 편입니다. 실제 열차 대기까지 포함하면 대략 40분 안팎을 여유 있게 잡는 걸 권장합니다.</p></div></div>
+<div class="event"><div class="time">08:00</div><div><b>여의도 한강공원 돗자리</b><p>여의도역에서 강변까지 추가 도보시간을 고려해 회기에서는 07시 전후 출발하는 쪽이 안전합니다.</p></div></div>
+<div class="event"><div class="time">21:40+</div><div><b>여의도역 또는 샛강역으로 분산</b><p>여의나루역은 19:00~22:00 혼잡 시 무정차·출입구 폐쇄 가능성이 있어 제외. 1순위는 여의도역입니다.</p></div></div>
+<div class="event"><div class="time">귀가</div><div><b>여의도역 → 노량진 → 회기역 → 친구집 → 마석</b><p>회기에서 다시 자차로 마석까지 이동. 늦어지지만 차량 출차 지옥을 피한다는 장점이 큽니다.</p></div></div>
+</div>
+</div>
+<div class="card">
+<h3>회기 vs 영등포·신길 주차 비교</h3>
+<table class="table">
+<tr><th>항목</th><th>회기 친구집</th><th>영등포·신길 공영</th></tr>
+<tr><td><b>주차 확실성</b></td><td>★★★★★</td><td>★★★☆☆</td></tr>
+<tr><td><b>주차비</b></td><td>무료</td><td>유료</td></tr>
+<tr><td><b>행사장 접근</b></td><td>★★★☆☆</td><td>★★★★★</td></tr>
+<tr><td><b>종료 후 차량 탈출</b></td><td>★★★★★</td><td>★★★☆☆</td></tr>
+<tr><td><b>4명 합류 편의</b></td><td>★★★★★</td><td>★★★☆☆</td></tr>
+<tr><td><b>귀가 피로</b></td><td>★★★☆☆</td><td>★★★★☆</td></tr>
+<tr><td><b>만차 스트레스</b></td><td>거의 없음</td><td>높음</td></tr>
+<tr><td><b>종합</b></td><td><span class="badge">8.5/10 추천</span></td><td>8/10</td></tr>
+</table>
+</div>
+<div class="card">
+<h3>회기 플랜의 단점도 있음</h3>
+<details open><summary>밤에 회기까지 다시 올라가야 한다</summary><p>불꽃이 끝난 뒤 지하철을 타고 서울 동북권까지 이동한 다음 다시 차를 타고 마석으로 가야 합니다. 가장 큰 단점은 ‘시간’보다 피로도입니다.</p></details>
+<details><summary>그래도 주차 리스크가 거의 사라진다</summary><p>행사날 공영주차장 만차·사전예약 실패·출차 정체를 모두 피할 수 있다는 게 매우 큽니다. 특히 네 명이 같은 목적지로 돌아간다면 장점이 더 커집니다.</p></details>
+<details><summary>술 마실 계획이면 회기 플랜과 궁합이 나쁨</summary><p>회기로 돌아온 뒤 직접 운전해서 마석으로 가야 하므로 운전자 음주는 당연히 제외해야 합니다. 술을 마실 계획이면 차를 회기에 두고 다음날 찾는 별도 계획이 필요합니다.</p></details>
+</div>
+<div class="card">
+<h3>내 최종 우선순위</h3>
+<div class="rank"><div class="num">1</div><div><b>회기 친구집 무료주차</b><p class="sub">주차가 확실히 보장된다면 최우선. 4명 합류까지 해결.</p></div></div>
+<div class="rank"><div class="num">2</div><div><b>영등포본동 제1공영</b><p class="sub">행사장 접근은 더 편하지만 조기 만차 리스크 존재.</p></div></div>
+<div class="rank"><div class="num">3</div><div><b>신길·노량진</b><p class="sub">회기 사용이 어려워졌을 때 행사 당일 플랜 B.</p></div></div>
+</div>
+</section>
+<section class="section" id="field">
+<div class="card">
+<h2>현장모드</h2>
+<div class="sub">행사 당일에는 정보 전체를 뒤지는 대신 이 화면만 보면 되도록 핵심 기능을 모았습니다.</div>
+<div class="grid2" style="margin-top:12px">
+<div class="metric"><b id="fieldClock">--:--</b><small>현재시간</small></div>
+<div class="metric"><b id="countdown">D-3</b><small>불꽃 20:00까지</small></div>
+</div>
+<div class="btnrow">
+<button class="linkbtn" onclick="saveMySpot()">현재 위치를 돗자리로 저장</button>
+<button class="linkbtn light" onclick="showSavedSpot()">저장한 자리 보기</button>
+</div>
+<div class="mini" id="spotSaveStatus" style="margin-top:10px">GPS를 허용하면 돗자리 좌표를 이 휴대폰에 저장합니다.</div>
+</div>
+<div class="card">
+<h3>🚨 SOS · 꼭 기억</h3>
+<div class="grid2">
+<div class="metric"><b>119</b><small>응급·구급</small></div>
+<div class="metric"><b>120</b><small>서울시 다산콜</small></div>
+</div>
+<p class="sub">2026 행사장에는 운영상황실 겸 응급의료소 <b>6곳</b>, 종합안내소 <b>2곳</b>이 운영됩니다. 화장실 위치 안내, 응급의료, 미아 찾기, 분실물 접수를 지원합니다.</p>
+<div class="callout"><b>통신이 느리면</b><p>오렌지플레이 긴급구조 기능 → 일반전화/SMS → 커플별 무전기 → 사전에 정한 고정 재집결 지점 순으로 대응.</p></div>
+</div>
+<div class="card">
+<h3>🚻 편의시설</h3>
+<p class="sub">여의도·이촌에 임시화장실 94동이 추가됩니다. 물빛무대 앞은 공식 푸드트럭존. 사람이 몰리기 전 <b>16:30~17:30 화장실 1차 이용</b>을 추천합니다.</p>
+<div class="btnrow">
+<a class="linkbtn" target="_blank" href="https://hangang.seoul.go.kr/www/contents/669.do?mid=473">한강공원 시설안내</a>
+<a class="linkbtn light" target="_blank" href="https://topis.seoul.go.kr/">TOPIS 교통</a>
+</div>
+</div>
+<div class="card">
+<h3>📸 아이폰 불꽃 촬영 체크</h3>
+<div class="checklist">
+<label><input type="checkbox"><span><b>렌즈 닦기</b><small>불꽃 번짐 차이가 큼.</small></span></label>
+<label><input type="checkbox"><span><b>플래시 OFF</b><small>멀리 있는 불꽃에는 효과 없음.</small></span></label>
+<label><input type="checkbox"><span><b>1배부터 시작</b><small>0.5배는 주변 사람과 난간이 많이 들어올 수 있음.</small></span></label>
+<label><input type="checkbox"><span><b>영상 4K 30fps</b><small>긴 영상 하나보다 10~20초 클립 여러 개 추천.</small></span></label>
+<label><input type="checkbox"><span><b>노출 살짝 낮추기</b><small>불꽃 중심부 하얗게 날아가는 현상 감소.</small></span></label>
+</div>
+</div>
+<div class="card">
+<h3>🧹 철수 체크</h3>
+<div class="pillrow">
+<span class="pill">돗자리</span><span class="pill">방석 4</span><span class="pill">무전기 2</span>
+<span class="pill">보조배터리</span><span class="pill">휴대폰</span><span class="pill">쓰레기</span><span class="pill">겉옷</span>
+</div>
+<p class="sub">21:10 종료 직후 역으로 뛰지 말고 짐·쓰레기부터 정리한 뒤 21:40 전후 분산 귀가.</p>
+</div>
+</section>
+<section class="section" id="food">
+<div class="card">
+<h2>푸드트럭 · 먹거리</h2>
+<div class="sub">2026 공식 푸드트럭존은 <b>여의도 물빛무대 앞 광장</b>에서 13:00~22:00 운영됩니다. 본행사일 9월 5일에는 약 <b>27대</b> 규모로 모집·선정됐습니다.</div>
+<div class="callout warn"><b>중요: 2026 개별 메뉴판은 아직 공개 웹자료에서 확인되지 않음</b><p>서울시는 선정 결과까지 공고했지만, 현재 검색 가능한 공식 페이지에는 27개 트럭의 상호·최종 메뉴·가격표가 텍스트로 공개되어 있지 않습니다. 확인되지 않은 메뉴를 2026 확정 메뉴처럼 표시하지 않았습니다.</p></div>
+</div>
+<div class="card">
+<h3>공식적으로 확인된 운영 기준</h3>
+<table class="table">
+<tr><th>항목</th><th>2026 확인 내용</th></tr>
+<tr><td>운영시간</td><td>13:00~22:00</td></tr>
+<tr><td>본행사 규모</td><td>약 27대</td></tr>
+<tr><td>위치</td><td>여의도 물빛무대 앞 광장</td></tr>
+<tr><td>조리</td><td>트럭 내 직접 조리·판매, 단순 레토르트 가열식품 제외</td></tr>
+<tr><td>가격</td><td>사전 심사 + 현장 가격·중량·원산지 표시 의무</td></tr>
+<tr><td>결제</td><td>카드결제 원칙</td></tr>
+<tr><td>주류</td><td>공식 모집 기준 푸드트럭 주류 판매 불가</td></tr>
+</table>
+</div>
+<div class="card">
+<h3>나올 가능성이 높은 메뉴군</h3>
+<div class="sub">아래는 <b>2026 확정 메뉴가 아니라</b> 서울시 푸드트럭 Pool 분류와 과거 불꽃축제 판매 사례를 합친 참고 목록입니다.</div>
+<div class="grid2" style="margin-top:12px">
+<div class="metric"><b>🍗 한식</b><small>닭강정 · 닭꼬치 · 떡갈비 · 육전 · 삼겹살류</small></div>
+<div class="metric"><b>🍔 양식</b><small>스테이크 · 스테이크덮밥 · 햄버거 · 타코 · 새우</small></div>
+<div class="metric"><b>🍢 분식</b><small>떡볶이 · 순대 · 어묵 · 튀김 · 만두 · 우동</small></div>
+<div class="metric"><b>🥟 중식</b><small>탕수육 · 멘보샤 · 양꼬치류</small></div>
+<div class="metric"><b>🐙 일식</b><small>타코야끼 · 야끼소바 · 직화초밥류</small></div>
+<div class="metric"><b>🍟 간식</b><small>소떡소떡 · 핫도그 · 츄러스 · 감자튀김 · 회오리감자</small></div>
+<div class="metric"><b>🥤 음료</b><small>커피 · 에이드 · 생과일주스 · 쉐이크류</small></div>
+<div class="metric"><b>🔥 과거 인기</b><small>닭강정 · 큐브스테이크 · 감자튀김 · 츄러스 · 버터구이 오징어</small></div>
+</div>
+</div>
+<div class="card">
+<h3>4명 먹거리 전략</h3>
+<div class="rank"><div class="num">1</div><div><b>점심은 여의도 실내에서</b><p class="su
