@@ -100,7 +100,7 @@ function safeJson(raw,fallback){
 }
 
 const state={
- view:"all", chip:"전체", query:"", sort:"date", showSelectedOnly:false,
+ view:"all", chip:"전체", dateChip:"전체 일정", query:"", sort:"date", showSelectedOnly:false,
  favorites:new Set(safeJson(SafeStore.get("festivalFavs","[]"),[])),
  selectedFestivals:new Set(safeJson(SafeStore.get("festivalSelected","[]"),[])),
  expandedCards:new Set(),
@@ -296,9 +296,17 @@ function renderMonths(){
 
 function renderChips(){
   const list=filters[state.view]||["전체"];
-  qs("#chips").innerHTML=list.map(c=>`<button class="chip ${state.chip===c?"on":""}" onclick="setChip('${c}')">${c}</button>`).join("");
+  if(state.view==="type"){
+    const dates=["전체 일정","진행중","이번 주말","8월","9월","10월","11월","12월"];
+    qs("#chips").innerHTML=`
+      <div class="filter-track"><span class="filter-label">유형</span>${list.map(c=>`<button class="chip ${state.chip===c?"on":""}" onclick="setChip('${c}')">${c}</button>`).join("")}</div>
+      <div class="filter-track"><span class="filter-label">날짜</span>${dates.map(c=>`<button class="chip ${state.dateChip===c?"on":""}" onclick="setDateChip('${c}')">${c}</button>`).join("")}</div>`;
+    return;
+  }
+  qs("#chips").innerHTML=`<div class="filter-track">${list.map(c=>`<button class="chip ${state.chip===c?"on":""}" onclick="setChip('${c}')">${c}</button>`).join("")}</div>`;
 }
 window.setChip=c=>{state.chip=c;renderListAndMap();};
+window.setDateChip=c=>{state.dateChip=c;renderListAndMap();};
 
 function filtered(){
   let arr=[...festivals], c=state.chip, t=today(), [sat,sun]=weekendRange();
@@ -308,7 +316,12 @@ function filtered(){
   if(state.view==="favorites")arr=arr.filter(f=>state.favorites.has(f.id));
   if(state.view==="schedule"&&c!=="전체")arr=arr.filter(f=>f.month===Number(c.replace("월","")));
   if(state.view==="region"&&c!=="전체")arr=arr.filter(f=>f.region===c);
-  if(state.view==="type"&&c!=="전체")arr=arr.filter(f=>f.type===c);
+  if(state.view==="type"){
+    if(c!=="전체")arr=arr.filter(f=>f.type===c);
+    if(state.dateChip==="진행중")arr=arr.filter(f=>parseDate(f.start)<=t&&parseDate(f.end)>=t);
+    else if(state.dateChip==="이번 주말")arr=arr.filter(f=>overlaps(f,sat,sun));
+    else if(state.dateChip!=="전체 일정")arr=arr.filter(f=>f.month===Number(state.dateChip.replace("월","")));
+  }
   if(state.view==="all"){
     if(c==="이번 주말")arr=arr.filter(f=>overlaps(f,sat,sun));
     if(c==="진행중")arr=arr.filter(f=>parseDate(f.start)<=t&&parseDate(f.end)>=t);
