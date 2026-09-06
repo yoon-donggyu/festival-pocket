@@ -671,11 +671,16 @@ function card(f){
 
 
 window.toggleCard=id=>{
-  state.expandedCards.has(id)?state.expandedCards.delete(id):state.expandedCards.add(id);
+  const shouldOpen=!state.expandedCards.has(id);
+  state.expandedCards.clear();
+  qsa(".card.open").forEach(card=>card.classList.remove("open"));
+  if(!shouldOpen)return;
+
+  state.expandedCards.add(id);
   const el=qs(`#festival-${id}`);
   if(el){
-    el.classList.toggle("open",state.expandedCards.has(id));
-    if(state.expandedCards.has(id)) loadWeather(festivals.find(f=>f.id===id));
+    el.classList.add("open");
+    loadWeather(festivals.find(f=>f.id===id));
   }
 };
 function collapseAll(){

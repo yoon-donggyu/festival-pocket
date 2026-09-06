@@ -60,7 +60,7 @@
     document.body.appendChild(s);
   }
 
-  loadScript('app-core.js?v=20260825-perf2',function(){
+  loadScript('app-core.js?v=20260906-list1',function(){
     try{
       window.setupWeatherObserver=function(){};
       window.loadWeather=function(f){
@@ -101,7 +101,7 @@
       loadScript('festival-extra.js?v=20260825-perf2',function(){
         loadScript('monthly-update-202609.js?v=20260901',function(){
           loadScript('enhancements.js?v=20260825-perf2',function(){
-            loadScript('tab-layout.js?v=20260906-tabs1');
+            loadScript('tab-layout.js?v=20260906-tabs2');
           });
         });
       });

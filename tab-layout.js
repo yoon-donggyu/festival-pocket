@@ -4,8 +4,8 @@
   'use strict';
   const $=s=>document.querySelector(s);
   const allSections=['#top','#heroRec','#weekend','#preferences','#calendar','#mapSection','#favorites','main.wrap > .section:last-child'];
-  const titles={home:['Festival Pocket','오늘 갈 축제를 빠르게 골라보세요'],map:['축제 지도','위치와 거리를 보며 축제를 선택하세요'],festivals:['전체 축제','검색과 필터로 원하는 축제를 찾아보세요'],calendar:['축제 일정','월별로 예정된 축제를 확인하세요'],favorites:['찜한 축제','저장한 축제만 모아봅니다']};
-  let active='home';
+  const titles={all:['전체 축제','모든 축제를 한눈에 확인하세요'],schedule:['축제 일정','월별로 예정된 축제만 확인하세요'],map:['축제 지도','지도에서 축제 위치만 확인하세요'],type:['유형별 축제','유형을 골라 해당 축제만 확인하세요'],favorites:['찜한 축제','저장한 축제만 모아봅니다']};
+  let active='all';
 
   const pageHeader=document.createElement('header');
   pageHeader.id='tabPageHeader';pageHeader.className='tab-page-header fp-tab-hidden';
@@ -14,10 +14,10 @@
 
   const nav=$('.bottom-nav');
   if(nav)nav.innerHTML=`
-    <button type="button" data-tab="home"><span class="ico">⌂</span>홈</button>
+    <button type="button" data-tab="all"><span class="ico">⌂</span>전체</button>
+    <button type="button" data-tab="schedule"><span class="ico">◷</span>일정</button>
     <button type="button" data-tab="map"><span class="ico">⌖</span>지도</button>
-    <button type="button" data-tab="festivals"><span class="ico">▦</span>축제</button>
-    <button type="button" data-tab="calendar"><span class="ico">◷</span>일정</button>
+    <button type="button" data-tab="type"><span class="ico">◇</span>유형</button>
     <button type="button" data-tab="favorites"><span class="ico">♡</span>찜</button>`;
 
   function syncNav(){nav?.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('on',b.dataset.tab===active))}
@@ -31,14 +31,14 @@
     if(typeof renderListAndMap==='function')renderListAndMap();
   }
   function setTab(tab,{scroll=true}={}){
-    active=titles[tab]?tab:'home';hideAll();
-    pageHeader.classList.toggle('fp-tab-hidden',active==='home');
-    if(active==='home'){['#top','#heroRec','#weekend','#preferences'].forEach(show)}
+    active=titles[tab]?tab:'all';hideAll();
+    pageHeader.classList.remove('fp-tab-hidden');
+    if(active==='all'){show('.sticky');show('#favorites');show('main.wrap > .section:last-child');setListView('all')}
+    if(active==='schedule')show('#calendar');
     if(active==='map'){show('#mapSection');setTimeout(()=>window.resizeFestivalMap?.(),80)}
-    if(active==='calendar')show('#calendar');
-    if(active==='festivals'){show('.sticky');show('#favorites');show('main.wrap > .section:last-child');setListView('all')}
+    if(active==='type'){show('.sticky');show('#favorites');show('main.wrap > .section:last-child');setListView('type')}
     if(active==='favorites'){show('.sticky');show('#favorites');show('main.wrap > .section:last-child');setListView('favorites')}
-    if(active!=='home'){pageHeader.querySelector('h1').textContent=titles[active][0];pageHeader.querySelector('p').textContent=titles[active][1]}
+    pageHeader.querySelector('h1').textContent=titles[active][0];pageHeader.querySelector('p').textContent=titles[active][1];
     syncNav();
     document.body.dataset.appTab=active;
     try{sessionStorage.setItem('festivalPocketTab',active)}catch{}
@@ -49,9 +49,9 @@
 
   document.querySelectorAll('[data-jump="mapSection"]').forEach(b=>b.onclick=()=>setTab('map'));
   document.querySelectorAll('[data-jump="favorites"]').forEach(b=>b.onclick=()=>setTab('favorites'));
-  document.querySelectorAll('[data-jump="weekend"],[data-jump="preferences"]').forEach(b=>{const target=b.dataset.jump;b.onclick=()=>{setTab('home',{scroll:false});setTimeout(()=>document.getElementById(target)?.scrollIntoView({behavior:'smooth',block:'start'}),0)}});
+  document.querySelectorAll('[data-jump="weekend"],[data-jump="preferences"]').forEach(b=>b.onclick=()=>setTab('all'));
 
   const oldFocus=window.focusFestival;
-  if(typeof oldFocus==='function')window.focusFestival=id=>{setTab('festivals');setTimeout(()=>oldFocus(id),20)};
-  setTab('home',{scroll:false});
+  if(typeof oldFocus==='function')window.focusFestival=id=>{setTab('all');setTimeout(()=>oldFocus(id),20)};
+  setTab('all',{scroll:false});
 })();
