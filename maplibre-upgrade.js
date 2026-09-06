@@ -58,6 +58,7 @@
     if(selectedId&&!arr.some(f=>f.id===selectedId))sheet.classList.remove('open');
   };
   window.setMapZoom=z=>{if(map)map.easeTo({zoom:Math.max(5,Math.min(18,map.getZoom()+(Number(z)>1?1:-1)))})};
+  window.resizeFestivalMap=()=>map?.resize();
   const mapNav=document.querySelector('.bottom-nav [data-bview="region"]');
   if(mapNav)mapNav.onclick=()=>{document.getElementById('mapSection')?.scrollIntoView({behavior:'smooth',block:'start'});setTimeout(()=>map?.resize(),350)};
   init();

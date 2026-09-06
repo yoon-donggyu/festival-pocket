@@ -100,7 +100,9 @@
       loadScript('maplibre-upgrade.js?v=20260906-map1',function(){
       loadScript('festival-extra.js?v=20260825-perf2',function(){
         loadScript('monthly-update-202609.js?v=20260901',function(){
-          loadScript('enhancements.js?v=20260825-perf2');
+          loadScript('enhancements.js?v=20260825-perf2',function(){
+            loadScript('tab-layout.js?v=20260906-tabs1');
+          });
         });
       });
       });
