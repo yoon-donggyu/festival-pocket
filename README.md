@@ -34,3 +34,15 @@
 ## 수정할 때
 축제 화면 수정은 GitHub의 `index.html`, `styles.css`, `app.js`만 업데이트하면 됩니다.
 Apps Script는 날씨 API가 바뀌지 않는 한 건드릴 필요 없습니다.
+
+## 지도·확장 구조
+- 축제 위치는 `MapLibre GL JS`의 GeoJSON source와 WebGL Circle/Symbol Layer로 표시합니다.
+- 가까운 축제는 자동 클러스터링하고 선택 정보는 모바일 Bottom Sheet로 표시합니다.
+- 현재 18건은 전체 GeoJSON이 가장 단순하고 빠르므로 Vector Tile을 사용하지 않습니다.
+- 수천 건 이상으로 증가하면 `maplibre-upgrade.js`의 source만 MVT/PMTiles 또는 bbox API로 교체합니다.
+- 축제 탐색에는 건물 3D가 판단에 도움이 되지 않아 3D 렌더링은 사용하지 않습니다.
+
+## 버전 복구
+- 운영 변경 전 날짜별 `backup/` 브랜치를 만듭니다.
+- 기능 개발은 `feature/` 브랜치에서 커밋 단위로 저장합니다.
+- 문제가 생기면 운영 브랜치를 해당 백업 커밋으로 되돌립니다.
