@@ -60,7 +60,7 @@
     document.body.appendChild(s);
   }
 
-  loadScript('app-core.js?v=20260906-list1',function(){
+  loadScript('app-core.js?v=20260906-filter1',function(){
     try{
       window.setupWeatherObserver=function(){};
       window.loadWeather=function(f){

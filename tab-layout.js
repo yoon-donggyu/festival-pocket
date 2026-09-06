@@ -27,7 +27,7 @@
   function hideAll(){allSections.forEach(s=>$(s)?.classList.add('fp-tab-hidden'));$('.sticky')?.classList.add('fp-tab-hidden')}
   function show(selector){$(selector)?.classList.remove('fp-tab-hidden')}
   function setListView(view){
-    if(typeof state!=='undefined'){state.view=view;state.chip='전체'}
+    if(typeof state!=='undefined'){state.view=view;state.chip='전체';state.dateChip='전체 일정'}
     if(typeof renderListAndMap==='function')renderListAndMap();
   }
   function setTab(tab,{scroll=true}={}){
