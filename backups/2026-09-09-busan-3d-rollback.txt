@@ -1,0 +1,8 @@
+Festival Pocket 부산불꽃축제 3D 시야 Viewer 적용 전 롤백 기준
+
+적용 전 파일: app.js
+적용 전 blob SHA: 3510765fdd5d1c865ca9f5878cecc3ce764d8b0e
+기준 브랜치: main
+기준일: 2026-09-09
+
+문제 발생 시 GitHub 파일 이력에서 위 SHA 기준의 app.js 내용으로 복원하면 됩니다.
