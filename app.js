@@ -14,6 +14,7 @@
     .seg button{background:transparent !important;color:#6f6f74 !important;}
     .seg button.on,.chip.on,.choice.on,.pill.primary,.pill.blue,.rec-actions button.main,.card-actions .tmap,.quick-actions .primary,.list-tools button.active,.sheet-actions .apply,.bottom-nav button.on{background:#111 !important;color:#fff !important;}
     .chip,.choice,.badge,.score-box,.parking,.card-actions button,.card-actions a,.more-actions button,.card-toggle,.quick-actions button,.list-tools button,.sheet-head button,.sheet-actions button,.sheet-search input,.kma-badge,.hour-cell,.event-day-box,.weather-warning{background:#f3f3f1 !important;color:#555 !important;border-color:rgba(17,17,17,.06) !important;}
+    .card-actions a.busan-3d-btn{background:#111 !important;color:#fff !important;border-color:#111 !important;font-weight:850 !important;}
     .metric,.weather-stat{background:#fff !important;color:#121212 !important;}
     .cover{background:#f1f1ef !important;color:#111 !important;border-color:rgba(17,17,17,.06) !important;}
     .cover h3,.cover .line-icon,.line-icon{color:#151515 !important;}
@@ -60,6 +61,27 @@
     document.body.appendChild(s);
   }
 
+  function installBusan3DEntry(){
+    const decorate=function(){
+      const card=document.getElementById('festival-14');
+      if(!card)return;
+      const actions=card.querySelector('.card-actions');
+      if(!actions||actions.querySelector('.busan-3d-btn'))return;
+      const a=document.createElement('a');
+      a.className='busan-3d-btn';
+      a.href='busan-fireworks-3d.html?spot=pknu-rooftop';
+      a.textContent='3D 시야 보기';
+      a.setAttribute('aria-label','부산불꽃축제 3D 시야 보기');
+      actions.insertBefore(a,actions.firstChild);
+    };
+    decorate();
+    const target=document.getElementById('festivalList')||document.querySelector('main')||document.body;
+    if(!target)return;
+    const observer=new MutationObserver(decorate);
+    observer.observe(target,{childList:true,subtree:true});
+    window.__festivalPocketBusan3DObserver=observer;
+  }
+
   loadScript('app-core.js?v=20260906-filter1',function(){
     try{
       window.setupWeatherObserver=function(){};
@@ -94,6 +116,7 @@
         el.className='weather-summary';
         el.innerHTML='<span class="weather-dot"></span><span>날씨는 「날씨 새로고침」으로 확인</span>';
       });
+      installBusan3DEntry();
     }catch(e){console.warn('manual weather mode setup failed',e);}
 
     loadScript('performance.js?v=20260825-perf2',function(){
