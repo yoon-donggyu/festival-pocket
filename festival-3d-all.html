@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<meta name="theme-color" content="#0b0d12">
+<title>Festival Pocket · 전체 3D 지도</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.7.1/dist/maplibre-gl.css">
+<script src="https://unpkg.com/maplibre-gl@5.7.1/dist/maplibre-gl.js"></script>
+<style>
+*{box-sizing:border-box}html,body,#map{width:100%;height:100%;margin:0}body{overflow:hidden;background:#0b0d12;font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR",sans-serif;color:#fff}#map{position:fixed;inset:0 0 64px}.top{position:fixed;z-index:10;top:max(10px,env(safe-area-inset-top));left:10px;right:10px;display:flex;align-items:center;gap:8px;padding:8px;background:rgba(12,14,20,.88);border:1px solid rgba(255,255,255,.12);border-radius:16px;backdrop-filter:blur(12px)}.back,.icon{width:40px;height:40px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.07);color:#fff;text-decoration:none;display:grid;place-items:center;font-size:18px}.title{min-width:0;flex:1}.title b,.title span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.title b{font-size:15px}.title span{margin-top:2px;font-size:11px;color:#aab1bc}.filters{position:fixed;z-index:9;top:calc(max(10px,env(safe-area-inset-top)) + 66px);left:10px;right:10px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{height:34px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(12,14,20,.82);color:#ddd;white-space:nowrap;font-weight:700}.filter.on{background:#fff;color:#111;border-color:#fff}.legend{position:fixed;z-index:8;left:10px;bottom:calc(76px + env(safe-area-inset-bottom));padding:7px 10px;border-radius:12px;background:rgba(12,14,20,.8);border:1px solid rgba(255,255,255,.1);font-size:11px;color:#c7ccd4;pointer-events:none}.legend b{color:#ffd15c}.bottom-nav{position:fixed;z-index:20;left:8px;right:8px;bottom:max(6px,env(safe-area-inset-bottom));height:58px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;padding:4px;background:rgba(255,255,255,.95);border-radius:18px;box-shadow:0 10px 35px rgba(0,0,0,.28)}.bottom-nav a{min-width:0;border-radius:13px;color:#8e8e93;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:9px;font-weight:750;gap:1px;white-space:nowrap}.bottom-nav a .ico{font-size:16px;line-height:17px}.bottom-nav a.on{background:#111;color:#fff}.maplibregl-popup-content{background:#171a20;color:#fff;border-radius:15px;padding:12px;box-shadow:0 15px 40px rgba(0,0,0,.35);min-width:230px}.maplibregl-popup-tip{border-top-color:#171a20!important;border-bottom-color:#171a20!important}.pop-name{font-size:14px;font-weight:850;margin-bottom:4px}.pop-meta{font-size:11px;color:#b9bec7;line-height:1.5}.pop-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}.pop-actions button,.pop-actions a{height:36px;border:0;border-radius:10px;font:inherit;font-size:11px;font-weight:800;text-decoration:none;display:flex;align-items:center;justify-content:center}.pop-actions button{background:#fff;color:#111}.pop-actions a{background:#2a2e36;color:#fff}.maplibregl-ctrl-top-right{top:116px}.maplibregl-ctrl-bottom-left,.maplibregl-ctrl-bottom-right{display:none}@media(min-width:800px){#map{inset:0}.top{right:auto;width:500px}.filters{right:auto;width:620px}.bottom-nav{left:50%;right:auto;width:520px;transform:translateX(-50%)}}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<header class="top"><a class="back" href="./?tab=map" aria-label="앱으로 돌아가기">←</a><div class="title"><b>전체 3D 지도</b><span id="summary">전국 축제 18곳 · 별을 눌러 지역 3D 보기</span></div><button class="icon" id="home" aria-label="전국 보기">⌂</button></header>
+<div class="filters" id="filters"></div>
+<div class="legend"><b>★</b> 축제 위치 · 확대하면 3D 건물 자동 표시</div>
+<nav class="bottom-nav" aria-label="Festival Pocket 메뉴">
+<a href="./?tab=all"><span class="ico">⌂</span>전체</a><a href="./?tab=schedule"><span class="ico">◷</span>일정</a><a href="./?tab=map"><span class="ico">⌖</span>지도</a><a class="on" href="festival-3d-all.html"><span class="ico">★</span>전체3D</a><a href="./?tab=type"><span class="ico">◇</span>유형</a><a href="./?tab=favorites"><span class="ico">♡</span>찜</a>
+</nav>
+<script>
+(()=>{
+'use strict';
+const festivals=[
+{id:1,name:'2026 송도맥주축제',dateText:'8.22(토) – 8.30(일)',region:'인천',district:'연수구',place:'송도달빛축제공원',lat:37.4074,lng:126.6339,type:'맥주',rating:4.9,crowd:'매우 혼잡',fee:'일반·유료존 혼합',tags:['공연','맥주','불꽃','먹거리','야간']},
+{id:2,name:'2026 동대문구 맥주축제',dateText:'8.28(금) – 8.29(토) · 17:00–22:00',region:'서울',district:'동대문구',place:'장안1 수변공원',lat:37.5678,lng:127.0732,type:'맥주',rating:4.3,crowd:'혼잡',fee:'무료 입장',tags:['맥주','푸드트럭','DJ','데이트']},
+{id:3,name:'제3회 서울조각페스티벌',dateText:'메인 8.29 – 9.4 · 전시 일부 11.30까지',region:'서울',district:'종로·광진',place:'열린송현녹지광장·뚝섬한강공원',lat:37.5761,lng:126.9821,type:'전시·예술',rating:4.0,crowd:'보통',fee:'무료',tags:['조각','전시','산책','무료']},
+{id:4,name:'2026 서울아트위크',dateText:'8.31 – 9.6 (예정)',region:'서울',district:'서울 전역',place:'미술관·갤러리·문화공간 일대',lat:37.5117,lng:127.0592,type:'전시·예술',rating:4.1,crowd:'보통',fee:'공간별 상이',tags:['미술','전시','갤러리','실내']},
+{id:5,name:'한화 서울세계불꽃축제 2026',dateText:'9.5(토)',region:'서울',district:'영등포구',place:'여의도한강공원',lat:37.5285,lng:126.9330,type:'불꽃',rating:5.0,crowd:'극심',fee:'일반 관람 무료 · 유료존 별도',tags:['불꽃','한강','야간','대형행사']},
+{id:6,name:'서울 어텀 페스타',dateText:'9.19 – 11.9',region:'서울',district:'서울 전역',place:'서울 주요 문화공간·도심',lat:37.5664,lng:126.9780,type:'도심종합',rating:4.2,crowd:'보통',fee:'프로그램별 상이',tags:['공연','문화','도심','가을']},
+{id:7,name:'한성백제문화제',dateText:'9.26 – 9.28',region:'서울',district:'송파구',place:'올림픽공원 일대',lat:37.5209,lng:127.1215,type:'역사·전통',rating:4.2,crowd:'혼잡',fee:'대부분 무료',tags:['백제','체험','공연','가족']},
+{id:8,name:'강남페스티벌',dateText:'10.2 – 10.5 (예정)',region:'서울',district:'강남구',place:'영동대로·코엑스 일대',lat:37.5119,lng:127.0604,type:'도심종합',rating:4.4,crowd:'매우 혼잡',fee:'프로그램별 상이',tags:['KPOP','공연','도심','먹거리']},
+{id:9,name:'2026 진주남강유등축제',dateText:'10.3(토) – 10.18(일)',region:'경남',district:'진주시',place:'진주성·진주 남강 일원',lat:35.1897,lng:128.0804,type:'빛·야간',rating:4.9,crowd:'매우 혼잡',fee:'일부 체험 유료',tags:['유등','야경','사진','1박추천']},
+{id:10,name:'정조대왕 능행차',dateText:'10.4(일) (예정)',region:'서울',district:'도심·남부권',place:'서울 도심~수원 방면 일부 구간',lat:37.5658,lng:126.9790,type:'역사·전통',rating:4.3,crowd:'혼잡',fee:'무료 관람 중심',tags:['퍼레이드','역사','사진','전통']},
+{id:11,name:'강동선사문화축제',dateText:'10.16 – 10.18 (예정)',region:'서울',district:'강동구',place:'서울 암사동 유적 일대',lat:37.5609,lng:127.1304,type:'역사·전통',rating:4.2,crowd:'혼잡',fee:'대부분 무료',tags:['선사시대','체험','가족','공연']},
+{id:12,name:'제25회 서울억새축제',dateText:'10.17 – 10.23',region:'서울',district:'마포구',place:'월드컵공원 하늘공원',lat:37.5685,lng:126.8857,type:'자연·경관',rating:4.7,crowd:'매우 혼잡',fee:'무료',tags:['억새','노을','야경','데이트','사진']},
+{id:13,name:'정동야행',dateText:'10.29 – 10.31',region:'서울',district:'중구',place:'정동·덕수궁 돌담길 일대',lat:37.5658,lng:126.9722,type:'빛·야간',rating:4.6,crowd:'혼잡',fee:'대부분 무료',tags:['야행','문화유산','산책','데이트']},
+{id:14,name:'제21회 부산불꽃축제',dateText:'11.7(토)',region:'부산',district:'수영구',place:'광안리해수욕장·이기대·동백섬',lat:35.1532,lng:129.1187,type:'불꽃',rating:5.0,crowd:'극심',fee:'무료 관람 · 유료 지정석 별도',tags:['불꽃','광안대교','야경','1박추천']},
+{id:15,name:'2026 서울윈터페스타',dateText:'12.4 – 2027.1.31',region:'서울',district:'도심',place:'광화문광장 외 6곳',lat:37.5724,lng:126.9769,type:'도심종합',rating:4.7,crowd:'매우 혼잡',fee:'행사별 상이',tags:['겨울','미디어아트','도심','야경']},
+{id:16,name:'2026 서울라이트 광화문',dateText:'12.11 – 2027.1.3 · 17:30–22:00',region:'서울',district:'종로구',place:'광화문광장',lat:37.5728,lng:126.9775,type:'빛·야간',rating:4.7,crowd:'매우 혼잡',fee:'무료 관람 중심',tags:['미디어아트','빛','야경','데이트']},
+{id:17,name:'2026 서울빛초롱축제',dateText:'12월 · 세부일정 미공개',region:'서울',district:'중구',place:'청계천 일대',lat:37.5690,lng:126.9785,type:'빛·야간',rating:4.6,crowd:'매우 혼잡',fee:'무료 관람 중심',tags:['빛','청계천','산책','사진']},
+{id:18,name:'2026 광화문 마켓',dateText:'12월 · 세부일정 미공개',region:'서울',district:'종로구',place:'광화문광장',lat:37.5719,lng:126.9763,type:'크리스마스',rating:4.6,crowd:'매우 혼잡',fee:'무료 입장 · 구매 별도',tags:['크리스마스','마켓','먹거리','데이트']}
+];
+const map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/liberty',center:[127.72,36.3],zoom:6.35,pitch:24,bearing:0,antialias:true});
+map.addControl(new maplibregl.NavigationControl({showCompass:true}),'top-right');map.addControl(new maplibregl.GeolocateControl({positionOptions:{enableHighAccuracy:false},trackUserLocation:false,showAccuracyCircle:false}),'top-right');
+let activeRegion='전체',activeId=null,popup=null;
+const feature=f=>({type:'Feature',properties:{id:f.id,name:f.name,region:f.region,type:f.type},geometry:{type:'Point',coordinates:[f.lng,f.lat]}});
+function filtered(){return activeRegion==='전체'?festivals:festivals.filter(f=>f.region===activeRegion)}
+function setSource(){const src=map.getSource('festivals');if(src)src.setData({type:'FeatureCollection',features:filtered().map(feature)});document.getElementById('summary').textContent=`${activeRegion==='전체'?'전국':activeRegion} 축제 ${filtered().length}곳 · 별을 눌러 지역 3D 보기`}
+function genericUrl(f){if(f.id===14)return'busan-fireworks-3d-share.html';const p=new URLSearchParams({lat:f.lat,lng:f.lng,name:f.name,place:f.place,type:f.type,rating:f.rating,crowd:f.crowd,fee:f.fee,tags:f.tags.join(',')});return'festival-3d.html?'+p.toString()}
+function openFestival(f){activeId=f.id;if(popup)popup.remove();const html=`<div class="pop-name">★ ${f.name}</div><div class="pop-meta">${f.dateText}<br>${f.region} ${f.district} · ${f.place}<br>평점 ${f.rating.toFixed(1)}/5 · ${f.crowd}</div><div class="pop-actions"><button id="fly3d">이 지역 3D</button><a href="${genericUrl(f)}">상세 3D</a></div>`;popup=new maplibregl.Popup({offset:18,closeButton:true,maxWidth:'300px'}).setLngLat([f.lng,f.lat]).setHTML(html).addTo(map);setTimeout(()=>{const b=document.getElementById('fly3d');if(b)b.onclick=()=>map.flyTo({center:[f.lng,f.lat],zoom:15.7,pitch:62,bearing:28,duration:1200})},0)}
+function nationwide(){activeId=null;if(popup){popup.remove();popup=null}map.flyTo({center:[127.72,36.3],zoom:6.35,pitch:24,bearing:0,duration:900})}
+document.getElementById('home').onclick=nationwide;
+const regions=['전체',...new Set(festivals.map(f=>f.region))],filters=document.getElementById('filters');filters.innerHTML=regions.map(r=>`<button class="filter${r==='전체'?' on':''}" data-r="${r}">${r}</button>`).join('');filters.onclick=e=>{const b=e.target.closest('[data-r]');if(!b)return;activeRegion=b.dataset.r;filters.querySelectorAll('.filter').forEach(x=>x.classList.toggle('on',x===b));setSource();if(activeRegion==='전체')nationwide();else{const arr=filtered(),bounds=new maplibregl.LngLatBounds();arr.forEach(f=>bounds.extend([f.lng,f.lat]));map.fitBounds(bounds,{padding:80,maxZoom:11,duration:800})}};
+map.on('load',()=>{map.addSource('festivals',{type:'geojson',data:{type:'FeatureCollection',features:festivals.map(feature)}});map.addLayer({id:'festival-stars',type:'symbol',source:'festivals',layout:{'text-field':'★','text-size':['interpolate',['linear'],['zoom'],5,17,10,21,15,26],'text-allow-overlap':true,'text-ignore-placement':true},paint:{'text-color':'#ffd15c','text-halo-color':'#16191f','text-halo-width':1.6}});try{if(map.getSource('openmaptiles')&&!map.getLayer('fp-all-buildings'))map.addLayer({id:'fp-all-buildings',source:'openmaptiles','source-layer':'building',type:'fill-extrusion',minzoom:14,paint:{'fill-extrusion-color':'#c8c9cc','fill-extrusion-height':['coalesce',['get','render_height'],['get','height'],8],'fill-extrusion-base':['coalesce',['get','render_min_height'],0],'fill-extrusion-opacity':.76}})}catch(e){console.warn('3D buildings unavailable',e)}});
+map.on('click','festival-stars',e=>{const id=Number(e.features?.[0]?.properties?.id),f=festivals.find(x=>x.id===id);if(f)openFestival(f)});map.on('mouseenter','festival-stars',()=>map.getCanvas().style.cursor='pointer');map.on('mouseleave','festival-stars',()=>map.getCanvas().style.cursor='');
+})();
+</script>
+</body>
+</html>
