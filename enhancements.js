@@ -1,4 +1,4 @@
-// Festival Pocket convenience features · optimized 2026-08-25
+// Festival Pocket convenience features · compact action UI
 (function(){
   'use strict';
   const KEY_STATUS='festivalPocket.visitStatus.v1';
@@ -54,14 +54,29 @@
     const s=document.createElement('style');
     s.id='fp-convenience-style';
     s.textContent=`
-      .fp-filter-row{display:flex;gap:7px;overflow:auto;scrollbar-width:none;margin:0 0 12px}.fp-filter-row::-webkit-scrollbar{display:none}
-      .fp-filter-row button{flex:0 0 auto;border:0;border-radius:999px;padding:9px 12px;background:#fff;color:#555;font-size:11px;font-weight:800;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+      .fp-filter-row{display:flex;gap:6px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;margin:0 0 12px;padding-bottom:1px}
+      .fp-filter-row::-webkit-scrollbar,.fp-action-strip::-webkit-scrollbar,.top-actions::-webkit-scrollbar,.choice-row::-webkit-scrollbar,.list-tools::-webkit-scrollbar{display:none}
+      .fp-filter-row button{flex:0 0 auto;min-height:34px;border:0;border-radius:11px;padding:7px 10px;background:#fff;color:#555;font-size:10px;font-weight:800;box-shadow:none;white-space:nowrap}
       .fp-filter-row button.on{background:#111!important;color:#fff!important}
-      .fp-status-row{display:flex;gap:7px;align-items:center;margin-top:8px;flex-wrap:wrap}
-      .fp-status-row button{border:0;border-radius:11px;padding:8px 10px;background:#f3f3f1;color:#555;font-size:10px;font-weight:800}
+
+      .quick-actions.fp-action-strip{display:flex!important;align-items:center;gap:6px!important;overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap!important;scrollbar-width:none;margin-top:9px!important;padding:1px 0 2px;-webkit-overflow-scrolling:touch}
+      .quick-actions.fp-action-strip>button,
+      .quick-actions.fp-action-strip .fp-status-row>button{flex:0 0 auto!important;min-height:34px!important;border-radius:10px!important;padding:7px 9px!important;font-size:10px!important;font-weight:800!important;line-height:1!important;white-space:nowrap!important;box-shadow:none!important}
+      .fp-action-strip .fp-status-row{display:contents}
+      .fp-status-row{display:flex;gap:6px;align-items:center;margin-top:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+      .fp-status-row button{flex:0 0 auto;border:0;border-radius:10px;padding:7px 9px;min-height:34px;background:#f3f3f1;color:#555;font-size:10px;font-weight:800;white-space:nowrap}
       .fp-status-row button.on{background:#111!important;color:#fff!important}
-      .fp-note-preview{width:100%;font-size:10px;color:#777;line-height:1.45;padding:2px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .fp-note-preview{width:100%;font-size:10px;color:#777;line-height:1.45;padding:5px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
       .fp-urgency{display:inline-flex;margin-left:6px;padding:3px 6px;border-radius:999px;background:#111;color:#fff;font-size:9px;font-weight:850;vertical-align:1px}
+
+      .top-actions,.choice-row,.list-tools{flex-wrap:nowrap!important;overflow-x:auto!important;scrollbar-width:none}
+      .top-actions button,.choice-row button,.list-tools button{flex:0 0 auto;white-space:nowrap}
+
+      @media(max-width:430px){
+        .quick-actions.fp-action-strip{gap:5px!important}
+        .quick-actions.fp-action-strip>button,
+        .quick-actions.fp-action-strip .fp-status-row>button{min-height:33px!important;padding:7px 8px!important;font-size:10px!important}
+      }
     `;
     document.head.appendChild(s);
   }
@@ -101,6 +116,7 @@
     write(KEY_STATUS,visitStatus);
     enhanceCards();
   }
+
   function editNote(id){
     const f=typeof festivals!=='undefined'?festivals.find(x=>x.id===id):null;
     const current=notes[id]||'';
@@ -111,6 +127,7 @@
     write(KEY_NOTES,notes);
     enhanceCards();
   }
+
   window.fpSetVisit=setVisit;
   window.fpEditNote=editNote;
 
@@ -134,23 +151,42 @@
           }else if(badge){badge.remove();}
         }
 
+        const quick=el.querySelector('.quick-actions');
+        if(quick)quick.classList.add('fp-action-strip');
+
         let row=el.querySelector('.fp-status-row');
         if(!row){
           row=document.createElement('div');
           row.className='fp-status-row';
-          const quick=el.querySelector('.quick-actions');
-          if(quick)quick.insertAdjacentElement('afterend',row);else el.appendChild(row);
+          if(quick)quick.appendChild(row);else el.appendChild(row);
+        }else if(quick&&row.parentElement!==quick){
+          quick.appendChild(row);
         }
+
+        const embeddedPreview=row.querySelector('.fp-note-preview');
+        if(embeddedPreview)embeddedPreview.remove();
+
         const st=visitStatus[id]||'';
         const note=notes[id]||'';
         const sig=`${st}|${note}`;
-        if(row.dataset.fpSig!==sig){
+        if(row.dataset.fpSig!==sig||row.querySelectorAll('button').length!==3){
           row.dataset.fpSig=sig;
           row.innerHTML=`
             <button class="${st==='plan'?'on':''}" onclick="event.stopPropagation();fpSetVisit(${id},'plan')">갈 예정</button>
             <button class="${st==='done'?'on':''}" onclick="event.stopPropagation();fpSetVisit(${id},'done')">다녀옴</button>
-            <button onclick="event.stopPropagation();fpEditNote(${id})">${note?'메모 수정':'내 메모'}</button>
-            ${note?`<div class="fp-note-preview">${esc(note)}</div>`:''}`;
+            <button onclick="event.stopPropagation();fpEditNote(${id})">${note?'메모 수정':'내 메모'}</button>`;
+        }
+
+        let preview=el.querySelector('.fp-note-preview');
+        if(note){
+          if(!preview){
+            preview=document.createElement('div');
+            preview.className='fp-note-preview';
+            if(quick)quick.insertAdjacentElement('afterend',preview);else row.insertAdjacentElement('afterend',preview);
+          }
+          preview.innerHTML=esc(note);
+        }else if(preview){
+          preview.remove();
         }
       });
       applyFallbackFilter();
