@@ -69,7 +69,7 @@
       if(!actions||actions.querySelector('.busan-3d-btn'))return;
       const a=document.createElement('a');
       a.className='busan-3d-btn';
-      a.href='busan-fireworks-3d.html?spot=pknu-rooftop';
+      a.href='busan-fireworks-3d-share.html';
       a.textContent='3D 시야 보기';
       a.setAttribute('aria-label','부산불꽃축제 3D 시야 보기');
       actions.insertBefore(a,actions.firstChild);
