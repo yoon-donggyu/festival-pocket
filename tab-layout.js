@@ -54,4 +54,10 @@
   const oldFocus=window.focusFestival;
   if(typeof oldFocus==='function')window.focusFestival=id=>{setTab('all');setTimeout(()=>oldFocus(id),20)};
   setTab('all',{scroll:false});
+
+  // Load reusable 3D venue + festival comparison controls after the core app is ready.
+  const fp3d=document.createElement('script');
+  fp3d.src='festival-3d-entry.js?v=20260909-3dall1';
+  fp3d.defer=true;
+  document.body.appendChild(fp3d);
 })();
