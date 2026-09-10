@@ -21,9 +21,9 @@
 <div class="analysis-head"><div class="score"><small>간이 시야 점수</small><strong id="score">-<span>점</span></strong></div><div class="result"><small>가림 판정</small><b id="blockResult">분석 전</b><p id="blockDetail">지도에서 관람 위치를 누르면 분석합니다.</p></div></div>
 <div class="stats"><div class="stat"><small>불꽃 중심까지</small><b id="distance">-</b></div><div class="stat"><small>관람 높이</small><b id="spotName">-</b></div></div>
 <div class="bands"><div class="band wait" id="band50"><small>저고도 50m</small><b>-</b></div><div class="band wait" id="band150"><small>중고도 150m</small><b>-</b></div><div class="band wait" id="band300"><small>고고도 300m</small><b>-</b></div></div>
-<div class="bar"><button class="on" data-view="observer">관람뷰</button><button data-view="overview">전체뷰</button><button data-view="target">불꽃 위치</button></div>
-<div class="bar"><button class="on" data-height="ground">지상 눈높이</button><button data-height="roof">+30m 옥상 가정</button><button id="pknu">부경대 위치</button></div>
-<div class="note">※ 공개 지형·OpenStreetMap 건물 데이터 기반 간이 분석입니다. 불꽃 높이는 50m·150m·300m로 가정하며 실제 발사 위치·건물 높이·현장 구조에 따라 차이가 날 수 있습니다.</div>
+<div class="bar"><button class="on" data-view="eye">사람 눈높이뷰</button><button data-view="overview">전체뷰</button><button data-view="target">불꽃 위치</button></div>
+<div class="bar"><button class="on" data-height="ground">지상 눈높이 1.7m</button><button data-height="roof">+30m 옥상 가정</button><button id="pknu">부경대 위치</button></div>
+<div class="note">※ 사람 눈높이뷰는 선택 지점의 공개 지형고도에 1.7m를 더해 카메라를 배치하고, 약 150m 높이의 불꽃 중심을 바라보도록 계산합니다. 공개 지형·OpenStreetMap 건물 데이터 기반 간이 분석이므로 실제 현장과 차이가 날 수 있습니다.</div>
 </div>
 </section>
 <script>
@@ -43,8 +43,20 @@ function lineData(){return{type:'Feature',geometry:{type:'LineString',coordinate
 function openPanel(){const p=document.getElementById('infoPanel'),t=document.getElementById('panelToggle');p.classList.remove('collapsed');t.textContent='▼ 시야 분석 접기';t.setAttribute('aria-expanded','true')}
 function setBand(id,state){const el=document.getElementById('band'+id);el.className='band '+(state===null?'wait':state?'ok':'bad');el.querySelector('b').textContent=state===null?'분석 중':state?'보임':'가림 가능'}
 function setLoading(){document.getElementById('score').innerHTML='…<span>점</span>';document.getElementById('blockResult').textContent='시야 계산 중';document.getElementById('blockDetail').textContent='지형과 건물 데이터를 확인하고 있습니다.';HEIGHTS.forEach(h=>setBand(h,null))}
-function updateBasic(){document.getElementById('distance').textContent=(distance(current.lat,current.lng,TARGET.lat,TARGET.lng)/1000).toFixed(2)+' km';document.getElementById('spotName').textContent=observerOffset>10?'+30m 옥상 가정':'지상 눈높이';const s=map.getSource('sight');if(s)s.setData(lineData());if(obs)obs.setLngLat([current.lng,current.lat]);document.querySelectorAll('[data-height]').forEach(b=>b.classList.toggle('on',(observerOffset>10?'roof':'ground')===b.dataset.height))}
-function observer(){map.flyTo({center:[current.lng,current.lat],zoom:16.5,pitch:72,bearing:bearing(current.lat,current.lng,TARGET.lat,TARGET.lng),duration:850})}
+function terrainAt(lng,lat){try{const h=map.queryTerrainElevation([lng,lat]);return Number.isFinite(h)?h:0}catch(e){return 0}}
+function updateBasic(){document.getElementById('distance').textContent=(distance(current.lat,current.lng,TARGET.lat,TARGET.lng)/1000).toFixed(2)+' km';document.getElementById('spotName').textContent=observerOffset>10?'+30m 옥상 가정':'지상 1.7m';const s=map.getSource('sight');if(s)s.setData(lineData());if(obs)obs.setLngLat([current.lng,current.lat]);document.querySelectorAll('[data-height]').forEach(b=>b.classList.toggle('on',(observerOffset>10?'roof':'ground')===b.dataset.height))}
+function eyeLevelView(){
+ const fromGround=terrainAt(current.lng,current.lat),toGround=terrainAt(TARGET.lng,TARGET.lat);
+ const fromAlt=fromGround+observerOffset,toAlt=toGround+150;
+ try{
+   const from=new maplibregl.LngLat(current.lng,current.lat),to=new maplibregl.LngLat(TARGET.lng,TARGET.lat);
+   const opts=map.calculateCameraOptionsFromTo(from,fromAlt,to,toAlt);
+   map.easeTo({...opts,duration:850});
+   toast(observerOffset>10?'옥상 관람 시점':'사람 눈높이 1.7m 시점');
+ }catch(e){
+   map.easeTo({center:[current.lng,current.lat],zoom:18.2,pitch:84,bearing:bearing(current.lat,current.lng,TARGET.lat,TARGET.lng),duration:850});
+ }
+}
 function overview(){const bounds=new maplibregl.LngLatBounds();bounds.extend([current.lng,current.lat]);bounds.extend([TARGET.lng,TARGET.lat]);map.fitBounds(bounds,{padding:{top:100,bottom:150,left:55,right:55},maxZoom:14.8,pitch:50,bearing:bearing(current.lat,current.lng,TARGET.lat,TARGET.lng),duration:750})}
 function targetView(){map.flyTo({center:[TARGET.lng,TARGET.lat],zoom:15.7,pitch:66,bearing:bearing(TARGET.lat,TARGET.lng,current.lat,current.lng),duration:850})}
 function xy(lng,lat,refLat){const k=111320,c=Math.cos(rad(refLat));return{x:lng*k*c,y:lat*k}}
@@ -75,18 +87,18 @@ async function analyze(seq){
  return{score,label,detail:parts.join(' · '),outcomes,km,buildings:buildings.length,terrainCoverage:valid/N}
 }
 function renderResult(r){if(!r)return;lastResult=r;document.getElementById('score').innerHTML=r.score+'<span>점</span>';document.getElementById('blockResult').textContent=r.label;document.getElementById('blockDetail').textContent=r.detail;HEIGHTS.forEach(h=>setBand(h,r.outcomes[h].visible))}
-function analyzeCurrent(moveToView=true,reveal=true){analysisSeq++;const seq=analysisSeq;if(reveal)openPanel();setLoading();overview();const wait=()=>{map.once('idle',async()=>{const r=await analyze(seq);if(seq!==analysisSeq)return;renderResult(r);toast('시야 분석 완료');if(moveToView)setTimeout(observer,180)})};setTimeout(wait,120)}
+function analyzeCurrent(moveToView=true,reveal=true){analysisSeq++;const seq=analysisSeq;if(reveal)openPanel();setLoading();overview();const wait=()=>{map.once('idle',async()=>{const r=await analyze(seq);if(seq!==analysisSeq)return;renderResult(r);toast('시야 분석 완료');if(moveToView)setTimeout(eyeLevelView,180)})};setTimeout(wait,120)}
 const map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/liberty',center:[129.1168,35.1402],zoom:14.5,pitch:60,bearing:bearing(current.lat,current.lng,TARGET.lat,TARGET.lng),antialias:true});
 map.addControl(new maplibregl.NavigationControl({showCompass:true}),'top-left');
 map.on('load',()=>{
  try{map.addSource('fp-terrain',{type:'raster-dem',tiles:['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],tileSize:256,maxzoom:15,encoding:'terrarium'});map.setTerrain({source:'fp-terrain',exaggeration:1})}catch(e){console.warn('terrain unavailable',e)}
  try{if(map.getSource('openmaptiles')){const first=(map.getStyle().layers||[]).find(l=>l.type==='symbol');map.addLayer({id:'fp3d',type:'fill-extrusion',source:'openmaptiles','source-layer':'building',minzoom:13,paint:{'fill-extrusion-color':'#aeb5c3','fill-extrusion-height':['coalesce',['get','render_height'],['get','height'],10],'fill-extrusion-base':['coalesce',['get','render_min_height'],0],'fill-extrusion-opacity':.78}},first&&first.id)}}catch(e){console.warn('buildings unavailable',e)}
  map.addSource('sight',{type:'geojson',data:lineData()});map.addLayer({id:'sightline',type:'line',source:'sight',paint:{'line-color':'#ff6685','line-width':4,'line-opacity':.9}});
- obs=new maplibregl.Marker({element:pin('👁')}).setLngLat([current.lng,current.lat]).addTo(map);fire=new maplibregl.Marker({element:pin('🎆',true)}).setLngLat([TARGET.lng,TARGET.lat]).addTo(map);updateBasic();observer()
+ obs=new maplibregl.Marker({element:pin('👁')}).setLngLat([current.lng,current.lat]).addTo(map);fire=new maplibregl.Marker({element:pin('🎆',true)}).setLngLat([TARGET.lng,TARGET.lat]).addTo(map);updateBasic();eyeLevelView()
 });
 map.on('click',e=>{current={lat:e.lngLat.lat,lng:e.lngLat.lng,name:'선택 위치'};observerOffset=1.7;lastResult=null;updateBasic();analyzeCurrent(true,true)});
-document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-view]').forEach(x=>x.classList.remove('on'));b.classList.add('on');b.dataset.view==='observer'?observer():b.dataset.view==='overview'?overview():targetView()});
-document.querySelectorAll('[data-height]').forEach(b=>b.onclick=()=>{observerOffset=b.dataset.height==='roof'?31.7:1.7;lastResult=null;updateBasic();analyzeCurrent(false,true)});
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-view]').forEach(x=>x.classList.remove('on'));b.classList.add('on');b.dataset.view==='eye'?eyeLevelView():b.dataset.view==='overview'?overview():targetView()});
+document.querySelectorAll('[data-height]').forEach(b=>b.onclick=()=>{observerOffset=b.dataset.height==='roof'?31.7:1.7;lastResult=null;updateBasic();analyzeCurrent(false,true);setTimeout(eyeLevelView,250)});
 document.getElementById('pknu').onclick=()=>{current={...PKNU};observerOffset=31.7;lastResult=null;updateBasic();analyzeCurrent(true,true)};
 const panel=document.getElementById('infoPanel'),toggle=document.getElementById('panelToggle');toggle.onclick=()=>{const collapsed=panel.classList.toggle('collapsed');toggle.textContent=collapsed?'▲ 시야 분석 열기':'▼ 시야 분석 접기';toggle.setAttribute('aria-expanded',String(!collapsed));if(!collapsed&&!lastResult)analyzeCurrent(true,false);setTimeout(()=>map.resize(),180)};
 })();
