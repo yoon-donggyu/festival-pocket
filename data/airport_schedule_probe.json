@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-11T23:28:34.399067+00:00",
-  "elapsed_seconds": 3.11,
+  "generated_at_utc": "2026-09-12T08:04:08.157483+00:00",
+  "elapsed_seconds": 4.42,
   "timeout_seconds": 35,
   "max_attempts": 2,
   "max_workers": 8,
@@ -26,30 +26,6 @@
           "ok": true,
           "status": 200,
           "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 148, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"airFln\": \"WE6501\", \"std\": \"0600\", \"etd\": \"0611\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"13\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingE"
-        }
-      ],
-      "attempt_count": 1
-    },
-    {
-      "provider": "IIAC_DEPARTURES",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "30",
-        "type": "json",
-        "airport": "KIX",
-        "lang": "K"
-      },
-      "ok": true,
-      "status": 200,
-      "content_type": "application/json;charset=UTF-8",
-      "body_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":121,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1303\",\"airline\":\"제주항공\",\"st\":\"0905\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE611\",\"airline\":\"이스타항공\",\"st\":\"0915\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"KE723\",\"airline\":\"대한항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9855\",\"airline\":\"아시아나항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"DL7785\",\"airline\":\"델타항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"OM6703\",\"airline\":\"몽골항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"JL5210\",\"airline\":\"일본항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1393\",\"airline\":\"제주항공\",\"st\":\"1405\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE613\",\"airline\":\"이스타항공\",\"st\":\"1515\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS715\",\"airline\":\"에어서울\",\"st\":\"1520\",\"firstdate\":\"20260329\",\"lastdate\":\"20260914\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"TW305\",\"airline\":\"트리니티항공\",\"st\":\"1555\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"KE721\",\"airline\":\"대한항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9859\",\"airline\":\"아시아나항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE721\",\"codeshare\":\"Slave\"},{\"flightid\":\"MM710\",\"airline\":\"피치항공\",\"st\":\"2055\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM712\",\"airline\":\"피치항공\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3512\",\"airline\":\"전일본공수\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"MM712\",\"codeshare\":\"Slave\"},{\"flightid\":\"MM714\",\"airline\":\"피치항공\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3524\",\"airline\":\"전일본공수\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"MM714\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1395\",\"airline\":\"제주항공\",\"st\":\"1920\",\"firstdate\":\"20260401\",\"lastdate\":\"20261023\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1305\",\"airline\":\"제주항공\",\"st\":\"1040\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ114\",\"airline\":\"아시아나항공\",\"st\":\"1640\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"EY8449\",\"airline\":\"에티하드 항공\",\"st\":\"1640\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ114\",\"codeshare\":\"Slave\"},{\"flightid\":\"NH6954\",\"airline\":\"전일본공수\",\"st\":\"1640\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ114\",\"codeshare\":\"Slave\"},{\"flightid\":\"OZ9568\",\"airline\":\"아시아나항공\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX172\",\"codeshare\":\"Slave\"},{\"flightid\":\"BX172\",\"airline\":\"에어부산\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX174\",\"airline\":\"에어부산\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9570\",\"airline\":\"아시아나항공\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX174\",\"codeshare\":\"Slave\"},{\"flightid\":\"OZ116\",\"airline\":\"아시아나항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"}]}}}",
-      "attempts": [
-        {
-          "attempt": 1,
-          "ok": true,
-          "status": 200,
-          "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":121,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"la"
         }
       ],
       "attempt_count": 1
@@ -117,13 +93,37 @@
       "ok": true,
       "status": 200,
       "content_type": "application/json",
-      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 100, \"pageNo\": 1, \"totalCount\": 123, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS901\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"WE6501\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0720\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE201\", \"domesticStartTime\": \"0605\", \"domesticStdate\": \"2026-07-19T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0730\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C101\", \"domesticStartTime\": \"0615\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0730\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ501\", \"domesticStartTime\": \"0615\", \"domesticStdate\": \"2026-07-16T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0735\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C103\", \"domesticStartTime\": \"0620\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0735\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C151\", \"domesticStartTime\": \"0620\", \"domesticStdate\": \"2026-06-20T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0740\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW701\", \"domesticStartTime\": \"0625\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0745\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8901\", \"domesticStartTime\": \"0630\", \"domesticStdate\": \"2026-08-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0745\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ503\", \"domesticStartTime\": \"0630\", \"domesticStdate\": \"2026-06-26T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0750\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1007\", \"domesticStartTime\": \"0635\", \"domesticStdate\": \"2026-07-02T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0755\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8913\", \"domesticStartTime\": \"0640\", \"domesticStdate\": \"2026-07-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0805\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE205\", \"domesticStartTime\": \"0645\", \"domesticStdate\": \"2026-04-08T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0805\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C105\", \"domesticStartTime\": \"0645\", \"domesticStdate\": \"2026-08-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0805\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW703\", \"domesticStartTime\": \"0650\", \"domesticStdate\": \"2026-06-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0820\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1017\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0825\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1019\", \"domesticStartTime\": \"0710\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8013\", \"domesticStartTime\": \"0710\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0835\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1023\", \"domesticStartTime\": \"0720\", \"domesticStdate\": \"2026-04-05T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0840\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ505\", \"domesticStartTime\": \"0725\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0850\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE207\", \"domesticStartTime\": \"0735\", \"domesticStdate\": \"2026-05-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0850\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C107\", \"domesticStartTime\": \"0735\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0855\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE271\", \"domesticStartTime\": \"0740\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0910\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0750\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0905\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW705\", \"domesticStartTime\": \"0750\", \"domesticStdate\": \"2026-06-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0925\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8027\", \"domesticStartTime\": \"0805\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0935\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1045\", \"domesticStartTime\": \"0820\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0935\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8921\", \"domesticStartTime\": \"0820\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0940\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8927\", \"domesticStartTime\": \"0825\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1000\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C185\", \"domesticStartTime\": \"0845\", \"domesticStdate\": \"2026-03-30T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1005\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C185\", \"domesticStartTime\": \"0850\", \"domesticStdate\": \"2026-03-30T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1010\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1049\", \"domesticStartTime\": \"0855\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1010\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C109\", \"domesticStartTime\": \"0855\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1025\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1055\", \"domesticStartTime\": \"0910\", \"domesticStdate\": \"2026-05-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1035\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C111\", \"domesticStartTime\": \"0920\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1100\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW707\", \"domesticStartTime\": \"0945\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1100\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS903\", \"domesticStartTime\": \"0945\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1110\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE209\", \"domesticStartTime\": \"0955\", \"domesticStdate\": \"2026-07-19T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1125\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1073\", \"domesticStartTime\": \"1010\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1125\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C153\", \"domesticStartTime\": \"1010\", \"domesticStdate\": \"2026-06-20T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1135\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW709\", \"domesticStartTime\": \"1020\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1145\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C113\", \"domesticStartTime\": \"1030\", \"domesticStdate\": \"2026-08-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1145\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ507\", \"domesticStartTime\": \"1030\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1150\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1079\", \"domesticStartTime\": \"1035\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1155\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1075\", \"domesticStartTime\": \"1040\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1205\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE211\", \"domesticStartTime\": \"1050\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1225\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1081\", \"domesticStartTime\": \"1110\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1230\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE281\", \"domesticStartTime\": \"1115\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1235\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8941\", \"domesticStartTime\": \"1120\", \"domesticStdate\": \"2026-08-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1245\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE273\", \"domesticStartTime\": \"1130\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1250\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE213\", \"domesticStartTime\": \"1135\", \"domesticStdate\": \"2026-05-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1250\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C115\", \"domesticStartTime\": \"1135\", \"domesticStdate\": \"2026-05-16T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1310\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C117\", \"domesticStartTime\": \"1155\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1330\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW713\", \"domesticStartTime\": \"1215\", \"domesticStdate\": \"2026-05-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1340\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8949\", \"domesticStartTime\": \"1225\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1340\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C119\", \"domesticStartTime\": \"1225\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1350\", \"domesticEddate\": \"2026-10-23T00:00:00\", \"domesticNum\": \"ZE215\", \"domesticStartTime\": \"1235\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1400\", \"domesticEddate\": \"2026-09-17T00:00:00\", \"domesticNum\": \"KE1107\", \"domesticStartTime\": \"1245\", \"domesticStdate\": \"2026-08-31T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1400\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ509\", \"domesticStartTime\": \"1245\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1410\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8951\", \"domesticStartTime\": \"1255\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1415\", \"domesticEddate\": \"2026-10-11T00:00:00\", \"domesticNum\": \"TW715\", \"domesticStartTime\": \"1300\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1420\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C121\", \"domesticStartTime\": \"1305\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1430\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1113\", \"domesticStartTime\": \"1315\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1435\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C123\", \"domesticStartTime\": \"1320\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1440\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1121\", \"domesticStartTime\": \"1325\", \"domesticStdate\": \"2026-05-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1500\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE217\", \"domesticStartTime\": \"1345\", \"domesticStdate\": \"2026-07-19T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1505\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS905\", \"domesticStartTime\": \"1345\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1510\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW717\", \"domesticStartTime\": \"1355\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1133\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-07-13T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW723\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C155\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1141\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-07-13T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1530\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW721\", \"domesticStartTime\": \"1415\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1540\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C125\", \"domesticStartTime\": \"1425\", \"domesticStdate\": \"2026-07-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1555\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE219\", \"domesticStartTime\": \"1440\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1610\", \"domesticEddate\": \"2026-09-19T00:00:00\", \"domesticNum\": \"KE1143\", \"domesticStartTime\": \"1455\", \"domesticStdate\": \"2026-08-31T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1620\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE221\", \"domesticStartTime\": \"1500\", \"domesticStdate\": \"2026-05-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1620\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C127\", \"domesticStartTime\": \"1505\", \"domesticStdate\": \"2026-08-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1625\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1147\", \"domesticStartTime\": \"1510\", \"domesticStdate\": \"2026-07-10T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1625\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8963\", \"domesticStartTime\": \"1510\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1630\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8021\", \"domesticStartTime\": \"1515\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1630\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW725\", \"domesticStartTime\": \"1515\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1645\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE275\", \"domesticStartTime\": \"1520\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1635\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ511\", \"domesticStartTime\": \"1520\", \"domesticStdate\": \"2026-07-16T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1650\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE223\", \"domesticStartTime\": \"1535\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1655\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C129\", \"domesticStartTime\": \"1535\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1700\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8973\", \"domesticStartTime\": \"1545\", \"domesticStdate\": \"2026-08-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1715\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C131\", \"domesticStartTime\": \"1555\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1740\", \"domesticEddate\": \"2026-10-23T00:00:00\", \"domesticNum\": \"ZE225\", \"domesticStartTime\": \"1625\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1750\", \"domesticEddate\": \"2026-09-19T00:00:00\", \"domesticNum\": \"KE1165\", \"domesticStartTime\": \"1635\", \"domesticStdate\": \"2026-08-31T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1800\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C133\", \"domesticStartTime\": \"1645\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1825\", \"domesticEddate\": \"2026-10-11T00:00:00\", \"domesticNum\": \"TW727\", \"domesticStartTime\": \"1710\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1845\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1177\", \"domesticStartTime\": \"1730\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1845\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW743\", \"domesticStartTime\": \"1730\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1855\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8019\", \"domesticStartTime\": ",
+      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 100, \"pageNo\": 1, \"totalCount\": 123, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS901\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"WE6501\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0720\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE201\", \"domesticStartTime\": \"0605\", \"domesticStdate\": \"2026-07-19T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0730\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C101\", \"domesticStartTime\": \"0615\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0730\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ501\", \"domesticStartTime\": \"0615\", \"domesticStdate\": \"2026-07-16T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0735\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C151\", \"domesticStartTime\": \"0620\", \"domesticStdate\": \"2026-06-20T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0735\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C103\", \"domesticStartTime\": \"0620\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0740\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW701\", \"domesticStartTime\": \"0625\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0745\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8901\", \"domesticStartTime\": \"0630\", \"domesticStdate\": \"2026-08-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0745\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ503\", \"domesticStartTime\": \"0630\", \"domesticStdate\": \"2026-06-26T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0750\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1007\", \"domesticStartTime\": \"0635\", \"domesticStdate\": \"2026-07-02T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0755\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8913\", \"domesticStartTime\": \"0640\", \"domesticStdate\": \"2026-07-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0805\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE205\", \"domesticStartTime\": \"0645\", \"domesticStdate\": \"2026-04-08T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0805\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C105\", \"domesticStartTime\": \"0645\", \"domesticStdate\": \"2026-08-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0805\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW703\", \"domesticStartTime\": \"0650\", \"domesticStdate\": \"2026-06-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0820\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1017\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0705\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0825\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1019\", \"domesticStartTime\": \"0710\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0830\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8013\", \"domesticStartTime\": \"0710\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0835\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1023\", \"domesticStartTime\": \"0720\", \"domesticStdate\": \"2026-04-05T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0840\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ505\", \"domesticStartTime\": \"0725\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0850\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE207\", \"domesticStartTime\": \"0735\", \"domesticStdate\": \"2026-05-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0850\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C107\", \"domesticStartTime\": \"0735\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0855\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE271\", \"domesticStartTime\": \"0740\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0910\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8025\", \"domesticStartTime\": \"0750\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0905\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW705\", \"domesticStartTime\": \"0750\", \"domesticStdate\": \"2026-06-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0925\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8027\", \"domesticStartTime\": \"0805\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0935\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1045\", \"domesticStartTime\": \"0820\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0935\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8921\", \"domesticStartTime\": \"0820\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0940\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8927\", \"domesticStartTime\": \"0825\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1000\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C185\", \"domesticStartTime\": \"0845\", \"domesticStdate\": \"2026-03-30T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1005\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C185\", \"domesticStartTime\": \"0850\", \"domesticStdate\": \"2026-03-30T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1010\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1049\", \"domesticStartTime\": \"0855\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1010\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C109\", \"domesticStartTime\": \"0855\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1025\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1055\", \"domesticStartTime\": \"0910\", \"domesticStdate\": \"2026-05-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1035\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C111\", \"domesticStartTime\": \"0920\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1100\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW707\", \"domesticStartTime\": \"0945\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1100\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS903\", \"domesticStartTime\": \"0945\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1110\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE209\", \"domesticStartTime\": \"0955\", \"domesticStdate\": \"2026-07-19T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1125\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1073\", \"domesticStartTime\": \"1010\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1125\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C153\", \"domesticStartTime\": \"1010\", \"domesticStdate\": \"2026-06-20T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1135\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW709\", \"domesticStartTime\": \"1020\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1145\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C113\", \"domesticStartTime\": \"1030\", \"domesticStdate\": \"2026-08-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1145\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ507\", \"domesticStartTime\": \"1030\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1150\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1079\", \"domesticStartTime\": \"1035\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1155\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1075\", \"domesticStartTime\": \"1040\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1205\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE211\", \"domesticStartTime\": \"1050\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1225\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1081\", \"domesticStartTime\": \"1110\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1230\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE281\", \"domesticStartTime\": \"1115\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1235\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8941\", \"domesticStartTime\": \"1120\", \"domesticStdate\": \"2026-08-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1245\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE273\", \"domesticStartTime\": \"1130\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1250\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE213\", \"domesticStartTime\": \"1135\", \"domesticStdate\": \"2026-05-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1250\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C115\", \"domesticStartTime\": \"1135\", \"domesticStdate\": \"2026-05-16T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1310\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C117\", \"domesticStartTime\": \"1155\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1330\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW713\", \"domesticStartTime\": \"1215\", \"domesticStdate\": \"2026-05-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1340\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8949\", \"domesticStartTime\": \"1225\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1340\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C119\", \"domesticStartTime\": \"1225\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1350\", \"domesticEddate\": \"2026-10-23T00:00:00\", \"domesticNum\": \"ZE215\", \"domesticStartTime\": \"1235\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1400\", \"domesticEddate\": \"2026-09-17T00:00:00\", \"domesticNum\": \"KE1107\", \"domesticStartTime\": \"1245\", \"domesticStdate\": \"2026-08-31T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1400\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ509\", \"domesticStartTime\": \"1245\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1410\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8951\", \"domesticStartTime\": \"1255\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1415\", \"domesticEddate\": \"2026-10-11T00:00:00\", \"domesticNum\": \"TW715\", \"domesticStartTime\": \"1300\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1420\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C121\", \"domesticStartTime\": \"1305\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1430\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1113\", \"domesticStartTime\": \"1315\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1435\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C123\", \"domesticStartTime\": \"1320\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1440\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1121\", \"domesticStartTime\": \"1325\", \"domesticStdate\": \"2026-05-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1500\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE217\", \"domesticStartTime\": \"1345\", \"domesticStdate\": \"2026-07-19T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1505\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS905\", \"domesticStartTime\": \"1345\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1510\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW717\", \"domesticStartTime\": \"1355\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1141\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-07-13T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW723\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C155\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1515\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1133\", \"domesticStartTime\": \"1400\", \"domesticStdate\": \"2026-07-13T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1530\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW721\", \"domesticStartTime\": \"1415\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1540\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C125\", \"domesticStartTime\": \"1425\", \"domesticStdate\": \"2026-07-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1555\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE219\", \"domesticStartTime\": \"1440\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1610\", \"domesticEddate\": \"2026-09-19T00:00:00\", \"domesticNum\": \"KE1143\", \"domesticStartTime\": \"1455\", \"domesticStdate\": \"2026-08-31T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1620\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE221\", \"domesticStartTime\": \"1500\", \"domesticStdate\": \"2026-05-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1620\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C127\", \"domesticStartTime\": \"1505\", \"domesticStdate\": \"2026-08-24T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1625\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1147\", \"domesticStartTime\": \"1510\", \"domesticStdate\": \"2026-07-10T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"N\", \"domesticMon\": \"N\", \"domesticTue\": \"Y\", \"domesticWed\": \"N\", \"domesticThu\": \"Y\", \"domesticFri\": \"N\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1625\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8963\", \"domesticStartTime\": \"1510\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1630\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8021\", \"domesticStartTime\": \"1515\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1630\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW725\", \"domesticStartTime\": \"1515\", \"domesticStdate\": \"2026-07-06T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1645\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE275\", \"domesticStartTime\": \"1520\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1635\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"LJ511\", \"domesticStartTime\": \"1520\", \"domesticStdate\": \"2026-07-16T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1650\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"ZE223\", \"domesticStartTime\": \"1535\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1655\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C129\", \"domesticStartTime\": \"1535\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1700\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"OZ8973\", \"domesticStartTime\": \"1545\", \"domesticStdate\": \"2026-08-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1715\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C131\", \"domesticStartTime\": \"1555\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1740\", \"domesticEddate\": \"2026-10-23T00:00:00\", \"domesticNum\": \"ZE225\", \"domesticStartTime\": \"1625\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1750\", \"domesticEddate\": \"2026-09-19T00:00:00\", \"domesticNum\": \"KE1165\", \"domesticStartTime\": \"1635\", \"domesticStdate\": \"2026-08-31T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"N\", \"domesticTue\": \"N\", \"domesticWed\": \"N\", \"domesticThu\": \"N\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1800\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"7C133\", \"domesticStartTime\": \"1645\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"N\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"N\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1825\", \"domesticEddate\": \"2026-10-11T00:00:00\", \"domesticNum\": \"TW727\", \"domesticStartTime\": \"1710\", \"domesticStdate\": \"2026-09-01T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1845\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"KE1177\", \"domesticStartTime\": \"1730\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1845\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"TW743\", \"domesticStartTime\": \"1730\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", \"domesticSun\": \"Y\", \"domesticMon\": \"Y\", \"domesticTue\": \"Y\", \"domesticWed\": \"Y\", \"domesticThu\": \"Y\", \"domesticFri\": \"Y\", \"domesticSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어부산\", \"airlineEnglish\": \"AIR BUSAN\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"1855\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"BX8019\", \"domesticStartTime\": ",
       "attempts": [
         {
           "attempt": 1,
           "ok": true,
           "status": 200,
           "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 100, \"pageNo\": 1, \"totalCount\": 123, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-09-06T00:00:00\", \"domesticNum\": \"RS901\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-04-22T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP\", "
+        }
+      ],
+      "attempt_count": 1
+    },
+    {
+      "provider": "IIAC_DEPARTURES",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
+      },
+      "ok": true,
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "body_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":121,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1303\",\"airline\":\"제주항공\",\"st\":\"0905\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE611\",\"airline\":\"이스타항공\",\"st\":\"0915\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"KE723\",\"airline\":\"대한항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9855\",\"airline\":\"아시아나항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"DL7785\",\"airline\":\"델타항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"OM6703\",\"airline\":\"몽골항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"JL5210\",\"airline\":\"일본항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1393\",\"airline\":\"제주항공\",\"st\":\"1405\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE613\",\"airline\":\"이스타항공\",\"st\":\"1515\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS715\",\"airline\":\"에어서울\",\"st\":\"1520\",\"firstdate\":\"20260329\",\"lastdate\":\"20260914\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"TW305\",\"airline\":\"트리니티항공\",\"st\":\"1555\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"KE721\",\"airline\":\"대한항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9859\",\"airline\":\"아시아나항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE721\",\"codeshare\":\"Slave\"},{\"flightid\":\"MM710\",\"airline\":\"피치항공\",\"st\":\"2055\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM712\",\"airline\":\"피치항공\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3512\",\"airline\":\"전일본공수\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"MM712\",\"codeshare\":\"Slave\"},{\"flightid\":\"MM714\",\"airline\":\"피치항공\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3524\",\"airline\":\"전일본공수\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"MM714\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1395\",\"airline\":\"제주항공\",\"st\":\"1920\",\"firstdate\":\"20260401\",\"lastdate\":\"20261023\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1305\",\"airline\":\"제주항공\",\"st\":\"1040\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ114\",\"airline\":\"아시아나항공\",\"st\":\"1640\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"EY8449\",\"airline\":\"에티하드 항공\",\"st\":\"1640\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ114\",\"codeshare\":\"Slave\"},{\"flightid\":\"NH6954\",\"airline\":\"전일본공수\",\"st\":\"1640\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ114\",\"codeshare\":\"Slave\"},{\"flightid\":\"OZ9568\",\"airline\":\"아시아나항공\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX172\",\"codeshare\":\"Slave\"},{\"flightid\":\"BX172\",\"airline\":\"에어부산\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX174\",\"airline\":\"에어부산\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9570\",\"airline\":\"아시아나항공\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX174\",\"codeshare\":\"Slave\"},{\"flightid\":\"OZ116\",\"airline\":\"아시아나항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"}]}}}",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "status": 200,
+          "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":121,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"la"
         }
       ],
       "attempt_count": 1
@@ -159,11 +159,11 @@
     },
     {
       "rank": 2,
-      "key": "ICN-KIX-2026-09-16T22:30:00+09:00-2026-09-24T22:20:00+09:00-TW-317",
+      "key": "ICN-KIX-2026-09-16T22:30:00+09:00-2026-09-24T01:30:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
       "departure_at": "2026-09-16T22:30:00+09:00",
-      "return_at": "2026-09-24T22:20:00+09:00",
+      "return_at": "2026-09-24T01:30:00+09:00",
       "airline": "TW",
       "flight_number": "317",
       "flight_code": "317",
@@ -295,6 +295,34 @@
     },
     {
       "rank": 7,
+      "key": "GMP-KIX-2026-09-16T11:25:00+09:00-2026-09-24T08:35:00+09:00-MM-736",
+      "origin": "GMP",
+      "destination": "KIX",
+      "departure_at": "2026-09-16T11:25:00+09:00",
+      "return_at": "2026-09-24T08:35:00+09:00",
+      "airline": "MM",
+      "flight_number": "736",
+      "flight_code": "736",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20260916",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "KIX",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 8,
       "key": "ICN-PQC-2026-09-28T11:55:00+09:00-2026-09-30T20:20:00+07:00-9G-451",
       "origin": "ICN",
       "destination": "PQC",
@@ -321,7 +349,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "key": "ICN-NRT-2026-09-15T20:10:00+09:00-2026-09-24T21:45:00+09:00-TW-249",
       "origin": "ICN",
       "destination": "NRT",
@@ -348,7 +376,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 10,
       "key": "ICN-NRT-2026-09-16T06:55:00+09:00-2026-09-23T08:40:00+09:00-TW-237",
       "origin": "ICN",
       "destination": "NRT",
@@ -375,7 +403,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "key": "ICN-NRT-2026-09-15T08:00:00+09:00-2026-09-23T11:30:00+09:00-ZE-601",
       "origin": "ICN",
       "destination": "NRT",
@@ -402,7 +430,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "key": "ICN-FUK-2026-09-14T18:00:00+09:00-2026-09-16T11:30:00+09:00-ZE-643",
       "origin": "ICN",
       "destination": "FUK",
@@ -429,7 +457,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 13,
       "key": "ICN-KIX-2026-09-20T22:30:00+09:00-2026-09-23T22:20:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -456,7 +484,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 14,
       "key": "ICN-KIX-2026-12-14T21:00:00+09:00-2026-12-17T07:40:00+09:00-MM-710",
       "origin": "ICN",
       "destination": "KIX",
@@ -483,7 +511,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
       "key": "GMP-KIX-2026-09-20T11:25:00+09:00-2026-09-24T16:05:00+09:00-MM-736",
       "origin": "GMP",
       "destination": "KIX",
@@ -511,7 +539,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 16,
       "key": "ICN-KIX-2026-09-14T22:30:00+09:00-2026-09-16T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -538,7 +566,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 17,
       "key": "ICN-PQC-2026-09-15T05:20:00+09:00-2026-09-19T01:00:00+07:00-9G-453",
       "origin": "ICN",
       "destination": "PQC",
@@ -565,7 +593,7 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 18,
       "key": "ICN-PQC-2026-09-16T11:55:00+09:00-2026-09-20T20:20:00+07:00-9G-451",
       "origin": "ICN",
       "destination": "PQC",
@@ -592,7 +620,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 19,
       "key": "ICN-NRT-2026-09-17T07:25:00+09:00-2026-09-29T14:20:00+09:00-ZE-605",
       "origin": "ICN",
       "destination": "NRT",
@@ -619,7 +647,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "key": "ICN-NRT-2026-09-16T07:25:00+09:00-2026-09-24T10:50:00+09:00-ZE-605",
       "origin": "ICN",
       "destination": "NRT",
@@ -646,7 +674,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "key": "ICN-KIX-2026-09-15T22:30:00+09:00-2026-09-17T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -673,7 +701,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
       "key": "ICN-PQC-2026-09-14T05:20:00+09:00-2026-09-17T01:00:00+07:00-9G-455",
       "origin": "ICN",
       "destination": "PQC",
@@ -700,7 +728,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 23,
       "key": "ICN-TPE-2026-09-17T00:30:00+09:00-2026-09-22T01:25:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -727,7 +755,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 24,
       "key": "ICN-DAD-2026-09-13T20:35:00+09:00-2026-09-18T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -754,7 +782,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 25,
       "key": "ICN-KIX-2026-09-14T22:30:00+09:00-2026-09-17T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -781,62 +809,7 @@
       }
     },
     {
-      "rank": 25,
-      "key": "ICN-PQC-2026-09-13T11:55:00+09:00-2026-09-20T01:00:00+07:00-9G-451",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-13T11:55:00+09:00",
-      "return_at": "2026-09-20T01:00:00+07:00",
-      "airline": "9G",
-      "flight_number": "451",
-      "flight_code": "451",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
       "rank": 26,
-      "key": "GMP-KIX-2026-09-16T08:10:00+09:00-2026-09-24T11:00:00+09:00-7C-1325",
-      "origin": "GMP",
-      "destination": "KIX",
-      "departure_at": "2026-09-16T08:10:00+09:00",
-      "return_at": "2026-09-24T11:00:00+09:00",
-      "airline": "7C",
-      "flight_number": "1325",
-      "flight_code": "1325",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20260916",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "KIX",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 27,
       "key": "ICN-DAD-2026-10-06T20:55:00+09:00-2026-10-15T00:40:00+07:00-RS-0511",
       "origin": "ICN",
       "destination": "DAD",
@@ -863,7 +836,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 27,
       "key": "ICN-TPE-2026-09-17T00:30:00+09:00-2026-09-20T10:30:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -890,34 +863,7 @@
       }
     },
     {
-      "rank": 29,
-      "key": "ICN-PQC-2026-09-13T11:55:00+09:00-2026-09-16T01:00:00+07:00-9G-451",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-13T11:55:00+09:00",
-      "return_at": "2026-09-16T01:00:00+07:00",
-      "airline": "9G",
-      "flight_number": "451",
-      "flight_code": "451",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 30,
+      "rank": 28,
       "key": "ICN-TPE-2026-09-26T00:30:00+09:00-2026-09-29T20:00:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -944,7 +890,34 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 29,
+      "key": "ICN-DAD-2026-09-16T07:00:00+09:00-2026-09-23T23:45:00+07:00-VJ-879",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-09-16T07:00:00+09:00",
+      "return_at": "2026-09-23T23:45:00+07:00",
+      "airline": "VJ",
+      "flight_number": "879",
+      "flight_code": "879",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 30,
       "key": "ICN-DAD-2026-10-14T20:35:00+09:00-2026-10-17T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -971,7 +944,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 31,
       "key": "ICN-FUK-2026-09-13T18:30:00+09:00-2026-09-16T11:30:00+09:00-ZE-643",
       "origin": "ICN",
       "destination": "FUK",
@@ -998,7 +971,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 32,
       "key": "ICN-DAD-2026-10-14T20:55:00+09:00-2026-10-21T00:40:00+07:00-RS-0511",
       "origin": "ICN",
       "destination": "DAD",
@@ -1021,6 +994,33 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 33,
+      "key": "ICN-TAO-2026-11-15T20:00:00+09:00-2026-11-17T19:50:00+08:00-7C-8407",
+      "origin": "ICN",
+      "destination": "TAO",
+      "departure_at": "2026-11-15T20:00:00+09:00",
+      "return_at": "2026-11-17T19:50:00+08:00",
+      "airline": "7C",
+      "flight_number": "8407",
+      "flight_code": "8407",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "TAO",
         "lang": "K"
       }
     },
@@ -1053,6 +1053,33 @@
     },
     {
       "rank": 35,
+      "key": "ICN-TAO-2026-11-14T20:00:00+09:00-2026-11-17T19:50:00+08:00-7C-8407",
+      "origin": "ICN",
+      "destination": "TAO",
+      "departure_at": "2026-11-14T20:00:00+09:00",
+      "return_at": "2026-11-17T19:50:00+08:00",
+      "airline": "7C",
+      "flight_number": "8407",
+      "flight_code": "8407",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "TAO",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 36,
       "key": "ICN-DAD-2026-10-13T07:00:00+09:00-2026-10-22T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1079,7 +1106,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 37,
       "key": "ICN-OKA-2026-09-15T11:30:00+09:00-2026-09-22T11:30:00+09:00-ZE-631",
       "origin": "ICN",
       "destination": "OKA",
@@ -1106,7 +1133,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 38,
       "key": "ICN-DAD-2026-10-12T07:00:00+09:00-2026-10-16T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1133,7 +1160,7 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 39,
       "key": "ICN-DAD-2026-10-10T07:00:00+09:00-2026-10-15T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1160,7 +1187,7 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 40,
       "key": "ICN-OKA-2026-09-16T11:30:00+09:00-2026-09-23T11:30:00+09:00-ZE-631",
       "origin": "ICN",
       "destination": "OKA",
@@ -1187,7 +1214,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 41,
       "key": "ICN-OKA-2026-09-17T11:30:00+09:00-2026-09-24T11:30:00+09:00-ZE-631",
       "origin": "ICN",
       "destination": "OKA",
@@ -1214,7 +1241,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 42,
       "key": "ICN-DAD-2026-09-15T07:00:00+09:00-2026-09-18T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1241,42 +1268,15 @@
       }
     },
     {
-      "rank": 42,
-      "key": "ICN-FUK-2026-09-15T18:30:00+09:00-2026-09-18T11:30:00+09:00-ZE-643",
-      "origin": "ICN",
-      "destination": "FUK",
-      "departure_at": "2026-09-15T18:30:00+09:00",
-      "return_at": "2026-09-18T11:30:00+09:00",
-      "airline": "ZE",
-      "flight_number": "643",
-      "flight_code": "643",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "FUK",
-        "lang": "K"
-      }
-    },
-    {
       "rank": 43,
-      "key": "ICN-FUK-2026-09-16T18:30:00+09:00-2026-09-18T11:30:00+09:00-ZE-643",
+      "key": "ICN-FUK-2026-09-15T18:20:00+09:00-2026-09-18T11:30:00+09:00-ZE-649",
       "origin": "ICN",
       "destination": "FUK",
-      "departure_at": "2026-09-16T18:30:00+09:00",
+      "departure_at": "2026-09-15T18:20:00+09:00",
       "return_at": "2026-09-18T11:30:00+09:00",
       "airline": "ZE",
-      "flight_number": "643",
-      "flight_code": "643",
+      "flight_number": "649",
+      "flight_code": "649",
       "provider": "IIAC_SCHEDULE_MATCH",
       "verification_mode": "route_flight_schedule",
       "api_ok": true,
@@ -1296,6 +1296,33 @@
     },
     {
       "rank": 44,
+      "key": "ICN-FUK-2026-09-16T18:20:00+09:00-2026-09-18T11:30:00+09:00-ZE-649",
+      "origin": "ICN",
+      "destination": "FUK",
+      "departure_at": "2026-09-16T18:20:00+09:00",
+      "return_at": "2026-09-18T11:30:00+09:00",
+      "airline": "ZE",
+      "flight_number": "649",
+      "flight_code": "649",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "FUK",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 45,
       "key": "ICN-TPE-2026-10-20T00:30:00+09:00-2026-10-27T20:00:00+08:00-IT-0603",
       "origin": "ICN",
       "destination": "TPE",
@@ -1322,7 +1349,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 46,
       "key": "ICN-DAD-2026-10-21T20:35:00+09:00-2026-10-24T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1349,7 +1376,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 47,
       "key": "ICN-NRT-2026-09-19T20:10:00+09:00-2026-09-25T08:40:00+09:00-TW-249",
       "origin": "ICN",
       "destination": "NRT",
@@ -1376,7 +1403,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 48,
       "key": "ICN-TPE-2026-09-16T23:00:00+09:00-2026-09-22T18:10:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -1403,7 +1430,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 49,
       "key": "ICN-NRT-2026-09-20T15:05:00+09:00-2026-09-23T21:45:00+09:00-ZG-44",
       "origin": "ICN",
       "destination": "NRT",
@@ -1430,7 +1457,7 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 50,
       "key": "GMP-KIX-2026-09-15T13:10:00+09:00-2026-09-24T16:05:00+09:00-MM-738",
       "origin": "GMP",
       "destination": "KIX",
@@ -1458,7 +1485,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 51,
       "key": "ICN-TAO-2026-09-17T08:05:00+09:00-2026-09-22T09:00:00+08:00-7C-8401",
       "origin": "ICN",
       "destination": "TAO",
@@ -1485,142 +1512,7 @@
       }
     },
     {
-      "rank": 51,
-      "key": "ICN-DAD-2026-10-12T07:00:00+09:00-2026-10-14T23:45:00+07:00-VJ-879",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-10-12T07:00:00+09:00",
-      "return_at": "2026-10-14T23:45:00+07:00",
-      "airline": "VJ",
-      "flight_number": "879",
-      "flight_code": "879",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
       "rank": 52,
-      "key": "ICN-DAD-2026-10-10T21:15:00+09:00-2026-10-14T00:25:00+07:00-ZE-593",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-10-10T21:15:00+09:00",
-      "return_at": "2026-10-14T00:25:00+07:00",
-      "airline": "ZE",
-      "flight_number": "593",
-      "flight_code": "593",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 53,
-      "key": "ICN-DAD-2026-09-16T07:00:00+09:00-2026-09-20T23:45:00+07:00-VJ-879",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-09-16T07:00:00+09:00",
-      "return_at": "2026-09-20T23:45:00+07:00",
-      "airline": "VJ",
-      "flight_number": "879",
-      "flight_code": "879",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 54,
-      "key": "ICN-DAD-2026-10-22T07:00:00+09:00-2026-10-25T23:40:00+07:00-VJ-879",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-10-22T07:00:00+09:00",
-      "return_at": "2026-10-25T23:40:00+07:00",
-      "airline": "VJ",
-      "flight_number": "879",
-      "flight_code": "879",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 55,
-      "key": "ICN-PQC-2026-09-16T04:05:00+09:00-2026-09-21T22:25:00+07:00-VJ-979",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-16T04:05:00+09:00",
-      "return_at": "2026-09-21T22:25:00+07:00",
-      "airline": "VJ",
-      "flight_number": "979",
-      "flight_code": "979",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 56,
       "key": "ICN-DAD-2026-10-17T07:00:00+09:00-2026-10-21T23:45:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1647,7 +1539,142 @@
       }
     },
     {
+      "rank": 53,
+      "key": "ICN-DAD-2026-10-12T07:00:00+09:00-2026-10-14T23:45:00+07:00-VJ-879",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-10-12T07:00:00+09:00",
+      "return_at": "2026-10-14T23:45:00+07:00",
+      "airline": "VJ",
+      "flight_number": "879",
+      "flight_code": "879",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 54,
+      "key": "ICN-DAD-2026-10-10T21:15:00+09:00-2026-10-14T00:25:00+07:00-ZE-593",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-10-10T21:15:00+09:00",
+      "return_at": "2026-10-14T00:25:00+07:00",
+      "airline": "ZE",
+      "flight_number": "593",
+      "flight_code": "593",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 55,
+      "key": "ICN-DAD-2026-09-16T07:00:00+09:00-2026-09-20T23:45:00+07:00-VJ-879",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-09-16T07:00:00+09:00",
+      "return_at": "2026-09-20T23:45:00+07:00",
+      "airline": "VJ",
+      "flight_number": "879",
+      "flight_code": "879",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 56,
+      "key": "ICN-DAD-2026-10-22T07:00:00+09:00-2026-10-25T23:40:00+07:00-VJ-879",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-10-22T07:00:00+09:00",
+      "return_at": "2026-10-25T23:40:00+07:00",
+      "airline": "VJ",
+      "flight_number": "879",
+      "flight_code": "879",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
       "rank": 57,
+      "key": "ICN-PQC-2026-09-16T04:05:00+09:00-2026-09-21T22:25:00+07:00-VJ-979",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-16T04:05:00+09:00",
+      "return_at": "2026-09-21T22:25:00+07:00",
+      "airline": "VJ",
+      "flight_number": "979",
+      "flight_code": "979",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 58,
       "key": "ICN-DAD-2026-10-21T20:35:00+09:00-2026-10-28T23:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1674,7 +1701,7 @@
       }
     },
     {
-      "rank": 58,
+      "rank": 59,
       "key": "ICN-PQC-2026-09-17T05:20:00+09:00-2026-09-21T22:25:00+07:00-9G-455",
       "origin": "ICN",
       "destination": "PQC",
@@ -1701,7 +1728,7 @@
       }
     },
     {
-      "rank": 59,
+      "rank": 60,
       "key": "ICN-TPE-2026-09-18T00:30:00+09:00-2026-09-21T20:00:00+08:00-IT-603",
       "origin": "ICN",
       "destination": "TPE",
@@ -1728,7 +1755,7 @@
       }
     },
     {
-      "rank": 60,
+      "rank": 61,
       "key": "ICN-PQC-2026-09-17T04:05:00+09:00-2026-09-22T00:20:00+07:00-VJ-979",
       "origin": "ICN",
       "destination": "PQC",
@@ -1755,7 +1782,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 62,
       "key": "ICN-DAD-2026-10-23T07:00:00+09:00-2026-10-25T23:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1782,7 +1809,7 @@
       }
     },
     {
-      "rank": 62,
+      "rank": 63,
       "key": "ICN-NRT-2026-09-15T08:00:00+09:00-2026-09-29T11:30:00+09:00-ZE-601",
       "origin": "ICN",
       "destination": "NRT",
@@ -1809,7 +1836,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 64,
       "key": "ICN-KIX-2026-10-20T15:15:00+09:00-2026-10-29T07:40:00+09:00-ZE-613",
       "origin": "ICN",
       "destination": "KIX",
@@ -1836,7 +1863,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 65,
       "key": "GMP-KIX-2026-12-14T11:20:00+09:00-2026-12-17T14:10:00+09:00-MM-736",
       "origin": "GMP",
       "destination": "KIX",
@@ -1864,7 +1891,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "key": "ICN-DAD-2026-10-21T20:35:00+09:00-2026-10-25T23:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1891,7 +1918,7 @@
       }
     },
     {
-      "rank": 66,
+      "rank": 67,
       "key": "ICN-NRT-2026-09-20T20:10:00+09:00-2026-09-24T21:45:00+09:00-TW-249",
       "origin": "ICN",
       "destination": "NRT",
@@ -1918,7 +1945,7 @@
       }
     },
     {
-      "rank": 67,
+      "rank": 68,
       "key": "ICN-NRT-2026-09-20T15:00:00+09:00-2026-09-30T10:50:00+09:00-7C-1107",
       "origin": "ICN",
       "destination": "NRT",
@@ -1945,7 +1972,7 @@
       }
     },
     {
-      "rank": 68,
+      "rank": 69,
       "key": "ICN-DAD-2026-10-05T20:35:00+09:00-2026-10-19T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1972,7 +1999,7 @@
       }
     },
     {
-      "rank": 69,
+      "rank": 70,
       "key": "ICN-KIX-2026-12-07T07:30:00+09:00-2026-12-10T19:50:00+09:00-MM-712",
       "origin": "ICN",
       "destination": "KIX",
@@ -1999,7 +2026,7 @@
       }
     },
     {
-      "rank": 70,
+      "rank": 71,
       "key": "ICN-PQC-2026-09-27T19:30:00+09:00-2026-09-30T00:20:00+07:00-ZE-581",
       "origin": "ICN",
       "destination": "PQC",
@@ -2026,42 +2053,15 @@
       }
     },
     {
-      "rank": 71,
-      "key": "ICN-DAD-2026-09-13T07:00:00+09:00-2026-09-16T23:45:00+07:00-VJ-879",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-09-13T07:00:00+09:00",
-      "return_at": "2026-09-16T23:45:00+07:00",
-      "airline": "VJ",
-      "flight_number": "879",
-      "flight_code": "879",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
       "rank": 72,
-      "key": "ICN-PQC-2026-09-12T19:30:00+09:00-2026-09-14T00:20:00+07:00-ZE-581",
+      "key": "ICN-NRT-2026-09-19T20:10:00+09:00-2026-09-24T08:40:00+09:00-TW-249",
       "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-12T19:30:00+09:00",
-      "return_at": "2026-09-14T00:20:00+07:00",
-      "airline": "ZE",
-      "flight_number": "581",
-      "flight_code": "581",
+      "destination": "NRT",
+      "departure_at": "2026-09-19T20:10:00+09:00",
+      "return_at": "2026-09-24T08:40:00+09:00",
+      "airline": "TW",
+      "flight_number": "249",
+      "flight_code": "249",
       "provider": "IIAC_SCHEDULE_MATCH",
       "verification_mode": "route_flight_schedule",
       "api_ok": true,
@@ -2075,7 +2075,7 @@
         "pageNo": "1",
         "numOfRows": "1000",
         "type": "json",
-        "airport": "PQC",
+        "airport": "NRT",
         "lang": "K"
       }
     },
@@ -2326,6 +2326,60 @@
     },
     {
       "rank": 82,
+      "key": "ICN-PQC-2026-10-06T02:10:00+09:00-2026-10-08T00:20:00+07:00-VJ-979",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-10-06T02:10:00+09:00",
+      "return_at": "2026-10-08T00:20:00+07:00",
+      "airline": "VJ",
+      "flight_number": "979",
+      "flight_code": "979",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 83,
+      "key": "ICN-PQC-2026-09-12T19:30:00+09:00-2026-09-14T00:20:00+07:00-ZE-581",
+      "origin": "ICN",
+      "destination": "PQC",
+      "departure_at": "2026-09-12T19:30:00+09:00",
+      "return_at": "2026-09-14T00:20:00+07:00",
+      "airline": "ZE",
+      "flight_number": "581",
+      "flight_code": "581",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PQC",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 84,
       "key": "ICN-DAD-2026-10-22T20:55:00+09:00-2026-10-29T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2352,7 +2406,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "key": "ICN-HKG-2026-10-02T02:35:00+09:00-2026-10-05T00:50:00+08:00-UO-615",
       "origin": "ICN",
       "destination": "HKG",
@@ -2379,7 +2433,7 @@
       }
     },
     {
-      "rank": 84,
+      "rank": 86,
       "key": "ICN-DAD-2026-10-26T07:00:00+09:00-2026-10-29T23:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2406,7 +2460,34 @@
       }
     },
     {
-      "rank": 85,
+      "rank": 87,
+      "key": "ICN-DAD-2026-10-13T07:00:00+09:00-2026-10-20T23:45:00+07:00-VJ-879",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-10-13T07:00:00+09:00",
+      "return_at": "2026-10-20T23:45:00+07:00",
+      "airline": "VJ",
+      "flight_number": "879",
+      "flight_code": "879",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 88,
       "key": "ICN-DAD-2026-10-23T20:55:00+09:00-2026-10-30T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2433,7 +2514,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 89,
       "key": "ICN-CXR-2026-09-13T19:00:00+09:00-2026-09-21T23:30:00+07:00-TW-033",
       "origin": "ICN",
       "destination": "CXR",
@@ -2460,7 +2541,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 90,
       "key": "ICN-DAD-2026-10-12T07:00:00+09:00-2026-10-15T23:45:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2487,7 +2568,7 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 91,
       "key": "GMP-KIX-2026-09-20T11:25:00+09:00-2026-09-23T16:05:00+09:00-MM-736",
       "origin": "GMP",
       "destination": "KIX",
@@ -2515,7 +2596,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 92,
       "key": "ICN-DAD-2026-10-12T07:00:00+09:00-2026-10-17T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2542,7 +2623,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 93,
       "key": "ICN-DAD-2026-09-25T07:00:00+09:00-2026-09-29T23:45:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2569,7 +2650,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 94,
       "key": "ICN-SGN-2026-09-20T11:40:00+09:00-2026-09-23T12:20:00+07:00-VJ-863",
       "origin": "ICN",
       "destination": "SGN",
@@ -2596,7 +2677,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 95,
       "key": "ICN-SGN-2026-10-19T11:40:00+09:00-2026-10-23T12:20:00+07:00-VJ-863",
       "origin": "ICN",
       "destination": "SGN",
@@ -2623,34 +2704,7 @@
       }
     },
     {
-      "rank": 93,
-      "key": "ICN-CXR-2026-09-14T06:45:00+09:00-2026-09-23T22:55:00+07:00-VJ-835",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-09-14T06:45:00+09:00",
-      "return_at": "2026-09-23T22:55:00+07:00",
-      "airline": "VJ",
-      "flight_number": "835",
-      "flight_code": "835",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 94,
+      "rank": 96,
       "key": "ICN-KIX-2026-10-11T16:10:00+09:00-2026-10-21T11:10:00+09:00-LJ-239",
       "origin": "ICN",
       "destination": "KIX",
@@ -2677,7 +2731,7 @@
       }
     },
     {
-      "rank": 95,
+      "rank": 97,
       "key": "ICN-CXR-2026-10-20T06:45:00+09:00-2026-10-30T00:30:00+07:00-VJ-835",
       "origin": "ICN",
       "destination": "CXR",
@@ -2704,7 +2758,7 @@
       }
     },
     {
-      "rank": 96,
+      "rank": 98,
       "key": "ICN-DAD-2026-09-14T07:00:00+09:00-2026-09-19T23:45:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2731,7 +2785,7 @@
       }
     },
     {
-      "rank": 97,
+      "rank": 99,
       "key": "ICN-DAD-2026-10-24T07:00:00+09:00-2026-10-29T23:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2758,7 +2812,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 100,
       "key": "ICN-DAD-2026-09-14T07:00:00+09:00-2026-09-21T23:45:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2767,60 +2821,6 @@
       "airline": "VJ",
       "flight_number": "879",
       "flight_code": "879",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 99,
-      "key": "ICN-PQC-2026-09-16T04:05:00+09:00-2026-09-24T00:20:00+07:00-VJ-979",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-09-16T04:05:00+09:00",
-      "return_at": "2026-09-24T00:20:00+07:00",
-      "airline": "VJ",
-      "flight_number": "979",
-      "flight_code": "979",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 100,
-      "key": "ICN-DAD-2026-10-11T20:55:00+09:00-2026-10-16T00:40:00+07:00-RS-511",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-10-11T20:55:00+09:00",
-      "return_at": "2026-10-16T00:40:00+07:00",
-      "airline": "RS",
-      "flight_number": "511",
-      "flight_code": "511",
       "provider": "IIAC_SCHEDULE_MATCH",
       "verification_mode": "route_flight_schedule",
       "api_ok": true,
