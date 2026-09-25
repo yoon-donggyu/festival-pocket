@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T14:42:30.328726+00:00",
+  "generated_at_utc": "2026-09-25T23:59:16.678188+00:00",
   "quota_policy": {
     "runs_per_day": 2,
     "queries_per_run": 6,
@@ -9,113 +9,112 @@
   "queries_this_run": 6,
   "run_results": [
     {
-      "candidate_key": "ICN|FUK|2026-10-06|2026-10-14|ZE|643",
-      "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
-      "rank_at_check": 13,
-      "selection_priority": 71.2,
+      "candidate_key": "ICN|DAD|2026-11-27|2026-11-30|VJ|879",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 29,
+      "selection_priority": 61.7,
       "selection_reasons": [
         "신규/미검증",
         "검증 24시간 경과",
-        "목적지내 저가 8%"
-      ],
-      "origin": "ICN",
-      "destination": "FUK",
-      "destination_name": "후쿠오카",
-      "departure_date": "2026-10-06",
-      "return_date": "2026-10-14",
-      "travelpayouts_price_krw": 190502,
-      "travelpayouts_airline": "ZE",
-      "travelpayouts_flight_number": "643",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "candidate_key": "ICN|DAD|2026-10-24|2026-10-29|VJ|879",
-      "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
-      "rank_at_check": 17,
-      "selection_priority": 70.17,
-      "selection_reasons": [
-        "신규/미검증",
-        "검증 24시간 경과",
-        "목적지내 저가 11%"
+        "목적지내 저가 7%"
       ],
       "origin": "ICN",
       "destination": "DAD",
       "destination_name": "다낭",
-      "departure_date": "2026-10-24",
-      "return_date": "2026-10-29",
-      "travelpayouts_price_krw": 195455,
+      "departure_date": "2026-11-27",
+      "return_date": "2026-11-30",
+      "travelpayouts_price_krw": 205369,
       "travelpayouts_airline": "VJ",
       "travelpayouts_flight_number": "879",
       "ok": false,
       "error": "HTTP Error 429: Too Many Requests"
     },
     {
-      "candidate_key": "ICN|CXR|2026-10-05|2026-10-15|RS|527",
-      "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
-      "rank_at_check": 27,
-      "selection_priority": 59.83,
+      "candidate_key": "ICN|CXR|2026-10-23|2026-10-27|VJ|835",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 34,
+      "selection_priority": 56.31,
       "selection_reasons": [
         "신규/미검증",
         "검증 24시간 경과",
-        "목적지내 저가 5%"
+        "목적지내 저가 1%"
       ],
       "origin": "ICN",
       "destination": "CXR",
       "destination_name": "나트랑",
-      "departure_date": "2026-10-05",
-      "return_date": "2026-10-15",
-      "travelpayouts_price_krw": 201237,
-      "travelpayouts_airline": "RS",
-      "travelpayouts_flight_number": "527",
+      "departure_date": "2026-10-23",
+      "return_date": "2026-10-27",
+      "travelpayouts_price_krw": 210128,
+      "travelpayouts_airline": "VJ",
+      "travelpayouts_flight_number": "835",
       "ok": false,
       "error": "HTTP Error 429: Too Many Requests"
     },
     {
-      "candidate_key": "GMP|KIX|2026-12-02|2026-12-09|MM|736",
-      "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
-      "rank_at_check": 89,
+      "candidate_key": "ICN|KIX|2026-12-02|2026-12-09|MM|706",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 80,
       "selection_priority": 55,
       "selection_reasons": [
         "신규/미검증",
         "검증 24시간 경과"
       ],
-      "origin": "GMP",
+      "origin": "ICN",
       "destination": "KIX",
       "destination_name": "오사카",
       "departure_date": "2026-12-02",
       "return_date": "2026-12-09",
-      "travelpayouts_price_krw": 224220,
+      "travelpayouts_price_krw": 223566,
       "travelpayouts_airline": "MM",
-      "travelpayouts_flight_number": "736",
+      "travelpayouts_flight_number": "706",
       "ok": false,
       "error": "HTTP Error 429: Too Many Requests"
     },
     {
-      "candidate_key": "ICN|TAO|2026-10-02|2026-10-07|LJ|861",
-      "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
-      "rank_at_check": 3,
-      "selection_priority": 36.23,
+      "candidate_key": "ICN|FUK|2026-10-13|2026-10-15|ZE|643",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 99,
+      "selection_priority": 55,
+      "selection_reasons": [
+        "신규/미검증",
+        "검증 24시간 경과"
+      ],
+      "origin": "ICN",
+      "destination": "FUK",
+      "destination_name": "후쿠오카",
+      "departure_date": "2026-10-13",
+      "return_date": "2026-10-15",
+      "travelpayouts_price_krw": 226934,
+      "travelpayouts_airline": "ZE",
+      "travelpayouts_flight_number": "643",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "candidate_key": "ICN|TAO|2026-10-01|2026-10-03|LJ|861",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 1,
+      "selection_priority": 51.69,
       "selection_reasons": [
         "검증 24시간 경과",
-        "목적지내 저가 3%"
+        "목적지내 저가 17%"
       ],
       "origin": "ICN",
       "destination": "TAO",
       "destination_name": "칭다오",
-      "departure_date": "2026-10-02",
-      "return_date": "2026-10-07",
-      "travelpayouts_price_krw": 171875,
+      "departure_date": "2026-10-01",
+      "return_date": "2026-10-03",
+      "travelpayouts_price_krw": 147972,
       "travelpayouts_airline": "LJ",
       "travelpayouts_flight_number": "861",
       "ok": false,
       "error": "HTTP Error 429: Too Many Requests"
     },
     {
-      "candidate_key": "ICN|PQC|2026-11-03|2026-11-11|VJ|977",
-      "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
-      "rank_at_check": 4,
-      "selection_priority": 40.24,
+      "candidate_key": "ICN|PQC|2026-10-11|2026-10-17|VJ|977",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 5,
+      "selection_priority": 38.83,
       "selection_reasons": [
         "검증 24시간 경과",
         "목적지내 저가 8%"
@@ -123,9 +122,9 @@
       "origin": "ICN",
       "destination": "PQC",
       "destination_name": "푸꾸옥",
-      "departure_date": "2026-11-03",
-      "return_date": "2026-11-11",
-      "travelpayouts_price_krw": 174174,
+      "departure_date": "2026-10-11",
+      "return_date": "2026-10-17",
+      "travelpayouts_price_krw": 174958,
       "travelpayouts_airline": "VJ",
       "travelpayouts_flight_number": "977",
       "ok": false,
@@ -133,6 +132,128 @@
     }
   ],
   "results": [
+    {
+      "candidate_key": "ICN|TAO|2026-10-01|2026-10-03|LJ|861",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 1,
+      "selection_priority": 51.69,
+      "selection_reasons": [
+        "검증 24시간 경과",
+        "목적지내 저가 17%"
+      ],
+      "origin": "ICN",
+      "destination": "TAO",
+      "destination_name": "칭다오",
+      "departure_date": "2026-10-01",
+      "return_date": "2026-10-03",
+      "travelpayouts_price_krw": 147972,
+      "travelpayouts_airline": "LJ",
+      "travelpayouts_flight_number": "861",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "candidate_key": "ICN|PQC|2026-10-11|2026-10-17|VJ|977",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 5,
+      "selection_priority": 38.83,
+      "selection_reasons": [
+        "검증 24시간 경과",
+        "목적지내 저가 8%"
+      ],
+      "origin": "ICN",
+      "destination": "PQC",
+      "destination_name": "푸꾸옥",
+      "departure_date": "2026-10-11",
+      "return_date": "2026-10-17",
+      "travelpayouts_price_krw": 174958,
+      "travelpayouts_airline": "VJ",
+      "travelpayouts_flight_number": "977",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "candidate_key": "ICN|DAD|2026-11-27|2026-11-30|VJ|879",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 29,
+      "selection_priority": 61.7,
+      "selection_reasons": [
+        "신규/미검증",
+        "검증 24시간 경과",
+        "목적지내 저가 7%"
+      ],
+      "origin": "ICN",
+      "destination": "DAD",
+      "destination_name": "다낭",
+      "departure_date": "2026-11-27",
+      "return_date": "2026-11-30",
+      "travelpayouts_price_krw": 205369,
+      "travelpayouts_airline": "VJ",
+      "travelpayouts_flight_number": "879",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "candidate_key": "ICN|CXR|2026-10-23|2026-10-27|VJ|835",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 34,
+      "selection_priority": 56.31,
+      "selection_reasons": [
+        "신규/미검증",
+        "검증 24시간 경과",
+        "목적지내 저가 1%"
+      ],
+      "origin": "ICN",
+      "destination": "CXR",
+      "destination_name": "나트랑",
+      "departure_date": "2026-10-23",
+      "return_date": "2026-10-27",
+      "travelpayouts_price_krw": 210128,
+      "travelpayouts_airline": "VJ",
+      "travelpayouts_flight_number": "835",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "candidate_key": "ICN|KIX|2026-12-02|2026-12-09|MM|706",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 80,
+      "selection_priority": 55,
+      "selection_reasons": [
+        "신규/미검증",
+        "검증 24시간 경과"
+      ],
+      "origin": "ICN",
+      "destination": "KIX",
+      "destination_name": "오사카",
+      "departure_date": "2026-12-02",
+      "return_date": "2026-12-09",
+      "travelpayouts_price_krw": 223566,
+      "travelpayouts_airline": "MM",
+      "travelpayouts_flight_number": "706",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "candidate_key": "ICN|FUK|2026-10-13|2026-10-15|ZE|643",
+      "checked_at_utc": "2026-09-25T23:59:16.678188+00:00",
+      "rank_at_check": 99,
+      "selection_priority": 55,
+      "selection_reasons": [
+        "신규/미검증",
+        "검증 24시간 경과"
+      ],
+      "origin": "ICN",
+      "destination": "FUK",
+      "destination_name": "후쿠오카",
+      "departure_date": "2026-10-13",
+      "return_date": "2026-10-15",
+      "travelpayouts_price_krw": 226934,
+      "travelpayouts_airline": "ZE",
+      "travelpayouts_flight_number": "643",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
     {
       "candidate_key": "ICN|PQC|2026-11-03|2026-11-11|VJ|977",
       "checked_at_utc": "2026-09-25T14:42:30.328726+00:00",
@@ -273,27 +394,6 @@
       "travelpayouts_price_krw": 209838,
       "travelpayouts_airline": "ZE",
       "travelpayouts_flight_number": "603",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "candidate_key": "ICN|TAO|2026-10-01|2026-10-03|LJ|861",
-      "checked_at_utc": "2026-09-24T23:55:59.463955+00:00",
-      "rank_at_check": 1,
-      "selection_priority": 90.14,
-      "selection_reasons": [
-        "신규/미검증",
-        "검증 24시간 경과",
-        "목적지내 저가 15%"
-      ],
-      "origin": "ICN",
-      "destination": "TAO",
-      "destination_name": "칭다오",
-      "departure_date": "2026-10-01",
-      "return_date": "2026-10-03",
-      "travelpayouts_price_krw": 155591,
-      "travelpayouts_airline": "LJ",
-      "travelpayouts_flight_number": "861",
       "ok": false,
       "error": "HTTP Error 429: Too Many Requests"
     },
@@ -642,27 +742,6 @@
       "travelpayouts_price_krw": 218805,
       "travelpayouts_airline": "MM",
       "travelpayouts_flight_number": "738",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
-    },
-    {
-      "candidate_key": "ICN|PQC|2026-10-11|2026-10-17|VJ|977",
-      "checked_at_utc": "2026-09-23T14:20:21.013981+00:00",
-      "rank_at_check": 7,
-      "selection_priority": 73.14,
-      "selection_reasons": [
-        "신규/미검증",
-        "검증 24시간 경과",
-        "목적지내 저가 4%"
-      ],
-      "origin": "ICN",
-      "destination": "PQC",
-      "destination_name": "푸꾸옥",
-      "departure_date": "2026-10-11",
-      "return_date": "2026-10-17",
-      "travelpayouts_price_krw": 173482,
-      "travelpayouts_airline": "VJ",
-      "travelpayouts_flight_number": "977",
       "ok": false,
       "error": "HTTP Error 429: Too Many Requests"
     },
