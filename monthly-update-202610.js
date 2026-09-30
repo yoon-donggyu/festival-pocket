@@ -1,0 +1,27 @@
+// Festival Pocket monthly dataset refresh · 2026-10-01
+(function(){
+try{
+const patch=(id,data)=>{const f=festivals.find(x=>x.id===id);if(f)Object.assign(f,data);};
+patch(7,{name:"제26회 한성백제문화제",start:"2026-10-23",end:"2026-10-25",month:10,dateText:"10.23(금) – 10.25(일)",place:"올림픽공원 88잔디마당",search:"올림픽공원 88잔디마당",status:"확정",source:"https://www.songpa.go.kr/hanseong/"});
+patch(8,{start:"2026-10-03",end:"2026-10-05",month:10,dateText:"10.3(토) – 10.5(월)",place:"도산대로·마루공원·봉은사 일대",search:"도산공원",status:"확정",source:"https://www.gangnam.go.kr/gangnamlife/2026/html/vol374/sub01_02.html"});
+patch(11,{start:"2026-10-16",end:"2026-10-18",month:10,dateText:"10.16 – 10.18 (예정)",status:"예정",source:"https://festival.seoul.go.kr/festival/year/loadMap.do"});
+patch(12,{start:"2026-10-17",end:"2026-10-23",month:10,dateText:"10.17 – 10.23",status:"확정",source:"https://festival.seoul.go.kr/festival/year/loadMap.do"});
+patch(13,{start:"2026-10-29",end:"2026-10-31",month:10,dateText:"10.29 – 10.31",status:"확정",source:"https://festival.seoul.go.kr/festival/year/loadMap.do"});
+patch(23,{dateText:"9.24(목) – 10.4(일) · 개막식 9.25 18:00",place:"중앙선 1942 안동역·탈춤공원·원도심·하회마을 등",search:"안동탈춤공원",status:"확정",source:"https://www.maskdance.com/2024/main.asp"});
+patch(28,{dateText:"9.12 · 10.9 · 10.31 · 19:30–21:25 (드론쇼 20:30–20:45)",place:"뚝섬한강공원 수변무대",status:"확정",source:"https://news.seoul.go.kr/culture/archives/534345"});
+patch(34,{dateText:"10.24(토) – 10.25(일) · 12:00–20:30",district:"마포구",place:"난지캠핑장 일대",search:"난지캠핑장",lat:37.5704,lng:126.8728,status:"확정",fee:"무료 입장 · 셀프BBQ존/음식 구매 유료",source:"https://news.seoul.go.kr/culture/archives/534476"});
+const additions=[
+{id:35,name:"2026 서울라이트 한강 빛섬축제",start:"2026-10-02",end:"2026-10-11",dateText:"10.2 – 10.11",month:10,region:"서울",district:"용산구",place:"노들섬",search:"노들섬",lat:37.5178,lng:126.9583,type:"빛·야간",pin:"light",icon:"✨",format:"수변 미디어아트형 · 레이저+빛",rating:4.9,status:"확정",fee:"무료 관람 중심",crowd:"매우 혼잡",desc:"노들섬에서 열리는 수변 레이저·빛 미디어아트 축제.",tags:["미디어아트","야경","한강","사진","데이트"],source:"https://news.seoul.go.kr/culture/archives/534609",scope:0},
+{id:36,name:"스마트라이프위크 2026",start:"2026-10-06",end:"2026-10-08",dateText:"10.6(화) – 10.8(목)",month:10,region:"서울",district:"강남구",place:"코엑스 A·B홀 및 300~308호",search:"코엑스",lat:37.5117,lng:127.0592,type:"전시·예술",pin:"art",icon:"🤖",format:"미래도시 체험형 · AI+로봇",rating:4.6,status:"확정",fee:"사전등록 시 전시 무료",crowd:"혼잡",desc:"AI·로봇·스마트 모빌리티 미래도시 체험 행사.",tags:["AI","로봇","체험","전시","실내"],source:"https://news.seoul.go.kr/gov/archives/580148",scope:0},
+{id:37,name:"2026 한강페스티벌 · 가을",start:"2026-10-17",end:"2026-10-25",dateText:"10.17(토) – 10.25(일)",month:10,region:"서울",district:"한강공원",place:"한강공원 일대",search:"반포한강공원",lat:37.5096,lng:126.9958,type:"도심종합",pin:"city",icon:"🌊",format:"한강 체험형 · 운동+공연",rating:4.7,status:"확정",fee:"프로그램별 상이",crowd:"혼잡",desc:"가을 한강에서 운동·공연·야외 체험을 즐기는 시즌 축제.",tags:["한강","공연","체험","가족"],source:"https://www.seoul.go.kr/festa/hangang/y2026",scope:0},
+{id:38,name:"2026 서울뮤직페스티벌",start:"2026-10-24",end:"2026-10-24",dateText:"10.24(토) · 12:00–21:00",month:10,region:"서울",district:"용산구",place:"노들섬",search:"노들섬",lat:37.5178,lng:126.9583,type:"도심종합",pin:"city",icon:"🎵",format:"야외 음악축제형 · 라이브+푸드",rating:4.8,status:"확정",fee:"무료",crowd:"매우 혼잡",desc:"노들섬에서 열리는 무료 음악축제.",tags:["음악","공연","노들섬","무료"],source:"https://culture.seoul.go.kr/night/sub/program/view.do?pgmId=7115",scope:0},
+{id:39,name:"2026 서울펫림픽",start:"2026-10-24",end:"2026-10-25",dateText:"10.24(토) – 10.25(일)",month:10,region:"서울",district:"마포구",place:"월드컵공원 평화광장",search:"월드컵공원 평화광장",lat:37.5639,lng:126.8972,type:"도심종합",pin:"city",icon:"🐕",format:"반려동물 스포츠형 · 경기+체험",rating:4.7,status:"확정",fee:"관람 중심 무료 · 경기 참가비 별도",crowd:"혼잡",desc:"반려견 스포츠 경기와 도그트레일을 즐기는 축제.",tags:["반려견","스포츠","체험","가족"],source:"https://news.seoul.go.kr/env/archives/570688",scope:0}
+];
+const norm=s=>String(s||"").replace(/\s+/g,"").replace(/2026/g,"").toLowerCase();
+for(const a of additions){const idx=festivals.findIndex(f=>f.id===a.id||norm(f.name)===norm(a.name));if(idx>=0)Object.assign(festivals[idx],a);else festivals.push(a);}
+Object.assign(extras,{35:{parking:"노들섬 행사 기간 대중교통 권장.",parkingLevel:5,warn:"야간 수변 행사라 기상·운영 공지를 확인하세요.",scores:{date:5,food:4.2,photo:5,family:4.7,value:5}},36:{parking:"코엑스 행사 기간 대중교통 권장.",parkingLevel:4,warn:"프로그램별 참가 조건 확인.",scores:{date:4.2,food:4.4,photo:4.4,family:4.7,value:4.9}},37:{parking:"프로그램별 장소 확인 필요.",parkingLevel:4,warn:"야외 프로그램은 기상에 따라 변경 가능.",scores:{date:4.8,food:4.3,photo:4.8,family:4.9,value:4.8}},38:{parking:"노들섬 대중교통 권장.",parkingLevel:5,warn:"무료 공연이라 인파 집중 가능.",scores:{date:4.9,food:4.4,photo:4.7,family:4.4,value:5}},39:{parking:"월드컵공원 행사일 혼잡 가능.",parkingLevel:4,warn:"종목 참가에는 사전신청·참가비가 필요할 수 있습니다.",scores:{date:4.5,food:4,photo:4.7,family:5,value:4.5}}});
+if(typeof mapPos!=="undefined")Object.assign(mapPos,{35:[190,250],36:[275,285],37:[225,270],38:[190,250],39:[150,230]});
+const seenId=new Set(),seenName=new Set();for(let i=festivals.length-1;i>=0;i--){const f=festivals[i],n=norm(f.name);if(seenId.has(f.id)||seenName.has(n))festivals.splice(i,1);else{seenId.add(f.id);seenName.add(n);}}
+if(typeof renderAll==="function")renderAll();if(typeof renderPreference==="function")renderPreference();if(typeof renderSelectionList==="function"&&document.querySelector("#selectionList"))renderSelectionList();
+}catch(e){console.error("Festival Pocket 2026-10 monthly update error",e);}
+})();
