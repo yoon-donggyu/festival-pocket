@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-10T15:33:00.721413+00:00",
-  "elapsed_seconds": 3.69,
+  "generated_at_utc": "2026-10-10T20:16:24.861403+00:00",
+  "elapsed_seconds": 2.15,
   "timeout_seconds": 35,
   "max_attempts": 2,
   "max_workers": 8,
@@ -19,13 +19,37 @@
       "ok": true,
       "status": 200,
       "content_type": "application/json",
-      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 188, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"airFln\": \"WE6501\", \"std\": \"0600\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"13\", \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS901\", \"std\": \"0600\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"airFln\": \"ZE201\", \"std\": \"0605\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"airFln\": \"ZE261\", \"std\": \"0610\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"airFln\": \"LJ501\", \"std\": \"0615\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C101\", \"std\": \"0615\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE5153\", \"std\": \"0615\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C151\", \"std\": \"0620\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C103\", \"std\": \"0620\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"airFln\": \"TW701\", \"std\": \"0625\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": null, \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}]}}}}",
+      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 188, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS901\", \"std\": \"0600\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"airFln\": \"WE6501\", \"std\": \"0600\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"13\", \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"airFln\": \"ZE201\", \"std\": \"0605\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"11\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"이스타항공\", \"airlineEnglish\": \"EASTAR JET\", \"airFln\": \"ZE261\", \"std\": \"0610\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"12\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE5153\", \"std\": \"0615\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"1\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"airFln\": \"LJ501\", \"std\": \"0615\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"1\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C101\", \"std\": \"0615\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"19\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C151\", \"std\": \"0620\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"14\", \"rmkKor\": \"탑승구 변경\", \"rmkEng\": \"GATE CHANGE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C103\", \"std\": \"0620\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"15\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"airFln\": \"TW701\", \"std\": \"0625\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"18\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}]}}}}",
       "attempts": [
         {
           "attempt": 1,
           "ok": true,
           "status": 200,
-          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 188, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"airFln\": \"WE6501\", \"std\": \"0600\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"13\", \"rmkKor\": null, \"rmkEng\": null, \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GI"
+          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 188, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS901\", \"std\": \"0600\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": \"탑승장 입장\", \"rmkEng\": \"GO TO GATE\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingE"
+        }
+      ],
+      "attempt_count": 1
+    },
+    {
+      "provider": "IIAC_DEPARTURES",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
+      },
+      "ok": true,
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "body_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":99,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1303\",\"airline\":\"제주항공\",\"st\":\"0905\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE611\",\"airline\":\"이스타항공\",\"st\":\"0915\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9855\",\"airline\":\"아시아나항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"KE723\",\"airline\":\"대한항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"DL7785\",\"airline\":\"델타항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"OM6703\",\"airline\":\"몽골항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"JL5210\",\"airline\":\"일본항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1393\",\"airline\":\"제주항공\",\"st\":\"1405\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE613\",\"airline\":\"이스타항공\",\"st\":\"1515\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"TW305\",\"airline\":\"트리니티항공\",\"st\":\"1555\",\"firstdate\":\"20260329\",\"lastdate\":\"20261012\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9859\",\"airline\":\"아시아나항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE721\",\"codeshare\":\"Slave\"},{\"flightid\":\"KE721\",\"airline\":\"대한항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM710\",\"airline\":\"피치항공\",\"st\":\"2055\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM712\",\"airline\":\"피치항공\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM712\",\"airline\":\"피치항공\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"N\",\"wednesday\":\"N\",\"thursday\":\"N\",\"friday\":\"N\",\"saturday\":\"N\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3512\",\"airline\":\"전일본공수\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"MM712\",\"codeshare\":\"Slave\"},{\"flightid\":\"MM714\",\"airline\":\"피치항공\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3524\",\"airline\":\"전일본공수\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"MM714\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1395\",\"airline\":\"제주항공\",\"st\":\"1920\",\"firstdate\":\"20260401\",\"lastdate\":\"20261023\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1305\",\"airline\":\"제주항공\",\"st\":\"1040\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9568\",\"airline\":\"아시아나항공\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX172\",\"codeshare\":\"Slave\"},{\"flightid\":\"BX172\",\"airline\":\"에어부산\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX174\",\"airline\":\"에어부산\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9570\",\"airline\":\"아시아나항공\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX174\",\"codeshare\":\"Slave\"},{\"flightid\":\"OZ116\",\"airline\":\"아시아나항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"AC6974\",\"airline\":\"에어캐나다\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ116\",\"codeshare\":\"Slave\"},{\"flightid\":\"ET1290\",\"airline\":\"에티오피아항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ116\",\"codeshare\":\"Slave\"},{\"flightid\":\"EY8450\",\"airline\":\"에티하드 항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ116\",\"codeshare\":\"Slave\"}]}}}",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "status": 200,
+          "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":99,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"las"
         }
       ],
       "attempt_count": 1
@@ -50,31 +74,6 @@
           "ok": true,
           "status": 200,
           "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":98,\"items\":[{\"flightid\":\"7C1302\",\"airline\":\"제주항공\",\"st\":\"1205\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1392\",\"airline\":\"제주항공\",\"st\":\"1250\",\"firstdate\":\"20260329\",\"las"
-        }
-      ],
-      "attempt_count": 1
-    },
-    {
-      "provider": "KAC_INT",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/int",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "30",
-        "schDate": "20260901",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "HND",
-        "type": "json"
-      },
-      "ok": true,
-      "status": 200,
-      "content_type": "application/json",
-      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": \"0740\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-01T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL90\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"0800\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1085\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2101\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0900\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL92\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"1205\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH864\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1240\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1045\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1545\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2103\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1620\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2105\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-09-30T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL94\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1915\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1065\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1950\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH868\", \"internationalStdate\": \"2026-08-26T00:00:00\", \"internationalTime\": \"1955\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}]}}}}",
-      "attempts": [
-        {
-          "attempt": 1,
-          "ok": true,
-          "status": 200,
-          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": "
         }
       ],
       "attempt_count": 1
@@ -105,25 +104,26 @@
       "attempt_count": 1
     },
     {
-      "provider": "IIAC_DEPARTURES",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
+      "provider": "KAC_INT",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/int",
       "params_without_key": {
         "pageNo": "1",
         "numOfRows": "30",
-        "type": "json",
-        "airport": "KIX",
-        "lang": "K"
+        "schDate": "20260901",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "HND",
+        "type": "json"
       },
       "ok": true,
       "status": 200,
-      "content_type": "application/json;charset=UTF-8",
-      "body_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":99,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1303\",\"airline\":\"제주항공\",\"st\":\"0905\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE611\",\"airline\":\"이스타항공\",\"st\":\"0915\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9855\",\"airline\":\"아시아나항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"KE723\",\"airline\":\"대한항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"DL7785\",\"airline\":\"델타항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"OM6703\",\"airline\":\"몽골항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"JL5210\",\"airline\":\"일본항공\",\"st\":\"0935\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE723\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1393\",\"airline\":\"제주항공\",\"st\":\"1405\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE613\",\"airline\":\"이스타항공\",\"st\":\"1515\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"TW305\",\"airline\":\"트리니티항공\",\"st\":\"1555\",\"firstdate\":\"20260329\",\"lastdate\":\"20261012\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9859\",\"airline\":\"아시아나항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"KE721\",\"codeshare\":\"Slave\"},{\"flightid\":\"KE721\",\"airline\":\"대한항공\",\"st\":\"1845\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM710\",\"airline\":\"피치항공\",\"st\":\"2055\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM712\",\"airline\":\"피치항공\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM712\",\"airline\":\"피치항공\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"N\",\"wednesday\":\"N\",\"thursday\":\"N\",\"friday\":\"N\",\"saturday\":\"N\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3512\",\"airline\":\"전일본공수\",\"st\":\"0730\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"N\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"N\",\"masterflightid\":\"MM712\",\"codeshare\":\"Slave\"},{\"flightid\":\"MM714\",\"airline\":\"피치항공\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"NH3524\",\"airline\":\"전일본공수\",\"st\":\"1020\",\"firstdate\":\"20260330\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"MM714\",\"codeshare\":\"Slave\"},{\"flightid\":\"7C1395\",\"airline\":\"제주항공\",\"st\":\"1920\",\"firstdate\":\"20260401\",\"lastdate\":\"20261023\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1305\",\"airline\":\"제주항공\",\"st\":\"1040\",\"firstdate\":\"20260530\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9568\",\"airline\":\"아시아나항공\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX172\",\"codeshare\":\"Slave\"},{\"flightid\":\"BX172\",\"airline\":\"에어부산\",\"st\":\"0940\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX174\",\"airline\":\"에어부산\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9570\",\"airline\":\"아시아나항공\",\"st\":\"1300\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX174\",\"codeshare\":\"Slave\"},{\"flightid\":\"OZ116\",\"airline\":\"아시아나항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"AC6974\",\"airline\":\"에어캐나다\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ116\",\"codeshare\":\"Slave\"},{\"flightid\":\"ET1290\",\"airline\":\"에티오피아항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ116\",\"codeshare\":\"Slave\"},{\"flightid\":\"EY8450\",\"airline\":\"에티하드 항공\",\"st\":\"1935\",\"firstdate\":\"20260701\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ116\",\"codeshare\":\"Slave\"}]}}}",
+      "content_type": "application/json",
+      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": \"0740\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-01T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL90\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"0800\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1085\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2101\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0900\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL92\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"1205\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH864\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1240\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1045\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1545\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2103\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1620\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2105\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-09-30T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL94\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1915\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1065\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1950\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH868\", \"internationalStdate\": \"2026-08-26T00:00:00\", \"internationalTime\": \"1955\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}]}}}}",
       "attempts": [
         {
           "attempt": 1,
           "ok": true,
           "status": 200,
-          "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":99,\"items\":[{\"flightid\":\"7C1301\",\"airline\":\"제주항공\",\"st\":\"0710\",\"firstdate\":\"20260329\",\"lastdate\":\"20261024\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"S26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1391\",\"airline\":\"제주항공\",\"st\":\"0755\",\"firstdate\":\"20260329\",\"las"
+          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": "
         }
       ],
       "attempt_count": 1
@@ -132,6 +132,33 @@
   "top50_verifications": [
     {
       "rank": 1,
+      "key": "ICN-TAO-2026-10-16T23:30:00+09:00-2026-10-18T01:05:00+08:00-LJ-867",
+      "origin": "ICN",
+      "destination": "TAO",
+      "departure_at": "2026-10-16T23:30:00+09:00",
+      "return_at": "2026-10-18T01:05:00+08:00",
+      "airline": "LJ",
+      "flight_number": "867",
+      "flight_code": "867",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "TAO",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 2,
       "key": "ICN-TAO-2026-10-13T23:30:00+09:00-2026-10-16T09:00:00+08:00-LJ-867",
       "origin": "ICN",
       "destination": "TAO",
@@ -158,7 +185,7 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
       "key": "ICN-TAO-2026-10-22T23:30:00+09:00-2026-10-24T01:05:00+08:00-LJ-867",
       "origin": "ICN",
       "destination": "TAO",
@@ -185,7 +212,7 @@
       }
     },
     {
-      "rank": 3,
+      "rank": 4,
       "key": "ICN-FUK-2026-10-12T07:15:00+09:00-2026-10-15T09:40:00+09:00-LJ-261",
       "origin": "ICN",
       "destination": "FUK",
@@ -212,7 +239,7 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
       "key": "ICN-KIX-2026-11-10T21:45:00+09:00-2026-11-12T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -239,7 +266,7 @@
       }
     },
     {
-      "rank": 5,
+      "rank": 6,
       "key": "ICN-KIX-2026-10-13T22:30:00+09:00-2026-10-21T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -266,7 +293,7 @@
       }
     },
     {
-      "rank": 6,
+      "rank": 7,
       "key": "ICN-CXR-2026-10-11T20:55:00+09:00-2026-10-24T01:05:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -293,7 +320,7 @@
       }
     },
     {
-      "rank": 7,
+      "rank": 8,
       "key": "ICN-KIX-2026-10-14T22:30:00+09:00-2026-10-21T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -320,7 +347,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "key": "ICN-TAO-2026-10-17T23:30:00+09:00-2026-10-19T01:05:00+08:00-LJ-867",
       "origin": "ICN",
       "destination": "TAO",
@@ -347,7 +374,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 10,
       "key": "ICN-TAO-2026-10-21T07:15:00+09:00-2026-10-28T09:20:00+08:00-LJ-861",
       "origin": "ICN",
       "destination": "TAO",
@@ -374,7 +401,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "key": "ICN-KIX-2026-10-12T22:30:00+09:00-2026-10-15T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -401,7 +428,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "key": "ICN-DAD-2026-11-09T19:00:00+09:00-2026-11-13T00:40:00+07:00-TW-011",
       "origin": "ICN",
       "destination": "DAD",
@@ -428,7 +455,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 13,
       "key": "ICN-CXR-2026-10-26T20:50:00+09:00-2026-10-30T00:30:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -455,7 +482,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 14,
       "key": "ICN-FUK-2026-10-11T18:20:00+09:00-2026-10-15T11:30:00+09:00-ZE-649",
       "origin": "ICN",
       "destination": "FUK",
@@ -482,7 +509,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
       "key": "ICN-CXR-2026-11-20T20:00:00+09:00-2026-11-27T00:30:00+07:00-RS-115",
       "origin": "ICN",
       "destination": "CXR",
@@ -491,33 +518,6 @@
       "airline": "RS",
       "flight_number": "115",
       "flight_code": "115",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 15,
-      "key": "ICN-CXR-2026-11-03T20:00:00+09:00-2026-11-09T00:30:00+07:00-RS-0115",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-11-03T20:00:00+09:00",
-      "return_at": "2026-11-09T00:30:00+07:00",
-      "airline": "RS",
-      "flight_number": "0115",
-      "flight_code": "0115",
       "provider": "IIAC_SCHEDULE_MATCH",
       "verification_mode": "route_flight_schedule",
       "api_ok": true,
@@ -645,6 +645,33 @@
     },
     {
       "rank": 20,
+      "key": "ICN-KIX-2026-12-08T21:45:00+09:00-2026-12-15T00:40:00+09:00-TW-317",
+      "origin": "ICN",
+      "destination": "KIX",
+      "departure_at": "2026-12-08T21:45:00+09:00",
+      "return_at": "2026-12-15T00:40:00+09:00",
+      "airline": "TW",
+      "flight_number": "317",
+      "flight_code": "317",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 21,
       "key": "ICN-CXR-2026-10-17T19:00:00+09:00-2026-10-23T00:05:00+07:00-TW-33",
       "origin": "ICN",
       "destination": "CXR",
@@ -671,7 +698,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
       "key": "ICN-KIX-2026-11-04T21:45:00+09:00-2026-11-10T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -698,7 +725,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 23,
       "key": "ICN-KIX-2026-11-09T21:45:00+09:00-2026-11-17T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -725,7 +752,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 24,
       "key": "ICN-KIX-2026-11-09T21:45:00+09:00-2026-11-18T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -748,33 +775,6 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "KIX",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 24,
-      "key": "ICN-CXR-2026-11-21T20:00:00+09:00-2026-11-26T00:30:00+07:00-RS-115",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-11-21T20:00:00+09:00",
-      "return_at": "2026-11-26T00:30:00+07:00",
-      "airline": "RS",
-      "flight_number": "115",
-      "flight_code": "115",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
         "lang": "K"
       }
     },
@@ -969,33 +969,6 @@
     },
     {
       "rank": 32,
-      "key": "ICN-CXR-2026-10-26T06:45:00+09:00-2026-10-31T00:30:00+07:00-VJ-835",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-10-26T06:45:00+09:00",
-      "return_at": "2026-10-31T00:30:00+07:00",
-      "airline": "VJ",
-      "flight_number": "835",
-      "flight_code": "835",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 33,
       "key": "ICN-DAD-2026-11-02T07:00:00+09:00-2026-11-12T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1022,7 +995,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 33,
       "key": "ICN-CXR-2026-10-12T20:55:00+09:00-2026-10-18T00:05:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -1049,7 +1022,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 34,
       "key": "ICN-KIX-2026-10-11T22:30:00+09:00-2026-10-14T01:30:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1076,7 +1049,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 35,
       "key": "ICN-DAD-2026-11-08T07:00:00+09:00-2026-11-13T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1103,7 +1076,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 36,
       "key": "ICN-CXR-2026-11-23T20:50:00+09:00-2026-11-26T00:30:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -1130,7 +1103,7 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 37,
       "key": "ICN-DAD-2026-11-17T07:00:00+09:00-2026-11-26T00:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1157,7 +1130,7 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 38,
       "key": "ICN-CXR-2026-10-13T20:55:00+09:00-2026-10-16T00:05:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -1184,7 +1157,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 39,
       "key": "ICN-CXR-2026-11-26T20:00:00+09:00-2026-11-28T00:30:00+07:00-RS-0115",
       "origin": "ICN",
       "destination": "CXR",
@@ -1211,7 +1184,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 40,
       "key": "ICN-CXR-2026-10-24T20:55:00+09:00-2026-10-30T00:30:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -1238,7 +1211,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 41,
       "key": "ICN-CXR-2026-11-08T20:50:00+09:00-2026-11-11T00:30:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -1265,7 +1238,7 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 42,
       "key": "ICN-KIX-2026-11-10T21:45:00+09:00-2026-11-17T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1292,7 +1265,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 43,
       "key": "ICN-CXR-2026-10-16T19:50:00+09:00-2026-10-23T00:05:00+07:00-RS-527",
       "origin": "ICN",
       "destination": "CXR",
@@ -1319,7 +1292,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 44,
       "key": "ICN-CXR-2026-11-10T20:50:00+09:00-2026-11-17T00:30:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -1346,7 +1319,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 45,
       "key": "ICN-PQC-2026-10-13T05:20:00+09:00-2026-10-17T00:20:00+07:00-9G-455",
       "origin": "ICN",
       "destination": "PQC",
@@ -1373,7 +1346,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 46,
       "key": "ICN-DAD-2026-10-20T20:35:00+09:00-2026-10-23T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1400,7 +1373,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 47,
       "key": "ICN-KIX-2026-11-01T21:45:00+09:00-2026-11-06T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1427,7 +1400,7 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 48,
       "key": "ICN-KIX-2026-11-02T21:45:00+09:00-2026-11-06T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1454,7 +1427,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 49,
       "key": "ICN-DAD-2026-10-18T07:00:00+09:00-2026-10-22T01:25:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -1481,7 +1454,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 50,
       "key": "ICN-KIX-2026-10-12T22:30:00+09:00-2026-10-14T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1508,7 +1481,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 51,
       "key": "ICN-CXR-2026-11-15T06:45:00+09:00-2026-11-21T00:30:00+07:00-VJ-835",
       "origin": "ICN",
       "destination": "CXR",
@@ -1535,7 +1508,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 52,
       "key": "ICN-KIX-2026-10-14T22:30:00+09:00-2026-10-20T01:30:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1562,7 +1535,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 53,
       "key": "ICN-DAD-2026-10-20T20:35:00+09:00-2026-10-25T00:40:00+07:00-ZE-593",
       "origin": "ICN",
       "destination": "DAD",
@@ -1589,7 +1562,7 @@
       }
     },
     {
-      "rank": 55,
+      "rank": 54,
       "key": "ICN-CXR-2026-11-01T20:10:00+09:00-2026-11-03T00:30:00+07:00-TW-33",
       "origin": "ICN",
       "destination": "CXR",
@@ -1616,7 +1589,7 @@
       }
     },
     {
-      "rank": 56,
+      "rank": 55,
       "key": "ICN-KIX-2026-11-04T21:45:00+09:00-2026-11-11T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -1639,6 +1612,33 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "KIX",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 56,
+      "key": "ICN-CXR-2026-11-08T20:50:00+09:00-2026-11-15T21:40:00+07:00-ZE-561",
+      "origin": "ICN",
+      "destination": "CXR",
+      "departure_at": "2026-11-08T20:50:00+09:00",
+      "return_at": "2026-11-15T21:40:00+07:00",
+      "airline": "ZE",
+      "flight_number": "561",
+      "flight_code": "561",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "CXR",
         "lang": "K"
       }
     },
@@ -1968,33 +1968,6 @@
     },
     {
       "rank": 69,
-      "key": "ICN-CXR-2026-10-11T19:00:00+09:00-2026-10-17T00:05:00+07:00-TW-33",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-10-11T19:00:00+09:00",
-      "return_at": "2026-10-17T00:05:00+07:00",
-      "airline": "TW",
-      "flight_number": "33",
-      "flight_code": "TW33",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 70,
       "key": "ICN-KIX-2026-10-13T22:30:00+09:00-2026-10-17T00:15:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -2021,7 +1994,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 70,
       "key": "ICN-KIX-2026-12-13T21:45:00+09:00-2026-12-18T07:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -2048,7 +2021,7 @@
       }
     },
     {
-      "rank": 72,
+      "rank": 71,
       "key": "ICN-DAD-2026-10-25T18:15:00+09:00-2026-10-30T00:40:00+07:00-WE-201",
       "origin": "ICN",
       "destination": "DAD",
@@ -2075,7 +2048,7 @@
       }
     },
     {
-      "rank": 73,
+      "rank": 72,
       "key": "ICN-CXR-2026-10-16T19:00:00+09:00-2026-10-27T00:30:00+07:00-TW-33",
       "origin": "ICN",
       "destination": "CXR",
@@ -2102,7 +2075,7 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 73,
       "key": "ICN-DAD-2026-11-02T18:15:00+09:00-2026-11-05T00:40:00+07:00-WE-201",
       "origin": "ICN",
       "destination": "DAD",
@@ -2129,7 +2102,7 @@
       }
     },
     {
-      "rank": 75,
+      "rank": 74,
       "key": "ICN-DAD-2026-10-22T20:55:00+09:00-2026-10-29T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2156,7 +2129,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 75,
       "key": "ICN-KIX-2026-10-19T22:30:00+09:00-2026-10-22T01:30:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -2183,7 +2156,7 @@
       }
     },
     {
-      "rank": 77,
+      "rank": 76,
       "key": "ICN-DAD-2026-10-16T20:55:00+09:00-2026-10-21T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2210,7 +2183,7 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 77,
       "key": "ICN-PQC-2026-10-13T05:20:00+09:00-2026-10-15T00:35:00+07:00-9G-455",
       "origin": "ICN",
       "destination": "PQC",
@@ -2237,7 +2210,7 @@
       }
     },
     {
-      "rank": 79,
+      "rank": 78,
       "key": "ICN-KIX-2026-12-04T21:45:00+09:00-2026-12-07T00:40:00+09:00-TW-317",
       "origin": "ICN",
       "destination": "KIX",
@@ -2264,7 +2237,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 79,
       "key": "ICN-CXR-2026-11-17T06:45:00+09:00-2026-11-27T00:30:00+07:00-VJ-835",
       "origin": "ICN",
       "destination": "CXR",
@@ -2291,7 +2264,7 @@
       }
     },
     {
-      "rank": 81,
+      "rank": 80,
       "key": "ICN-CXR-2026-10-19T19:00:00+09:00-2026-10-24T01:05:00+07:00-TW-33",
       "origin": "ICN",
       "destination": "CXR",
@@ -2318,7 +2291,7 @@
       }
     },
     {
-      "rank": 82,
+      "rank": 81,
       "key": "ICN-DAD-2026-10-24T20:55:00+09:00-2026-10-29T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2345,7 +2318,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 82,
       "key": "ICN-CXR-2026-10-15T19:30:00+09:00-2026-10-29T00:30:00+07:00-WE-205",
       "origin": "ICN",
       "destination": "CXR",
@@ -2372,7 +2345,7 @@
       }
     },
     {
-      "rank": 84,
+      "rank": 83,
       "key": "ICN-DAD-2026-10-13T20:55:00+09:00-2026-10-16T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2399,7 +2372,7 @@
       }
     },
     {
-      "rank": 85,
+      "rank": 84,
       "key": "ICN-DAD-2026-10-23T21:35:00+09:00-2026-10-30T00:40:00+07:00-TW-13",
       "origin": "ICN",
       "destination": "DAD",
@@ -2426,7 +2399,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 85,
       "key": "ICN-DAD-2026-10-18T20:55:00+09:00-2026-10-21T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2453,7 +2426,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 86,
       "key": "ICN-CXR-2026-10-14T19:30:00+09:00-2026-10-18T00:05:00+07:00-WE-205",
       "origin": "ICN",
       "destination": "CXR",
@@ -2480,7 +2453,7 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 87,
       "key": "ICN-CXR-2026-11-07T20:35:00+09:00-2026-11-18T00:30:00+07:00-WE-205",
       "origin": "ICN",
       "destination": "CXR",
@@ -2507,7 +2480,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 88,
       "key": "ICN-CXR-2026-11-14T20:35:00+09:00-2026-11-21T00:30:00+07:00-WE-205",
       "origin": "ICN",
       "destination": "CXR",
@@ -2534,7 +2507,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 89,
       "key": "ICN-DAD-2026-10-18T20:55:00+09:00-2026-10-23T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2561,7 +2534,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 90,
       "key": "ICN-PQC-2026-10-20T04:05:00+09:00-2026-10-23T17:45:00+07:00-VJ-979",
       "origin": "ICN",
       "destination": "PQC",
@@ -2588,7 +2561,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 91,
       "key": "ICN-DAD-2026-11-01T07:00:00+09:00-2026-11-10T23:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2615,7 +2588,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 92,
       "key": "ICN-DAD-2026-10-14T20:55:00+09:00-2026-10-21T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2642,7 +2615,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 93,
       "key": "ICN-DAD-2026-10-14T20:55:00+09:00-2026-10-17T00:40:00+07:00-RS-511",
       "origin": "ICN",
       "destination": "DAD",
@@ -2669,7 +2642,7 @@
       }
     },
     {
-      "rank": 95,
+      "rank": 94,
       "key": "ICN-TAO-2026-10-16T23:30:00+09:00-2026-10-19T01:05:00+08:00-LJ-867",
       "origin": "ICN",
       "destination": "TAO",
@@ -2696,34 +2669,7 @@
       }
     },
     {
-      "rank": 96,
-      "key": "ICN-CXR-2026-11-12T20:10:00+09:00-2026-11-21T00:30:00+07:00-TW-33",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-11-12T20:10:00+09:00",
-      "return_at": "2026-11-21T00:30:00+07:00",
-      "airline": "TW",
-      "flight_number": "33",
-      "flight_code": "TW33",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 97,
+      "rank": 95,
       "key": "ICN-DAD-2026-11-02T07:00:00+09:00-2026-11-11T23:35:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2750,7 +2696,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 96,
       "key": "ICN-CXR-2026-10-18T19:50:00+09:00-2026-10-21T00:05:00+07:00-RS-527",
       "origin": "ICN",
       "destination": "CXR",
@@ -2777,7 +2723,7 @@
       }
     },
     {
-      "rank": 99,
+      "rank": 97,
       "key": "ICN-CXR-2026-11-09T20:50:00+09:00-2026-11-14T00:30:00+07:00-ZE-561",
       "origin": "ICN",
       "destination": "CXR",
@@ -2804,12 +2750,66 @@
       }
     },
     {
-      "rank": 100,
+      "rank": 98,
       "key": "ICN-CXR-2026-11-05T20:35:00+09:00-2026-11-19T00:30:00+07:00-WE-205",
       "origin": "ICN",
       "destination": "CXR",
       "departure_at": "2026-11-05T20:35:00+09:00",
       "return_at": "2026-11-19T00:30:00+07:00",
+      "airline": "WE",
+      "flight_number": "205",
+      "flight_code": "205",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "CXR",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 99,
+      "key": "ICN-CXR-2026-11-06T20:00:00+09:00-2026-11-13T00:30:00+07:00-RS-115",
+      "origin": "ICN",
+      "destination": "CXR",
+      "departure_at": "2026-11-06T20:00:00+09:00",
+      "return_at": "2026-11-13T00:30:00+07:00",
+      "airline": "RS",
+      "flight_number": "115",
+      "flight_code": "115",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "CXR",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 100,
+      "key": "ICN-CXR-2026-11-11T20:35:00+09:00-2026-11-17T00:30:00+07:00-WE-205",
+      "origin": "ICN",
+      "destination": "CXR",
+      "departure_at": "2026-11-11T20:35:00+09:00",
+      "return_at": "2026-11-17T00:30:00+07:00",
       "airline": "WE",
       "flight_number": "205",
       "flight_code": "205",
