@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-17T00:23:51.422588+00:00",
-  "elapsed_seconds": 3.9,
+  "generated_at_utc": "2026-11-17T04:05:35.618696+00:00",
+  "elapsed_seconds": 4.01,
   "timeout_seconds": 35,
   "max_attempts": 2,
   "max_workers": 8,
@@ -80,6 +80,30 @@
       "attempt_count": 1
     },
     {
+      "provider": "IIAC_ARRIVALS",
+      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedArrivalsDeOdp",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "type": "json",
+        "airport": "KIX",
+        "lang": "K"
+      },
+      "ok": true,
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "body_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":125,\"items\":[{\"flightid\":\"MM701\",\"airline\":\"피치항공\",\"st\":\"0945\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS302\",\"airline\":\"에어서울\",\"st\":\"1155\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1302\",\"airline\":\"제주항공\",\"st\":\"1155\",\"firstdate\":\"20261025\",\"lastdate\":\"20261231\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ111\",\"airline\":\"아시아나항공\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"AC6975\",\"airline\":\"에어캐나다\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"EY8445\",\"airline\":\"에티하드 항공\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"NH6951\",\"airline\":\"전일본공수\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"KE5722\",\"airline\":\"대한항공\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"TW302\",\"airline\":\"트리니티항공\",\"st\":\"1325\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE612\",\"airline\":\"이스타항공\",\"st\":\"1350\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM705\",\"airline\":\"피치항공\",\"st\":\"1350\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1304\",\"airline\":\"제주항공\",\"st\":\"1405\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX328\",\"airline\":\"에어부산\",\"st\":\"1410\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9567\",\"airline\":\"아시아나항공\",\"st\":\"1410\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX328\",\"codeshare\":\"Slave\"},{\"flightid\":\"ZE616\",\"airline\":\"이스타항공\",\"st\":\"1455\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1316\",\"airline\":\"제주항공\",\"st\":\"1515\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS354\",\"airline\":\"에어서울\",\"st\":\"1755\",\"firstdate\":\"20261025\",\"lastdate\":\"20261225\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"N\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"TW304\",\"airline\":\"트리니티항공\",\"st\":\"1755\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX332\",\"airline\":\"에어부산\",\"st\":\"1805\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9569\",\"airline\":\"아시아나항공\",\"st\":\"1805\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX332\",\"codeshare\":\"Slave\"},{\"flightid\":\"LJ368\",\"airline\":\"진에어\",\"st\":\"1945\",\"firstdate\":\"20261025\",\"lastdate\":\"20261208\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE614\",\"airline\":\"이스타항공\",\"st\":\"1950\",\"firstdate\":\"20261025\",\"lastdate\":\"20270301\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS382\",\"airline\":\"에어서울\",\"st\":\"2005\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX374\",\"airline\":\"에어부산\",\"st\":\"2015\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9571\",\"airline\":\"아시아나항공\",\"st\":\"2015\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX374\",\"codeshare\":\"Slave\"},{\"flightid\":\"TW306\",\"airline\":\"트리니티항공\",\"st\":\"2105\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1306\",\"airline\":\"제주항공\",\"st\":\"2145\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM711\",\"airline\":\"피치항공\",\"st\":\"2150\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ113\",\"airline\":\"아시아나항공\",\"st\":\"2200\",\"firstdate\":\"20261025\",\"lastdate\":\"20261119\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ET1297\",\"airline\":\"에티오피아항공\",\"st\":\"2200\",\"firstdate\":\"20261025\",\"lastdate\":\"20261119\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ113\",\"codeshare\":\"Slave\"}]}}}",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "status": 200,
+          "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":125,\"items\":[{\"flightid\":\"MM701\",\"airline\":\"피치항공\",\"st\":\"0945\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS302\",\"airline\":\"에어서울\",\"st\":\"1155\",\"firstdate\":\"20261025\",\"last"
+        }
+      ],
+      "attempt_count": 1
+    },
+    {
       "provider": "KAC_DOM_JEJU",
       "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/dom",
       "params_without_key": {
@@ -100,30 +124,6 @@
           "ok": true,
           "status": 200,
           "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 100, \"pageNo\": 1, \"totalCount\": 123, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"WE6501\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP"
-        }
-      ],
-      "attempt_count": 1
-    },
-    {
-      "provider": "IIAC_ARRIVALS",
-      "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedArrivalsDeOdp",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "30",
-        "type": "json",
-        "airport": "KIX",
-        "lang": "K"
-      },
-      "ok": true,
-      "status": 200,
-      "content_type": "application/json;charset=UTF-8",
-      "body_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":125,\"items\":[{\"flightid\":\"MM701\",\"airline\":\"피치항공\",\"st\":\"0945\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS302\",\"airline\":\"에어서울\",\"st\":\"1155\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1302\",\"airline\":\"제주항공\",\"st\":\"1155\",\"firstdate\":\"20261025\",\"lastdate\":\"20261231\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ111\",\"airline\":\"아시아나항공\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"AC6975\",\"airline\":\"에어캐나다\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"EY8445\",\"airline\":\"에티하드 항공\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"NH6951\",\"airline\":\"전일본공수\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"KE5722\",\"airline\":\"대한항공\",\"st\":\"1235\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ111\",\"codeshare\":\"Slave\"},{\"flightid\":\"TW302\",\"airline\":\"트리니티항공\",\"st\":\"1325\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE612\",\"airline\":\"이스타항공\",\"st\":\"1350\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM705\",\"airline\":\"피치항공\",\"st\":\"1350\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1304\",\"airline\":\"제주항공\",\"st\":\"1405\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX328\",\"airline\":\"에어부산\",\"st\":\"1410\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9567\",\"airline\":\"아시아나항공\",\"st\":\"1410\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX328\",\"codeshare\":\"Slave\"},{\"flightid\":\"ZE616\",\"airline\":\"이스타항공\",\"st\":\"1455\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1316\",\"airline\":\"제주항공\",\"st\":\"1515\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS354\",\"airline\":\"에어서울\",\"st\":\"1755\",\"firstdate\":\"20261025\",\"lastdate\":\"20261225\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"N\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"TW304\",\"airline\":\"트리니티항공\",\"st\":\"1755\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX332\",\"airline\":\"에어부산\",\"st\":\"1805\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9569\",\"airline\":\"아시아나항공\",\"st\":\"1805\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX332\",\"codeshare\":\"Slave\"},{\"flightid\":\"LJ368\",\"airline\":\"진에어\",\"st\":\"1945\",\"firstdate\":\"20261025\",\"lastdate\":\"20261208\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ZE614\",\"airline\":\"이스타항공\",\"st\":\"1950\",\"firstdate\":\"20261025\",\"lastdate\":\"20270301\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS382\",\"airline\":\"에어서울\",\"st\":\"2005\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"BX374\",\"airline\":\"에어부산\",\"st\":\"2015\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ9571\",\"airline\":\"아시아나항공\",\"st\":\"2015\",\"firstdate\":\"20261025\",\"lastdate\":\"20261216\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"BX374\",\"codeshare\":\"Slave\"},{\"flightid\":\"TW306\",\"airline\":\"트리니티항공\",\"st\":\"2105\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"7C1306\",\"airline\":\"제주항공\",\"st\":\"2145\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"MM711\",\"airline\":\"피치항공\",\"st\":\"2150\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"OZ113\",\"airline\":\"아시아나항공\",\"st\":\"2200\",\"firstdate\":\"20261025\",\"lastdate\":\"20261119\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"ET1297\",\"airline\":\"에티오피아항공\",\"st\":\"2200\",\"firstdate\":\"20261025\",\"lastdate\":\"20261119\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"OZ113\",\"codeshare\":\"Slave\"}]}}}",
-      "attempts": [
-        {
-          "attempt": 1,
-          "ok": true,
-          "status": 200,
-          "error_or_preview": "{\"response\":{\"header\":{\"resultCode\":\"00\",\"resultMsg\":\"NORMAL SERVICE.\"},\"body\":{\"numOfRows\":30,\"pageNo\":1,\"totalCount\":125,\"items\":[{\"flightid\":\"MM701\",\"airline\":\"피치항공\",\"st\":\"0945\",\"firstdate\":\"20261025\",\"lastdate\":\"20270327\",\"airportcode\":\"KIX\",\"airport\":\"오사카/ 간사이\",\"season\":\"W26\",\"monday\":\"Y\",\"tuesday\":\"Y\",\"wednesday\":\"Y\",\"thursday\":\"Y\",\"friday\":\"Y\",\"saturday\":\"Y\",\"sunday\":\"Y\",\"masterflightid\":\"\",\"codeshare\":\"Master\"},{\"flightid\":\"RS302\",\"airline\":\"에어서울\",\"st\":\"1155\",\"firstdate\":\"20261025\",\"last"
         }
       ],
       "attempt_count": 1
@@ -214,33 +214,6 @@
     },
     {
       "rank": 4,
-      "key": "ICN-FUK-2026-12-02T16:20:00+09:00-2026-12-10T08:55:00+09:00-7C-1407",
-      "origin": "ICN",
-      "destination": "FUK",
-      "departure_at": "2026-12-02T16:20:00+09:00",
-      "return_at": "2026-12-10T08:55:00+09:00",
-      "airline": "7C",
-      "flight_number": "1407",
-      "flight_code": "1407",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "FUK",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 5,
       "key": "ICN-KIX-2026-12-02T15:50:00+09:00-2026-12-09T11:15:00+09:00-TW-305",
       "origin": "ICN",
       "destination": "KIX",
@@ -267,7 +240,7 @@
       }
     },
     {
-      "rank": 6,
+      "rank": 5,
       "key": "ICN-TAO-2026-11-23T11:35:00+09:00-2026-11-26T13:25:00+08:00-TW-607",
       "origin": "ICN",
       "destination": "TAO",
@@ -290,6 +263,33 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "TAO",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 6,
+      "key": "ICN-FUK-2026-12-02T17:25:00+09:00-2026-12-10T08:55:00+09:00-LJ-461",
+      "origin": "ICN",
+      "destination": "FUK",
+      "departure_at": "2026-12-02T17:25:00+09:00",
+      "return_at": "2026-12-10T08:55:00+09:00",
+      "airline": "LJ",
+      "flight_number": "461",
+      "flight_code": "461",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "FUK",
         "lang": "K"
       }
     },
@@ -598,6 +598,34 @@
     },
     {
       "rank": 18,
+      "key": "GMP-PVG-2026-12-09T19:05:00+09:00-2026-12-15T20:10:00+08:00-7C-729",
+      "origin": "GMP",
+      "destination": "PVG",
+      "departure_at": "2026-12-09T19:05:00+09:00",
+      "return_at": "2026-12-15T20:10:00+08:00",
+      "airline": "7C",
+      "flight_number": "729",
+      "flight_code": "729",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261209",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "PVG",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 19,
       "key": "GMP-KIX-2026-12-02T13:10:00+09:00-2026-12-09T08:30:00+09:00-MM-738",
       "origin": "GMP",
       "destination": "KIX",
@@ -625,7 +653,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "key": "GMP-KIX-2026-12-02T13:10:00+09:00-2026-12-08T14:10:00+09:00-MM-738",
       "origin": "GMP",
       "destination": "KIX",
@@ -653,7 +681,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "key": "GMP-PVG-2026-12-08T17:25:00+09:00-2026-12-15T15:10:00+08:00-TW-725",
       "origin": "GMP",
       "destination": "PVG",
@@ -681,7 +709,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
       "key": "ICN-TAO-2026-11-26T07:20:00+09:00-2026-11-30T09:20:00+08:00-LJ-841",
       "origin": "ICN",
       "destination": "TAO",
@@ -708,7 +736,35 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 23,
+      "key": "GMP-PVG-2026-12-01T19:05:00+09:00-2026-12-06T07:40:00+08:00-TW-729",
+      "origin": "GMP",
+      "destination": "PVG",
+      "departure_at": "2026-12-01T19:05:00+09:00",
+      "return_at": "2026-12-06T07:40:00+08:00",
+      "airline": "TW",
+      "flight_number": "729",
+      "flight_code": "729",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261201",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "PVG",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 24,
       "key": "ICN-PVG-2026-12-01T06:55:00+09:00-2026-12-08T13:45:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -735,7 +791,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 25,
       "key": "ICN-PVG-2026-12-10T14:00:00+09:00-2026-12-15T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -762,7 +818,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 26,
       "key": "ICN-KIX-2026-12-07T20:40:00+09:00-2026-12-10T10:50:00+09:00-LJ-383",
       "origin": "ICN",
       "destination": "KIX",
@@ -789,7 +845,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 27,
       "key": "ICN-PVG-2026-11-25T06:55:00+09:00-2026-11-28T13:45:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -816,7 +872,7 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 28,
       "key": "ICN-PVG-2026-12-04T22:10:00+09:00-2026-12-07T13:45:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -843,7 +899,7 @@
       }
     },
     {
-      "rank": 27,
+      "rank": 29,
       "key": "ICN-KIX-2026-11-22T19:10:00+09:00-2026-11-26T07:40:00+09:00-7C-1395",
       "origin": "ICN",
       "destination": "KIX",
@@ -870,7 +926,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 30,
       "key": "GMP-PVG-2026-12-10T19:05:00+09:00-2026-12-15T07:40:00+08:00-7C-137",
       "origin": "GMP",
       "destination": "PVG",
@@ -898,7 +954,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 31,
       "key": "GMP-PVG-2026-12-03T19:05:00+09:00-2026-12-08T15:10:00+08:00-TW-729",
       "origin": "GMP",
       "destination": "PVG",
@@ -926,7 +982,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 32,
       "key": "ICN-DAD-2026-12-19T23:50:00+09:00-2026-12-24T00:40:00+07:00-VJ-875",
       "origin": "ICN",
       "destination": "DAD",
@@ -953,7 +1009,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 33,
       "key": "ICN-FUK-2026-12-08T17:25:00+09:00-2026-12-10T09:30:00+09:00-LJ-461",
       "origin": "ICN",
       "destination": "FUK",
@@ -980,7 +1036,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 34,
       "key": "GMP-KIX-2026-12-01T17:00:00+09:00-2026-12-03T08:30:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -1008,7 +1064,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 35,
       "key": "ICN-KIX-2026-12-15T20:20:00+09:00-2026-12-22T08:50:00+09:00-TW-307",
       "origin": "ICN",
       "destination": "KIX",
@@ -1035,7 +1091,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 36,
       "key": "ICN-PVG-2026-11-26T06:55:00+09:00-2026-11-30T13:45:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -1062,7 +1118,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 37,
       "key": "ICN-PVG-2026-12-13T20:20:00+09:00-2026-12-18T13:45:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -1089,7 +1145,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 38,
       "key": "ICN-PVG-2026-12-12T12:20:00+09:00-2026-12-19T20:10:00+08:00-SC-4610",
       "origin": "ICN",
       "destination": "PVG",
@@ -1116,7 +1172,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 39,
       "key": "ICN-PVG-2026-12-02T20:20:00+09:00-2026-12-05T11:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -1143,7 +1199,7 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 40,
       "key": "ICN-PVG-2026-12-04T14:00:00+09:00-2026-12-06T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -1170,7 +1226,7 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 41,
       "key": "ICN-NGO-2026-12-02T14:50:00+09:00-2026-12-09T11:55:00+09:00-7C-1203",
       "origin": "ICN",
       "destination": "NGO",
@@ -1197,7 +1253,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 42,
       "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-04T13:45:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -1224,7 +1280,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 43,
       "key": "ICN-CXR-2026-12-06T20:00:00+09:00-2026-12-11T01:10:00+07:00-RS-115",
       "origin": "ICN",
       "destination": "CXR",
@@ -1251,7 +1307,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 44,
       "key": "ICN-DAD-2026-12-13T19:00:00+09:00-2026-12-16T23:35:00+07:00-TW-011",
       "origin": "ICN",
       "destination": "DAD",
@@ -1278,7 +1334,7 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 45,
       "key": "ICN-PVG-2026-12-02T22:10:00+09:00-2026-12-09T02:00:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -1305,7 +1361,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 46,
       "key": "ICN-PQC-2026-11-24T19:00:00+09:00-2026-11-26T00:05:00+07:00-TW-055",
       "origin": "ICN",
       "destination": "PQC",
@@ -1332,7 +1388,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 47,
       "key": "ICN-CXR-2026-11-23T21:50:00+09:00-2026-11-26T22:45:00+07:00-7C-2303",
       "origin": "ICN",
       "destination": "CXR",
@@ -1359,7 +1415,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 48,
       "key": "GMP-KIX-2026-12-08T17:00:00+09:00-2026-12-15T14:10:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -1387,7 +1443,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 49,
       "key": "ICN-CXR-2026-11-24T20:00:00+09:00-2026-11-27T01:10:00+07:00-RS-115",
       "origin": "ICN",
       "destination": "CXR",
@@ -1414,7 +1470,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 50,
       "key": "ICN-TAO-2026-12-04T08:45:00+09:00-2026-12-06T10:30:00+08:00-SC-8014",
       "origin": "ICN",
       "destination": "TAO",
@@ -1441,35 +1497,7 @@
       }
     },
     {
-      "rank": 49,
-      "key": "GMP-PVG-2026-12-09T16:35:00+09:00-2026-12-15T20:10:00+08:00-7C-133",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-09T16:35:00+09:00",
-      "return_at": "2026-12-15T20:10:00+08:00",
-      "airline": "7C",
-      "flight_number": "133",
-      "flight_code": "133",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261209",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 50,
+      "rank": 51,
       "key": "ICN-PVG-2026-11-20T14:00:00+09:00-2026-11-23T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -1493,34 +1521,6 @@
         "type": "json",
         "airport": "PVG",
         "lang": "K"
-      }
-    },
-    {
-      "rank": 51,
-      "key": "GMP-PVG-2026-12-01T18:30:00+09:00-2026-12-06T20:10:00+08:00-TW-727",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-01T18:30:00+09:00",
-      "return_at": "2026-12-06T20:10:00+08:00",
-      "airline": "TW",
-      "flight_number": "727",
-      "flight_code": "727",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261201",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
-        "type": "json"
       }
     },
     {
@@ -1661,34 +1661,6 @@
     },
     {
       "rank": 57,
-      "key": "GMP-PVG-2026-12-03T15:40:00+09:00-2026-12-06T20:10:00+08:00-TW-721",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-03T15:40:00+09:00",
-      "return_at": "2026-12-06T20:10:00+08:00",
-      "airline": "TW",
-      "flight_number": "721",
-      "flight_code": "721",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261203",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 58,
       "key": "ICN-PVG-2026-12-01T22:10:00+09:00-2026-12-13T23:15:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -1715,7 +1687,7 @@
       }
     },
     {
-      "rank": 59,
+      "rank": 58,
       "key": "ICN-PVG-2026-12-15T06:55:00+09:00-2026-12-19T11:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -1742,7 +1714,7 @@
       }
     },
     {
-      "rank": 60,
+      "rank": 59,
       "key": "ICN-CXR-2026-11-22T20:00:00+09:00-2026-11-27T02:10:00+07:00-RS-115",
       "origin": "ICN",
       "destination": "CXR",
@@ -1769,7 +1741,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 60,
       "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-08T11:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -1796,34 +1768,7 @@
       }
     },
     {
-      "rank": 62,
-      "key": "ICN-CXR-2026-11-24T20:00:00+09:00-2026-11-28T00:55:00+07:00-RS-115",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-11-24T20:00:00+09:00",
-      "return_at": "2026-11-28T00:55:00+07:00",
-      "airline": "RS",
-      "flight_number": "115",
-      "flight_code": "115",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 63,
+      "rank": 61,
       "key": "ICN-PVG-2026-12-03T14:00:00+09:00-2026-12-08T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -1850,7 +1795,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 62,
       "key": "ICN-NRT-2026-11-18T13:05:00+09:00-2026-11-26T11:50:00+09:00-ZG-046",
       "origin": "ICN",
       "destination": "NRT",
@@ -1877,7 +1822,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 63,
       "key": "ICN-BKI-2026-12-01T07:30:00+09:00-2026-12-04T01:30:00+08:00-AK-1624",
       "origin": "ICN",
       "destination": "BKI",
@@ -1904,7 +1849,7 @@
       }
     },
     {
-      "rank": 66,
+      "rank": 64,
       "key": "ICN-HKG-2026-12-12T12:25:00+09:00-2026-12-15T21:05:00+08:00-UO-619",
       "origin": "ICN",
       "destination": "HKG",
@@ -1931,7 +1876,7 @@
       }
     },
     {
-      "rank": 67,
+      "rank": 65,
       "key": "ICN-GUM-2026-11-24T20:55:00+09:00-2026-11-27T05:40:00+10:00-RS-905",
       "origin": "ICN",
       "destination": "GUM",
@@ -1958,7 +1903,34 @@
       }
     },
     {
-      "rank": 68,
+      "rank": 66,
+      "key": "ICN-PVG-2026-12-01T14:00:00+09:00-2026-12-06T13:45:00+08:00-SC-4612",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-01T14:00:00+09:00",
+      "return_at": "2026-12-06T13:45:00+08:00",
+      "airline": "SC",
+      "flight_number": "4612",
+      "flight_code": "4612",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 67,
       "key": "ICN-TAO-2026-11-17T23:20:00+09:00-2026-11-20T19:50:00+08:00-QW-902",
       "origin": "ICN",
       "destination": "TAO",
@@ -1985,7 +1957,7 @@
       }
     },
     {
-      "rank": 69,
+      "rank": 68,
       "key": "GMP-PVG-2026-12-14T20:30:00+09:00-2026-12-16T20:10:00+08:00-ZE-227",
       "origin": "GMP",
       "destination": "PVG",
@@ -2013,7 +1985,7 @@
       }
     },
     {
-      "rank": 70,
+      "rank": 69,
       "key": "ICN-KIX-2026-11-24T21:00:00+09:00-2026-11-26T07:40:00+09:00-MM-710",
       "origin": "ICN",
       "destination": "KIX",
@@ -2040,7 +2012,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 70,
       "key": "ICN-PVG-2026-12-15T14:00:00+09:00-2026-12-20T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2067,7 +2039,7 @@
       }
     },
     {
-      "rank": 72,
+      "rank": 71,
       "key": "ICN-PVG-2026-11-20T20:20:00+09:00-2026-11-24T11:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -2094,7 +2066,7 @@
       }
     },
     {
-      "rank": 73,
+      "rank": 72,
       "key": "ICN-KIX-2026-11-21T20:20:00+09:00-2026-11-25T23:10:00+09:00-TW-307",
       "origin": "ICN",
       "destination": "KIX",
@@ -2121,7 +2093,7 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 73,
       "key": "ICN-KIX-2026-12-14T20:20:00+09:00-2026-12-17T11:50:00+09:00-TW-307",
       "origin": "ICN",
       "destination": "KIX",
@@ -2148,7 +2120,7 @@
       }
     },
     {
-      "rank": 75,
+      "rank": 74,
       "key": "ICN-PVG-2026-12-16T20:20:00+09:00-2026-12-19T13:45:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -2175,7 +2147,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 75,
       "key": "ICN-PVG-2026-11-27T22:10:00+09:00-2026-11-29T23:15:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -2202,7 +2174,7 @@
       }
     },
     {
-      "rank": 77,
+      "rank": 76,
       "key": "ICN-NRT-2026-12-01T17:15:00+09:00-2026-12-08T10:55:00+09:00-ZG-044",
       "origin": "ICN",
       "destination": "NRT",
@@ -2229,7 +2201,7 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 77,
       "key": "GMP-PVG-2026-12-08T06:25:00+09:00-2026-12-13T20:10:00+08:00-7C-101",
       "origin": "GMP",
       "destination": "PVG",
@@ -2257,7 +2229,7 @@
       }
     },
     {
-      "rank": 79,
+      "rank": 78,
       "key": "ICN-XIY-2026-12-07T20:20:00+09:00-2026-12-14T16:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "XIY",
@@ -2284,7 +2256,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 79,
       "key": "ICN-PVG-2026-11-27T14:00:00+09:00-2026-11-30T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2311,34 +2283,7 @@
       }
     },
     {
-      "rank": 81,
-      "key": "ICN-CXR-2026-12-03T20:50:00+09:00-2026-12-10T01:10:00+07:00-ZE-561",
-      "origin": "ICN",
-      "destination": "CXR",
-      "departure_at": "2026-12-03T20:50:00+09:00",
-      "return_at": "2026-12-10T01:10:00+07:00",
-      "airline": "ZE",
-      "flight_number": "561",
-      "flight_code": "561",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CXR",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 82,
+      "rank": 80,
       "key": "GMP-PVG-2026-12-15T19:05:00+09:00-2026-12-20T07:40:00+08:00-7C-137",
       "origin": "GMP",
       "destination": "PVG",
@@ -2366,7 +2311,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 81,
       "key": "ICN-PVG-2026-12-05T22:10:00+09:00-2026-12-07T13:45:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -2393,34 +2338,7 @@
       }
     },
     {
-      "rank": 84,
-      "key": "ICN-CAN-2026-11-17T20:20:00+09:00-2026-11-20T12:50:00+08:00-SC-4616",
-      "origin": "ICN",
-      "destination": "CAN",
-      "departure_at": "2026-11-17T20:20:00+09:00",
-      "return_at": "2026-11-20T12:50:00+08:00",
-      "airline": "SC",
-      "flight_number": "4616",
-      "flight_code": "4616",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "CAN",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 85,
+      "rank": 82,
       "key": "ICN-PVG-2026-12-20T22:10:00+09:00-2026-12-26T11:10:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -2447,7 +2365,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 83,
       "key": "ICN-PVG-2026-11-26T14:00:00+09:00-2026-11-29T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2474,7 +2392,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 84,
       "key": "ICN-TAO-2026-11-21T21:10:00+09:00-2026-11-24T12:00:00+08:00-SC-8010",
       "origin": "ICN",
       "destination": "TAO",
@@ -2501,7 +2419,7 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 85,
       "key": "GMP-PVG-2026-12-16T15:40:00+09:00-2026-12-20T20:10:00+08:00-7C-129",
       "origin": "GMP",
       "destination": "PVG",
@@ -2529,7 +2447,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 86,
       "key": "ICN-PVG-2026-11-20T20:20:00+09:00-2026-11-22T23:15:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -2556,7 +2474,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 87,
       "key": "ICN-XIY-2026-11-26T06:55:00+09:00-2026-11-30T16:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "XIY",
@@ -2583,34 +2501,7 @@
       }
     },
     {
-      "rank": 91,
-      "key": "ICN-PVG-2026-11-19T06:55:00+09:00-2026-11-24T11:10:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-11-19T06:55:00+09:00",
-      "return_at": "2026-11-24T11:10:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 92,
+      "rank": 88,
       "key": "ICN-PVG-2026-12-10T14:00:00+09:00-2026-12-24T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2637,7 +2528,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 89,
       "key": "ICN-NRT-2026-12-15T13:05:00+09:00-2026-12-21T10:55:00+09:00-ZG-046",
       "origin": "ICN",
       "destination": "NRT",
@@ -2664,7 +2555,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 90,
       "key": "ICN-PVG-2026-12-08T14:00:00+09:00-2026-12-13T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2691,34 +2582,7 @@
       }
     },
     {
-      "rank": 95,
-      "key": "ICN-PVG-2026-12-10T06:55:00+09:00-2026-12-13T23:15:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-10T06:55:00+09:00",
-      "return_at": "2026-12-13T23:15:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 96,
+      "rank": 91,
       "key": "ICN-FUK-2026-12-07T16:20:00+09:00-2026-12-09T08:55:00+09:00-7C-1407",
       "origin": "ICN",
       "destination": "FUK",
@@ -2745,7 +2609,7 @@
       }
     },
     {
-      "rank": 97,
+      "rank": 92,
       "key": "ICN-DAD-2026-11-24T07:00:00+09:00-2026-11-27T23:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2772,7 +2636,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 93,
       "key": "ICN-DAD-2026-12-05T20:55:00+09:00-2026-12-08T23:35:00+07:00-RS-95",
       "origin": "ICN",
       "destination": "DAD",
@@ -2799,34 +2663,7 @@
       }
     },
     {
-      "rank": 99,
-      "key": "ICN-PVG-2026-12-03T06:55:00+09:00-2026-12-06T23:15:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-03T06:55:00+09:00",
-      "return_at": "2026-12-06T23:15:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 100,
+      "rank": 94,
       "key": "ICN-DAD-2026-12-07T19:00:00+09:00-2026-12-10T01:20:00+07:00-TW-011",
       "origin": "ICN",
       "destination": "DAD",
@@ -2849,6 +2686,168 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 95,
+      "key": "ICN-PVG-2026-11-21T14:00:00+09:00-2026-11-27T13:45:00+08:00-SC-4612",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-11-21T14:00:00+09:00",
+      "return_at": "2026-11-27T13:45:00+08:00",
+      "airline": "SC",
+      "flight_number": "4612",
+      "flight_code": "4612",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 96,
+      "key": "ICN-PVG-2026-12-14T14:00:00+09:00-2026-12-20T23:15:00+08:00-SC-4612",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-14T14:00:00+09:00",
+      "return_at": "2026-12-20T23:15:00+08:00",
+      "airline": "SC",
+      "flight_number": "4612",
+      "flight_code": "4612",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 97,
+      "key": "ICN-PVG-2026-12-03T14:00:00+09:00-2026-12-07T11:10:00+08:00-SC-4612",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-03T14:00:00+09:00",
+      "return_at": "2026-12-07T11:10:00+08:00",
+      "airline": "SC",
+      "flight_number": "4612",
+      "flight_code": "4612",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 98,
+      "key": "ICN-PVG-2026-11-19T20:20:00+09:00-2026-11-28T20:10:00+08:00-SC-4616",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-11-19T20:20:00+09:00",
+      "return_at": "2026-11-28T20:10:00+08:00",
+      "airline": "SC",
+      "flight_number": "4616",
+      "flight_code": "4616",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 99,
+      "key": "ICN-CAN-2026-11-17T20:20:00+09:00-2026-11-21T12:50:00+08:00-SC-4616",
+      "origin": "ICN",
+      "destination": "CAN",
+      "departure_at": "2026-11-17T20:20:00+09:00",
+      "return_at": "2026-11-21T12:50:00+08:00",
+      "airline": "SC",
+      "flight_number": "4616",
+      "flight_code": "4616",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "CAN",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 100,
+      "key": "ICN-CAN-2026-11-26T06:55:00+09:00-2026-11-29T20:30:00+08:00-SC-4624",
+      "origin": "ICN",
+      "destination": "CAN",
+      "departure_at": "2026-11-26T06:55:00+09:00",
+      "return_at": "2026-11-29T20:30:00+08:00",
+      "airline": "SC",
+      "flight_number": "4624",
+      "flight_code": "4624",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "CAN",
         "lang": "K"
       }
     }
