@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-19T02:44:36.752727+00:00",
-  "elapsed_seconds": 4.25,
+  "generated_at_utc": "2026-11-19T11:59:18.023452+00:00",
+  "elapsed_seconds": 6.36,
   "timeout_seconds": 35,
   "max_attempts": 2,
   "max_workers": 8,
@@ -377,6 +377,34 @@
     },
     {
       "rank": 10,
+      "key": "GMP-PVG-2026-12-03T19:15:00+09:00-2026-12-08T07:40:00+08:00-ZE-277",
+      "origin": "GMP",
+      "destination": "PVG",
+      "departure_at": "2026-12-03T19:15:00+09:00",
+      "return_at": "2026-12-08T07:40:00+08:00",
+      "airline": "ZE",
+      "flight_number": "277",
+      "flight_code": "277",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261203",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "PVG",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 11,
       "key": "ICN-KIX-2026-12-01T21:00:00+09:00-2026-12-03T10:00:00+09:00-MM-710",
       "origin": "ICN",
       "destination": "KIX",
@@ -403,7 +431,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "key": "ICN-KIX-2026-12-08T15:20:00+09:00-2026-12-15T10:00:00+09:00-RS-381",
       "origin": "ICN",
       "destination": "KIX",
@@ -430,7 +458,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 13,
       "key": "ICN-KIX-2026-12-08T19:10:00+09:00-2026-12-22T09:50:00+09:00-7C-1395",
       "origin": "ICN",
       "destination": "KIX",
@@ -457,7 +485,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 14,
       "key": "GMP-PVG-2026-12-10T18:30:00+09:00-2026-12-14T20:10:00+08:00-TW-727",
       "origin": "GMP",
       "destination": "PVG",
@@ -485,7 +513,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
       "key": "ICN-TAO-2026-12-03T23:20:00+09:00-2026-12-05T19:50:00+08:00-QW-902",
       "origin": "ICN",
       "destination": "TAO",
@@ -512,7 +540,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 16,
       "key": "GMP-PVG-2026-12-08T06:50:00+09:00-2026-12-10T07:40:00+08:00-TW-703",
       "origin": "GMP",
       "destination": "PVG",
@@ -540,7 +568,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 17,
       "key": "ICN-KIX-2026-12-08T15:05:00+09:00-2026-12-11T10:00:00+09:00-MM-706",
       "origin": "ICN",
       "destination": "KIX",
@@ -567,7 +595,7 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 18,
       "key": "GMP-PVG-2026-12-01T06:20:00+09:00-2026-12-08T07:40:00+08:00-TW-701",
       "origin": "GMP",
       "destination": "PVG",
@@ -595,7 +623,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 19,
       "key": "GMP-PVG-2026-12-09T19:05:00+09:00-2026-12-15T20:10:00+08:00-7C-729",
       "origin": "GMP",
       "destination": "PVG",
@@ -623,7 +651,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "key": "GMP-PVG-2026-12-02T19:55:00+09:00-2026-12-14T20:10:00+08:00-ZE-225",
       "origin": "GMP",
       "destination": "PVG",
@@ -651,7 +679,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "key": "GMP-KIX-2026-12-02T13:10:00+09:00-2026-12-08T14:10:00+09:00-MM-738",
       "origin": "GMP",
       "destination": "KIX",
@@ -679,7 +707,35 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
+      "key": "GMP-TPE-2026-12-02T19:05:00+09:00-2026-12-05T03:05:00+08:00-TW-729",
+      "origin": "GMP",
+      "destination": "TPE",
+      "departure_at": "2026-12-02T19:05:00+09:00",
+      "return_at": "2026-12-05T03:05:00+08:00",
+      "airline": "TW",
+      "flight_number": "729",
+      "flight_code": "729",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261202",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "TPE",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 23,
       "key": "ICN-TAO-2026-11-26T07:20:00+09:00-2026-11-30T09:20:00+08:00-LJ-841",
       "origin": "ICN",
       "destination": "TAO",
@@ -706,7 +762,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 24,
       "key": "GMP-PVG-2026-12-01T19:05:00+09:00-2026-12-06T07:40:00+08:00-TW-729",
       "origin": "GMP",
       "destination": "PVG",
@@ -734,7 +790,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 25,
       "key": "ICN-PVG-2026-12-01T06:55:00+09:00-2026-12-08T13:45:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -761,7 +817,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 26,
       "key": "ICN-PVG-2026-12-10T14:00:00+09:00-2026-12-15T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -788,7 +844,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 27,
       "key": "ICN-KIX-2026-12-07T20:40:00+09:00-2026-12-10T10:50:00+09:00-LJ-383",
       "origin": "ICN",
       "destination": "KIX",
@@ -815,34 +871,7 @@
       }
     },
     {
-      "rank": 26,
-      "key": "ICN-PVG-2026-11-25T06:55:00+09:00-2026-11-28T13:45:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-11-25T06:55:00+09:00",
-      "return_at": "2026-11-28T13:45:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 27,
+      "rank": 28,
       "key": "ICN-PVG-2026-12-04T22:10:00+09:00-2026-12-07T13:45:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -869,7 +898,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 29,
       "key": "ICN-KIX-2026-11-22T19:10:00+09:00-2026-11-26T07:40:00+09:00-7C-1395",
       "origin": "ICN",
       "destination": "KIX",
@@ -896,7 +925,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 30,
       "key": "GMP-PVG-2026-12-10T19:05:00+09:00-2026-12-15T07:40:00+08:00-7C-137",
       "origin": "GMP",
       "destination": "PVG",
@@ -924,7 +953,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 31,
       "key": "GMP-KIX-2026-12-08T17:00:00+09:00-2026-12-22T10:20:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -948,34 +977,6 @@
         "schDate": "20261208",
         "schDeptCityCode": "GMP",
         "schArrvCityCode": "KIX",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 31,
-      "key": "GMP-PVG-2026-12-03T19:05:00+09:00-2026-12-08T15:10:00+08:00-TW-729",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-03T19:05:00+09:00",
-      "return_at": "2026-12-08T15:10:00+08:00",
-      "airline": "TW",
-      "flight_number": "729",
-      "flight_code": "729",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261203",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
         "type": "json"
       }
     },
@@ -1199,33 +1200,6 @@
     },
     {
       "rank": 40,
-      "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-04T13:45:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-02T06:55:00+09:00",
-      "return_at": "2026-12-04T13:45:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 41,
       "key": "ICN-CXR-2026-12-06T20:00:00+09:00-2026-12-11T01:10:00+07:00-RS-115",
       "origin": "ICN",
       "destination": "CXR",
@@ -1252,7 +1226,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 41,
       "key": "ICN-DAD-2026-12-13T19:00:00+09:00-2026-12-16T23:35:00+07:00-TW-011",
       "origin": "ICN",
       "destination": "DAD",
@@ -1279,34 +1253,7 @@
       }
     },
     {
-      "rank": 43,
-      "key": "ICN-PQC-2026-11-24T19:00:00+09:00-2026-11-26T00:05:00+07:00-TW-055",
-      "origin": "ICN",
-      "destination": "PQC",
-      "departure_at": "2026-11-24T19:00:00+09:00",
-      "return_at": "2026-11-26T00:05:00+07:00",
-      "airline": "TW",
-      "flight_number": "055",
-      "flight_code": "055",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PQC",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 44,
+      "rank": 42,
       "key": "ICN-TAO-2026-12-11T11:35:00+09:00-2026-12-13T08:00:00+08:00-TW-607",
       "origin": "ICN",
       "destination": "TAO",
@@ -1333,7 +1280,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 43,
       "key": "GMP-KIX-2026-12-02T17:00:00+09:00-2026-12-09T08:30:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -1361,7 +1308,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 44,
       "key": "ICN-PVG-2026-12-13T06:55:00+09:00-2026-12-18T23:15:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -1388,7 +1335,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 45,
       "key": "ICN-GUM-2026-12-01T20:55:00+09:00-2026-12-05T00:40:00+10:00-RS-905",
       "origin": "ICN",
       "destination": "GUM",
@@ -1415,7 +1362,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 46,
       "key": "ICN-PVG-2026-12-01T14:00:00+09:00-2026-12-05T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -1442,7 +1389,7 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 47,
       "key": "ICN-PVG-2026-12-02T12:20:00+09:00-2026-12-14T13:45:00+08:00-SC-4610",
       "origin": "ICN",
       "destination": "PVG",
@@ -1469,7 +1416,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 48,
       "key": "ICN-PVG-2026-12-16T22:10:00+09:00-2026-12-20T23:15:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -1496,7 +1443,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 49,
       "key": "GMP-TPE-2026-12-02T06:50:00+09:00-2026-12-09T03:05:00+08:00-TW-703",
       "origin": "GMP",
       "destination": "TPE",
@@ -1524,7 +1471,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 50,
       "key": "ICN-PQC-2026-12-03T02:20:00+09:00-2026-12-11T20:45:00+07:00-VJ-979",
       "origin": "ICN",
       "destination": "PQC",
@@ -1551,7 +1498,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 51,
       "key": "ICN-PVG-2026-12-14T20:20:00+09:00-2026-12-19T11:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -1578,7 +1525,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 52,
       "key": "ICN-PVG-2026-12-14T20:20:00+09:00-2026-12-16T20:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -1605,7 +1552,7 @@
       }
     },
     {
-      "rank": 55,
+      "rank": 53,
       "key": "ICN-TPE-2026-12-09T22:55:00+09:00-2026-12-11T20:00:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -1628,6 +1575,61 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "TPE",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 54,
+      "key": "GMP-PVG-2026-12-02T18:35:00+09:00-2026-12-04T07:40:00+08:00-ZE-283",
+      "origin": "GMP",
+      "destination": "PVG",
+      "departure_at": "2026-12-02T18:35:00+09:00",
+      "return_at": "2026-12-04T07:40:00+08:00",
+      "airline": "ZE",
+      "flight_number": "283",
+      "flight_code": "283",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261202",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "PVG",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 55,
+      "key": "ICN-PVG-2026-12-02T22:10:00+09:00-2026-12-04T13:45:00+08:00-SC-4620",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-02T22:10:00+09:00",
+      "return_at": "2026-12-04T13:45:00+08:00",
+      "airline": "SC",
+      "flight_number": "4620",
+      "flight_code": "4620",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
         "lang": "K"
       }
     },
@@ -1742,33 +1744,6 @@
     },
     {
       "rank": 60,
-      "key": "ICN-PVG-2026-12-03T14:00:00+09:00-2026-12-08T13:45:00+08:00-SC-4612",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-03T14:00:00+09:00",
-      "return_at": "2026-12-08T13:45:00+08:00",
-      "airline": "SC",
-      "flight_number": "4612",
-      "flight_code": "4612",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 61,
       "key": "ICN-NRT-2026-12-02T16:10:00+09:00-2026-12-10T11:50:00+09:00-ZE-607",
       "origin": "ICN",
       "destination": "NRT",
@@ -1795,7 +1770,7 @@
       }
     },
     {
-      "rank": 62,
+      "rank": 61,
       "key": "ICN-PVG-2026-11-23T14:00:00+09:00-2026-11-26T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -1804,6 +1779,33 @@
       "airline": "SC",
       "flight_number": "4612",
       "flight_code": "4612",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 62,
+      "key": "ICN-PVG-2026-12-03T06:55:00+09:00-2026-12-08T11:10:00+08:00-SC-4624",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-03T06:55:00+09:00",
+      "return_at": "2026-12-08T11:10:00+08:00",
+      "airline": "SC",
+      "flight_number": "4624",
+      "flight_code": "4624",
       "provider": "IIAC_SCHEDULE_MATCH",
       "verification_mode": "route_flight_schedule",
       "api_ok": true,
@@ -1958,14 +1960,14 @@
     },
     {
       "rank": 68,
-      "key": "ICN-PVG-2026-12-04T14:00:00+09:00-2026-12-06T23:15:00+08:00-SC-4612",
+      "key": "ICN-PVG-2026-12-04T06:55:00+09:00-2026-12-06T20:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
-      "departure_at": "2026-12-04T14:00:00+09:00",
-      "return_at": "2026-12-06T23:15:00+08:00",
+      "departure_at": "2026-12-04T06:55:00+09:00",
+      "return_at": "2026-12-06T20:10:00+08:00",
       "airline": "SC",
-      "flight_number": "4612",
-      "flight_code": "4612",
+      "flight_number": "4624",
+      "flight_code": "4624",
       "provider": "IIAC_SCHEDULE_MATCH",
       "verification_mode": "route_flight_schedule",
       "api_ok": true,
@@ -2147,6 +2149,33 @@
     },
     {
       "rank": 75,
+      "key": "ICN-PVG-2026-11-25T20:20:00+09:00-2026-11-28T13:45:00+08:00-SC-4616",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-11-25T20:20:00+09:00",
+      "return_at": "2026-11-28T13:45:00+08:00",
+      "airline": "SC",
+      "flight_number": "4616",
+      "flight_code": "4616",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 76,
       "key": "GMP-PVG-2026-12-08T06:25:00+09:00-2026-12-13T20:10:00+08:00-7C-101",
       "origin": "GMP",
       "destination": "PVG",
@@ -2168,34 +2197,6 @@
         "pageNo": "1",
         "numOfRows": "200",
         "schDate": "20261208",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 76,
-      "key": "GMP-PVG-2026-12-05T19:20:00+09:00-2026-12-07T06:10:00+08:00-7C-139",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-05T19:20:00+09:00",
-      "return_at": "2026-12-07T06:10:00+08:00",
-      "airline": "7C",
-      "flight_number": "139",
-      "flight_code": "139",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261205",
         "schDeptCityCode": "GMP",
         "schArrvCityCode": "PVG",
         "type": "json"
@@ -2230,60 +2231,6 @@
     },
     {
       "rank": 78,
-      "key": "ICN-XIY-2026-12-07T20:20:00+09:00-2026-12-14T16:10:00+08:00-SC-4616",
-      "origin": "ICN",
-      "destination": "XIY",
-      "departure_at": "2026-12-07T20:20:00+09:00",
-      "return_at": "2026-12-14T16:10:00+08:00",
-      "airline": "SC",
-      "flight_number": "4616",
-      "flight_code": "4616",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "XIY",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 79,
-      "key": "ICN-PVG-2026-11-27T14:00:00+09:00-2026-11-30T23:15:00+08:00-SC-4612",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-11-27T14:00:00+09:00",
-      "return_at": "2026-11-30T23:15:00+08:00",
-      "airline": "SC",
-      "flight_number": "4612",
-      "flight_code": "4612",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 80,
       "key": "GMP-PVG-2026-12-15T19:05:00+09:00-2026-12-20T07:40:00+08:00-7C-137",
       "origin": "GMP",
       "destination": "PVG",
@@ -2311,7 +2258,7 @@
       }
     },
     {
-      "rank": 81,
+      "rank": 79,
       "key": "ICN-FUK-2026-12-07T16:20:00+09:00-2026-12-09T08:55:00+09:00-7C-1407",
       "origin": "ICN",
       "destination": "FUK",
@@ -2338,7 +2285,7 @@
       }
     },
     {
-      "rank": 82,
+      "rank": 80,
       "key": "ICN-PVG-2026-12-20T22:10:00+09:00-2026-12-26T11:10:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -2365,7 +2312,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 81,
       "key": "ICN-TAO-2026-11-21T21:10:00+09:00-2026-11-24T12:00:00+08:00-SC-8010",
       "origin": "ICN",
       "destination": "TAO",
@@ -2392,7 +2339,7 @@
       }
     },
     {
-      "rank": 84,
+      "rank": 82,
       "key": "GMP-PVG-2026-12-16T15:40:00+09:00-2026-12-20T20:10:00+08:00-7C-129",
       "origin": "GMP",
       "destination": "PVG",
@@ -2420,7 +2367,7 @@
       }
     },
     {
-      "rank": 85,
+      "rank": 83,
       "key": "ICN-FUK-2026-12-15T18:15:00+09:00-2026-12-23T10:30:00+09:00-ZE-649",
       "origin": "ICN",
       "destination": "FUK",
@@ -2447,7 +2394,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 84,
       "key": "ICN-XIY-2026-11-26T06:55:00+09:00-2026-11-30T16:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "XIY",
@@ -2474,7 +2421,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 85,
       "key": "GMP-KIX-2026-12-09T17:00:00+09:00-2026-12-17T10:45:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -2502,7 +2449,7 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 86,
       "key": "ICN-CAN-2026-12-10T20:20:00+09:00-2026-12-13T20:30:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "CAN",
@@ -2529,7 +2476,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 87,
       "key": "ICN-PVG-2026-12-10T14:00:00+09:00-2026-12-24T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2556,7 +2503,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 88,
       "key": "ICN-NRT-2026-12-15T13:05:00+09:00-2026-12-21T10:55:00+09:00-ZG-046",
       "origin": "ICN",
       "destination": "NRT",
@@ -2583,7 +2530,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 89,
       "key": "ICN-PVG-2026-12-08T14:00:00+09:00-2026-12-13T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2610,7 +2557,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 90,
       "key": "ICN-DAD-2026-11-24T07:00:00+09:00-2026-11-27T23:40:00+07:00-VJ-879",
       "origin": "ICN",
       "destination": "DAD",
@@ -2637,34 +2584,7 @@
       }
     },
     {
-      "rank": 93,
-      "key": "ICN-DAD-2026-12-05T20:55:00+09:00-2026-12-08T23:35:00+07:00-RS-95",
-      "origin": "ICN",
-      "destination": "DAD",
-      "departure_at": "2026-12-05T20:55:00+09:00",
-      "return_at": "2026-12-08T23:35:00+07:00",
-      "airline": "RS",
-      "flight_number": "95",
-      "flight_code": "RS95",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "DAD",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 94,
+      "rank": 91,
       "key": "GMP-PVG-2026-12-01T17:25:00+09:00-2026-12-04T10:50:00+08:00-TW-725",
       "origin": "GMP",
       "destination": "PVG",
@@ -2692,7 +2612,7 @@
       }
     },
     {
-      "rank": 95,
+      "rank": 92,
       "key": "ICN-DAD-2026-12-07T19:00:00+09:00-2026-12-10T01:20:00+07:00-TW-011",
       "origin": "ICN",
       "destination": "DAD",
@@ -2719,7 +2639,7 @@
       }
     },
     {
-      "rank": 96,
+      "rank": 93,
       "key": "ICN-PVG-2026-11-26T22:10:00+09:00-2026-11-29T23:15:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -2746,7 +2666,7 @@
       }
     },
     {
-      "rank": 97,
+      "rank": 94,
       "key": "ICN-PVG-2026-12-16T20:20:00+09:00-2026-12-26T13:45:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -2773,7 +2693,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 95,
       "key": "GMP-PVG-2026-12-10T18:30:00+09:00-2026-12-13T20:10:00+08:00-TW-727",
       "origin": "GMP",
       "destination": "PVG",
@@ -2801,7 +2721,7 @@
       }
     },
     {
-      "rank": 99,
+      "rank": 96,
       "key": "ICN-CTU-2026-12-14T06:55:00+09:00-2026-12-17T17:05:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "CTU",
@@ -2828,7 +2748,7 @@
       }
     },
     {
-      "rank": 100,
+      "rank": 97,
       "key": "ICN-PVG-2026-12-09T22:10:00+09:00-2026-12-15T13:45:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -2851,6 +2771,87 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 98,
+      "key": "ICN-PVG-2026-11-21T14:00:00+09:00-2026-11-27T20:10:00+08:00-SC-4612",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-11-21T14:00:00+09:00",
+      "return_at": "2026-11-27T20:10:00+08:00",
+      "airline": "SC",
+      "flight_number": "4612",
+      "flight_code": "4612",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 99,
+      "key": "ICN-PVG-2026-12-11T06:55:00+09:00-2026-12-14T13:45:00+08:00-SC-4624",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-11T06:55:00+09:00",
+      "return_at": "2026-12-14T13:45:00+08:00",
+      "airline": "SC",
+      "flight_number": "4624",
+      "flight_code": "4624",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 100,
+      "key": "ICN-DAD-2026-12-06T19:00:00+09:00-2026-12-09T23:40:00+07:00-TW-11",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-12-06T19:00:00+09:00",
+      "return_at": "2026-12-09T23:40:00+07:00",
+      "airline": "TW",
+      "flight_number": "11",
+      "flight_code": "TW11",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
         "lang": "K"
       }
     }
