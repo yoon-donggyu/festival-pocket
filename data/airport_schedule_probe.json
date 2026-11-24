@@ -1,60 +1,10 @@
 {
-  "generated_at_utc": "2026-11-23T21:38:39.017373+00:00",
-  "elapsed_seconds": 4.42,
+  "generated_at_utc": "2026-11-24T03:00:42.133960+00:00",
+  "elapsed_seconds": 6.76,
   "timeout_seconds": 35,
   "max_attempts": 2,
   "max_workers": 8,
   "results": [
-    {
-      "provider": "KAC_FLIGHT_SEARCH",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-search/info",
-      "params_without_key": {
-        "schLineType": "D",
-        "schIOType": "O",
-        "schAirCode": "GMP",
-        "schStTime": "0600",
-        "schEdTime": "2359",
-        "type": "json"
-      },
-      "ok": true,
-      "status": 200,
-      "content_type": "application/json",
-      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 175, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS6347\", \"std\": \"0600\", \"etd\": \"0618\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"1\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"airFln\": \"LJ6301\", \"std\": \"0605\", \"etd\": \"0626\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE5153\", \"std\": \"0605\", \"etd\": \"0626\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airFln\": \"OZ8905\", \"std\": \"0615\", \"etd\": \"0623\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"4\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"airFln\": \"TW701\", \"std\": \"0620\", \"etd\": \"0636\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"15\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C151\", \"std\": \"0620\", \"etd\": \"0628\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"18\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C101\", \"std\": \"0625\", \"etd\": \"0634\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"20\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"airFln\": \"LJ6325\", \"std\": \"0630\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"6\", \"rmkKor\": \"마감예정\", \"rmkEng\": \"FINAL CALL\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE1013\", \"std\": \"0630\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"10\", \"rmkKor\": \"마감예정\", \"rmkEng\": \"FINAL CALL\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE5155\", \"std\": \"0630\", \"etd\": null, \"io\": \"O\", \"line\": \"국내\", \"gate\": \"6\", \"rmkKor\": \"마감예정\", \"rmkEng\": \"FINAL CALL\", \"city\": \"CJU\", \"airport\": \"GMP\"}]}}}}",
-      "attempts": [
-        {
-          "attempt": 1,
-          "ok": true,
-          "status": 200,
-          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 175, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS6347\", \"std\": \"0600\", \"etd\": \"0618\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"1\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\""
-        }
-      ],
-      "attempt_count": 1
-    },
-    {
-      "provider": "KAC_INT",
-      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/int",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "30",
-        "schDate": "20260901",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "HND",
-        "type": "json"
-      },
-      "ok": true,
-      "status": 200,
-      "content_type": "application/json",
-      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": \"0740\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-01T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL90\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"0800\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1085\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2101\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0900\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL92\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"1205\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH864\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1240\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1045\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1545\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2103\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1620\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2105\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-09-30T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL94\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1915\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1065\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1950\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH868\", \"internationalStdate\": \"2026-08-26T00:00:00\", \"internationalTime\": \"1955\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}]}}}}",
-      "attempts": [
-        {
-          "attempt": 1,
-          "ok": true,
-          "status": 200,
-          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": "
-        }
-      ],
-      "attempt_count": 1
-    },
     {
       "provider": "IIAC_DEPARTURES",
       "endpoint": "https://apis.data.go.kr/B551177/StatusOfPaxFltSched/getPaxFltSchedDeparturesDeOdp",
@@ -104,6 +54,31 @@
       "attempt_count": 1
     },
     {
+      "provider": "KAC_FLIGHT_SEARCH",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-search/info",
+      "params_without_key": {
+        "schLineType": "D",
+        "schIOType": "O",
+        "schAirCode": "GMP",
+        "schStTime": "0600",
+        "schEdTime": "2359",
+        "type": "json"
+      },
+      "ok": true,
+      "status": 200,
+      "content_type": "application/json",
+      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 175, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS6347\", \"std\": \"0600\", \"etd\": \"0618\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"1\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE5153\", \"std\": \"0605\", \"etd\": \"0626\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"airFln\": \"LJ6301\", \"std\": \"0605\", \"etd\": \"0626\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"3\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airFln\": \"OZ8905\", \"std\": \"0615\", \"etd\": \"0623\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"4\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"트리니티항공\", \"airlineEnglish\": \"TRINITY AIRWAYS\", \"airFln\": \"TW701\", \"std\": \"0620\", \"etd\": \"0636\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"15\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C151\", \"std\": \"0620\", \"etd\": \"0628\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"18\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"제주항공\", \"airlineEnglish\": \"JEJU AIR\", \"airFln\": \"7C101\", \"std\": \"0625\", \"etd\": \"0634\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"20\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE5155\", \"std\": \"0630\", \"etd\": \"0643\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"6\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"진에어\", \"airlineEnglish\": \"JINAIR\", \"airFln\": \"LJ6325\", \"std\": \"0630\", \"etd\": \"0643\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"6\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airFln\": \"KE1013\", \"std\": \"0630\", \"etd\": \"0639\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"10\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}]}}}}",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "status": 200,
+          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 10, \"pageNo\": 1, \"totalCount\": 175, \"items\": {\"item\": [{\"boardingKor\": \"서울/김포\", \"boardingEng\": \"GIMPO\", \"arrivedKor\": \"제주\", \"arrivedEng\": \"JEJU\", \"airlineKorean\": \"에어서울\", \"airlineEnglish\": \"AIR SEOUL\", \"airFln\": \"RS6347\", \"std\": \"0600\", \"etd\": \"0618\", \"io\": \"O\", \"line\": \"국내\", \"gate\": \"1\", \"rmkKor\": \"출발\", \"rmkEng\": \"DEPARTED\", \"city\": \"CJU\", \"airport\": \"GMP\"}, {\"boardingKor\": \"서울/김포\", \"boardingEng\""
+        }
+      ],
+      "attempt_count": 1
+    },
+    {
       "provider": "KAC_DOM_JEJU",
       "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/dom",
       "params_without_key": {
@@ -124,6 +99,31 @@
           "ok": true,
           "status": 200,
           "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 100, \"pageNo\": 1, \"totalCount\": 123, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"파라타항공\", \"airlineEnglish\": \"PARATA AIR\", \"arrivalcity\": \"제주\", \"arrivalcityCode\": \"CJU\", \"domesticArrivalTime\": \"0715\", \"domesticEddate\": \"2026-10-24T00:00:00\", \"domesticNum\": \"WE6501\", \"domesticStartTime\": \"0600\", \"domesticStdate\": \"2026-03-29T00:00:00\", \"startcity\": \"서울/김포\", \"startcityCode\": \"GMP"
+        }
+      ],
+      "attempt_count": 1
+    },
+    {
+      "provider": "KAC_INT",
+      "endpoint": "https://apis.data.go.kr/B551178/flight-schedule/int",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "30",
+        "schDate": "20260901",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "HND",
+        "type": "json"
+      },
+      "ok": true,
+      "status": 200,
+      "content_type": "application/json",
+      "body_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": \"0740\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-01T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL90\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"0800\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1085\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2101\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"0900\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL92\", \"internationalStdate\": \"2026-05-10T00:00:00\", \"internationalTime\": \"1205\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH864\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1240\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1045\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1545\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2103\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1620\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"대한항공\", \"airlineEnglish\": \"KOREAN AIR\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"KE2105\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1840\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"일본항공\", \"airlineEnglish\": \"JAPAN AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-09-30T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"JL94\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1915\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"아시아나항공\", \"airlineEnglish\": \"ASIANA AIRLINES\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"OZ1065\", \"internationalStdate\": \"2026-03-29T00:00:00\", \"internationalTime\": \"1950\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}, {\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-24T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH868\", \"internationalStdate\": \"2026-08-26T00:00:00\", \"internationalTime\": \"1955\", \"internationalSun\": \"Y\", \"internationalMon\": \"Y\", \"internationalTue\": \"Y\", \"internationalWed\": \"Y\", \"internationalThu\": \"Y\", \"internationalFri\": \"Y\", \"internationalSat\": \"Y\", \"flightPurpose\": \"여객기\"}]}}}}",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "status": 200,
+          "error_or_preview": "{\"response\": {\"header\": {\"resultCode\": \"00\", \"resultMsg\": \"NORMAL SERVICE.\"}, \"body\": {\"numOfRows\": 30, \"pageNo\": 1, \"totalCount\": 12, \"items\": {\"item\": [{\"airlinehomepageUrl\": null, \"airlineKorean\": \"전일본공수\", \"airlineEnglish\": \"ALL NIPPON AIRWAYS\", \"airport\": \"서울/김포\", \"airportCode\": \"GMP\", \"city\": \"도쿄/하네다\", \"cityCode\": \"HND\", \"internationalEddate\": \"2026-10-25T00:00:00\", \"internationalIoType\": \"OUT\", \"internationalNum\": \"NH862\", \"internationalStdate\": \"2026-03-30T00:00:00\", \"internationalTime\": "
         }
       ],
       "attempt_count": 1
@@ -539,33 +539,6 @@
     },
     {
       "rank": 16,
-      "key": "ICN-NRT-2026-12-09T15:35:00+09:00-2026-12-12T11:10:00+09:00-BX-265",
-      "origin": "ICN",
-      "destination": "NRT",
-      "departure_at": "2026-12-09T15:35:00+09:00",
-      "return_at": "2026-12-12T11:10:00+09:00",
-      "airline": "BX",
-      "flight_number": "265",
-      "flight_code": "265",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": true,
-      "official_operation_score_25": 25,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "NRT",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 17,
       "key": "GMP-TPE-2026-12-02T19:05:00+09:00-2026-12-05T03:05:00+08:00-TW-729",
       "origin": "GMP",
       "destination": "TPE",
@@ -593,7 +566,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 17,
       "key": "ICN-FUK-2026-12-08T18:15:00+09:00-2026-12-10T08:55:00+09:00-ZE-649",
       "origin": "ICN",
       "destination": "FUK",
@@ -620,7 +593,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 18,
       "key": "ICN-TPE-2026-12-12T22:55:00+09:00-2026-12-16T20:00:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -647,7 +620,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 19,
       "key": "GMP-KIX-2026-12-08T17:00:00+09:00-2026-12-22T10:20:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -675,7 +648,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 20,
       "key": "ICN-KIX-2026-12-02T15:05:00+09:00-2026-12-08T10:00:00+09:00-MM-706",
       "origin": "ICN",
       "destination": "KIX",
@@ -702,7 +675,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 21,
       "key": "ICN-FUK-2026-12-02T17:50:00+09:00-2026-12-08T08:35:00+09:00-TW-207",
       "origin": "ICN",
       "destination": "FUK",
@@ -729,7 +702,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 22,
       "key": "ICN-KIX-2026-12-15T19:10:00+09:00-2026-12-17T23:10:00+09:00-7C-1395",
       "origin": "ICN",
       "destination": "KIX",
@@ -756,7 +729,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 23,
       "key": "GMP-PKX-2026-12-06T20:25:00+09:00-2026-12-08T17:55:00+08:00-7C-141",
       "origin": "GMP",
       "destination": "PKX",
@@ -784,7 +757,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 24,
       "key": "GMP-KIX-2026-12-02T17:00:00+09:00-2026-12-09T08:30:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -812,7 +785,7 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 25,
       "key": "ICN-TAO-2026-12-11T11:35:00+09:00-2026-12-13T08:00:00+08:00-TW-607",
       "origin": "ICN",
       "destination": "TAO",
@@ -839,7 +812,7 @@
       }
     },
     {
-      "rank": 27,
+      "rank": 26,
       "key": "ICN-KIX-2026-12-09T15:20:00+09:00-2026-12-17T10:00:00+09:00-RS-381",
       "origin": "ICN",
       "destination": "KIX",
@@ -866,7 +839,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 27,
       "key": "GMP-KIX-2026-12-01T17:00:00+09:00-2026-12-09T10:45:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -894,7 +867,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 28,
       "key": "ICN-PVG-2026-12-13T06:55:00+09:00-2026-12-18T23:15:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -921,7 +894,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 29,
       "key": "ICN-GUM-2026-12-01T20:55:00+09:00-2026-12-05T00:40:00+10:00-RS-905",
       "origin": "ICN",
       "destination": "GUM",
@@ -948,7 +921,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 30,
       "key": "ICN-PVG-2026-12-01T14:00:00+09:00-2026-12-05T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -975,7 +948,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 31,
       "key": "ICN-NRT-2026-12-05T15:00:00+09:00-2026-12-10T10:55:00+09:00-ZG-686",
       "origin": "ICN",
       "destination": "NRT",
@@ -1002,7 +975,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 32,
       "key": "ICN-PQC-2026-12-03T02:20:00+09:00-2026-12-11T20:45:00+07:00-VJ-979",
       "origin": "ICN",
       "destination": "PQC",
@@ -1029,7 +1002,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 33,
       "key": "ICN-PVG-2026-11-24T14:00:00+09:00-2026-11-30T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -1056,7 +1029,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 34,
       "key": "ICN-PVG-2026-12-14T20:20:00+09:00-2026-12-19T11:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -1083,7 +1056,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 35,
       "key": "ICN-PVG-2026-12-14T20:20:00+09:00-2026-12-16T20:10:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -1110,7 +1083,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 36,
       "key": "GMP-PVG-2026-12-02T18:35:00+09:00-2026-12-04T07:40:00+08:00-ZE-283",
       "origin": "GMP",
       "destination": "PVG",
@@ -1138,7 +1111,7 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 37,
       "key": "ICN-PVG-2026-12-02T22:10:00+09:00-2026-12-04T13:45:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "PVG",
@@ -1165,7 +1138,7 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 38,
       "key": "GMP-PVG-2026-12-14T14:40:00+09:00-2026-12-16T20:10:00+08:00-ZE-215",
       "origin": "GMP",
       "destination": "PVG",
@@ -1193,7 +1166,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 39,
       "key": "ICN-NRT-2026-12-04T15:00:00+09:00-2026-12-10T10:55:00+09:00-ZG-686",
       "origin": "ICN",
       "destination": "NRT",
@@ -1220,7 +1193,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 40,
       "key": "ICN-PVG-2026-11-25T06:55:00+09:00-2026-11-30T23:15:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -1247,12 +1220,39 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 41,
       "key": "ICN-PVG-2026-12-10T06:55:00+09:00-2026-12-12T11:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
       "departure_at": "2026-12-10T06:55:00+09:00",
       "return_at": "2026-12-12T11:10:00+08:00",
+      "airline": "SC",
+      "flight_number": "4624",
+      "flight_code": "4624",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 42,
+      "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-08T13:45:00+08:00-SC-4624",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-02T06:55:00+09:00",
+      "return_at": "2026-12-08T13:45:00+08:00",
       "airline": "SC",
       "flight_number": "4624",
       "flight_code": "4624",
@@ -1735,33 +1735,6 @@
     },
     {
       "rank": 60,
-      "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-08T11:10:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-02T06:55:00+09:00",
-      "return_at": "2026-12-08T11:10:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 61,
       "key": "ICN-NRT-2026-12-08T16:10:00+09:00-2026-12-17T11:50:00+09:00-ZE-607",
       "origin": "ICN",
       "destination": "NRT",
@@ -1788,7 +1761,7 @@
       }
     },
     {
-      "rank": 62,
+      "rank": 61,
       "key": "ICN-NRT-2026-12-01T19:45:00+09:00-2026-12-09T10:55:00+09:00-TW-247",
       "origin": "ICN",
       "destination": "NRT",
@@ -1815,7 +1788,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 62,
       "key": "ICN-KIX-2026-12-09T15:05:00+09:00-2026-12-11T12:00:00+09:00-ZE-613",
       "origin": "ICN",
       "destination": "KIX",
@@ -1842,7 +1815,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 63,
       "key": "ICN-CAN-2026-12-10T20:20:00+09:00-2026-12-13T20:30:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "CAN",
@@ -1865,6 +1838,33 @@
         "numOfRows": "1000",
         "type": "json",
         "airport": "CAN",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 64,
+      "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-06T23:15:00+08:00-SC-4624",
+      "origin": "ICN",
+      "destination": "PVG",
+      "departure_at": "2026-12-02T06:55:00+09:00",
+      "return_at": "2026-12-06T23:15:00+08:00",
+      "airline": "SC",
+      "flight_number": "4624",
+      "flight_code": "4624",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "PVG",
         "lang": "K"
       }
     },
@@ -1952,6 +1952,33 @@
     },
     {
       "rank": 68,
+      "key": "ICN-DAD-2026-12-08T07:00:00+09:00-2026-12-21T23:40:00+07:00-VJ-879",
+      "origin": "ICN",
+      "destination": "DAD",
+      "departure_at": "2026-12-08T07:00:00+09:00",
+      "return_at": "2026-12-21T23:40:00+07:00",
+      "airline": "VJ",
+      "flight_number": "879",
+      "flight_code": "879",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": true,
+      "official_operation_score_25": 25,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "DAD",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 69,
       "key": "ICN-NRT-2026-12-03T16:40:00+09:00-2026-12-10T10:55:00+09:00-RS-267",
       "origin": "ICN",
       "destination": "NRT",
@@ -1978,7 +2005,7 @@
       }
     },
     {
-      "rank": 69,
+      "rank": 70,
       "key": "ICN-PVG-2026-12-03T14:00:00+09:00-2026-12-08T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2005,7 +2032,7 @@
       }
     },
     {
-      "rank": 70,
+      "rank": 71,
       "key": "ICN-PVG-2026-12-16T20:20:00+09:00-2026-12-26T13:45:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "PVG",
@@ -2029,34 +2056,6 @@
         "type": "json",
         "airport": "PVG",
         "lang": "K"
-      }
-    },
-    {
-      "rank": 71,
-      "key": "GMP-PVG-2026-12-10T18:30:00+09:00-2026-12-13T20:10:00+08:00-TW-727",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-10T18:30:00+09:00",
-      "return_at": "2026-12-13T20:10:00+08:00",
-      "airline": "TW",
-      "flight_number": "727",
-      "flight_code": "727",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261210",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
-        "type": "json"
       }
     },
     {
@@ -2089,33 +2088,6 @@
     },
     {
       "rank": 73,
-      "key": "ICN-PVG-2026-12-11T06:55:00+09:00-2026-12-14T13:45:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-11T06:55:00+09:00",
-      "return_at": "2026-12-14T13:45:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 74,
       "key": "ICN-XIY-2026-12-02T22:55:00+09:00-2026-12-07T22:05:00+08:00-CZ-676",
       "origin": "ICN",
       "destination": "XIY",
@@ -2142,7 +2114,7 @@
       }
     },
     {
-      "rank": 75,
+      "rank": 74,
       "key": "ICN-PVG-2026-11-26T14:00:00+09:00-2026-11-29T13:45:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2169,7 +2141,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 75,
       "key": "ICN-CAN-2026-12-02T22:10:00+09:00-2026-12-04T12:50:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "CAN",
@@ -2196,7 +2168,7 @@
       }
     },
     {
-      "rank": 77,
+      "rank": 76,
       "key": "ICN-XIY-2026-12-11T21:50:00+09:00-2026-12-14T22:05:00+08:00-CZ-672",
       "origin": "ICN",
       "destination": "XIY",
@@ -2223,7 +2195,7 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 77,
       "key": "ICN-CAN-2026-12-10T20:20:00+09:00-2026-12-17T12:50:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "CAN",
@@ -2250,7 +2222,7 @@
       }
     },
     {
-      "rank": 79,
+      "rank": 78,
       "key": "GMP-TPE-2026-12-09T06:50:00+09:00-2026-12-11T02:45:00+08:00-TW-703",
       "origin": "GMP",
       "destination": "TPE",
@@ -2278,7 +2250,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 79,
       "key": "ICN-CAN-2026-11-27T22:10:00+09:00-2026-11-30T13:40:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "CAN",
@@ -2305,7 +2277,7 @@
       }
     },
     {
-      "rank": 81,
+      "rank": 80,
       "key": "ICN-XIY-2026-11-27T20:20:00+09:00-2026-11-29T19:55:00+08:00-SC-4616",
       "origin": "ICN",
       "destination": "XIY",
@@ -2332,7 +2304,7 @@
       }
     },
     {
-      "rank": 82,
+      "rank": 81,
       "key": "ICN-KIX-2026-12-10T14:45:00+09:00-2026-12-18T11:45:00+09:00-WE-513",
       "origin": "ICN",
       "destination": "KIX",
@@ -2359,7 +2331,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 82,
       "key": "ICN-CAN-2026-11-24T22:10:00+09:00-2026-11-27T12:50:00+08:00-SC-4620",
       "origin": "ICN",
       "destination": "CAN",
@@ -2386,7 +2358,7 @@
       }
     },
     {
-      "rank": 84,
+      "rank": 83,
       "key": "GMP-KIX-2026-12-02T17:00:00+09:00-2026-12-08T14:10:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -2414,35 +2386,7 @@
       }
     },
     {
-      "rank": 85,
-      "key": "GMP-PVG-2026-12-11T18:30:00+09:00-2026-12-14T20:10:00+08:00-TW-727",
-      "origin": "GMP",
-      "destination": "PVG",
-      "departure_at": "2026-12-11T18:30:00+09:00",
-      "return_at": "2026-12-14T20:10:00+08:00",
-      "airline": "TW",
-      "flight_number": "727",
-      "flight_code": "727",
-      "provider": "KAC_SCHEDULE_MATCH",
-      "verification_mode": "date_route_flight",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": false,
-      "flight_match": false,
-      "official_operation_score_25": 8,
-      "live_flight_search_api_ok": true,
-      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "200",
-        "schDate": "20261211",
-        "schDeptCityCode": "GMP",
-        "schArrvCityCode": "PVG",
-        "type": "json"
-      }
-    },
-    {
-      "rank": 86,
+      "rank": 84,
       "key": "ICN-PVG-2026-12-02T06:55:00+09:00-2026-12-05T11:10:00+08:00-SC-4624",
       "origin": "ICN",
       "destination": "PVG",
@@ -2469,7 +2413,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 85,
       "key": "ICN-NRT-2026-12-02T15:35:00+09:00-2026-12-10T10:55:00+09:00-BX-265",
       "origin": "ICN",
       "destination": "NRT",
@@ -2496,7 +2440,35 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 86,
+      "key": "GMP-TPE-2026-12-04T14:05:00+09:00-2026-12-06T06:40:00+08:00-TW-717",
+      "origin": "GMP",
+      "destination": "TPE",
+      "departure_at": "2026-12-04T14:05:00+09:00",
+      "return_at": "2026-12-06T06:40:00+08:00",
+      "airline": "TW",
+      "flight_number": "717",
+      "flight_code": "717",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261204",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "TPE",
+        "type": "json"
+      }
+    },
+    {
+      "rank": 87,
       "key": "ICN-CAN-2026-11-26T15:25:00+09:00-2026-11-29T20:30:00+08:00-SC-4614",
       "origin": "ICN",
       "destination": "CAN",
@@ -2523,7 +2495,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 88,
       "key": "GMP-KIX-2026-12-08T17:00:00+09:00-2026-12-15T10:20:00+09:00-MM-740",
       "origin": "GMP",
       "destination": "KIX",
@@ -2551,7 +2523,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 89,
       "key": "ICN-NRT-2026-12-02T17:15:00+09:00-2026-12-11T09:55:00+09:00-ZG-044",
       "origin": "ICN",
       "destination": "NRT",
@@ -2578,7 +2550,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 90,
       "key": "ICN-NRT-2026-12-15T15:30:00+09:00-2026-12-17T11:55:00+09:00-TW-245",
       "origin": "ICN",
       "destination": "NRT",
@@ -2605,7 +2577,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 91,
       "key": "ICN-TPE-2026-12-12T22:55:00+09:00-2026-12-15T18:10:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -2632,7 +2604,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 92,
       "key": "ICN-TPE-2026-12-09T22:55:00+09:00-2026-12-11T20:00:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -2659,7 +2631,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 93,
       "key": "ICN-NRT-2026-12-08T19:45:00+09:00-2026-12-10T10:55:00+09:00-TW-247",
       "origin": "ICN",
       "destination": "NRT",
@@ -2686,34 +2658,7 @@
       }
     },
     {
-      "rank": 95,
-      "key": "ICN-PVG-2026-12-10T06:55:00+09:00-2026-12-13T23:15:00+08:00-SC-4624",
-      "origin": "ICN",
-      "destination": "PVG",
-      "departure_at": "2026-12-10T06:55:00+09:00",
-      "return_at": "2026-12-13T23:15:00+08:00",
-      "airline": "SC",
-      "flight_number": "4624",
-      "flight_code": "4624",
-      "provider": "IIAC_SCHEDULE_MATCH",
-      "verification_mode": "route_flight_schedule",
-      "api_ok": true,
-      "http_status": 200,
-      "route_match": true,
-      "flight_match": false,
-      "official_operation_score_25": 15,
-      "live_flight_search_api_ok": true,
-      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
-      "params_without_key": {
-        "pageNo": "1",
-        "numOfRows": "1000",
-        "type": "json",
-        "airport": "PVG",
-        "lang": "K"
-      }
-    },
-    {
-      "rank": 96,
+      "rank": 94,
       "key": "ICN-GUM-2026-12-06T18:10:00+09:00-2026-12-10T02:00:00+10:00-LJ-5905",
       "origin": "ICN",
       "destination": "GUM",
@@ -2740,7 +2685,7 @@
       }
     },
     {
-      "rank": 97,
+      "rank": 95,
       "key": "ICN-PEK-2026-11-28T14:20:00+09:00-2026-11-30T08:40:00+08:00-CA-144",
       "origin": "ICN",
       "destination": "PEK",
@@ -2767,7 +2712,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 96,
       "key": "ICN-PVG-2026-11-27T14:00:00+09:00-2026-11-29T23:15:00+08:00-SC-4612",
       "origin": "ICN",
       "destination": "PVG",
@@ -2794,7 +2739,7 @@
       }
     },
     {
-      "rank": 99,
+      "rank": 97,
       "key": "ICN-TPE-2026-12-02T22:55:00+09:00-2026-12-05T18:10:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -2821,7 +2766,7 @@
       }
     },
     {
-      "rank": 100,
+      "rank": 98,
       "key": "ICN-TPE-2026-12-09T22:55:00+09:00-2026-12-12T18:10:00+08:00-TR-873",
       "origin": "ICN",
       "destination": "TPE",
@@ -2845,6 +2790,61 @@
         "type": "json",
         "airport": "TPE",
         "lang": "K"
+      }
+    },
+    {
+      "rank": 99,
+      "key": "ICN-CAN-2026-12-14T20:20:00+09:00-2026-12-20T21:10:00+08:00-SC-4616",
+      "origin": "ICN",
+      "destination": "CAN",
+      "departure_at": "2026-12-14T20:20:00+09:00",
+      "return_at": "2026-12-20T21:10:00+08:00",
+      "airline": "SC",
+      "flight_number": "4616",
+      "flight_code": "4616",
+      "provider": "IIAC_SCHEDULE_MATCH",
+      "verification_mode": "route_flight_schedule",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": true,
+      "flight_match": false,
+      "official_operation_score_25": 15,
+      "live_flight_search_api_ok": true,
+      "limitations": "IIAC timetable has no requested travel date; match confirms the route/flight exists in the published regular timetable, not current sale availability.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "1000",
+        "type": "json",
+        "airport": "CAN",
+        "lang": "K"
+      }
+    },
+    {
+      "rank": 100,
+      "key": "GMP-TPE-2026-11-26T06:20:00+09:00-2026-11-29T06:40:00+08:00-TW-701",
+      "origin": "GMP",
+      "destination": "TPE",
+      "departure_at": "2026-11-26T06:20:00+09:00",
+      "return_at": "2026-11-29T06:40:00+08:00",
+      "airline": "TW",
+      "flight_number": "701",
+      "flight_code": "701",
+      "provider": "KAC_SCHEDULE_MATCH",
+      "verification_mode": "date_route_flight",
+      "api_ok": true,
+      "http_status": 200,
+      "route_match": false,
+      "flight_match": false,
+      "official_operation_score_25": 8,
+      "live_flight_search_api_ok": true,
+      "limitations": "KAC schedule is queried with the fare departure date. Live flight-search is a service-health signal for future dates.",
+      "params_without_key": {
+        "pageNo": "1",
+        "numOfRows": "200",
+        "schDate": "20261126",
+        "schDeptCityCode": "GMP",
+        "schArrvCityCode": "TPE",
+        "type": "json"
       }
     }
   ],
