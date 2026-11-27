@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-26T19:14:26.272560+00:00",
+  "generated_at_utc": "2026-11-27T00:44:08.431772+00:00",
   "requests": 568,
   "successful_requests": 560,
   "failed_requests": 8,
@@ -113,8 +113,8 @@
       "origin": "ICN",
       "destination": "FUK",
       "month": "2026-12",
-      "returned": 33,
-      "accepted": 28
+      "returned": 30,
+      "accepted": 26
     },
     {
       "origin": "ICN",
@@ -253,8 +253,8 @@
       "origin": "ICN",
       "destination": "TPE",
       "month": "2026-12",
-      "returned": 20,
-      "accepted": 16
+      "returned": 18,
+      "accepted": 14
     },
     {
       "origin": "ICN",
@@ -330,8 +330,8 @@
       "origin": "ICN",
       "destination": "MFM",
       "month": "2026-11",
-      "returned": 1,
-      "accepted": 1
+      "returned": 0,
+      "accepted": 0
     },
     {
       "origin": "ICN",
@@ -506,7 +506,7 @@
       "destination": "BKI",
       "month": "2026-12",
       "returned": 11,
-      "accepted": 9
+      "accepted": 10
     },
     {
       "origin": "ICN",
@@ -533,8 +533,8 @@
       "origin": "ICN",
       "destination": "DPS",
       "month": "2026-12",
-      "returned": 35,
-      "accepted": 29
+      "returned": 34,
+      "accepted": 28
     },
     {
       "origin": "ICN",
@@ -554,15 +554,15 @@
       "origin": "ICN",
       "destination": "DAD",
       "month": "2026-11",
-      "returned": 5,
+      "returned": 4,
       "accepted": 2
     },
     {
       "origin": "ICN",
       "destination": "DAD",
       "month": "2026-12",
-      "returned": 60,
-      "accepted": 58
+      "returned": 59,
+      "accepted": 57
     },
     {
       "origin": "ICN",
@@ -589,8 +589,8 @@
       "origin": "ICN",
       "destination": "CXR",
       "month": "2026-12",
-      "returned": 48,
-      "accepted": 48
+      "returned": 46,
+      "accepted": 46
     },
     {
       "origin": "ICN",
@@ -645,8 +645,8 @@
       "origin": "ICN",
       "destination": "SGN",
       "month": "2026-12",
-      "returned": 14,
-      "accepted": 13
+      "returned": 12,
+      "accepted": 11
     },
     {
       "origin": "ICN",
@@ -673,8 +673,8 @@
       "origin": "ICN",
       "destination": "PQC",
       "month": "2026-12",
-      "returned": 70,
-      "accepted": 67
+      "returned": 68,
+      "accepted": 65
     },
     {
       "origin": "ICN",
@@ -701,8 +701,8 @@
       "origin": "ICN",
       "destination": "CEB",
       "month": "2026-12",
-      "returned": 12,
-      "accepted": 10
+      "returned": 11,
+      "accepted": 9
     },
     {
       "origin": "ICN",
@@ -722,8 +722,8 @@
       "origin": "ICN",
       "destination": "MNL",
       "month": "2026-11",
-      "returned": 1,
-      "accepted": 1
+      "returned": 0,
+      "accepted": 0
     },
     {
       "origin": "ICN",
@@ -778,15 +778,15 @@
       "origin": "ICN",
       "destination": "PVG",
       "month": "2026-11",
-      "returned": 3,
-      "accepted": 2
+      "returned": 1,
+      "accepted": 1
     },
     {
       "origin": "ICN",
       "destination": "PVG",
       "month": "2026-12",
-      "returned": 50,
-      "accepted": 42
+      "returned": 48,
+      "accepted": 40
     },
     {
       "origin": "ICN",
@@ -813,7 +813,7 @@
       "origin": "ICN",
       "destination": "PEK",
       "month": "2026-12",
-      "returned": 16,
+      "returned": 17,
       "accepted": 13
     },
     {
@@ -834,14 +834,14 @@
       "origin": "ICN",
       "destination": "PKX",
       "month": "2026-11",
-      "returned": 5,
-      "accepted": 3
+      "returned": 4,
+      "accepted": 2
     },
     {
       "origin": "ICN",
       "destination": "PKX",
       "month": "2026-12",
-      "returned": 16,
+      "returned": 17,
       "accepted": 13
     },
     {
@@ -1037,8 +1037,8 @@
       "origin": "ICN",
       "destination": "TAS",
       "month": "2026-12",
-      "returned": 48,
-      "accepted": 36
+      "returned": 49,
+      "accepted": 37
     },
     {
       "origin": "ICN",
@@ -1149,8 +1149,8 @@
       "origin": "ICN",
       "destination": "IST",
       "month": "2026-12",
-      "returned": 33,
-      "accepted": 22
+      "returned": 32,
+      "accepted": 21
     },
     {
       "origin": "ICN",
@@ -1401,8 +1401,8 @@
       "origin": "ICN",
       "destination": "BCN",
       "month": "2026-12",
-      "returned": 3,
-      "accepted": 3
+      "returned": 2,
+      "accepted": 2
     },
     {
       "origin": "ICN",
@@ -1877,7 +1877,7 @@
       "origin": "ICN",
       "destination": "MEL",
       "month": "2026-12",
-      "returned": 2,
+      "returned": 0,
       "accepted": 0
     },
     {
@@ -1989,7 +1989,7 @@
       "origin": "GMP",
       "destination": "NRT",
       "month": "2026-12",
-      "returned": 23,
+      "returned": 22,
       "accepted": 20
     },
     {
@@ -2045,8 +2045,8 @@
       "origin": "GMP",
       "destination": "FUK",
       "month": "2026-12",
-      "returned": 28,
-      "accepted": 23
+      "returned": 25,
+      "accepted": 21
     },
     {
       "origin": "GMP",
@@ -2185,8 +2185,8 @@
       "origin": "GMP",
       "destination": "TPE",
       "month": "2026-12",
-      "returned": 20,
-      "accepted": 16
+      "returned": 18,
+      "accepted": 14
     },
     {
       "origin": "GMP",
@@ -2437,8 +2437,8 @@
       "origin": "GMP",
       "destination": "BKI",
       "month": "2026-12",
-      "returned": 8,
-      "accepted": 8
+      "returned": 9,
+      "accepted": 9
     },
     {
       "origin": "GMP",
@@ -2493,8 +2493,8 @@
       "origin": "GMP",
       "destination": "DAD",
       "month": "2026-12",
-      "returned": 89,
-      "accepted": 86
+      "returned": 90,
+      "accepted": 87
     },
     {
       "origin": "GMP",
@@ -2521,8 +2521,8 @@
       "origin": "GMP",
       "destination": "CXR",
       "month": "2026-12",
-      "returned": 89,
-      "accepted": 87
+      "returned": 92,
+      "accepted": 90
     },
     {
       "origin": "GMP",
@@ -2577,8 +2577,8 @@
       "origin": "GMP",
       "destination": "SGN",
       "month": "2026-12",
-      "returned": 14,
-      "accepted": 13
+      "returned": 12,
+      "accepted": 11
     },
     {
       "origin": "GMP",
@@ -2598,15 +2598,15 @@
       "origin": "GMP",
       "destination": "PQC",
       "month": "2026-11",
-      "returned": 1,
-      "accepted": 1
+      "returned": 0,
+      "accepted": 0
     },
     {
       "origin": "GMP",
       "destination": "PQC",
       "month": "2026-12",
-      "returned": 77,
-      "accepted": 71
+      "returned": 76,
+      "accepted": 70
     },
     {
       "origin": "GMP",
@@ -2633,8 +2633,8 @@
       "origin": "GMP",
       "destination": "CEB",
       "month": "2026-12",
-      "returned": 11,
-      "accepted": 9
+      "returned": 10,
+      "accepted": 8
     },
     {
       "origin": "GMP",
@@ -2710,15 +2710,15 @@
       "origin": "GMP",
       "destination": "PVG",
       "month": "2026-11",
-      "returned": 2,
-      "accepted": 1
+      "returned": 0,
+      "accepted": 0
     },
     {
       "origin": "GMP",
       "destination": "PVG",
       "month": "2026-12",
-      "returned": 46,
-      "accepted": 39
+      "returned": 44,
+      "accepted": 37
     },
     {
       "origin": "GMP",
@@ -2738,14 +2738,14 @@
       "origin": "GMP",
       "destination": "PEK",
       "month": "2026-11",
-      "returned": 5,
-      "accepted": 3
+      "returned": 3,
+      "accepted": 1
     },
     {
       "origin": "GMP",
       "destination": "PEK",
       "month": "2026-12",
-      "returned": 16,
+      "returned": 17,
       "accepted": 13
     },
     {
@@ -2766,14 +2766,14 @@
       "origin": "GMP",
       "destination": "PKX",
       "month": "2026-11",
-      "returned": 5,
-      "accepted": 3
+      "returned": 3,
+      "accepted": 1
     },
     {
       "origin": "GMP",
       "destination": "PKX",
       "month": "2026-12",
-      "returned": 16,
+      "returned": 17,
       "accepted": 13
     },
     {
@@ -2962,7 +2962,7 @@
       "origin": "GMP",
       "destination": "TAS",
       "month": "2026-11",
-      "returned": 7,
+      "returned": 6,
       "accepted": 2
     },
     {
@@ -2970,7 +2970,7 @@
       "destination": "TAS",
       "month": "2026-12",
       "returned": 100,
-      "accepted": 71
+      "accepted": 72
     },
     {
       "origin": "GMP",
@@ -2997,8 +2997,8 @@
       "origin": "GMP",
       "destination": "DXB",
       "month": "2026-12",
-      "returned": 6,
-      "accepted": 6
+      "returned": 5,
+      "accepted": 5
     },
     {
       "origin": "GMP",
@@ -3081,8 +3081,8 @@
       "origin": "GMP",
       "destination": "IST",
       "month": "2026-12",
-      "returned": 31,
-      "accepted": 21
+      "returned": 30,
+      "accepted": 20
     },
     {
       "origin": "GMP",
@@ -3333,8 +3333,8 @@
       "origin": "GMP",
       "destination": "BCN",
       "month": "2026-12",
-      "returned": 3,
-      "accepted": 3
+      "returned": 2,
+      "accepted": 2
     },
     {
       "origin": "GMP",
@@ -3809,7 +3809,7 @@
       "origin": "GMP",
       "destination": "MEL",
       "month": "2026-12",
-      "returned": 2,
+      "returned": 0,
       "accepted": 0
     },
     {
@@ -3886,7 +3886,7 @@
       "origin": "ICN",
       "destination": "CJU",
       "month": "2026-11",
-      "returned": 2,
+      "returned": 1,
       "accepted": 1
     },
     {
@@ -3914,8 +3914,8 @@
       "origin": "GMP",
       "destination": "CJU",
       "month": "2026-11",
-      "returned": 9,
-      "accepted": 6
+      "returned": 7,
+      "accepted": 5
     },
     {
       "origin": "GMP",
